@@ -148,20 +148,21 @@ header div.header-mobile div.mobilemenu {
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb {
   height: 0vh;
+  padding: 0 20px;
   list-style: none;
   overflow: hidden;
   -webkit-transition: height ease-in-out 1s 0s;
   transition: height ease-in-out 1s 0s;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu {
-  padding: 20px;
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
+  padding: 20px 0;
   border-bottom: 1px solid #a7a7a7;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu::before {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
   content: "";
   display: inline-block;
   height: 15px;
@@ -169,17 +170,17 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu::before {
   background: url("./../images/icon-circle.svg") no-repeat center;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu.selected::before {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu.selected::before {
   background: url("./../images/icon-circle_h.svg") no-repeat center;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu > a, header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accordion {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu > a, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
   display: inline-block;
   padding-left: 10px;
   color: #231f20;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accordion {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
   background-color: transparent;
   cursor: pointer;
   width: calc(100% - 30px);
@@ -192,7 +193,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accor
   text-align: left;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accordion::after {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
   background-image: url("./../images/icon-circle.svg");
   width: 15px;
   height: 15px;
@@ -202,12 +203,12 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accor
   top: 7px;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accordion.active::after {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
   background-image: url("./../images/icon-circle_h.svg");
   content: "";
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-menu {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,20 +226,41 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-men
   transition: max-height 0.5s ease-out;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-menu li {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li {
   padding: 5px 0;
   width: 50%;
   font-size: 0.9em;
   font-weight: 400;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-menu li:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-menu li:nth-child(2) {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:nth-child(2) {
   padding-top: 10px;
 }
 
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-menu li a {
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a {
   display: inline-block;
   color: #999999;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
+  width: calc(100% / 3);
+  padding: 10px;
+  border: 1px solid #a7a7a7;
+  text-align: center;
 }
 
 header ul.topmenu {

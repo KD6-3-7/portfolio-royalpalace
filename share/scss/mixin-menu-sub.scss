@@ -114,12 +114,13 @@
 
             ul.mobile-gnb {
                 height: 0vh;
+                padding: 0 20px;
                 list-style: none;
                 overflow: hidden;
                 transition: height ease-in-out 1s 0s;
 
-                li.mobilemenu {
-                    padding: 20px;
+                & > li.mobilemenu {
+                    padding: 20px 0;
                     border-bottom: 1px solid $color-border;
 
                     font: {
@@ -206,6 +207,20 @@
                             }
                         }
                     }    
+                }
+
+                div.login-flex-box {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    li.mobilemenu {
+                        width: calc(100% / 3);
+                        padding: 10px;
+                        border: 1px solid $color-border;
+                        text-align: center;
+                    }   
                 }
             }
         }
