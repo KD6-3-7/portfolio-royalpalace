@@ -114,21 +114,17 @@
 
             ul.mobile-gnb {
                 height: 0vh;
-                padding-left: 15px;
                 list-style: none;
                 overflow: hidden;
                 transition: height ease-in-out 1s 0s;
 
                 li.mobilemenu {
-                    padding: 10px;
+                    padding: 20px;
+                    border-bottom: 1px solid $color-border;
 
                     font: {
-                        size: 1.3em;
+                        size: 1.2em;
                         weight: 600;
-                    }
-
-                    &:first-child {
-                        padding-top: 30px;
                     }
 
                     &::before {
@@ -171,7 +167,7 @@
                             content: "";
                             float: right;
                             position: relative;
-                            top: 10px;
+                            top: 7px;
                         }
 
                         &.active::after {
@@ -196,7 +192,7 @@
                             width: 50%;
 
                             font: {
-                                size: 0.8em;
+                                size: 0.9em;
                                 weight: 400;
                             }
 

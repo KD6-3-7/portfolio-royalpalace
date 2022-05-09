@@ -148,7 +148,6 @@ header div.header-mobile div.mobilemenu {
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb {
   height: 0vh;
-  padding-left: 15px;
   list-style: none;
   overflow: hidden;
   -webkit-transition: height ease-in-out 1s 0s;
@@ -156,13 +155,10 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb {
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu {
-  padding: 10px;
-  font-size: 1.3em;
+  padding: 20px;
+  border-bottom: 1px solid #a7a7a7;
+  font-size: 1.2em;
   font-weight: 600;
-}
-
-header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu:first-child {
-  padding-top: 30px;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu::before {
@@ -203,7 +199,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accor
   content: "";
   float: right;
   position: relative;
-  top: 10px;
+  top: 7px;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu button.accordion.active::after {
@@ -232,7 +228,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-men
 header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu ul.small-menu li {
   padding: 5px 0;
   width: 50%;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 400;
 }
 
