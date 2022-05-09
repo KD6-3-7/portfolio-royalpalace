@@ -2,7 +2,6 @@
 @import "common.scss";
 @import "mixin-menu-sub.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 // header
 header {
@@ -49,8 +48,8 @@ section.faq {
             display: block;
 
             font: {
-                size: 1em;
-                weight: 400;
+                size: 1.1em;
+                weight: 300;
             }
             
             &.no {
@@ -62,7 +61,7 @@ section.faq {
             }
             
             &.content {
-                font-weight: 600;
+                font-weight: 500;
                 width: 100%;
                 padding-top: 20px;
                 padding-left: 20%;
