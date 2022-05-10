@@ -3,11 +3,9 @@
 @import "mixin-menu-sub.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-
 // header
 header {
     @include topmenu-mobile();
-
     @include responsive(tablet-size) {
         @include topmenu-pc();
     }
@@ -21,7 +19,6 @@ main {
 // aside
 aside {
     @include sidemenu-mobile();
-
     @include responsive(tablet-size) {
         @include sidemenu-pc();
     }
@@ -30,21 +27,31 @@ aside {
 //section
 section.roy1 {
     @include wrapper();
-    
-    div{
-        h2.roy-title {
-            text-align: center;
-            margin-top: 60px;
-            padding-bottom: 60px;
-        }
+    h2 {
+        text-align: center;
+        margin: 50px 0;
     }
-    div.inside{
+    ul {
         display: flex;
-
-        div.roytime1 {
-            span.content-month {
-                padding-top: 20px;
-                padding-left: 10%;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            padding-bottom: 25px;
+            h3 {
+                padding-bottom: 5px;
+            }
+            p {
+                font-size: 1.125em;
+            }
+            &:last-child {
+                transform: translateY(2px);
+                h3 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -57,7 +64,6 @@ section.roy2 {
 // footer
 footer {
     @include footer-mobile();
-
     @include responsive(tablet-size) {
         @include footer-pc();
     }
