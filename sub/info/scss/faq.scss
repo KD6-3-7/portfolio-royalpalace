@@ -28,56 +28,30 @@ aside {
 }
 
 //section
-section.faq {
+section.roy1 {
     @include wrapper();
-
-    width: 100%;
-    margin: 100px auto;
-
-    div > h2 {
-        padding-bottom: 20px;
+    
+    div{
+        h2.roy-title {
+            text-align: center;
+            margin-top: 60px;
+            padding-bottom: 60px;
+        }
     }
-
-    ul.faq-list > div.faqArc {
+    div.inside{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 22px 0;
-        border-top: 1px solid $color-border;
 
-        span {
-            display: block;
-
-            font: {
-                size: 1em;
-                weight: 400;
-            }
-            
-            &.no {
-                width: 20%;
-            }
-            
-            &.title {
-                width: 80%;
-            }
-            
-            &.content {
-                font-weight: 600;
-                width: 100%;
+        div.roytime1 {
+            span.content-month {
                 padding-top: 20px;
-                padding-left: 20%;
-                line-height: 1.6em;
+                padding-left: 10%;
             }
-        }
-
-        &:first-child {
-            border-top: 1px solid $color-main;
-        }
-
-        &:last-child {
-            border-bottom: 1px solid $color-main;
         }
     }
+}
+
+section.roy2 {
+    @include wrapper();
 }
 
 // footer

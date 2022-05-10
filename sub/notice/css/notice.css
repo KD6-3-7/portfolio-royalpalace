@@ -390,61 +390,115 @@ aside div.sidemenu {
   }
 }
 
-article.des-1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  article.des-1 {
-    margin-top: 70px;
-    margin-bottom: 100px;
-  }
-}
-
-article.des-1 .wrapper {
+section.notice {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-}
-
-article.des-1 .wrapper .des-1-flex .des-1-left video {
   width: 100%;
-  height: 100%;
+  margin: 100px auto;
 }
 
-article.des-1 .wrapper .des-1-flex .des-1-right {
-  margin-top: 20px;
+section.notice div > h2 {
+  padding-bottom: 20px;
 }
 
-article.des-1 .wrapper .des-1-flex .des-1-right h2 {
-  font-size: 32px;
+section.notice div > table.bulletin {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #2c2928;
+  color: #2c2928;
 }
 
-@media screen and (min-width: 768px) {
-  article.des-1 .wrapper .des-1-flex .des-1-right h2 {
-    font-size: 38px;
-  }
+section.notice div > table.bulletin tr {
+  border-bottom: 1px solid #a7a7a7;
 }
 
-article.des-1 .wrapper .des-1-flex .des-1-right p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-top: 10px;
+section.notice div > table.bulletin tr th {
+  width: 20%;
+  padding: 15px 10px;
+  font-weight: normal;
+  vertical-align: top;
 }
 
-@media screen and (min-width: 768px) {
-  article.des-1 .wrapper .des-1-flex .des-1-right p {
-    font-size: 16px;
-    line-height: 26px;
-  }
+section.notice div > table.bulletin tr td {
+  width: 60%;
+  padding: 15px 10px;
+  vertical-align: top;
 }
 
-@media screen and (min-width: 1460px) {
-  article.des-1 .wrapper .des-1-flex .des-1-right p {
-    font-size: 20px;
-    line-height: 30px;
-  }
+section.notice div > table.bulletin tr td.date {
+  width: 20%;
+  text-align: right;
+}
+
+section.notice div > table.bulletin tr:last-child {
+  border-bottom: 1px solid #2c2928;
+}
+
+section.notice div.page {
+  width: 310px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.notice div.page ul.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 65px;
+}
+
+section.notice div.page ul.pagination li {
+  text-align: center;
+}
+
+section.notice div.page ul.pagination li a {
+  font-size: 1em;
+  color: #2c2928;
+  line-height: 30px;
+}
+
+section.notice div.page ul.pagination li a.num, section.notice div.page ul.pagination li a.arrow {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+}
+
+section.notice div.page ul.pagination li a.num:hover, section.notice div.page ul.pagination li a.arrow:hover {
+  background-color: #2c2928;
+  color: #f2ece4;
+}
+
+section.notice div.page ul.pagination li a.num:active, section.notice div.page ul.pagination li a.arrow:active {
+  background-color: #a7a7a7;
+  cursor: pointer;
+}
+
+section.notice div.page ul.pagination li a.active {
+  cursor: default;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #a7a7a7;
+  border-radius: 100%;
+}
+
+section.notice div.page ul.pagination li a:active {
+  outline: none;
 }
 
 footer {
@@ -542,4 +596,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-/*# sourceMappingURL=history.css.map */
+/*# sourceMappingURL=notice.css.map */
