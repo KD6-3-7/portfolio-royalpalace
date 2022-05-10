@@ -404,32 +404,38 @@ section.notice div > h2 {
 
 section.notice div > table.bulletin {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 1px;
   text-align: left;
   line-height: 1.5;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #2c2928;
   color: #2c2928;
 }
 
-section.notice div > table.bulletin th {
+section.notice div > table.bulletin tr {
+  border-bottom: 1px solid #a7a7a7;
+}
+
+section.notice div > table.bulletin tr th {
   width: 20%;
   padding: 15px 10px;
   font-weight: normal;
   vertical-align: top;
-  border-bottom: 1px solid #a7a7a7;
 }
 
-section.notice div > table.bulletin td {
+section.notice div > table.bulletin tr td {
   width: 60%;
   padding: 15px 10px;
   vertical-align: top;
-  border-bottom: 1px solid #a7a7a7;
 }
 
-section.notice div > table.bulletin td.date {
+section.notice div > table.bulletin tr td.date {
   width: 20%;
   text-align: right;
+}
+
+section.notice div > table.bulletin tr:last-child {
+  border-bottom: 1px solid #2c2928;
 }
 
 section.notice div.page {
