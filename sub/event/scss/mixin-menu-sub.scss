@@ -44,8 +44,6 @@
 
                 img {
                     width: 100px;
-                    height: 60px;
-                    filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
                 }
             }
 
@@ -121,18 +119,18 @@
 
                 & > li.mobilemenu {
                     padding: 20px 0;
-                    border-bottom: 1px solid $color-border;
+                    border-bottom: 1px solid $mobilemenu-border;
 
                     font: {
-                        size: 1.2em;
+                        size: 1em;
                         weight: 600;
                     }
 
                     &::before {
                         content:"";
                         display: inline-block;
-                        height: 15px;
-                        width: 15px;
+                        height: 13px;
+                        width: 13px;
                         background: url("./../images/icon-circle.svg") no-repeat center;
                     }
                     
@@ -163,8 +161,8 @@
 
                         &::after {
                             background-image: url("./../images/icon-circle.svg");
-                            width: 15px;
-                            height: 15px;
+                            width: 13px;
+                            height: 13px;
                             content: "";
                             float: right;
                             position: relative;
@@ -181,7 +179,7 @@
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
-                        padding-left: 30px;
+                        padding-left: 27px;
                         line-height: 1.4em;
 
                         max-height: 0;
@@ -218,9 +216,13 @@
                     li.mobilemenu {
                         width: calc(100% / 3);
                         padding: 10px;
-                        border: 1px solid $color-border;
+                        border: 1px solid $mobilemenu-border;
                         text-align: center;
-                    }   
+
+                        &:first-child, &:nth-child(2) {
+                            border-right: none;
+                        }
+                    }
                 }
             }
         }
@@ -238,19 +240,20 @@
 
     ul.topmenu {
         margin-left: 200px;
-        height: 100px;
+        // padding: 0 7%; // full menu 할 경우 주석처리
+        height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         li.submenu {
-            width: 25%;
+            width: calc(100% / 4); // calc(100% / [서브메뉴 개수])
             font: {
                 size: 1.2em;
                 weight: 300;
             }
             text-align: center;
-            line-height: 100px;
+            line-height: 80px;
             border-bottom: 1px solid $color-border;
 
             a {
@@ -300,11 +303,11 @@
         width: 200px;
         height: 100%;
         float: left;
-        transform: translateY(-100px);
+        transform: translateY(-80px);
         background-color: $sidemenu-background;
 
         h1.header-logo {
-            padding: 25px 30px 25px 25px; 
+            padding: 10px 30px 25px 25px; 
         }
     
         ul.gnb {
@@ -314,7 +317,7 @@
                 padding: 10px 0;
 
                 font: {
-                    size: 1.1em;
+                    size: 1em;
                     weight: 600;
                 }
                 
@@ -323,11 +326,11 @@
                     display: inline-block;
                     height: 10px;
                     width: 10px;
-                    background: url(./../images/icon-circle.svg) no-repeat center;
+                    background: url("./../images/icon-circle.svg") no-repeat center;
                 }
                 
                 &.selected::before {
-                    background: url(./../images/icon-circle_h.svg) no-repeat center;
+                    background: url("./../images/icon-circle_h.svg") no-repeat center;
                 }
                 
                 & > a {
@@ -338,7 +341,7 @@
     
                 ul.small-menu {
                     margin-top: 5px;
-                    margin-bottom: 10px;
+                    margin-bottom: 30px;
                     padding-left: 25px;
                     line-height: 1.4em;
     
@@ -376,30 +379,40 @@
     
             li > a {
                 color: $sidemenu-background;
-                font-size: 0.9em;
+
+                font: {
+                    size: 0.7em;
+                    weight: 200;
+                }
             }
         }
     
         div.copyright {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             padding: 30px 0;
     
             div.footer-logo {
-                width: 40%;
-                padding-bottom: 20px;
-    
-                img {
-                    filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
-                }
+                display: none;
             }
             
             div.contact {
+                color: $sidemenu-background;
+                line-height: 1.1em;
+
                 p {
-                    font-size: 0.9em;
-                    color: $sidemenu-background;
-                    line-height: 1.6em;
+                    font: {
+                        size: 0.7em;
+                        weight: 200;
+                    }
+
+                    &:first-child {
+                        font: {
+                            size: 0.8em;
+                            weight: 400;
+                        }
+                    }
                 }
             }
         }
@@ -412,21 +425,39 @@
     div.wrapper {
         div.policy > ul {
             width: 50%;
+
+            li > a {
+                font: {
+                    size: 0.9em;
+                }
+            }
         }
     
         div.copyright {
-            flex-direction: row;
-    
             div.footer-logo {
-                width: 12%;
+                display: block;
+                width: 145px;
                 padding-bottom: 0;
+                img {
+                    filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
+                }
             }
             
             div.contact {
                 width: 85%;
+                line-height: 1.6em;
     
                 p {
                     padding-left: 10%;
+
+                    font: {
+                        size: 0.9em;
+                        weight: 200;
+                    }
+
+                    &:first-child {
+                        display: none;
+                    }
                 }
             }
         }

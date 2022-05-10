@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/alternating.css">
-    <title>자주하는 질문</title>
+    <link rel="stylesheet" href="./css/alternationg.css">
+    <title>수문장 교대의식</title>
 </head>
 <body>
     <header>
         <div class="header-mobile">
             <div class="header-flex-box">
                 <h1 class="logo">
-                    <img src="./images/logo.svg" alt="main-logo">
+                    <img src="./images/logo_wt.png" alt="main-logo">
                 </h1> <!-- logo -->
                 <div class="hamburger">
                     <input type="checkbox" id="menu">
@@ -90,7 +90,7 @@
         </div> <!-- header-mobile -->
         <script src="./js/mobile-menu.js" type="text/javascript"></script>
         
-        <ul class="topmenu">
+        <ul class="topmenu"> <!-- 현재 페이지 li.submenu 클래스에 selected 삽입 -->
             <li class="submenu selected">
                 <a href="#">수문장 교대의식</a>
             </li>
@@ -110,9 +110,9 @@
         <aside>
             <div class="sidemenu">
                 <h1 class="header-logo">
-                    <img src="./images/logo.svg" alt="main-logo">
+                    <img src="./images/logo.png" alt="main-logo">
                 </h1>
-                <ul class="gnb">
+                <ul class="gnb"> <!-- 현재 페이지 li.menu 클래스에 selected 삽입 -->
                     <li class="sidemenu-home menu">
                         <a href="#">첫 화면</a>
                     </li> <!-- sidemenu-home -->
@@ -176,16 +176,46 @@
 
         <section class="event">
             <h1>수문장 교대의식</h1>
-            <img src="./images/alternating-main.png" alt="수문장 교대의식 메인이미지">
-            <div class="info">
-                <h2>소개</h2>
-                <p>경복궁 수문장 교대의식은 조선시대 왕실 호위문화를 상징하는 대표적인 전통문화행사입니다.<br>
-                    ‘조선왕조실록’예종(睿宗) 1년(1469) 수문장제도의 시행 기록을 역사적 근거로 하여<br>
-                    재구성된 이 행사는 당시의 복식 및 무기 등을 복원하여<br>
-                    조선 전기(前期) 군인들의 모습을 생생하게 재현하는 것에 초점을 맞추고 있습니다. </p>
+            <div class="img-text">
+                <img src="./images/alternating-main.png" alt="수문장 교대의식 메인이미지">
+                <div class="main-text">
+                    <h2>수문장 교대의식</h2>
+                    <p>“ 궁성의 문마다 수문장을 세우고,<br>
+                        수문장패를 만들어 날마다 낙점하여 수문하게 하라”<br>
+                    </p>
+                    <p class="person">
+                        - 예종 -
+                    </p>
+                </div>
             </div>
+
+            <div class="info">
+                <div class="line-flex">
+                    <div class="little-title">
+                        <h3>
+                            <span>
+                                소개
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="info-text">
+                    <p>경복궁 수문장 교대의식은 조선시대 왕실 호위문화를 상징하는 대표적인 전통문화행사입니다.<br>
+                        ‘조선왕조실록’예종(睿宗) 1년(1469) 수문장제도의 시행 기록을 역사적 근거로 하여<br>
+                        재구성된 이 행사는 당시의 복식 및 무기 등을 복원하여<br>
+                        조선 전기(前期) 군인들의 모습을 생생하게 재현하는 것에 초점을 맞추고 있습니다. </p>
+                </div>
+            </div>
+
 			<div class="procedure">
-                <h2>절차</h2>
+                <div class="little-title">
+                    <h3>
+                        <span>
+                            절차
+                        </span>
+                    </h3>
+                </div>
+
                 <div class="pro01">
                     <p>1. 당직수문군 입장 (협생문)</p>
                     <img src="./images/prodecure/1.jpg" alt="절차1">
@@ -220,6 +250,7 @@
                 </div>
             </div>
 		</section> 
+
     </main>
     <footer>
         <div class="wrapper">
@@ -233,9 +264,10 @@
             
             <div class="copyright">
                 <div class="footer-logo">
-                    <img src="./images/logo.svg" alt="footer-logo">
+                    <img src="./images/logo.png" alt="footer-logo">
                 </div>
                 <div class="contact">
+                    <p>문화재청 경복궁</p>
                     <p>우)03045 서울특별시 종로구 사직로 161<br>전화번호 (02) 3700-3900 팩스 (02) 3700-3909</p>
                     <p>COPYRIGHT 2022 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.</p>
                 </div>
