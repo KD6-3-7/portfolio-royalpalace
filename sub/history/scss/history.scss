@@ -26,55 +26,47 @@ aside {
     }
 }
 
-//section
-section.faq {
-    @include wrapper();
+//article
+article.des-1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    // background-color: aqua;
 
-    width: 100%;
-    margin: 100px auto;
+    .wrapper {
+        @include wrapper();
 
-    div > h2 {
-        padding-bottom: 20px;
-    }
+        .des-1-flex {
 
-    ul.faq-list > div.faqArc {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 22px 0;
-        border-top: 1px solid $color-border;
+            .des-1-left {
+                video {
+                    width: 100%;
 
-        span {
-            display: block;
-
-            font: {
-                size: 1.1em;
-                weight: 300;
+                }
+                
             }
-            
-            &.no {
-                width: 20%;
-            }
-            
-            &.title {
-                width: 80%;
-            }
-            
-            &.content {
-                font-weight: 500;
-                width: 100%;
-                padding-top: 20px;
-                padding-left: 20%;
-                line-height: 1.6em;
-            }
-        }
+    
+            .des-1-right {
+                margin-top: 20px;
+    
+                h2 {
+                    font-size: 32px;
 
-        &:first-child {
-            border-top: 1px solid $color-main;
-        }
+                    @include responsive(tablet-size) {
+                        font-size: 38px;
+                    }
+                }
+                
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-top: 10px;
 
-        &:last-child {
-            border-bottom: 1px solid $color-main;
+                    @include responsive(tablet-size) {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
         }
     }
 }
