@@ -48,6 +48,7 @@ article.des-1 {
                 video {
                     width: 100%;
                     height: 100%;
+                    border: 1px solid #b2b2b2;
                 }
 
             }
@@ -56,27 +57,22 @@ article.des-1 {
                 margin-top: 20px;
                 
                 h2 {
-                    font-size: 32px;
-
-                    @include responsive(tablet-size) {
-                        font-size: 38px;
-                    }
+                    font-size: 40px;
                 }
                 
                 p {
-                    font-size: 14px;
-                    line-height: 24px;
+                    font-size: 18px;
+                    line-height: 22px;
                     margin-top: 10px;
 
                     @include responsive(tablet-size) {
-                        font-size: 16px;
-                        line-height: 26px;
+                        line-height: 28px;
                     }
 
-                    @include responsive(pc-size) {
-                        font-size: 20px;
-                        line-height: 30px;
-                    }
+                    // @include responsive(pc-size) {
+                    //     font-size: 18px;
+                    //     line-height: 28px;
+                    // }
                 }
             }
         }

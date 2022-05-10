@@ -411,6 +411,7 @@ article.des-1 .wrapper {
 article.des-1 .wrapper .des-1-flex .des-1-left video {
   width: 100%;
   height: 100%;
+  border: 1px solid #b2b2b2;
 }
 
 article.des-1 .wrapper .des-1-flex .des-1-right {
@@ -418,32 +419,18 @@ article.des-1 .wrapper .des-1-flex .des-1-right {
 }
 
 article.des-1 .wrapper .des-1-flex .des-1-right h2 {
-  font-size: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  article.des-1 .wrapper .des-1-flex .des-1-right h2 {
-    font-size: 38px;
-  }
+  font-size: 40px;
 }
 
 article.des-1 .wrapper .des-1-flex .des-1-right p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
   article.des-1 .wrapper .des-1-flex .des-1-right p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  article.des-1 .wrapper .des-1-flex .des-1-right p {
-    font-size: 20px;
-    line-height: 30px;
+    line-height: 28px;
   }
 }
 

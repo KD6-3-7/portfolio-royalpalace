@@ -48,6 +48,7 @@ section.des-1 {
                         color: white;
                         opacity: 1;
                     }
+                    
                 }
                 
                 img {
@@ -71,6 +72,11 @@ section.des-1 {
                     width: 7.5em;
                     color:#474646;
                     opacity: 0.8;
+                    &:hover {
+                        img {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
             &:first-child {

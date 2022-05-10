@@ -444,6 +444,10 @@ section.des-1 ul li a p {
   opacity: 0.8;
 }
 
+section.des-1 ul li a p:hover img {
+  opacity: 1;
+}
+
 section.des-1 ul li:first-child a p {
   top: 73px;
 }
