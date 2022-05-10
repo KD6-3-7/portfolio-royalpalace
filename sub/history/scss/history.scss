@@ -2,6 +2,7 @@
 @import "common.scss";
 @import "mixin-menu-sub.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 // header
 header {
@@ -32,22 +33,28 @@ article.des-1 {
     margin-bottom: 50px;
     // background-color: aqua;
 
+    @include responsive(tablet-size) {
+        margin-top: 70px;
+        margin-bottom: 100px; 
+    }
+
     .wrapper {
         @include wrapper();
 
         .des-1-flex {
-
+            
             .des-1-left {
+
                 video {
                     width: 100%;
-
+                    height: 100%;
                 }
-                
+
             }
     
             .des-1-right {
                 margin-top: 20px;
-    
+                
                 h2 {
                     font-size: 32px;
 
@@ -65,12 +72,16 @@ article.des-1 {
                         font-size: 16px;
                         line-height: 26px;
                     }
+
+                    @include responsive(pc-size) {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
                 }
             }
         }
     }
 }
-
 // footer
 footer {
     @include footer-mobile();

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: Pretendard;
   background-color: #f2ece4;
 }
 
@@ -75,9 +76,6 @@ header div.header-mobile div.header-flex-box h1.logo {
 
 header div.header-mobile div.header-flex-box h1.logo img {
   width: 100px;
-  height: 60px;
-  -webkit-filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
-          filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
 }
 
 header div.header-mobile div.header-flex-box div.hamburger {
@@ -157,16 +155,16 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb {
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
   padding: 20px 0;
-  border-bottom: 1px solid #a7a7a7;
-  font-size: 1.2em;
+  border-bottom: 1px solid #dddddd;
+  font-size: 1em;
   font-weight: 600;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
   content: "";
   display: inline-block;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   background: url("./../images/icon-circle.svg") no-repeat center;
 }
 
@@ -185,7 +183,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
   cursor: pointer;
   width: calc(100% - 30px);
   border: none;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: Pretendard;
   font-size: 1em;
   font-weight: 600;
   -webkit-transition: 0.5s;
@@ -195,8 +193,8 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
   background-image: url("./../images/icon-circle.svg");
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   content: "";
   float: right;
   position: relative;
@@ -218,7 +216,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-m
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 30px;
+  padding-left: 27px;
   line-height: 1.4em;
   max-height: 0;
   overflow: hidden;
@@ -259,8 +257,12 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
 header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
   width: calc(100% / 3);
   padding: 10px;
-  border: 1px solid #a7a7a7;
+  border: 1px solid #dddddd;
   text-align: center;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:nth-child(2) {
+  border-right: none;
 }
 
 header ul.topmenu {
@@ -273,7 +275,8 @@ header ul.topmenu {
   }
   header ul.topmenu {
     margin-left: 200px;
-    height: 100px;
+    padding: 0 7%;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -286,11 +289,11 @@ header ul.topmenu {
             justify-content: space-between;
   }
   header ul.topmenu li.submenu {
-    width: 25%;
+    width: calc(100% / 3);
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
     border-bottom: 1px solid #a7a7a7;
   }
   header ul.topmenu li.submenu a {
@@ -341,19 +344,19 @@ aside div.sidemenu {
     width: 200px;
     height: 100%;
     float: left;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
     background-color: #ffffff;
   }
   aside div.sidemenu h1.header-logo {
-    padding: 25px 30px 25px 25px;
+    padding: 10px 30px 25px 25px;
   }
   aside div.sidemenu ul.gnb {
     padding-left: 30px;
   }
   aside div.sidemenu ul.gnb li.menu {
     padding: 10px 0;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
   }
   aside div.sidemenu ul.gnb li.menu::before {
@@ -361,10 +364,10 @@ aside div.sidemenu {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: url(./../images/icon-circle.svg) no-repeat center;
+    background: url("./../images/icon-circle.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
-    background: url(./../images/icon-circle_h.svg) no-repeat center;
+    background: url("./../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu > a {
     display: inline-block;
@@ -373,7 +376,7 @@ aside div.sidemenu {
   }
   aside div.sidemenu ul.gnb li.menu ul.small-menu {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     padding-left: 25px;
     line-height: 1.4em;
   }
@@ -387,60 +390,78 @@ aside div.sidemenu {
   }
 }
 
-section.faq {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-  width: 100%;
-  margin: 100px auto;
+section.des-1 {
+  margin-top: 70px;
+  margin-left: 7%;
+  margin-bottom: 2000px;
+  height: 0;
 }
 
-section.faq div > h2 {
-  padding-bottom: 20px;
-}
-
-section.faq ul.faq-list > div.faqArc {
+section.des-1 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 22px 0;
-  border-top: 1px solid #a7a7a7;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-section.faq ul.faq-list > div.faqArc span {
-  display: block;
-  font-size: 1.1em;
-  font-weight: 300;
+section.des-1 ul li {
+  width: 200px;
+  padding-right: 10px;
 }
 
-section.faq ul.faq-list > div.faqArc span.no {
-  width: 20%;
+section.des-1 ul li a {
+  position: relative;
 }
 
-section.faq ul.faq-list > div.faqArc span.title {
-  width: 80%;
+section.des-1 ul li a:hover p {
+  color: white;
+  opacity: 1;
 }
 
-section.faq ul.faq-list > div.faqArc span.content {
-  font-weight: 500;
+section.des-1 ul li a img {
   width: 100%;
-  padding-top: 20px;
-  padding-left: 20%;
-  line-height: 1.6em;
+  opacity: 0.15;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-section.faq ul.faq-list > div.faqArc:first-child {
-  border-top: 1px solid #2c2928;
+section.des-1 ul li a img:hover {
+  opacity: 1;
+  color: white;
 }
 
-section.faq ul.faq-list > div.faqArc:last-child {
-  border-bottom: 1px solid #2c2928;
+section.des-1 ul li a p {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 7.5em;
+  color: #474646;
+  opacity: 0.8;
+}
+
+section.des-1 ul li:first-child a p {
+  top: 73px;
+}
+
+section.des-1 ul li:nth-child(2) a p {
+  top: 73px;
+}
+
+section.des-1 .des-2-text {
+  margin-left: 0;
+}
+
+section.des-1 .des-2-text .wrapper .des-2-flex .des-2-left img {
+  display: none;
+}
+
+section.des-1 .des-2-text .wrapper .des-2-flex .des-2-right {
+  margin-top: 90px;
 }
 
 footer {
@@ -469,17 +490,18 @@ footer div.wrapper div.policy > ul {
 
 footer div.wrapper div.policy > ul li > a {
   color: #ffffff;
-  font-size: 0.9em;
+  font-size: 0.7em;
+  font-weight: 200;
 }
 
 footer div.wrapper div.copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -487,19 +509,22 @@ footer div.wrapper div.copyright {
 }
 
 footer div.wrapper div.copyright div.footer-logo {
-  width: 40%;
-  padding-bottom: 20px;
+  display: none;
 }
 
-footer div.wrapper div.copyright div.footer-logo img {
-  -webkit-filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
-          filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
+footer div.wrapper div.copyright div.contact {
+  color: #ffffff;
+  line-height: 1.1em;
 }
 
 footer div.wrapper div.copyright div.contact p {
-  font-size: 0.9em;
-  color: #ffffff;
-  line-height: 1.6em;
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
+footer div.wrapper div.copyright div.contact p:first-child {
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -509,21 +534,29 @@ footer div.wrapper div.copyright div.contact p {
   footer div.wrapper div.policy > ul {
     width: 50%;
   }
-  footer div.wrapper div.copyright {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  footer div.wrapper div.policy > ul li > a {
+    font-size: 0.9em;
   }
   footer div.wrapper div.copyright div.footer-logo {
-    width: 12%;
+    display: block;
+    width: 145px;
     padding-bottom: 0;
+  }
+  footer div.wrapper div.copyright div.footer-logo img {
+    -webkit-filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
+            filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
   }
   footer div.wrapper div.copyright div.contact {
     width: 85%;
+    line-height: 1.6em;
   }
   footer div.wrapper div.copyright div.contact p {
     padding-left: 10%;
+    font-size: 0.9em;
+    font-weight: 200;
+  }
+  footer div.wrapper div.copyright div.contact p:first-child {
+    display: none;
   }
 }
 /*# sourceMappingURL=restoration.css.map */
