@@ -27,58 +27,92 @@ aside {
     }
 }
 
-//section
-section.faq {
-    @include wrapper();
-
-    width: 100%;
-    margin: 100px auto;
-
-    div > h2 {
-        padding-bottom: 20px;
-    }
-
-    ul.faq-list > div.faqArc {
+section.des-1 {
+    margin-top: 70px;
+    margin-left: 7%;
+    margin-bottom: 2000px;
+    height: 0;
+    ul {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 22px 0;
-        border-top: 1px solid $color-border;
-
-        span {
-            display: block;
-
-            font: {
-                size: 1em;
-                weight: 400;
-            }
+        justify-content: flex-start;
+        
+        li {
+            width: 200px;
+            padding-right: 10px;
             
-            &.no {
-                width: 20%;
+            a {
+                position: relative;
+                
+                &:hover {
+                    p {
+                        color: white;
+                        opacity: 1;
+                    }
+                }
+                
+                img {
+                    width: 100%;
+                    opacity: 0.15;
+                    transition: all 1s;
+                    
+                    &:hover {
+                        opacity: 1;
+                        color: white;
+                    }
+                }
+                
+                p {
+                    position: absolute;
+                    left: 20px;
+                    top: 60px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    width: 7.5em;
+                    color:#474646;
+                    opacity: 0.8;
+                }
             }
-            
-            &.title {
-                width: 80%;
+            &:first-child {
+                a{
+                    p{
+                        top: 73px;
+                    }
+                }
             }
-            
-            &.content {
-                font-weight: 600;
-                width: 100%;
-                padding-top: 20px;
-                padding-left: 20%;
-                line-height: 1.6em;
+            &:nth-child(2) {
+                a {
+                    p {
+                        top: 73px;
+                    } 
+                }
             }
         }
+    }
+    
+    .des-2-text {
+        margin-left: 0;
+        .wrapper {
+            // @include wrapper();
+            
+            .des-2-flex{
+                .des-2-left{
+                    img {
+                        display: none;
+                    }
+                }
+                .des-2-right{
+                    margin-top: 90px;
 
-        &:first-child {
-            border-top: 1px solid $color-main;
-        }
-
-        &:last-child {
-            border-bottom: 1px solid $color-main;
+                    h2 {
+                        // text-align: center
+                    }
+                }
+            }
         }
     }
 }
+
 
 // footer
 footer {
