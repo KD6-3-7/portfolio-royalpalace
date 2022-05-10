@@ -387,60 +387,46 @@ aside div.sidemenu {
   }
 }
 
-section.faq {
+article.des-1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article.des-1 .wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+}
+
+article.des-1 .wrapper .des-1-flex .des-1-left video {
   width: 100%;
-  margin: 100px auto;
 }
 
-section.faq div > h2 {
-  padding-bottom: 20px;
+article.des-1 .wrapper .des-1-flex .des-1-right {
+  margin-top: 20px;
 }
 
-section.faq ul.faq-list > div.faqArc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 22px 0;
-  border-top: 1px solid #a7a7a7;
+article.des-1 .wrapper .des-1-flex .des-1-right h2 {
+  font-size: 32px;
 }
 
-section.faq ul.faq-list > div.faqArc span {
-  display: block;
-  font-size: 1.1em;
-  font-weight: 300;
+@media screen and (min-width: 768px) {
+  article.des-1 .wrapper .des-1-flex .des-1-right h2 {
+    font-size: 38px;
+  }
 }
 
-section.faq ul.faq-list > div.faqArc span.no {
-  width: 20%;
+article.des-1 .wrapper .des-1-flex .des-1-right p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
 }
 
-section.faq ul.faq-list > div.faqArc span.title {
-  width: 80%;
-}
-
-section.faq ul.faq-list > div.faqArc span.content {
-  font-weight: 500;
-  width: 100%;
-  padding-top: 20px;
-  padding-left: 20%;
-  line-height: 1.6em;
-}
-
-section.faq ul.faq-list > div.faqArc:first-child {
-  border-top: 1px solid #2c2928;
-}
-
-section.faq ul.faq-list > div.faqArc:last-child {
-  border-bottom: 1px solid #2c2928;
+@media screen and (min-width: 768px) {
+  article.des-1 .wrapper .des-1-flex .des-1-right p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 footer {
