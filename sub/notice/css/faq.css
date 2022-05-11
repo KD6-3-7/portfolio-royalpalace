@@ -412,7 +412,7 @@ section.faq ul.faq-list > div.faqArc {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 22px 0;
+  padding: 15px 10px;
   border-top: 1px solid #a7a7a7;
 }
 
