@@ -28,57 +28,113 @@ aside {
 }
 
 //section
-section.faq {
+section.des-1 {
     @include wrapper();
 
-    width: 100%;
-    margin: 100px auto;
-
-    div > h2 {
-        padding-bottom: 20px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 700px;
+    
+    @include responsive(pc-size) {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    ul.faq-list > div.faqArc {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 22px 0;
-        border-top: 1px solid $color-border;
+    .des-1-left {
+        width: 100%;
+        .des-1-image1{
+            position: relative;
 
-        span {
-            display: block;
-
-            font: {
-                size: 1em;
-                weight: 400;
-            }
-            
-            &.no {
-                width: 20%;
-            }
-            
-            &.title {
-                width: 80%;
-            }
-            
-            &.content {
-                font-weight: 600;
+            img {
                 width: 100%;
-                padding-top: 20px;
-                padding-left: 20%;
-                line-height: 1.6em;
+            }
+
+            p {
+                position: absolute;
+                left: 0;
+                top: -15px;
+                font-size: 0.9em;
+
+                span {
+                    display:inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    background-color: #000;
+
+                }
             }
         }
+    }
 
-        &:first-child {
-            border-top: 1px solid $color-main;
-        }
+    .des-1-right {
+        width: 100%;
 
-        &:last-child {
-            border-bottom: 1px solid $color-main;
+        .tab_content {
+            font-size: 0;
+            margin-top: 30px;
+
+            input[type="radio"] {
+                display: none;
+            }
+            
+            input[type="radio"] + label {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                @include responsive(tablet-size) {
+                    display: inline-block;
+                    width: 32.9%;
+                }
+                padding: 15px;
+                font-size: 20px;
+                text-align: center;
+                cursor: pointer;
+                color: #999;
+                background-color: #ccc;
+                
+            }
+            input[type="radio"]:checked + label {
+                color: #000;
+                background-color: #aaa;
+            }
+            
+            input[id="tab01"]:checked ~ .con1{
+                display: block;
+            }
+    
+            input[id="tab02"]:checked ~ .con2{
+                display: block;
+            }
+            
+            input[id="tab03"]:checked ~ .con3{
+                display: block;
+            }
+            
+            .conbox {
+                display: none;
+                font-size: 16px;
+                line-height: 22.4px;
+                margin-top: 3px;
+                padding: 15px;
+                background-color: #aaa;
+            }
+            background-color: #000;
+            
+            label {
+                // width: 9.8em;
+                // width: 30%;
+                margin-right: 2px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            
         }
     }
 }
+
 
 // footer
 footer {
