@@ -418,7 +418,7 @@ section.event .img-text .main-text {
 }
 
 section.event .img-text .main-text h2 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -497,7 +497,7 @@ section.event .info .little-title {
 }
 
 section.event .info .little-title h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -539,6 +539,12 @@ section.event .info p {
   line-height: 2em;
 }
 
+@media screen and (min-width: 1460px) {
+  section.event .info .info-text {
+    margin-top: 20px;
+  }
+}
+
 section.event .procedure {
   width: 100%;
   margin: 0 auto;
@@ -550,6 +556,16 @@ section.event .procedure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1460px) {
+  section.event .procedure {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 section.event .procedure .little-title {
@@ -558,7 +574,7 @@ section.event .procedure .little-title {
 }
 
 section.event .procedure .little-title h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -589,6 +605,136 @@ section.event .procedure .little-title::after {
   width: 150px;
   height: 2px;
   background: #c4c3c2;
+}
+
+section.event .procedure .line-flex {
+  width: 25%;
+}
+
+section.event .procedure .pro-flex-img div p {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+section.event .procedure .pro-flex-img div img {
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  section.event .procedure .pro-flex-img div {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.event .procedure .pro-flex-img div {
+    width: 24%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.event .procedure .pro-flex-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.event .procedure .pro-flex-img {
+    width: 75%;
+  }
+}
+
+section.event .operation {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1460px) {
+  section.event .operation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+section.event .operation .little-title {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+section.event .operation .little-title h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section.event .operation .little-title h3 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+section.event .operation .little-title h3 span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  z-index: 1;
+  background: #949392;
+}
+
+section.event .operation .little-title::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 2px;
+  background: #c4c3c2;
+}
+
+section.event .operation .line-flex {
+  width: 25%;
+}
+
+section.event .operation p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+section.event .operation .operation-info .operation-term .operation-info-box {
+  background-color: #cec4b6;
+}
+
+@media screen and (min-width: 768px) {
+  section.event .operation .operation-info .operation-term .operation-info-box {
+    width: 165px;
+    height: 145px;
+  }
 }
 
 footer {

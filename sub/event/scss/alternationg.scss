@@ -54,7 +54,7 @@ section.event {
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 25px;
                 @include responsive(tablet-size) {
                     font-size: 30px;
                     margin-bottom: 30px;
@@ -101,8 +101,7 @@ section.event {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;
-            // justify-content: space-between;
+            flex-direction: row;            
         }
         
         @include line-deco();
@@ -116,14 +115,99 @@ section.event {
             line-height: 2em;
         }
         margin-bottom: 90px;
+
+        .info-text {
+            @include responsive(pc-size) {
+                margin-top: 20px;
+            }
+        }
     }
 
     .procedure {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        
+        @include responsive(pc-size) {
+            flex-direction: row;
+        }
 
         @include line-deco();
+
+        .line-flex {
+            width: 25%;;
+        }
+
+        .pro-flex-img {
+            div {
+                p {
+                    margin-bottom: 18px;
+                    font-size: 18px;
+                }
+    
+                img {
+                    margin-bottom: 35px;
+                }
+
+                @include responsive(tablet-size) {
+                    width: 48%;
+                }
+                @include responsive(pc-size) {
+                    width: 24%;
+                }
+            }
+            
+            @include responsive(tablet-size) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            @include responsive(pc-size) {
+                width: 75%;
+            }
+        }
+
+        margin-bottom: 90px;
+    }
+
+    .operation {
+        @include wrapper();
+        display: flex;
+        flex-direction: column;
+        
+        @include responsive(pc-size) {
+            flex-direction: row;            
+        }
+        
+        @include line-deco();
+        
+        .line-flex {
+            width: 25%;;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2em;
+        }
+
+        .operation-info {
+            .operation-term {
+                .operation-info-box {
+                    background-color: #cec4b6;
+                    
+                    @include responsive(tablet-size) {
+                        width: 165px;
+                        height: 145px;
+                    }
+                }
+            }
+        }
+
+
+        margin-bottom: 90px;
+
 
 
     }
