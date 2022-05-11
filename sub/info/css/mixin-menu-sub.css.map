@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"mixin-menu-sub.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/mixin-menu-sub.scss"
+    ],
+    "names": [],
+    "file": "mixin-menu-sub.css"
+}
