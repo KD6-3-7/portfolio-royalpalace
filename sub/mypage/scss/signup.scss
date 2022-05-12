@@ -54,21 +54,25 @@ section.signup {
 
                 @include responsive(tablet-size) {
                     flex-direction: row;
+
+                    &:nth-child(5) {
+                        justify-content: left;
+                    }
                 }
 
                 &:last-child {
                     border-bottom: none;
                     
-                     div {
-                         display: flex;
-                         flex-direction: column;
+                    div {
+                        display: flex;
+                        flex-direction: column;
 
-                         span {
-                             padding-top: 5px;
-                             font-size: 0.8em;
-                             color: $color-border;
-                         }
-                     }
+                        span {
+                            padding-top: 5px;
+                            font-size: 0.8em;
+                            color: $color-border;
+                        }
+                    }
                 }
 
                 span.title {
@@ -78,33 +82,6 @@ section.signup {
 
                     @include responsive(tablet-size) {
                         width: 20%;
-                    }
-                }
-
-                
-                div.flexbox {
-                    width: 100%;
-                    
-                    @include responsive(tablet-size) {
-                        width: 80%;
-                    }
-
-                    input, textarea {
-                        height: 35px;
-                        padding-left: 10px;
-                        color: $color-main;
-                        border: 1px solid $color-border;
-                        
-                        font: {
-                            family: $font-sans;
-                            size: 1em;
-                        }
-                    }
-                    
-                    textarea {
-                        height: 166px;
-                        padding: 8px 0;
-                        resize: none;
                     }
                 }
                 
@@ -124,6 +101,226 @@ section.signup {
                         width: 80%;
                     }
                 }
+
+                div.flexbox {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    @include responsive(tablet-size) {
+                        width: 80%;
+                    }
+
+                    
+                    input, textarea {
+                        height: 35px;
+                        padding-left: 10px;
+                        color: $color-main;
+                        border: 1px solid $color-border;
+                        
+                        font: {
+                            family: $font-sans;
+                            size: 1em;
+                        }
+                    }
+                    
+                    textarea {
+                        height: 166px;
+                        padding: 8px 10px;
+                        resize: none;
+                    }
+                    
+                    select {
+                        width: 190px;
+                        height: 35px;
+                        padding-left: 5px;
+                        color: $color-main;
+                        border: 1px solid $color-border;
+                        
+                        font: {
+                            family: $font-sans;
+                            size: 1em;
+                        }
+                    }
+
+                    button.btn {
+                        width: 80px;
+                        height: 35px;
+                        margin-left: 10px;
+                        border: none;
+                        background-color: $color-main;
+                        color: $sidemenu-background;
+                        cursor: pointer;
+                        
+                        font: {
+                            family: $font-sans;
+                            size: 1em;
+                        }
+                        
+                        @include responsive(tablet-size) {
+                            width: 100px;                            
+                        }
+                    }
+
+                    &.userid-flex-box {
+                        input {
+                            width: 70%;
+
+                            @include responsive(tablet-size) {
+                                width: 88%;
+                            }
+                        }
+                    }
+
+                    &.mail-flex-box {
+                        flex-direction: column;
+
+                        @include responsive(tablet-size) {
+                            flex-direction: row;
+                        }
+
+                        div {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            @include responsive(tablet-size) {
+                                width: 82%;
+                            }
+
+                            input {
+                                width: 45%;
+                            }
+                        }
+                        
+                        select {
+                            width: 100%;
+                            margin-top: 5px;
+
+                            @include responsive(tablet-size) {
+                                width: 150px;
+                                margin-top: 0;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    &.phone-flex-box {
+                        @include responsive(pc-size) {
+                            justify-content: left;
+                        }
+
+                        div {
+                            width: 70%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            
+                            @include responsive(tablet-size) {
+                                width: 60%;
+                            }
+
+                            @include responsive(pc-size) {
+                                width: 25.5%;
+                            }
+
+                            select {
+                                width: 28%;
+                            }
+
+                            input {
+                                width: 28%;
+                            }
+                        }
+
+                        button {
+                            @include responsive(pc-size) {
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+
+                    &.address-flex-box {
+                        flex-wrap: wrap;
+
+                        div {
+                            width: 60%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: left;
+                            align-items: center;
+
+                            @include responsive(pc-size) {
+                                width: 17%;
+                                justify-content: space-between;
+                            }
+                            
+                            input {
+                                width: 53%;
+                                margin-left: 10px;
+                            }
+
+                            @include responsive(pc-size) {
+                                order: 1;
+                            }
+                        }
+
+                        button {
+                            @include responsive(pc-size) {
+                                order: 3;
+                            }
+                        }
+
+                        & > input {
+                            width: 100%;
+                            margin-top: 5px;
+                        }
+
+                        input#address1 {
+                            @include responsive(pc-size) {
+                                order: 2;
+                                width: 68.5%;
+                                margin-top: 0;
+                            }
+                        }
+
+                        input#address2{
+                            @include responsive(pc-size) {
+                                order: 4;
+                            }
+                        }
+                    }
+
+                    &.terms-flex-box {
+                        flex-direction: column;
+
+                        textarea {
+                            width: 100%;
+                        }
+
+                        div {
+                            width: 100%;
+                            margin-top: 5px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-items: left;
+                            align-items: center;
+
+                            label {
+                                padding-left: 10px;
+
+                                font: {
+                                    family: $font-sans;
+                                    size: 0.9em;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -141,12 +338,10 @@ section.signup {
                 font: {
                     family: $font-sans;
                     size: 1.1em;
-
                 }
             }
         }
     }
-    
 }
 
 // footer
