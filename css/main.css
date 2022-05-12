@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Serif KR", serif;
+  color: #fff;
+  font-weight: 100;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 100;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding-top: 1em;
+  opacity: 0.8;
+  font-weight: 100;
+}
+
+span {
+  font-size: 0.8em;
+}
+
+.text-area {
+  margin-left: 200px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.float {
+  float: left;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#wrapper .gnb {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 64px 48px;
+}
+
+#wrapper .gnb #hb {
+  width: 100px;
+}
+
+#wrapper #content1 {
+  width: 100%;
+  overflow: hidden;
+}
+
+#wrapper #content1 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% * 5);
+}
+
+#wrapper #content1 .intro .area1 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro01.jpg) no-repeat right top/cover;
+  overflow: hidden;
+  padding-top: 10vh;
+}
+
+#wrapper #content1 .intro .area2 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro02.jpg) no-repeat right top/cover;
+  overflow: hidden;
+}
+
+#wrapper #content1 .intro .area3 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro03.jpg) no-repeat center bottom/cover;
+  overflow: hidden;
+}
+
+#wrapper #content1 .intro .area4 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro04.jpg) no-repeat right top/cover;
+  overflow: hidden;
+}
+
+#wrapper #content1 .intro .area5 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro05.jpg) no-repeat right top/cover;
+  overflow: hidden;
+}
+
+#wrapper #content1 .intro .move-box {
+  width: 100vw;
+}
+
+#wrapper #content2 .history {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/main_history.jpg) no-repeat center bottom/cover;
+  overflow: hidden;
+}
+
+#wrapper #content2 .history .txt-area {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +36,7 @@ h2 {
 
 p {
   font-size: 1.1em;
+  line-height: 1.4em;
 }
 
 img {
@@ -387,6 +390,394 @@ aside div.sidemenu {
     display: inline-block;
     color: #999999;
   }
+}
+
+section h1 {
+  display: none;
+}
+
+section .img-text {
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+section .img-text .main-text {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translate(-10%, -50%);
+          transform: translate(-10%, -50%);
+  color: white;
+  font-family: serif;
+}
+
+@media screen and (min-width: 768px) {
+  section .img-text .main-text {
+    top: 50%;
+    right: 10%;
+  }
+}
+
+section .img-text .main-text h2 {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  section .img-text .main-text h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .img-text .main-text h2 {
+    font-size: 44px;
+    margin-bottom: 74px;
+  }
+}
+
+section .img-text .main-text p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  section .img-text .main-text p {
+    display: block;
+    font-size: 16px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .img-text .main-text p {
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .img-text .main-text .person {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .img-text .main-text .person {
+    margin-top: 40px;
+  }
+}
+
+section .info {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+section .info .little-title {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+section .info .little-title h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section .info .little-title h3 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+section .info .little-title h3 span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  z-index: 1;
+  background: #949392;
+}
+
+section .info .little-title::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 2px;
+  background: #c4c3c2;
+}
+
+section .info .line-flex {
+  width: 25%;
+}
+
+section .info p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .info .info-text {
+    margin-top: 20px;
+  }
+}
+
+section .guide {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+section .guide .little-title {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+section .guide .little-title h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section .guide .little-title h3 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+section .guide .little-title h3 span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  z-index: 1;
+  background: #949392;
+}
+
+section .guide .little-title::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 2px;
+  background: #c4c3c2;
+}
+
+section .guide .line-flex {
+  width: 25%;
+}
+
+section .guide p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info {
+    width: 75%;
+  }
+}
+
+section .guide .guide-info .guide-flex .guide-box {
+  background-color: #cec4b6;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+section .operation {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .operation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+section .operation .little-title {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+section .operation .little-title h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section .operation .little-title h3 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+section .operation .little-title h3 span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  z-index: 1;
+  background: #949392;
+}
+
+section .operation .little-title::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 2px;
+  background: #c4c3c2;
+}
+
+section .operation .line-flex {
+  width: 25%;
+}
+
+section .operation p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+section .inquiry {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .inquiry {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+section .inquiry .little-title {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+section .inquiry .little-title h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section .inquiry .little-title h3 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+section .inquiry .little-title h3 span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  z-index: 1;
+  background: #949392;
+}
+
+section .inquiry .little-title::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 2px;
+  background: #c4c3c2;
+}
+
+section .inquiry .line-flex {
+  width: 25%;
+}
+
+section .inquiry p {
+  font-size: 18px;
+  line-height: 2em;
 }
 
 footer {
