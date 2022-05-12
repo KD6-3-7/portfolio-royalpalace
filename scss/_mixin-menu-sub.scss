@@ -1,0 +1,465 @@
+@mixin wrapper() {
+    width: 100%;
+    // max-width: $break-pc;
+    margin: 0 auto;
+    padding: 0 7%;
+}
+
+@mixin responsive($break) {
+    @if $break == mobile-size {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+    
+    @else if $break == tablet-size {
+        @media screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+    
+    @else if $break == pc-size {
+        @media screen and (min-width: $break-pc) {
+            @content;
+        }
+    }
+}
+
+@mixin topmenu-mobile() {
+    div.header-mobile {
+        width: 100%;
+        
+        div.header-flex-box {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-main;
+
+            h1.logo {
+                margin: 0 20px;
+                line-height: 80px;
+
+                img {
+                    width: 100px;
+                }
+            }
+
+            div.hamburger {
+                width: 25px;
+                height: 20px;
+                margin-right: 20px;
+
+                input[id="menu"] {
+                    display: none;
+                }
+
+                input[id="menu"] + label {
+                    position: relative;
+                    display: block;
+                    width: 25px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+
+                input[id="menu"] + label span {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 30px;
+                    background: $sidemenu-background;
+                    transition: 0.3s;
+                }
+
+                input[id="menu"] + label span:nth-child(1) {
+                    top: 0;
+                }
+
+                input[id="menu"] + label span:nth-child(2) {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                input[id="menu"] + label span:nth-child(3) {
+                    bottom: 0;
+                }
+    
+                // 클릭 시
+                input[id="menu"]:checked + label span:nth-child(1) {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+
+                input[id="menu"]:checked + label span:nth-child(2) {
+                    opacity: 0;
+                }
+
+                input[id="menu"]:checked + label span:nth-child(3) {
+                    bottom: 50%;
+                    transform: translateY(50%) rotate(-45deg);
+                }
+            }
+        }
+        
+        div.mobilemenu {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            background-color: $sidemenu-background;
+
+            ul.mobile-gnb {
+                height: 0vh;
+                padding: 0 20px;
+                list-style: none;
+                overflow: hidden;
+                transition: height ease-in-out 1s 0s;
+
+                & > li.mobilemenu {
+                    padding: 20px 0;
+                    border-bottom: 1px solid $mobilemenu-border;
+
+                    font: {
+                        size: 1em;
+                        weight: 600;
+                    }
+
+                    &::before {
+                        content:"";
+                        display: inline-block;
+                        height: 13px;
+                        width: 13px;
+                        background: url("./../images/icon-circle.svg") no-repeat center;
+                    }
+                    
+                    &.selected::before {
+                        background: url("./../images/icon-circle_h.svg") no-repeat center;
+                    }
+                    
+                    & > a, button.accordion {
+                        display: inline-block;
+                        padding-left: 10px;
+                        color: $sidemenu-black;
+
+                    }
+                    
+                    button.accordion {
+                        background-color: transparent;
+                        cursor: pointer;
+                        width: calc(100% - 30px);
+                        border: none;
+                        
+                        font: {
+                            family: $font-sans;
+                            size: 1em;
+                            weight: 600;
+                        }
+                        transition: 0.5s;
+                        text-align: left;
+
+                        &::after {
+                            background-image: url("./../images/icon-circle.svg");
+                            width: 13px;
+                            height: 13px;
+                            content: "";
+                            float: right;
+                            position: relative;
+                            top: 7px;
+                        }
+
+                        &.active::after {
+                            background-image: url("./../images/icon-circle_h.svg");
+                            content: "";
+                        }
+                    }
+        
+                    ul.small-menu {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        padding-left: 27px;
+                        line-height: 1.4em;
+
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease-out;
+        
+                        li {
+                            padding: 5px 0;
+                            width: 50%;
+
+                            font: {
+                                size: 0.9em;
+                                weight: 400;
+                            }
+
+                            &:first-child, &:nth-child(2) {
+                                padding-top: 10px;
+                            }
+
+                            a {
+                                display: inline-block;
+                                color: $sidemenu-gray;
+                            }
+                        }
+                    }    
+                }
+
+                div.login-flex-box {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    li.mobilemenu {
+                        width: calc(100% / 3);
+                        padding: 10px;
+                        border: 1px solid $mobilemenu-border;
+                        text-align: center;
+
+                        &:first-child, &:nth-child(2) {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    ul.topmenu {
+        display: none;
+    }
+}
+
+@mixin topmenu-pc() {
+    div.header-mobile {
+        display: none;
+    }
+
+    ul.topmenu {
+        margin-left: 200px;
+        padding: 0 7%; // full menu 할 경우 주석처리
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li.submenu {
+            width: calc(100% / 3); // calc(100% / [서브메뉴 개수])
+            font: {
+                size: 1.2em;
+                weight: 300;
+            }
+            text-align: center;
+            line-height: 80px;
+            border-bottom: 1px solid $color-border;
+
+            a {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 1px;
+                    left: 50%;
+                    position: absolute;
+                    border-bottom: 2px solid $color-main;
+                    transform: translateY(-3px);
+                    transition: all 0.3s ease 0s, left 0.3s ease 0s;
+                }
+            }
+
+            &:hover > a::after {
+                width: 100%;
+                left: 0;
+            }
+
+            &.selected {
+                border-bottom: 2px solid $color-main;
+            }
+        }
+    }
+}
+
+@mixin menu-flex() {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin sidemenu-mobile() {
+    div.sidemenu {
+        display: none;
+    }
+}
+
+@mixin sidemenu-pc() {
+    background-color: $sidemenu-background;
+    
+    div.sidemenu {
+        display: block;
+        width: 200px;
+        height: 100%;
+        float: left;
+        transform: translateY(-80px);
+        background-color: $sidemenu-background;
+
+        h1.header-logo {
+            padding: 10px 30px 25px 25px; 
+        }
+    
+        ul.gnb {
+            padding-left: 30px;
+    
+            li.menu {
+                padding: 10px 0;
+
+                font: {
+                    size: 1em;
+                    weight: 600;
+                }
+                
+                &::before {
+                    content:"";
+                    display: inline-block;
+                    height: 10px;
+                    width: 10px;
+                    background: url("./../images/icon-circle.svg") no-repeat center;
+                }
+                
+                &.selected::before {
+                    background: url("./../images/icon-circle_h.svg") no-repeat center;
+                }
+                
+                & > a {
+                    display: inline-block;
+                    padding-left: 10px;
+                    color: $sidemenu-black;
+                }
+    
+                ul.small-menu {
+                    margin-top: 5px;
+                    margin-bottom: 30px;
+                    padding-left: 25px;
+                    line-height: 1.4em;
+    
+                    li {
+                        font: {
+                            size: 0.9em;
+                            weight: 400;
+                        }
+
+                        a {
+                            display: inline-block;
+                            color: $sidemenu-gray;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@mixin footer-mobile() {
+    background-color: $color-main;
+
+    div.wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 8%;
+
+        div.policy > ul {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            li > a {
+                color: $sidemenu-background;
+
+                font: {
+                    size: 0.7em;
+                    weight: 200;
+                }
+            }
+        }
+    
+        div.copyright {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 30px 0;
+    
+            div.footer-logo {
+                display: none;
+            }
+            
+            div.contact {
+                color: $sidemenu-background;
+                line-height: 1.1em;
+
+                p {
+                    font: {
+                        size: 0.7em;
+                        weight: 200;
+                    }
+
+                    &:first-child {
+                        font: {
+                            size: 0.8em;
+                            weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin footer-pc() {
+    padding: 0 200px;
+
+    div.wrapper {
+        div.policy > ul {
+            width: 50%;
+
+            li > a {
+                font: {
+                    size: 0.9em;
+                }
+            }
+        }
+    
+        div.copyright {
+            div.footer-logo {
+                display: block;
+                width: 145px;
+                padding-bottom: 0;
+                img {
+                    filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
+                }
+            }
+            
+            div.contact {
+                width: 85%;
+                line-height: 1.6em;
+    
+                p {
+                    padding-left: 10%;
+
+                    font: {
+                        size: 0.9em;
+                        weight: 200;
+                    }
+
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
