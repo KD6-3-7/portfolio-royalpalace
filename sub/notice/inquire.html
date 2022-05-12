@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/inquire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>1:1 문의하기</title>
 </head>
 <body>
@@ -178,8 +179,69 @@
 			<div>
                 <h2 class="inquire-title">1:1 문의하기</h2>
             </div>
-			<div>
-
+			<div class="inquire-form">
+                <form action="#" method="post">
+                    <div class="row">
+                        <span class="title">문의 분류</span>
+                        <div class="radio-btn">
+                            <div>
+                                <label for="viewing">관람</label>
+                                <input type="radio" name="category" id="viewing">
+                            </div>
+                            <div>
+                                <label for="reservation">예약</label>
+                                <input type="radio" name="category" id="reservation">
+                            </div>
+                            <div>
+                                <label for="facility">편의시설</label>
+                                <input type="radio" name="category" id="facility">
+                            </div>
+                            <div>
+                                <label for="etc">기타</label>
+                                <input type="radio" name="category" id="etc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="title">아이디</span>
+                        <input type="text" name="userid" id="userid" value="gyeongbokgung" disabled>
+                    </div>
+                    <div class="row">
+                        <span class="title">이름</span>
+                        <input type="text" name="username" id="username" value="경복궁" disabled>
+                    </div>
+                    <div class="row">
+                        <span class="title">연락받으실 이메일</span>
+                        <input type="text" name="mail" id="mail" value="gyeongbokgung@palace.kr" placeholder="연락받으실 이메일을 입력해주세요.">
+                    </div>
+                    <div class="row">
+                        <span class="title">문의 제목</span>
+                        <input type="text" name="title" id="title" placeholder="문의 제목을 입력해주세요.">
+                    </div>
+                    <div class="row">
+                        <span class="title">문의 내용</span>
+                        <textarea name="inquire" id="inquire" cols="30" rows="10" placeholder="문의 내용을 입력해주세요."></textarea>
+                    </div>
+                    <div class="row">
+                        <span class="title">첨부 파일</span>
+                        <div class="file-btn">
+                            <input type="file" name="attach" id="attach">
+                            <span>(5mb 이하의 .jpg, .png, .pdf 파일만 업로드 가능합니다.)</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="button-flex-box">
+                    <button>
+                        <a href="#">
+                            <i class="fa-solid fa-angle-left"></i>
+                            <span> 이전으로</span>
+                        </a>
+                    </button>
+                    <button type="submit">
+                        <span>제출하기 </span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
 			</div>
 		</section> <!-- inquire -->
     </main>
