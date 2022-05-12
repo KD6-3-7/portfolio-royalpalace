@@ -1,0 +1,264 @@
+@import "./../../../scss/style";
+@import "./../../../scss/common";
+@import "./mixin-menu-sub";
+@import "mixin-line.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+// header
+header {
+    @include topmenu-mobile();
+
+    @include responsive(tablet-size) {
+        @include topmenu-pc();
+    }
+}
+
+// main
+main {
+    @include menu-flex();
+}
+
+// aside
+aside {
+    @include sidemenu-mobile();
+
+    @include responsive(tablet-size) {
+        @include sidemenu-pc();
+    }
+}
+
+//section
+section.event {
+    h1 {
+        display: none;
+    }
+
+    .img-text {
+        margin-top: 50px;
+        position: relative;
+        margin-bottom: 55px;
+
+        .main-text {
+            text-align: right;
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translate(-10%, -50%);
+            color: white;
+            font-family: serif;
+
+            @include responsive(tablet-size) {
+                top: 50%;
+                right: 10%;
+            }
+
+            h2 {
+                font-size: 25px;
+                @include responsive(tablet-size) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+                @include responsive(pc-size) {
+                    font-size: 44px;
+                    margin-bottom: 74px;
+                }
+            }
+
+            p {
+                display: none;
+                @include responsive(tablet-size) {
+                    display: block;
+                    font: {
+                        size: 16px;
+                        family: $font-serif;
+                        weight: 100;
+                    }
+                }
+                @include responsive(pc-size) {
+                    font: {
+                        size: 21px;
+                        weight: 100;
+                    }
+                    line-height: 1.5em;
+                }
+            }
+
+            .person {
+                @include responsive(tablet-size) {
+                    margin-top: 15px;
+                }
+                @include responsive(pc-size) {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    .info {
+        @include wrapper();
+        display: flex;
+        flex-direction: column;
+        
+        @include responsive(pc-size) {
+            flex-direction: row;            
+        }
+        
+        @include line-deco();
+        
+        .line-flex {
+            width: 25%;;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2em;
+        }
+        margin-bottom: 90px;
+
+        .info-text {
+            @include responsive(pc-size) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .procedure {
+        @include wrapper();
+        display: flex;
+        flex-direction: column;
+        
+        @include responsive(pc-size) {
+            flex-direction: row;
+        }
+
+        @include line-deco();
+
+        .line-flex {
+            width: 25%;;
+        }
+
+        .pro-flex-img {
+            div {
+                p {
+                    margin-bottom: 18px;
+                    font-size: 18px;
+                }
+    
+                img {
+                    margin-bottom: 35px;
+                }
+
+                @include responsive(tablet-size) {
+                    width: 48%;
+                }
+                @include responsive(pc-size) {
+                    width: 24.1%;
+                    margin-top: 20px;
+                }
+            }
+            
+            @include responsive(tablet-size) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            @include responsive(pc-size) {
+                width: 75%;
+            }
+        }
+
+        margin-bottom: 90px;
+    }
+
+    .operation {
+        @include wrapper();
+        display: flex;
+        flex-direction: column;
+        
+        @include responsive(pc-size) {
+            flex-direction: row;            
+        }
+        
+        @include line-deco();
+        
+        .line-flex {
+            width: 25%;;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2em;
+        }
+
+        .operation-info {
+            .operation-term {
+                margin-bottom: 50px;
+                height: 145px;
+
+                .operation-info-box {
+                    background-color: #cec4b6;
+                    
+                    @include responsive(tablet-size) {
+                        width: 15%;
+                        height: 145px;
+                        p {
+                            padding: 10%;
+                        }
+
+                    }
+                    @include responsive(pc-size) {
+                        width: 165px;
+                        margin-right: 10%;
+                        p {
+                            padding: 36px;
+                        }
+                    }
+                }
+
+                @include responsive(tablet-size) {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        width: 80%;
+                    }
+                }
+
+                @include responsive(pc-size) {
+                    margin-bottom: 25px;
+                }
+
+                .info-center {
+                    @include responsive(tablet-size) {
+                        margin-top: 10px;
+                    }
+
+                    @include responsive(pc-size) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            @include responsive(pc-size) {
+                width: 75%;
+                margin-top: 20px;
+            }
+        }
+    
+        margin-bottom: 90px;
+
+    }
+}
+
+
+
+// footer
+footer {
+    @include footer-mobile();
+
+    @include responsive(tablet-size) {
+        @include footer-pc();
+    }
+}
