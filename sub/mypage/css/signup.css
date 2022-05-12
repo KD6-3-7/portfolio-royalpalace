@@ -292,7 +292,7 @@ header ul.topmenu {
             justify-content: space-between;
   }
   header ul.topmenu li.submenu {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
@@ -393,7 +393,7 @@ aside div.sidemenu {
   }
 }
 
-section.inquire {
+section.signup {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
@@ -401,20 +401,20 @@ section.inquire {
   margin: 100px auto;
 }
 
-section.inquire div > h2 {
+section.signup div > h2 {
   padding-bottom: 20px;
 }
 
-section.inquire div.inquire-form {
+section.signup div.signup-form {
   width: 100%;
 }
 
-section.inquire div.inquire-form form {
+section.signup div.signup-form form.frm {
   border-top: 1px solid #2c2928;
   border-bottom: 1px solid #2c2928;
 }
 
-section.inquire div.inquire-form form div.row {
+section.signup div.signup-form form.frm div.row {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +430,7 @@ section.inquire div.inquire-form form div.row {
 }
 
 @media screen and (min-width: 768px) {
-  section.inquire div.inquire-form form div.row {
+  section.signup div.signup-form form.frm div.row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -438,11 +438,11 @@ section.inquire div.inquire-form form div.row {
   }
 }
 
-section.inquire div.inquire-form form div.row:last-child {
+section.signup div.signup-form form.frm div.row:last-child {
   border-bottom: none;
 }
 
-section.inquire div.inquire-form form div.row:last-child div {
+section.signup div.signup-form form.frm div.row:last-child div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,62 +452,35 @@ section.inquire div.inquire-form form div.row:last-child div {
           flex-direction: column;
 }
 
-section.inquire div.inquire-form form div.row:last-child div span {
+section.signup div.signup-form form.frm div.row:last-child div span {
   padding-top: 5px;
   font-size: 0.8em;
   color: #a7a7a7;
 }
 
-section.inquire div.inquire-form form div.row span.title {
+section.signup div.signup-form form.frm div.row span.title {
   width: 100%;
   word-break: keep-all;
   line-height: 35px;
 }
 
 @media screen and (min-width: 768px) {
-  section.inquire div.inquire-form form div.row span.title {
+  section.signup div.signup-form form.frm div.row span.title {
     width: 20%;
   }
 }
 
-section.inquire div.inquire-form form div.row div.radio-btn, section.inquire div.inquire-form form div.row > input, section.inquire div.inquire-form form div.row > textarea, section.inquire div.inquire-form form div.row div.file-btn {
+section.signup div.signup-form form.frm div.row > input, section.signup div.signup-form form.frm div.row > textarea, section.signup div.signup-form form.frm div.row div.file-btn {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  section.inquire div.inquire-form form div.row div.radio-btn, section.inquire div.inquire-form form div.row > input, section.inquire div.inquire-form form div.row > textarea, section.inquire div.inquire-form form div.row div.file-btn {
+  section.signup div.signup-form form.frm div.row > input, section.signup div.signup-form form.frm div.row > textarea, section.signup div.signup-form form.frm div.row div.file-btn {
     width: 80%;
   }
 }
 
-section.inquire div.inquire-form form div.row div.radio-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 35px;
-  color: #2c2928;
-}
-
-@media screen and (min-width: 768px) {
-  section.inquire div.inquire-form form div.row div.radio-btn {
-    padding-left: 10px;
-  }
-  section.inquire div.inquire-form form div.row div.radio-btn div {
-    width: 25%;
-  }
-}
-
-section.inquire div.inquire-form form div.row input#userid, section.inquire div.inquire-form form div.row input#username, section.inquire div.inquire-form form div.row input#mail, section.inquire div.inquire-form form div.row input#title, section.inquire div.inquire-form form div.row textarea#inquire {
+section.signup div.signup-form form.frm div.row input#userid, section.signup div.signup-form form.frm div.row input#username, section.signup div.signup-form form.frm div.row input#mail, section.signup div.signup-form form.frm div.row input#title, section.signup div.signup-form form.frm div.row textarea#inquire {
   height: 35px;
   padding-left: 10px;
   color: #2c2928;
@@ -515,22 +488,22 @@ section.inquire div.inquire-form form div.row input#userid, section.inquire div.
   font-size: 1em;
 }
 
-section.inquire div.inquire-form form div.row input#userid, section.inquire div.inquire-form form div.row input#username {
+section.signup div.signup-form form.frm div.row input#userid, section.signup div.signup-form form.frm div.row input#username {
   background-color: #f2ece4;
   border: none;
 }
 
-section.inquire div.inquire-form form div.row input#mail, section.inquire div.inquire-form form div.row input#title, section.inquire div.inquire-form form div.row textarea#inquire {
+section.signup div.signup-form form.frm div.row input#mail, section.signup div.signup-form form.frm div.row input#title, section.signup div.signup-form form.frm div.row textarea#inquire {
   border: 1px solid #a7a7a7;
 }
 
-section.inquire div.inquire-form form div.row textarea#inquire {
+section.signup div.signup-form form.frm div.row textarea#inquire {
   height: 284px;
   padding-top: 8px;
   resize: none;
 }
 
-section.inquire div.inquire-form div.button-flex-box {
+section.signup div.signup-form div.button-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,7 +517,7 @@ section.inquire div.inquire-form div.button-flex-box {
   margin-top: 50px;
 }
 
-section.inquire div.inquire-form div.button-flex-box button {
+section.signup div.signup-form div.button-flex-box button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -647,4 +620,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-/*# sourceMappingURL=inquire.css.map */
+/*# sourceMappingURL=signup.css.map */

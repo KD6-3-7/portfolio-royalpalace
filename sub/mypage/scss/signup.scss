@@ -28,7 +28,7 @@ aside {
 }
 
 //section
-section.inquire {
+section.signup {
     @include wrapper();
 
     width: 100%;
@@ -38,10 +38,10 @@ section.inquire {
         padding-bottom: 20px;
     }
 
-    div.inquire-form {
+    div.signup-form {
         width: 100%;
 
-        form {
+        form.frm {
             border-top: 1px solid $color-main;
             border-bottom: 1px solid $color-main;
 
@@ -81,28 +81,11 @@ section.inquire {
                     }
                 }
 
-                div.radio-btn, & > input, & > textarea, div.file-btn {
+                & > input, & > textarea, div.file-btn {
                     width: 100%;
 
                     @include responsive(tablet-size) {
                         width: 80%;
-                    }
-                }
-
-                div.radio-btn {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    height: 35px;
-                    color: $color-main;
-
-                    @include responsive(tablet-size) {
-                        padding-left: 10px;
-
-                        div {
-                            width: 25%
-                        }
                     }
                 }
 

@@ -1,0 +1,64 @@
+@import "../scss/_style.scss";
+@import "../scss/_reset";
+@import "../scss/_main-mixin.scss";
+
+#wrapper {
+    width: 100%;
+    
+
+	.gnb {
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 64px 48px;
+		// background-color: aqua;
+
+		#hb {
+			width: 100px;
+		}
+	}
+	#content1 {
+		width: 100%;
+		overflow: hidden;
+
+		.intro {
+			display: flex;
+			width: calc(100% * 5);
+			.area1{
+				@include fullbg-right ("intro01");
+				padding-top: 10vh;
+			}
+			.area2{
+				@include fullbg-right ("intro02");
+			}
+	
+			.area3{
+				@include fullbg-center ("intro03");
+			}
+	
+			.area4{
+				@include fullbg-right ("intro04");
+			}
+	
+			.area5{
+				@include fullbg-right ("intro05");
+			}
+	
+			.move-box {
+				width: 100vw;
+				
+			}
+	
+		}
+	}//content1
+	#content2{
+		.history{
+			@include fullbg-center ("main_history");
+			.txt-area{
+				text-align: center;
+				// font-weight: 100;
+			}
+		}
+	}
+}
