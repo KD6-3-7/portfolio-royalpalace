@@ -33,17 +33,54 @@ section {
         margin: 50px 0;
         font-size: 1.875em;
     }
-    iframe{
-        width: 400px;
-        height: 300px;
+    
+    .map-pic {
+        padding-bottom: 70px;
+
+        img{ width: 400px; }
+    
+        span { 
+            padding-left: 140px;
+            font-size: 0.9em
+        }
     }
-    .subway div{
-        padding: 55px 0;
-        ul{
-            h3{
-                padding-bottom: 20px;
+
+    .parking-price{
+        padding-bottom: 70px;
+        #pk-price{
+            thead{
+                tr{
+                    background-color: #d4cabd;
+                }
+            }
+            th,
+            td{
+                border: 1px solid #c1b7aa;
+                padding: 7px;
+                text-align: center;
+            }
+    
+            border-collapse: collapse;
+        }
+    }
+
+    .parking-discount {
+        padding-bottom: 70px;
+
+        thead{
+            tr{
+                background-color: #d4cabd;
             }
         }
+
+        th,
+        td{
+            border: 1px solid #c1b7aa;
+            padding: 7px;
+            text-align: center;
+        }
+        
+        border-collapse: collapse;
     }
 }
 

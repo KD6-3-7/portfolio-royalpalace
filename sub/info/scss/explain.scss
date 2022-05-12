@@ -26,26 +26,7 @@ aside {
 }
 
 //section
-section {
-    @include wrapper();
-    h2 {
-        text-align: center;
-        margin: 50px 0;
-        font-size: 1.875em;
-    }
-    iframe{
-        width: 400px;
-        height: 300px;
-    }
-    .subway div{
-        padding: 55px 0;
-        ul{
-            h3{
-                padding-bottom: 20px;
-            }
-        }
-    }
-}
+
 
 // footer
 footer {

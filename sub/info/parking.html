@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/road.css">
-    <title>sub-오시는길</title>
+    <link rel="stylesheet" href="./css/parking.css">
+    <title>sub-주차안내</title>
 </head>
 <body>
     <header>
@@ -213,40 +213,77 @@
             <!-- sidemenu -->
         </aside>
 
-        <section class="road">
-            <div>
-                <h2>오시는길</h2>
+        <section>
+            <h2>주차안내</h2>
+            <div class="map-pic">
+                <img src="./images/map.png" alt="길안내 지도">
+                <span>광화문에서 삼청동 가는 길 초입 좌측편에 위치</span>
             </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.
-                957562545798!2d126.9748576801385!3d37.57961697989446!2m3!1f0!2f0!3f0!3m2!
-                1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!
-                1sko!2skr!4v1652260433276!5m2!1sko!2skr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="parking-price">
+                <table id="pk-price">
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>기본(2시간)</th>
+                            <th>초과요금(매 10분)</th>
+                            <th>회전시간(30분)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>소형차</td>
+                            <td>3,000원</td>
+                            <td>800원</td>
+                            <td>무료</td>
+                        </tr>
+                        <tr>
+                            <td>중/대형</td>
+                            <td>5,000원</td>
+                            <td>800원</td>
+                            <td>무료</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span>주차장 운영시간: 06:00 ~ 23:00</span>
             </div>
-            <div class="subway">
-                <div>
-                    <ul>
-                        <h3>지하철</h3>
-                        <li>- 3호선 경복궁역 5번 출구 도보 5분</li>
-                        <li>- 5호선 광화문역 2번 출구 도보 약 10분</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <h3>버스</h3>
-                        <li>- 경복궁 남측 : 109, 171, 272, 601, 606, 1020, 7025</li>
-                        <li>- 경복궁 서측 : 1020, 1711, 7016, 7018, 7022, 7212, 6011, 9703</li>
-                        <li>- 자세한 버스노선은 서울시 홈페이지 (http://topis.seoul.go.kr/)를 참고하시기 바랍니다.</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <h3>주소</h3>
-                        <li>- (우: 03045) 서울특별시 종로구 사직로 161</li>
-                        <li>- (02) 3700 - 3900~1</li>
-                    </ul>
-                </div>
+            <div class="parking-discount">
+                <table id="pking-discount">
+                    <thead>
+                        <tr>
+                            <th>감면(80%)</th>
+                            <th>감면(50%)</th>
+                            <th>감면(30%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                - 장애인 차량 <br>
+                                - 국가유공자 차량
+                            </td>
+                            <td>
+                                - 경승용차(1,000cc 이하)-이륜차 포함 <br>
+                                - 저공해자동차(하이브리드차 포함)<br>
+                                - 다자녀가족 차량(3자녀 이상
+                            </td>
+                            <td>- 다자녀가족 차량(2자녀)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                국가에서 발급한 증명서 또는 확인서류
+                                (복지카드, 유공자증 등)를 지참하고 관련
+                                식별표지가 부착된 차량으로 본인이 차량에
+                                탑승한 경우 
+                            </td>
+                            <td colspan="2">
+                                다자녀가족임을 증명할 수 있는 
+                                서류(다자녀카드, 가족관계 등록부, 건강보험증 등)를 
+                                지참하고 신분증과 함께 제시하는 경우
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span>[요금감면: 중복 할인 불가]</span>
             </div>
         </section>
     </main> 

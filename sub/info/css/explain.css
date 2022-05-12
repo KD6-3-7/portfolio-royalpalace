@@ -315,66 +315,6 @@ aside div.sidemenu {
   }
 }
 
-section.roy1 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-}
-section.roy1 h2 {
-  text-align: center;
-  margin: 50px 0;
-  font-size: 1.875em;
-}
-section.roy1 ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.roy1 ul li {
-  width: 50%;
-  padding-bottom: 25px;
-}
-section.roy1 ul li h3 {
-  padding-bottom: 5px;
-}
-section.roy1 ul li p {
-  font-size: 1.125em;
-}
-section.roy1 ul li:last-child {
-  transform: translateY(2px);
-}
-section.roy1 ul li:last-child h3 {
-  font-size: 16px;
-  font-weight: 500;
-}
-section.roy1 ul li:last-child p {
-  font-size: 14px;
-}
-
-section.roy2 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-  font-size: 1em;
-  padding-bottom: 92px;
-}
-section.roy2 h2 {
-  text-align: center;
-  margin: 50px 0;
-  font-size: 1.875em;
-}
-section.roy2 #roy2-price {
-  border-collapse: collapse;
-}
-section.roy2 #roy2-price th {
-  background-color: #d4cabd;
-}
-section.roy2 #roy2-price th,
-section.roy2 #roy2-price td {
-  border: 1px solid #c1b7aa;
-  padding: 7px;
-  text-align: center;
-}
-
 footer {
   background-color: #2c2928;
 }
@@ -445,4 +385,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
   footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
-}/*# sourceMappingURL=time-price.css.map */
+}/*# sourceMappingURL=explain.css.map */
