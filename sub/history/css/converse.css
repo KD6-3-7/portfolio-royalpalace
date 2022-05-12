@@ -390,19 +390,74 @@ aside div.sidemenu {
   }
 }
 
-section.faq {
+section.des-1 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 700px;
+}
+
+@media screen and (min-width: 1460px) {
+  section.des-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+section.des-1 .des-1-left {
   width: 100%;
-  margin: 100px auto;
 }
 
-section.faq div > h2 {
-  padding-bottom: 20px;
+section.des-1 .des-1-left .des-1-image1 {
+  position: relative;
 }
 
-section.faq ul.faq-list > div.faqArc {
+section.des-1 .des-1-left .des-1-image1 img {
+  width: 100%;
+}
+
+section.des-1 .des-1-left .des-1-image1 p {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  font-size: 0.9em;
+}
+
+section.des-1 .des-1-left .des-1-image1 p span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+section.des-1 .des-1-right {
+  width: 100%;
+}
+
+section.des-1 .des-1-right .tab_content {
+  font-size: 0;
+  margin-top: 30px;
+  background-color: #000;
+}
+
+section.des-1 .des-1-right .tab_content input[type="radio"] {
+  display: none;
+}
+
+section.des-1 .des-1-right .tab_content input[type="radio"] + label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,40 +465,55 @@ section.faq ul.faq-list > div.faqArc {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 22px 0;
-  border-top: 1px solid #a7a7a7;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #999;
+  background-color: #ccc;
 }
 
-section.faq ul.faq-list > div.faqArc span {
+@media screen and (min-width: 768px) {
+  section.des-1 .des-1-right .tab_content input[type="radio"] + label {
+    display: inline-block;
+    width: 32.9%;
+  }
+}
+
+section.des-1 .des-1-right .tab_content input[type="radio"]:checked + label {
+  color: #000;
+  background-color: #aaa;
+}
+
+section.des-1 .des-1-right .tab_content input[id="tab01"]:checked ~ .con1 {
   display: block;
-  font-size: 1em;
-  font-weight: 400;
 }
 
-section.faq ul.faq-list > div.faqArc span.no {
-  width: 20%;
+section.des-1 .des-1-right .tab_content input[id="tab02"]:checked ~ .con2 {
+  display: block;
 }
 
-section.faq ul.faq-list > div.faqArc span.title {
-  width: 80%;
+section.des-1 .des-1-right .tab_content input[id="tab03"]:checked ~ .con3 {
+  display: block;
 }
 
-section.faq ul.faq-list > div.faqArc span.content {
-  font-weight: 600;
-  width: 100%;
-  padding-top: 20px;
-  padding-left: 20%;
-  line-height: 1.6em;
+section.des-1 .des-1-right .tab_content .conbox {
+  display: none;
+  font-size: 16px;
+  line-height: 22.4px;
+  margin-top: 3px;
+  padding: 15px;
+  background-color: #aaa;
 }
 
-section.faq ul.faq-list > div.faqArc:first-child {
-  border-top: 1px solid #2c2928;
+section.des-1 .des-1-right .tab_content label {
+  margin-right: 2px;
 }
 
-section.faq ul.faq-list > div.faqArc:last-child {
-  border-bottom: 1px solid #2c2928;
+section.des-1 .des-1-right .tab_content label:last-child {
+  margin: 0;
 }
 
 footer {
