@@ -495,6 +495,7 @@ section.inquire div.inquire-form form div.row div.radio-btn {
       -ms-flex-align: center;
           align-items: center;
   height: 35px;
+  color: #2c2928;
 }
 
 @media screen and (min-width: 768px) {
@@ -509,6 +510,7 @@ section.inquire div.inquire-form form div.row div.radio-btn {
 section.inquire div.inquire-form form div.row input#userid, section.inquire div.inquire-form form div.row input#username, section.inquire div.inquire-form form div.row input#mail, section.inquire div.inquire-form form div.row input#title, section.inquire div.inquire-form form div.row textarea#inquire {
   height: 35px;
   padding-left: 10px;
+  color: #2c2928;
   font-family: Pretendard;
   font-size: 1em;
 }

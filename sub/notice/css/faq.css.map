@@ -5,7 +5,7 @@
         "../scss/faq.scss",
         "../../../scss/_style.scss",
         "../../../scss/_common.scss",
-        "../../../scss/_mixin-menu-sub.scss"
+        "../scss/_mixin-menu-sub.scss"
     ],
     "names": [],
     "file": "faq.css"
