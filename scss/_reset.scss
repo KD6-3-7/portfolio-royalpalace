@@ -1,0 +1,59 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-serif;
+    color: #fff;
+    font-weight: 100;
+
+    // -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar { display: none; }
+
+h1{
+    font-size: 0;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 100;
+
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    padding-top: 1em;
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+span{
+    font-size: 0.8em;
+}
+
+.text-area {
+    margin-left: 200px;
+}
+
+
+
+.flex{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.float{
+    float: left;
+}
+
+
+

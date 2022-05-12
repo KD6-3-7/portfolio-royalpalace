@@ -3,9 +3,11 @@
 @import "mixin-menu-sub.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 // header
 header {
     @include topmenu-mobile();
+
     @include responsive(tablet-size) {
         @include topmenu-pc();
     }
@@ -19,51 +21,69 @@ main {
 // aside
 aside {
     @include sidemenu-mobile();
+
     @include responsive(tablet-size) {
         @include sidemenu-pc();
     }
 }
 
 //section
-section.roy1 {
+section.faq {
     @include wrapper();
-    h2 {
-        text-align: center;
-        margin: 50px 0;
+
+    width: 100%;
+    margin: 100px auto;
+
+    div > h2 {
+        padding-bottom: 20px;
     }
-    ul {
+
+    ul.faq-list > div.faqArc {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        li {
-            width: 50%;
-            padding-bottom: 25px;
-            h3 {
-                padding-bottom: 5px;
+        padding: 22px 0;
+        border-top: 1px solid $color-border;
+
+        span {
+            display: block;
+
+            font: {
+                size: 1em;
+                weight: 400;
             }
-            p {
-                font-size: 1.125em;
+            
+            &.no {
+                width: 20%;
             }
-            &:last-child {
-                transform: translateY(2px);
-                h3 {
-                    font-size: 16px;
-                    font-weight: 500;
-                }
-                p {
-                    font-size: 14px;
-                }
+            
+            &.title {
+                width: 80%;
+            }
+            
+            &.content {
+                font-weight: 600;
+                width: 100%;
+                padding-top: 20px;
+                padding-left: 20%;
+                line-height: 1.6em;
             }
         }
-    }
-}
 
-section.roy2 {
-    @include wrapper();
+        &:first-child {
+            border-top: 1px solid $color-main;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid $color-main;
+        }
+    }
 }
 
 // footer
 footer {
     @include footer-mobile();
+
     @include responsive(tablet-size) {
         @include footer-pc();
     }
