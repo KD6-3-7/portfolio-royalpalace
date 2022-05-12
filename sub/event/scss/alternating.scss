@@ -153,7 +153,8 @@ section.event {
                     width: 48%;
                 }
                 @include responsive(pc-size) {
-                    width: 24%;
+                    width: 24.1%;
+                    margin-top: 20px;
                 }
             }
             
@@ -194,29 +195,62 @@ section.event {
 
         .operation-info {
             .operation-term {
+                margin-bottom: 50px;
+                height: 145px;
+
                 .operation-info-box {
                     background-color: #cec4b6;
                     
                     @include responsive(tablet-size) {
-                        width: 165px;
+                        width: 15%;
                         height: 145px;
+                        p {
+                            padding: 10%;
+                        }
+
+                    }
+                    @include responsive(pc-size) {
+                        width: 165px;
+                        margin-right: 10%;
+                        p {
+                            padding: 36px;
+                        }
+                    }
+                }
+
+                @include responsive(tablet-size) {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        width: 80%;
+                    }
+                }
+
+                @include responsive(pc-size) {
+                    margin-bottom: 25px;
+                }
+
+                .info-center {
+                    @include responsive(tablet-size) {
+                        margin-top: 10px;
+                    }
+
+                    @include responsive(pc-size) {
+                        margin-top: 20px;
                     }
                 }
             }
+
+            @include responsive(pc-size) {
+                width: 75%;
+                margin-top: 20px;
+            }
         }
-
-
+    
         margin-bottom: 90px;
-
-
 
     }
 }
-
-
-
-
-
 
 
 
