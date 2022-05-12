@@ -409,12 +409,12 @@ section.signup div.signup-form {
   width: 100%;
 }
 
-section.signup div.signup-form form.frm {
+section.signup div.signup-form form {
   border-top: 1px solid #2c2928;
   border-bottom: 1px solid #2c2928;
 }
 
-section.signup div.signup-form form.frm div.row {
+section.signup div.signup-form form div.row {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +430,7 @@ section.signup div.signup-form form.frm div.row {
 }
 
 @media screen and (min-width: 768px) {
-  section.signup div.signup-form form.frm div.row {
+  section.signup div.signup-form form div.row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -438,11 +438,11 @@ section.signup div.signup-form form.frm div.row {
   }
 }
 
-section.signup div.signup-form form.frm div.row:last-child {
+section.signup div.signup-form form div.row:last-child {
   border-bottom: none;
 }
 
-section.signup div.signup-form form.frm div.row:last-child div {
+section.signup div.signup-form form div.row:last-child div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,55 +452,63 @@ section.signup div.signup-form form.frm div.row:last-child div {
           flex-direction: column;
 }
 
-section.signup div.signup-form form.frm div.row:last-child div span {
+section.signup div.signup-form form div.row:last-child div span {
   padding-top: 5px;
   font-size: 0.8em;
   color: #a7a7a7;
 }
 
-section.signup div.signup-form form.frm div.row span.title {
+section.signup div.signup-form form div.row span.title {
   width: 100%;
   word-break: keep-all;
   line-height: 35px;
 }
 
 @media screen and (min-width: 768px) {
-  section.signup div.signup-form form.frm div.row span.title {
+  section.signup div.signup-form form div.row span.title {
     width: 20%;
   }
 }
 
-section.signup div.signup-form form.frm div.row > input, section.signup div.signup-form form.frm div.row > textarea, section.signup div.signup-form form.frm div.row div.file-btn {
+section.signup div.signup-form form div.row div.flexbox {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  section.signup div.signup-form form.frm div.row > input, section.signup div.signup-form form.frm div.row > textarea, section.signup div.signup-form form.frm div.row div.file-btn {
+  section.signup div.signup-form form div.row div.flexbox {
     width: 80%;
   }
 }
 
-section.signup div.signup-form form.frm div.row input#userid, section.signup div.signup-form form.frm div.row input#username, section.signup div.signup-form form.frm div.row input#mail, section.signup div.signup-form form.frm div.row input#title, section.signup div.signup-form form.frm div.row textarea#inquire {
+section.signup div.signup-form form div.row div.flexbox input, section.signup div.signup-form form div.row div.flexbox textarea {
   height: 35px;
   padding-left: 10px;
   color: #2c2928;
+  border: 1px solid #a7a7a7;
   font-family: Pretendard;
   font-size: 1em;
 }
 
-section.signup div.signup-form form.frm div.row input#userid, section.signup div.signup-form form.frm div.row input#username {
-  background-color: #f2ece4;
-  border: none;
-}
-
-section.signup div.signup-form form.frm div.row input#mail, section.signup div.signup-form form.frm div.row input#title, section.signup div.signup-form form.frm div.row textarea#inquire {
-  border: 1px solid #a7a7a7;
-}
-
-section.signup div.signup-form form.frm div.row textarea#inquire {
-  height: 284px;
-  padding-top: 8px;
+section.signup div.signup-form form div.row div.flexbox textarea {
+  height: 166px;
+  padding: 8px 0;
   resize: none;
+}
+
+section.signup div.signup-form form div.row > input {
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  color: #2c2928;
+  border: 1px solid #a7a7a7;
+  font-family: Pretendard;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  section.signup div.signup-form form div.row > input {
+    width: 80%;
+  }
 }
 
 section.signup div.signup-form div.button-flex-box {

@@ -183,7 +183,7 @@
                 <form action="#" method="post" name="frm">
                     <div class="row">
                         <span class="title">아이디</span>
-                        <div class="userid-flex-box">
+                        <div class="userid-flex-box flexbox">
                             <input type="text" name="userid" id="userid" placeholder="사용하실 아이디를 입력해주세요.">
                             <button class="userid">
                                     <span>중복 확인</span>
@@ -200,11 +200,11 @@
                     </div>
                     <div class="row">
                         <span class="title">이메일</span>
-                        <div class="mail-flex-box">
+                        <div class="mail-flex-box flexbox">
                             <input type="text" name="mail" id="mail" placeholder="이메일 아이디">
                             <span>@</span>
                             <input type="text" name="mailServer1" id="mailServer1">
-                            <select id="mailServer2" name="mailServer2" title="이메일 주소 선택"  onchange="input_email();">
+                            <select id="mailServer2" name="mailServer2" title="이메일 주소 선택" onchange="input_email();">
                                 <option value="">직접 입력</option>
                                 <option value="naver.com">naver.com</option>
                                 <option value="daum.net">daum.net</option>
@@ -216,8 +216,16 @@
                     </div>
                     <div class="row">
                         <span class="title">전화번호</span>
-                        <div class="phone-flex-box">
-                            <input type="tel" name="phone1" id="phone1">
+                        <div class="phone-flex-box flexbox">
+                            <select id="phone1" name="phone1" onchange="input_email();">
+                                <option value="">선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
                             <span>-</span>
                             <input type="tel" name="phone2" id="phone2">
                             <span>-</span>
@@ -229,7 +237,7 @@
                     </div>
                     <div class="row">
                         <span class="title">주소</span>
-                        <div class="address-flex-box">
+                        <div class="address-flex-box flexbox">
                             <span>우편번호</span>
                             <input type="number" name="zipcode" id="zipcode">
                             <input type="text" name="address1" id="address1">
@@ -241,7 +249,7 @@
                     </div>
                     <div class="row">
                         <span class="title">필수 약관 동의</span>
-                        <div class="terms-flex-box">
+                        <div class="terms-flex-box flexbox">
                             <textarea name="terms" id="terms" readonly cols="30" rows="10">경복궁 누리집 이용약관 동의(필수)
     
     
