@@ -393,82 +393,156 @@ aside div.sidemenu {
   }
 }
 
-section.des-1 {
+section.main-flex {
+  overflow: hidden;
   margin-top: 70px;
-  margin-left: 7%;
-  margin-bottom: 2000px;
-  height: 0;
 }
 
-section.des-1 ul {
+@media screen and (min-width: 1460px) {
+  section.main-flex {
+    overflow: visible;
+  }
+}
+
+section.main-flex section.des-1 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  width: 70em;
+}
+
+@media screen and (min-width: 768px) {
+  section.main-flex section.des-1 {
+    width: 75em;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-flex section.des-1 {
+    width: 80em;
+  }
+}
+
+section.main-flex section.des-1 .des-1-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-section.des-1 ul li {
-  width: 200px;
-  padding-right: 10px;
-}
-
-section.des-1 ul li a {
+section.main-flex section.des-1 .des-1-box .des-1-set {
   position: relative;
+  width: 20%;
 }
 
-section.des-1 ul li a:hover p {
-  color: white;
-  opacity: 1;
+section.main-flex section.des-1 .des-1-box .des-1-set a {
+  width: 100%;
 }
 
-section.des-1 ul li a img {
+section.main-flex section.des-1 .des-1-box .des-1-set a .des-img {
+  margin: 5px;
+}
+
+section.main-flex section.des-1 .des-1-box .des-1-set a .des-img img {
   width: 100%;
   opacity: 0.15;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-section.des-1 ul li a img:hover {
-  opacity: 1;
-  color: white;
-}
-
-section.des-1 ul li a p {
+section.main-flex section.des-1 .des-1-box .des-1-set a .des-1-text p {
   position: absolute;
-  left: 20px;
-  top: 60px;
+  left: 33px;
+  top: 70px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   width: 7.5em;
-  color: #474646;
   opacity: 0.8;
+  color: #474646;
 }
 
-section.des-1 ul li a p:hover img {
+section.main-flex section.des-1 .des-1-box .des-1-set a .top {
+  position: absolute;
+  top: 12px;
+}
+
+section.main-flex section.des-1 .des-1-box .des-1-set a:hover img {
   opacity: 1;
 }
 
-section.des-1 ul li:first-child a p {
-  top: 73px;
+section.main-flex section.des-1 .des-1-box .des-1-set a:hover p {
+  opacity: 1;
+  color: white;
 }
 
-section.des-1 ul li:nth-child(2) a p {
-  top: 73px;
+section.main-flex section.des-2 {
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
-section.des-1 .des-2-text {
-  margin-left: 0;
+section.main-flex section.des-2 .des-2-text .wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
 }
 
-section.des-1 .des-2-text .wrapper .des-2-flex .des-2-left img {
+section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: aqua;
+  }
+}
+
+section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img {
   display: none;
 }
 
-section.des-1 .des-2-text .wrapper .des-2-flex .des-2-right {
-  margin-top: 90px;
+@media screen and (min-width: 1460px) {
+  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img {
+    display: block;
+    width: 550px;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right {
+    margin-left: 30px;
+  }
+}
+
+section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2 {
+    text-align: start;
+  }
+}
+
+section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right p {
+  line-height: 1.4em;
 }
 
 footer {
