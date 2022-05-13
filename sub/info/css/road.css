@@ -326,13 +326,13 @@ section h2 {
   font-size: 1.875em;
 }
 section iframe {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
 }
 section .subway div {
   padding: 55px 0;
 }
-section .subway div ul h3 {
+section .subway div h3 {
   padding-bottom: 20px;
 }
 

@@ -37,10 +37,10 @@ section {
     .map-pic {
         padding-bottom: 70px;
 
-        img{ width: 400px; }
+        img{ width: 100%; }
     
         span { 
-            padding-left: 140px;
+            padding-left: 60px;
             font-size: 0.9em
         }
     }
@@ -56,31 +56,39 @@ section {
             th,
             td{
                 border: 1px solid #c1b7aa;
-                padding: 7px;
+                padding: 10px;
                 text-align: center;
             }
-    
             border-collapse: collapse;
         }
+        span { 
+            padding-left: 130px;
+            font-size: 0.9em
+        }
     }
+
 
     .parking-discount {
         padding-bottom: 70px;
 
-        thead{
-            tr{
-                background-color: #d4cabd;
+        #pk-discount{
+            thead{
+                tr{
+                    background-color: #d4cabd;
+                }
             }
+            th,
+            td{
+                border: 1px solid #c1b7aa;
+                padding: 7px;
+                text-align: center;
+            }
+            border-collapse: collapse;
         }
-
-        th,
-        td{
-            border: 1px solid #c1b7aa;
-            padding: 7px;
-            text-align: center;
-        }
-        
-        border-collapse: collapse;
+        span { 
+            padding-left: 169px;
+            font-size: 0.9em
+        }    
     }
 }
 
