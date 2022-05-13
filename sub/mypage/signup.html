@@ -191,6 +191,15 @@
                         </div> <!-- userid-flex-box -->
                     </div>
                     <div class="row">
+                        <span class="title">이름</span>
+                        <div class="username-flex-box flexbox">
+                            <input type="text" name="username" id="username" placeholder="이름을 입력해주세요.">
+                            <button class="username btn" type="button">
+                                    <span>본인 인증</span>
+                            </button>
+                        </div> <!-- userid-flex-box -->
+                    </div>
+                    <div class="row">
                         <span class="title">비밀번호</span>
                         <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요.">
                     </div>
@@ -219,24 +228,19 @@
                     <div class="row">
                         <span class="title">전화번호</span>
                         <div class="phone-flex-box flexbox">
-                            <div>
-                                <select id="phone1" name="phone1" onchange="input_email();">
-                                    <option value="">선택</option>
-                                    <option value="010">010</option>
-                                    <option value="011">011</option>
-                                    <option value="016">016</option>
-                                    <option value="017">017</option>
-                                    <option value="018">018</option>
-                                    <option value="019">019</option>
-                                </select>
-                                <span>-</span>
-                                <input type="tel" name="phone2" id="phone2">
-                                <span>-</span>
-                                <input type="tel" name="phone3" id="phone3">
-                            </div>
-                            <button class="phone btn" type="button">
-                                <span>본인 인증</span>
-                            </button>
+                            <select id="phone1" name="phone1" onchange="input_email();">
+                                <option value="">선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                            <span>-</span>
+                            <input type="tel" name="phone2" id="phone2">
+                            <span>-</span>
+                            <input type="tel" name="phone3" id="phone3">
                         </div> <!-- phone-flex-box -->
                     </div>
                     <div class="row">
