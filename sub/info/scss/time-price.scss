@@ -41,7 +41,6 @@ section.roy1 {
             h3 {
                 padding-bottom: 5px;
             }
-        
             &:last-child {
                 transform: translateY(2px);
                 h3 {
@@ -63,18 +62,16 @@ section.roy2 {
         margin: 50px 0;
         font-size: 1.875em;
     }
-    #roy2-price{
-        th{
+    #roy2-price {
+        th {
             background-color: #d4cabd;
         }
-
         th,
-        td{
+        td {
             border: 1px solid #c1b7aa;
             padding: 7px;
             text-align: center;
         }
-        
         border-collapse: collapse;
     }
     // font-size: 1em;
