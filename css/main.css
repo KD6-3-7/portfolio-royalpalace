@@ -5,10 +5,23 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  margin: 0;
+  width: 100%;
+  height: 100%;
   font-family: "Noto Serif KR", serif;
   color: #fff;
   font-weight: 100;
@@ -31,16 +44,21 @@ p {
   font-size: 1.2em;
   line-height: 1.8em;
   padding-top: 1em;
-  opacity: 0.8;
+  opacity: 0.9;
   font-weight: 100;
 }
 
 span {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
-.text-area {
-  margin-left: 200px;
+.txt-area {
+  padding-left: 200px;
+}
+
+.txt-center {
+  margin-top: 10vh;
+  text-align: center;
 }
 
 .flex {
@@ -58,6 +76,7 @@ span {
 
 #wrapper {
   width: 100%;
+  position: relative;
 }
 
 #wrapper .gnb {
@@ -69,11 +88,70 @@ span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 64px 48px;
+  padding: 40px 48px;
 }
 
 #wrapper .gnb #hb {
   width: 100px;
+}
+
+#wrapper #slide-nav {
+  position: fixed;
+  right: 30px;
+  top: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: Pretendard;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 3;
+}
+
+#wrapper #slide-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 0;
+}
+
+#wrapper #slide-nav a img {
+  position: relative;
+  right: -8px;
+  margin-left: 10px;
+}
+
+#wrapper #slide-nav a span {
+  position: relative;
+  right: -4px;
+  margin-left: 10px;
+}
+
+#wrapper #slide-nav a span:last-child {
+  width: 7px;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#wrapper #slide-nav a span:last-child:hover {
+  position: relative;
+  right: -6px;
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 #wrapper #content1 {
@@ -93,7 +171,7 @@ span {
   height: 100vh;
   background: url(../images/intro01.jpg) no-repeat right top/cover;
   overflow: hidden;
-  padding-top: 10vh;
+  padding-top: 20vh;
 }
 
 #wrapper #content1 .intro .area2 {
@@ -101,6 +179,7 @@ span {
   height: 100vh;
   background: url(../images/intro02.jpg) no-repeat right top/cover;
   overflow: hidden;
+  padding-top: 20vh;
 }
 
 #wrapper #content1 .intro .area3 {
@@ -108,6 +187,7 @@ span {
   height: 100vh;
   background: url(../images/intro03.jpg) no-repeat center bottom/cover;
   overflow: hidden;
+  padding-top: 20vh;
 }
 
 #wrapper #content1 .intro .area4 {
@@ -115,6 +195,7 @@ span {
   height: 100vh;
   background: url(../images/intro04.jpg) no-repeat right top/cover;
   overflow: hidden;
+  padding-top: 20vh;
 }
 
 #wrapper #content1 .intro .area5 {
@@ -122,20 +203,86 @@ span {
   height: 100vh;
   background: url(../images/intro05.jpg) no-repeat right top/cover;
   overflow: hidden;
+  padding-top: 20vh;
 }
 
 #wrapper #content1 .intro .move-box {
   width: 100vw;
 }
 
-#wrapper #content2 .history {
+#wrapper #content2 {
   width: 100%;
   height: 100vh;
   background: url(../images/main_history.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
 
-#wrapper #content2 .history .txt-area {
-  text-align: center;
+#wrapper #content2 .txt-area {
+  margin-top: 20vh;
+}
+
+#wrapper #content3 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/main_restore.jpg) no-repeat center bottom/cover;
+  overflow: hidden;
+}
+
+#wrapper #content3 .text-box {
+  width: 70vw;
+  height: 70vh;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#wrapper #content4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/main_info.jpg) no-repeat center bottom/cover;
+  overflow: hidden;
+  font-family: Pretendard;
+  line-height: 1.6em;
+}
+
+#wrapper #content4 .txt-area {
+  margin-top: 20vh;
+}
+
+#wrapper #content4 div {
+  padding-right: 40px;
+}
+
+#wrapper #content4 div h4 {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 3;
+}
+
+#wrapper #content5 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/main_event.jpg) no-repeat center bottom/cover;
+  overflow: hidden;
+}
+
+#wrapper #content5 .txt-area {
+  margin-top: 20vh;
+}
+
+#wrapper #content6 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/main_gallery.jpg) no-repeat center bottom/cover;
+  overflow: hidden;
+}
+
+#wrapper #content6 .txt-area {
+  margin-top: 20vh;
 }
 /*# sourceMappingURL=main.css.map */

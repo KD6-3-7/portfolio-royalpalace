@@ -55,7 +55,7 @@ section.signup {
                 @include responsive(tablet-size) {
                     flex-direction: row;
 
-                    &:nth-child(5) {
+                    &:nth-child(5), &:nth-child(6) {
                         justify-content: left;
                     }
                 }
@@ -164,9 +164,13 @@ section.signup {
                         }
                     }
 
-                    &.userid-flex-box {
+                    &.userid-flex-box, &.username-flex-box {
                         input {
                             width: 70%;
+
+                            @include responsive(tablet-size) {
+                                width: 85%;
+                            }
 
                             @include responsive(tablet-size) {
                                 width: 88%;
@@ -181,15 +185,15 @@ section.signup {
                             flex-direction: row;
                         }
 
+                        @include responsive(pc-size) {
+                            width: 70%;
+                        }
+
                         div {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-
-                            @include responsive(tablet-size) {
-                                width: 82%;
-                            }
 
                             input {
                                 width: 45%;
@@ -201,7 +205,7 @@ section.signup {
                             margin-top: 5px;
 
                             @include responsive(tablet-size) {
-                                width: 150px;
+                                width: 200px;
                                 margin-top: 0;
                                 margin-left: 10px;
                             }
@@ -209,38 +213,21 @@ section.signup {
                     }
 
                     &.phone-flex-box {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
                         @include responsive(pc-size) {
-                            justify-content: left;
+                            width: 25%;
                         }
 
-                        div {
-                            width: 70%;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            align-items: center;
-                            
-                            @include responsive(tablet-size) {
-                                width: 60%;
-                            }
-
-                            @include responsive(pc-size) {
-                                width: 25.5%;
-                            }
-
-                            select {
-                                width: 28%;
-                            }
-
-                            input {
-                                width: 28%;
-                            }
+                        select {
+                            width: 28%;
                         }
 
-                        button {
-                            @include responsive(pc-size) {
-                                margin-left: 30px;
-                            }
+                        input {
+                            width: 28%;
                         }
                     }
 

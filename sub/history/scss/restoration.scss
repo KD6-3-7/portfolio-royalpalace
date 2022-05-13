@@ -1,6 +1,6 @@
-@import "style.scss";
-@import "common.scss";
-@import "mixin-menu-sub.scss";
+@import "./../../../scss/_style.scss";
+@import "./../../../scss/_common.scss";
+@import "_mixin-menu-sub.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -27,89 +27,132 @@ aside {
     }
 }
 
-section.des-1 {
+section.main-flex {
+    overflow: hidden;
     margin-top: 70px;
-    margin-left: 7%;
-    margin-bottom: 2000px;
-    height: 0;
-    ul {
-        display: flex;
-        justify-content: flex-start;
-        
-        li {
-            width: 200px;
-            padding-right: 10px;
-            
-            a {
+    @include responsive(pc-size) {
+        overflow: visible;
+    }
+    section.des-1 {
+        @include wrapper();
+        width: 70em;
+
+        @include responsive(tablet-size) {
+            width: 75em;
+        }
+
+        @include responsive(pc-size) {
+            width: 80em;
+        }
+
+        .des-1-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .des-1-set {
                 position: relative;
-                
-                &:hover {
-                    p {
-                        color: white;
-                        opacity: 1;
-                    }
-                    
-                }
-                
-                img {
+                width: 20%;
+
+                a {
                     width: 100%;
-                    opacity: 0.15;
-                    transition: all 1s;
-                    
-                    &:hover {
-                        opacity: 1;
-                        color: white;
+
+                    .des-img {
+                        margin: 5px;
+                        
+                        img {
+                            width: 100%;
+                            opacity: 0.15;
+                            transition: all 1s;
+                        }
                     }
-                }
-                
-                p {
-                    position: absolute;
-                    left: 20px;
-                    top: 60px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    text-align: center;
-                    width: 7.5em;
-                    color:#474646;
-                    opacity: 0.8;
+                    
+                    .des-1-text {
+                        p {
+                            position: absolute;
+                            left: 33px;
+                            top: 70px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-align: center;
+                            width: 7.5em;
+                            opacity: 0.8;
+                            color:#474646;
+                        }
+                    }
+                    .top {
+                        position: absolute;
+                        top: 12px;
+                    }
+                    
                     &:hover {
                         img {
                             opacity: 1;
                         }
+                        p {
+                            opacity: 1;
+                            color: white;
+                        }
                     }
-                }
-            }
-            &:first-child {
-                a{
-                    p{
-                        top: 73px;
-                    }
-                }
-            }
-            &:nth-child(2) {
-                a {
-                    p {
-                        top: 73px;
-                    } 
+
                 }
             }
         }
     }
-    
-    .des-2-text {
-        margin-left: 0;
-        .wrapper {
-            // @include wrapper();
-            
-            .des-2-flex{
-                .des-2-left{
-                    img {
-                        display: none;
-                    }
-                }
-                .des-2-right{
-                    margin-top: 90px;
 
+    section.des-2 {
+        margin-top: 90px;
+        margin-bottom: 90px;
+
+        .des-2-text {
+
+            .wrapper {
+                @include wrapper();
+                
+                .des-2-flex{
+                    margin-top: 50px;
+                    @include responsive(pc-size) {
+                        
+                        display: flex;
+                        justify-content: space-around;
+                        width: 92%;
+                        margin: 0 auto;
+                        margin-top: 50px;
+                        background-color: aqua;
+                    }
+
+                    .des-2-left{
+                        
+                        img {
+                            display: none;
+
+                            @include responsive(pc-size) {
+                                display: block;
+                                width: 550px;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+
+                    .des-2-right{
+                        @include responsive(pc-size) {
+                            margin-left: 30px;
+                        }
+                        
+                        h2{
+                            font-size: 26px;
+                            text-align: center;
+                            font-weight: bold;
+                            margin-bottom: 20px;
+
+                            @include responsive(tablet-size) {
+                                text-align: start;
+                            }
+                        }
+                        p {
+                            line-height: 1.4em;
+                        }
+                    }
                 }
             }
         }

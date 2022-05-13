@@ -292,7 +292,7 @@ header ul.topmenu {
             justify-content: space-between;
   }
   header ul.topmenu li.submenu {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
@@ -393,37 +393,25 @@ aside div.sidemenu {
   }
 }
 
-section.main-flex {
-  overflow: hidden;
-  margin-top: 70px;
-}
-
-@media screen and (min-width: 1460px) {
-  section.main-flex {
-    overflow: visible;
-  }
-}
-
-section.main-flex section.des-1 {
+section.reservation {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  width: 70em;
+  width: 100%;
+  margin: 100px auto;
 }
 
-@media screen and (min-width: 768px) {
-  section.main-flex section.des-1 {
-    width: 75em;
-  }
+section.reservation div > h2 {
+  padding-bottom: 20px;
 }
 
-@media screen and (min-width: 1460px) {
-  section.main-flex section.des-1 {
-    width: 80em;
-  }
+section.reservation div.reservation-form {
+  width: 100%;
+  border-top: 1px solid #2c2928;
+  border-bottom: 1px solid #2c2928;
 }
 
-section.main-flex section.des-1 .des-1-box {
+section.reservation div.button-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,118 +419,18 @@ section.main-flex section.des-1 .des-1-box {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set {
-  position: relative;
-  width: 20%;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a {
-  width: 100%;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a .des-img {
-  margin: 5px;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a .des-img img {
-  width: 100%;
-  opacity: 0.15;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a .des-1-text p {
-  position: absolute;
-  left: 33px;
-  top: 70px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  width: 7.5em;
-  opacity: 0.8;
-  color: #474646;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a .top {
-  position: absolute;
-  top: 12px;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a:hover img {
-  opacity: 1;
-}
-
-section.main-flex section.des-1 .des-1-box .des-1-set a:hover p {
-  opacity: 1;
-  color: white;
-}
-
-section.main-flex section.des-2 {
-  margin-top: 90px;
-  margin-bottom: 90px;
-}
-
-section.main-flex section.des-2 .des-2-text .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-}
-
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 50px;
 }
 
-@media screen and (min-width: 1460px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 92%;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: aqua;
-  }
-}
-
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img {
-  display: none;
-}
-
-@media screen and (min-width: 1460px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img {
-    display: block;
-    width: 550px;
-    opacity: 0.8;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right {
-    margin-left: 30px;
-  }
-}
-
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2 {
-  font-size: 26px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2 {
-    text-align: start;
-  }
-}
-
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right p {
-  line-height: 1.4em;
+section.reservation div.button-flex-box button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Pretendard;
+  font-size: 1.1em;
 }
 
 footer {
@@ -640,4 +528,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-/*# sourceMappingURL=restoration.css.map */
+/*# sourceMappingURL=booking.css.map */

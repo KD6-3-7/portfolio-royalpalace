@@ -436,7 +436,7 @@ section.signup div.signup-form form div.row {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  section.signup div.signup-form form div.row:nth-child(5) {
+  section.signup div.signup-form form div.row:nth-child(5), section.signup div.signup-form form div.row:nth-child(6) {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -557,12 +557,18 @@ section.signup div.signup-form form div.row div.flexbox button.btn {
   }
 }
 
-section.signup div.signup-form form div.row div.flexbox.userid-flex-box input {
+section.signup div.signup-form form div.row div.flexbox.userid-flex-box input, section.signup div.signup-form form div.row div.flexbox.username-flex-box input {
   width: 70%;
 }
 
 @media screen and (min-width: 768px) {
-  section.signup div.signup-form form div.row div.flexbox.userid-flex-box input {
+  section.signup div.signup-form form div.row div.flexbox.userid-flex-box input, section.signup div.signup-form form div.row div.flexbox.username-flex-box input {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.signup div.signup-form form div.row div.flexbox.userid-flex-box input, section.signup div.signup-form form div.row div.flexbox.username-flex-box input {
     width: 88%;
   }
 }
@@ -583,6 +589,12 @@ section.signup div.signup-form form div.row div.flexbox.mail-flex-box {
   }
 }
 
+@media screen and (min-width: 1460px) {
+  section.signup div.signup-form form div.row div.flexbox.mail-flex-box {
+    width: 70%;
+  }
+}
+
 section.signup div.signup-form form div.row div.flexbox.mail-flex-box div {
   width: 100%;
   display: -webkit-box;
@@ -596,12 +608,6 @@ section.signup div.signup-form form div.row div.flexbox.mail-flex-box div {
           align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  section.signup div.signup-form form div.row div.flexbox.mail-flex-box div {
-    width: 82%;
-  }
-}
-
 section.signup div.signup-form form div.row div.flexbox.mail-flex-box div input {
   width: 45%;
 }
@@ -613,22 +619,13 @@ section.signup div.signup-form form div.row div.flexbox.mail-flex-box select {
 
 @media screen and (min-width: 768px) {
   section.signup div.signup-form form div.row div.flexbox.mail-flex-box select {
-    width: 150px;
+    width: 200px;
     margin-top: 0;
     margin-left: 10px;
   }
 }
 
-@media screen and (min-width: 1460px) {
-  section.signup div.signup-form form div.row div.flexbox.phone-flex-box {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-}
-
-section.signup div.signup-form form div.row div.flexbox.phone-flex-box div {
-  width: 70%;
+section.signup div.signup-form form div.row div.flexbox.phone-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,30 +641,18 @@ section.signup div.signup-form form div.row div.flexbox.phone-flex-box div {
           align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  section.signup div.signup-form form div.row div.flexbox.phone-flex-box div {
-    width: 60%;
-  }
-}
-
 @media screen and (min-width: 1460px) {
-  section.signup div.signup-form form div.row div.flexbox.phone-flex-box div {
-    width: 25.5%;
+  section.signup div.signup-form form div.row div.flexbox.phone-flex-box {
+    width: 25%;
   }
 }
 
-section.signup div.signup-form form div.row div.flexbox.phone-flex-box div select {
+section.signup div.signup-form form div.row div.flexbox.phone-flex-box select {
   width: 28%;
 }
 
-section.signup div.signup-form form div.row div.flexbox.phone-flex-box div input {
+section.signup div.signup-form form div.row div.flexbox.phone-flex-box input {
   width: 28%;
-}
-
-@media screen and (min-width: 1460px) {
-  section.signup div.signup-form form div.row div.flexbox.phone-flex-box button {
-    margin-left: 30px;
-  }
 }
 
 section.signup div.signup-form form div.row div.flexbox.address-flex-box {
