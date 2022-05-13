@@ -4,10 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    margin: 0;
+    width: 100%;
+    height: 100%;
     font-family: $font-serif;
     color: #fff;
     font-weight: 100;
@@ -31,16 +44,21 @@ p {
     font-size: 1.2em;
     line-height: 1.8em;
     padding-top: 1em;
-    opacity: 0.8;
+    opacity: 0.9;
     font-weight: 100;
 }
 
 span{
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
-.text-area {
-    margin-left: 200px;
+.txt-area {
+    padding-left: 200px;
+}
+
+.txt-center {
+    margin-top: 10vh;
+    text-align: center;
 }
 
 
