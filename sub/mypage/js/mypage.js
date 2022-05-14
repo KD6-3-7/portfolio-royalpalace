@@ -33,14 +33,41 @@ const calDic = {
 	12: 31,
 };
 
-const weekDic = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const weekDic = ["SUN", "MON", "TUE", "WEN", "THU", "FRI", "SAT"];
 
 weekDic.map((dic) => {
 	let container = document.querySelector("#weekDic");
 	let newElement = document.createElement("div");
 	newElement.id = dic;
 	newElement.className = "dic";
-	newElement.innerHTML = dic;
+	function enToKr(dic) {
+		let day = "";
+		switch(dic) {
+			case "SUN":
+				day = "일";
+				break;
+			case "MON":
+				day = "월";
+				break;
+			case "TUE":
+				day = "화";
+				break;
+			case "WEN":
+				day = "수";
+				break;
+			case "THU":
+				day = "목";
+				break;
+			case "FRI":
+				day = "금";
+				break;
+			case "SAT":
+				day = "토";
+				break;
+		}
+		return day;
+	}
+	newElement.innerHTML = enToKr(dic);
 	container.appendChild(newElement);
 });
 
@@ -52,7 +79,7 @@ function makeFirstWeek() {
 	firstDayIndex = getFirstDayIndex();
 	while (i < 7) {
 		if (i < firstDayIndex) {
-			firstWeek.unshift(".");
+			firstWeek.unshift("&nbsp;");
 		} else {
 			firstWeek.push(day);
 			day += 1;

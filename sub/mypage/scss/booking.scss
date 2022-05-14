@@ -43,10 +43,346 @@ section.reservation {
         border-top: 1px solid $color-main;
         border-bottom: 1px solid $color-main;
 
-        
+        div.option {
+            padding: 15px 0;
 
-        
+            @include responsive(pc-size) {
+                &.personnel-list:last-child {
+                    padding-bottom: 30px;
+                }
+            }
 
+            & > div.subtitle {
+                margin-bottom: 10px;
+            }
+
+            & > ul {
+                border-top: 1px solid $color-border;
+                border-bottom: 1px solid $color-border;
+                background-color: $color-white;
+            }
+        }
+
+        @include responsive(pc-size) {
+            div.row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                div.calendar {
+                    width: 30%;
+                    margin-right: 50px;
+                }
+
+                div.event-list {
+                    width: 70%;
+                }
+            }
+        }
+
+        div.calendar {
+            div.calendar-title {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                div.btn {
+                    display: inline-block;
+
+                    i {
+                        width: 2rem;
+                        line-height: 39px;
+                        transition: 0.3s;
+                        
+                        &:hover {
+                            transform:scale(1.1);
+                            filter: invert(50%);
+                        }
+                    }
+                }
+
+                div#year, div#month {
+                    margin: 5px;
+                    font-size: 1.1em;
+                }
+            }
+
+            div#container {
+                width: 100%;
+                color: $color-main;
+                
+                div#weekDic {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-family: $font-serif;
+
+                    div.dic {
+                        width: calc(100% / 7);
+                        padding: 5px;
+                        text-align: center;
+                    }
+
+                    div#SUN {
+                        color: red;
+                    }
+
+                    div#SAT {
+                        color: dodgerblue;
+                    }
+                }
+                
+                div#calendar {
+                    height: 241px;
+                    border-top: 1px solid $color-border;
+                    border-bottom: 1px solid $color-border;
+                    background-color: $color-white;
+
+                    div.day {
+                        width: calc(100% / 7);
+                        height: 40px;
+                        display: inline-block;
+                        padding: 12px;
+                        font-size: 0.9em;
+                        text-align: center;
+                        border: 1px solid $color-background;
+                        border-top: none;
+                        border-left: none;
+
+                        &:nth-child(7n) {
+                            border-right: none;
+                        }
+                    }
+
+                    div.today {
+                        background-color: $color-main;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    div.list {
+        ul {
+            li {
+                border-bottom: 1px solid $color-background;
+    
+                &:last-child {
+                    border-bottom: none;
+                }
+    
+                input {
+                    display: none;
+                    
+                    &:checked + label {
+                        background-color: $color-main;
+                        color: $color-white;
+                    }
+                }
+                
+                label {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    cursor: pointer;
+    
+                    span {
+                        padding: 10px;
+    
+                        &:last-child {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.event-list {
+        div.subtitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    div.time-list {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            li.time {
+                width: 50%;
+                
+                &:nth-child(odd) {
+                    border-right: 1px solid $color-background;
+                }
+                
+                &:nth-child(9) {
+                    border-bottom: none;
+                }
+                
+                @include responsive(pc-size) {
+                    width: 20%;
+                    border-right: 1px solid $color-background;
+
+                    &:nth-child(5n) {
+                        border-right: none;
+                    }
+
+                    &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    div.personnel-list {
+        div.personnel-flex-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include responsive(pc-size) {
+                flex-direction: row;
+                justify-content: space-between;
+                border-top: 1px solid $color-border;
+                border-bottom: 1px solid $color-border;
+            }
+
+            & > div {
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            div.desc {
+                padding: 10px;
+                border-top: 1px solid $color-border;
+                border-bottom: 1px solid $color-border;
+                background-color: $color-white;
+
+                @include responsive(pc-size) {
+                    width: 30%;
+                    height: 152px;
+                    margin-right: 30px;
+                    padding: 20px;
+                    border: none;
+                }
+
+                p {
+                    padding-left: 9px;
+
+                    font: {
+                        size: 0.9em;
+                    }
+                    
+                    &:first-child {
+                        padding-left: 0;
+                        padding-bottom: 5px;
+
+                        font: {
+                            size: 1em;
+                            weight: 500;
+                        }
+                    }
+                }
+            }
+
+            div.count {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @include responsive(pc-size) {
+                    width: 70%;
+                    padding: 0;
+                }
+
+                div.age {
+                    width: 100%;
+                    padding: 10px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @include responsive(pc-size) {
+                        height: 50px;
+                        padding: 0;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        line-height: 50px;
+
+                        &:first-child, &:nth-child(2) {
+                            margin-bottom: 1px;
+                        }
+                    }
+
+                    div.label {
+                        width: 100%;
+                        padding-bottom: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        span:last-child {
+                            font-weight: 500;
+                        }
+
+                        @include responsive(pc-size) {
+                            width: 40%;
+                            margin-right: 30px;
+                            padding: 0;
+                        }
+                    }
+
+                    div.personnel-count {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        background-color: $color-white;
+
+                        input {
+                            display: none;
+
+                            &:checked + label {
+                                background-color: $color-main;
+                                color: $color-white;
+                            }
+                        }
+
+                        label {
+                            padding: 10px;
+                            width: 20%;
+                            border-right: 1px solid $color-background;
+                            text-align: center;
+                            cursor: pointer;
+
+                            &:last-child {
+                                border-right: none;
+                            }
+
+                            @include responsive(pc-size) {
+                                padding: 0;
+                            }
+                        }
+
+                        @include responsive(pc-size) {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     div.button-flex-box {

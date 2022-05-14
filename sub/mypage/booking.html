@@ -7,71 +7,6 @@
     <link rel="stylesheet" href="./css/booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>온라인 예약·예매</title>
-    <style>
-        #container {
-            width: 420px;
-            color: white;
-
-            background-color: gray;
-        }
-        #container div.calendar-title {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        #container div.btn {
-            display: inline-block;
-        }
-        #container div.btn i {
-            width: 2rem;
-            line-height: 39px;
-            filter: invert(85%);
-            transition: 0.3s;
-        }
-        #container div.btn i:hover {
-            transform:scale(1.1);
-            filter: invert(100%);
-        }
-        #weekDic {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            font-size: 0.8rem;
-        }
-        #calendar {
-            height: 360px;
-        }
-        .day {
-            width: calc(100% / 7);
-            height: 60px;
-            display: inline-block;
-            padding: 5px;
-            border: 1px solid white;
-            background-color: coral;
-        }
-        .today {
-            border: 1px solid white;
-            background-color: black;
-        }
-        .dic {
-            display: inline-block;
-            width: calc(100% / 7);
-            padding: 5px;
-            text-align: center;
-        }
-        .calendar-title {
-            text-align: center;
-        }
-        #year {
-            margin: 5px;
-            font-size: 1.2em;
-        }
-        #month {
-            margin: 5px;
-            font-size: 1.2em;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -245,8 +180,8 @@
                 <h2 class="reservation-title">온라인 예약·예매</h2>
             </div>
 			<div class="reservation-form">
-                <div class="calendar">
-                    <div id="container">
+                <div class="row">
+                    <div class="calendar option">
                         <div class="calendar-title">
                             <div class="btn" onclick="handleWeek(-1)">
                                 <i class="fa-solid fa-angle-left"></i>
@@ -256,132 +191,161 @@
                             <div class="btn" onclick="handleWeek(1)">
                                 <i class="fa-solid fa-angle-right"></i>
                             </div>
-                        </div>
-                        <div id="weekDic"></div>
-                        <div id="calendar"></div>
-                    </div> <!-- container -->
-                </div> <!-- calendar-->
-                <div class="event-list">
-                    <div class="subtitle">
-                        <h3>행사 선택</h3>
-                        <h3>예약 가능 기간</h3>
-                    </div> <!-- subtitle -->
-                    <ul>
-                        <li class="event">
-                            <a href="#"><span>칠궁 특별관람</span><span>2022.03.06~2022.05.29</span></a>
-                        </li>
-                        <li class="event">
-                            <a href="#"><span>경회루 특별관람</span><span>2022.03.21~2022.05.29</span></a>
-                        </li>
-                        <li class="event">
-                            <a href="#"><span>생과방</span><span>2022.03.21~2022.05.29</span></a>
-                        </li>
-                        <li class="event">
-                            <a href="#"><span>수라간 시식공감</span><span>2022.03.24~2022.05.29</span></a>
-                        </li>
-                        <li class="event">
-                            <a href="#"><span>경복궁 별빛야행</span><span>2022.03.28~2022.05.29</span></a>
-                        </li>
-                        <li class="event">
-                            <a href="#"><span>경복궁 야간관람</span><span>2022.04.01~2022.05.29</span></a>
-                        </li>
-                    </ul>
-                </div> <!-- event-list -->
-                <div class="time-list">
+                        </div> <!-- calendar-title -->
+                        <div id="container">
+                            <div id="weekDic"></div>
+                            <div id="calendar"></div>
+                        </div> <!-- container -->
+                    </div> <!-- calendar-->
+                    <div class="event-list option list">
+                        <div class="subtitle">
+                            <h3>행사 선택</h3>
+                            <h3>예약 가능 기간</h3>
+                        </div> <!-- subtitle -->
+                        <ul>
+                            <li class="event">
+                                <input type="radio" name="event-pick" id="event01">
+                                <label for="event01"><span>칠궁 특별관람</span><span>2022.03.06~2022.05.29</span></label>
+                            </li>
+                            <li class="event">
+                                <input type="radio" name="event-pick" id="event02">
+                                <label for="event02"><span>경회루 특별관람</span><span>2022.03.21~2022.05.29</span></label>
+                            </li>
+                            <li class="event">
+                                <input type="radio" name="event-pick" id="event03">
+                                <label for="event03"><span>생과방</span><span>2022.03.21~2022.05.29</span></label>
+                            </li>
+                            <li class="event">
+                                <input type="radio" name="event-pick" id="event04">
+                                <label for="event04"><span>수라간 시식공감</span><span>2022.03.24~2022.05.29</span></label>
+                            </li>
+                            <li class="event">
+                                <input type="radio" name="event-pick" id="event05">
+                                <label for="event05"><span>경복궁 별빛야행</span><span>2022.03.28~2022.05.29</span></label>
+                            </li>
+                            <li class="event">
+                                <input type="radio" name="event-pick" id="event06">
+                                <label for="event06"><span>경복궁 야간관람</span><span>2022.04.01~2022.05.29</span></label>
+                            </li>
+                        </ul>
+                    </div> <!-- event-list -->
+                </div> <!-- row -->
+                <div class="time-list option list">
                     <div class="subtitle">
                         <h3>시간 선택</h3>
                     </div> <!-- subtitle -->
                     <ul>
                         <li class="time">
-                            <a href="#"><span>09:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time09">
+                            <label for="time09"><span>09:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>10:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time10">
+                            <label for="time10"><span>10:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>11:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time11">
+                            <label for="time11"><span>11:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>12:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time12">
+                            <label for="time12"><span>12:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>13:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time13">
+                            <label for="time13"><span>13:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>14:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time14">
+                            <label for="time14"><span>14:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>15:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time15">
+                            <label for="time15"><span>15:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>16:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time16">
+                            <label for="time16"><span>16:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>17:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time17">
+                            <label for="time17"><span>17:00</span><span>예약 가능</span></label>
                         </li>
                         <li class="time">
-                            <a href="#"><span>18:00</span><span>예약 가능</span></a>
+                            <input type="radio" name="time-pick" id="time18">
+                            <label for="time18"><span>18:00</span><span>예약 가능</span></label>
                         </li>
                     </ul>
                 </div> <!-- time-list -->
-                <div class="personnel-list">
+                <div class="personnel-list option">
                     <div class="subtitle">
                         <h3>인원 선택</h3>
                     </div> <!-- subtitle -->
-                    <div class="desc">
-                        <p>·무료 관람 대상자</p>
-                        <p>만 6세 이하<br>만65세 이상 ('14.10.1부터 시행)<br>한복 착용자<br>매월 마지막 수요일 [문화가 있는 날]</p>
-                    </div> <!-- desc -->
-                    <div class="count">
-                        <div class="adult">
-                            <span>일반 (무료 관람 대상자 외)</span>
-                            <span>3,000원</span>
-                            <div class="personnel-count">
-                                <input type="radio" name="adult-0" id="adult-0">
-                                <label for="adult-0">0인</label>
-                                <input type="radio" name="adult-1" id="adult-1">
-                                <label for="adult-1">1인</label>
-                                <input type="radio" name="adult-2" id="adult-2">
-                                <label for="adult-2">2인</label>
-                                <input type="radio" name="adult-3" id="adult-3">
-                                <label for="adult-3">3인</label>
-                                <input type="radio" name="adult-4" id="adult-4">
-                                <label for="adult-4">4인</label>
-                            </div>
-                        </div> <!-- adult -->
-                        <div class="foreign-adult">
-                            <span>외국인 - 대인 (만 19세~만 64세)</span>
-                            <span>3,000원</span>
-                            <div class="personnel-count">
-                                <input type="radio" name="adult-0" id="adult-0">
-                                <label for="adult-0">0인</label>
-                                <input type="radio" name="adult-1" id="adult-1">
-                                <label for="adult-1">1인</label>
-                                <input type="radio" name="adult-2" id="adult-2">
-                                <label for="adult-2">2인</label>
-                                <input type="radio" name="adult-3" id="adult-3">
-                                <label for="adult-3">3인</label>
-                                <input type="radio" name="adult-4" id="adult-4">
-                                <label for="adult-4">4인</label>
-                            </div>
-                        </div> <!-- foreign-adult -->
-                        <div class="foreign-kid">
-                            <span>외국인 - 소인 (만 7세~만 18세)</span>
-                            <span>1,500원</span>
-                            <div class="personnel-count">
-                                <input type="radio" name="adult-0" id="adult-0">
-                                <label for="adult-0">0인</label>
-                                <input type="radio" name="adult-1" id="adult-1">
-                                <label for="adult-1">1인</label>
-                                <input type="radio" name="adult-2" id="adult-2">
-                                <label for="adult-2">2인</label>
-                                <input type="radio" name="adult-3" id="adult-3">
-                                <label for="adult-3">3인</label>
-                                <input type="radio" name="adult-4" id="adult-4">
-                                <label for="adult-4">4인</label>
-                            </div>
-                        </div> <!-- foreign-kid -->
-                    </div>
+                    <div class="personnel-flex-box">
+                        <div class="desc">
+                            <p>· 무료 관람 대상자</p>
+                            <p>만 6세 이하</p>
+                            <p>만65세 이상 ('14.10.1부터 시행)</p>
+                            <p>한복 착용자</p>
+                            <p>매월 마지막 수요일 [문화가 있는 날]</p>
+                        </div> <!-- desc -->
+                        <div class="count">
+                            <div class="adult age">
+                                <div class="label">
+                                    <span>일반 (무료 관람 대상자 외)</span>
+                                    <span>3,000원</span>
+                                </div> <!-- label -->
+                                <div class="personnel-count">
+                                    <input type="radio" name="adult" id="adult-0" checked>
+                                    <label for="adult-0">0인</label>
+                                    <input type="radio" name="adult" id="adult-1">
+                                    <label for="adult-1">1인</label>
+                                    <input type="radio" name="adult" id="adult-2">
+                                    <label for="adult-2">2인</label>
+                                    <input type="radio" name="adult" id="adult-3">
+                                    <label for="adult-3">3인</label>
+                                    <input type="radio" name="adult" id="adult-4">
+                                    <label for="adult-4">4인</label>
+                                </div> <!-- personnel-count -->
+                            </div> <!-- adult -->
+                            <div class="foreign-adult age">
+                                <div class="label">
+                                    <span>외국인 - 대인 (만 19세~만 64세)</span>
+                                    <span>3,000원</span>
+                                </div> <!-- label -->
+                                <div class="personnel-count">
+                                    <input type="radio" name="foreign-adult" id="foreign-adult-0" checked>
+                                    <label for="foreign-adult-0">0인</label>
+                                    <input type="radio" name="foreign-adult" id="foreign-adult-1">
+                                    <label for="foreign-adult-1">1인</label>
+                                    <input type="radio" name="foreign-adult" id="foreign-adult-2">
+                                    <label for="foreign-adult-2">2인</label>
+                                    <input type="radio" name="foreign-adult" id="foreign-adult-3">
+                                    <label for="foreign-adult-3">3인</label>
+                                    <input type="radio" name="foreign-adult" id="foreign-adult-4">
+                                    <label for="foreign-adult-4">4인</label>
+                                </div> <!-- personnel-count -->
+                            </div> <!-- foreign-adult -->
+                            <div class="foreign-kid age">
+                                <div class="label">
+                                    <span>외국인 - 소인 (만 7세~만 18세)</span>
+                                    <span>1,500원</span>
+                                </div> <!-- label -->
+                                <div class="personnel-count">
+                                    <input type="radio" name="foreign-kid" id="foreign-kid-0" checked>
+                                    <label for="foreign-kid-0">0인</label>
+                                    <input type="radio" name="foreign-kid" id="foreign-kid-1">
+                                    <label for="foreign-kid-1">1인</label>
+                                    <input type="radio" name="foreign-kid" id="foreign-kid-2">
+                                    <label for="foreign-kid-2">2인</label>
+                                    <input type="radio" name="foreign-kid" id="foreign-kid-3">
+                                    <label for="foreign-kid-3">3인</label>
+                                    <input type="radio" name="foreign-kid" id="foreign-kid-4">
+                                    <label for="foreign-kid-4">4인</label>
+                                </div> <!-- personnel-count -->
+                            </div> <!-- foreign-kid -->
+                        </div> <!-- count -->
+                    </div> <!-- personnel-flex-box -->
                 </div> <!-- personnel-list -->
 			</div> <!-- reservation-form -->
             <div class="button-flex-box">
