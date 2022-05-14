@@ -112,8 +112,29 @@ function makeCalendar() {
 			let newElement = document.createElement("div");
 			newElement.className =
 				day === today.getDate() && month === today.getMonth() + 1 ? "day today" : "day";
-			newElement.innerHTML = day;
+			newElement.setAttribute("id", "day");
 			container.appendChild(newElement);
+
+			let div = document.querySelector("#day");
+			let input = document.createElement("input");
+			let label = document.createElement("label");
+			if (day != "&nbsp;") {
+				input.setAttribute("type", "radio");
+				input.setAttribute("name", "day");
+				input.setAttribute("class", "day");
+				input.setAttribute("id", "day" + day);
+				div.appendChild(input);
+			}
+			label.setAttribute("for", "day" + day);
+			label.innerHTML = day;
+			if (day != "&nbsp;") {
+				label.style.cursor = "pointer";
+			} else {
+				label.style.cursor = "default";
+			}
+
+			newElement.setAttribute("id", day);
+			div.appendChild(label);
 		});
 	});
 	console.log(calendar);
@@ -147,10 +168,6 @@ function handleWeek(opt) {
 	document.getElementById("month").innerHTML = "";
 	document.getElementById("year").innerHTML = year + "년 ";
 	document.getElementById("month").innerHTML = month + "월";
-}
-
-function hoverAction(){
-	
 }
 
 document.getElementById("year").innerHTML = year + "년 ";

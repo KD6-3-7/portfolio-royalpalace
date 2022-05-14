@@ -136,17 +136,20 @@ section.reservation {
                 }
                 
                 div#calendar {
-                    height: 241px;
+                    height: 302px;
                     border-top: 1px solid $color-border;
                     border-bottom: 1px solid $color-border;
                     background-color: $color-white;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: flex-start;
 
                     div.day {
                         width: calc(100% / 7);
-                        height: 40px;
-                        display: inline-block;
-                        padding: 12px;
-                        font-size: 0.9em;
+                        height: calc(100% / 6);
+                        display: flex;
                         text-align: center;
                         border: 1px solid $color-background;
                         border-top: none;
@@ -155,10 +158,27 @@ section.reservation {
                         &:nth-child(7n) {
                             border-right: none;
                         }
+                        
+                        input {
+                            display: none;
+                            
+                            &:checked + label {
+                                background-color: $color-main;
+                                color: $color-white;
+                            }
+                        }
+    
+                        label {
+                            width: 100%;
+                            height: 100%;
+                            font-size: 1em;
+                            line-height: 49px;
+                            text-align: center;
+                        }
                     }
 
                     div.today {
-                        background-color: $color-main;
+                        background-color: $color-border;
                         color: $color-white;
                     }
                 }
@@ -169,6 +189,7 @@ section.reservation {
     div.list {
         ul {
             li {
+                height: 50px;
                 border-bottom: 1px solid $color-background;
     
                 &:last-child {
@@ -186,6 +207,7 @@ section.reservation {
                 
                 label {
                     width: 100%;
+                    height: 100%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -193,6 +215,7 @@ section.reservation {
     
                     span {
                         padding: 10px;
+                        line-height: 29px;
     
                         &:last-child {
                             font-size: 0.9em;
@@ -265,7 +288,7 @@ section.reservation {
             }
 
             div.desc {
-                padding: 10px;
+                padding: 20px 10px;
                 border-top: 1px solid $color-border;
                 border-bottom: 1px solid $color-border;
                 background-color: $color-white;
@@ -346,6 +369,7 @@ section.reservation {
 
                     div.personnel-count {
                         width: 100%;
+                        height: 50px;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
@@ -361,10 +385,12 @@ section.reservation {
                         }
 
                         label {
-                            padding: 10px;
                             width: 20%;
+                            height: 50px;
+                            padding: 10px;
                             border-right: 1px solid $color-background;
                             text-align: center;
+                            line-height: 30px;
                             cursor: pointer;
 
                             &:last-child {
@@ -373,6 +399,7 @@ section.reservation {
 
                             @include responsive(pc-size) {
                                 padding: 0;
+                                line-height: 50px;
                             }
                         }
 
