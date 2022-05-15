@@ -247,7 +247,7 @@
         justify-content: space-between;
 
         li.submenu {
-            width: calc(100% / 4); // calc(100% / [서브메뉴 개수])
+            width: calc(100% / 3); // calc(100% / [서브메뉴 개수])
             font: {
                 size: 1.2em;
                 weight: 300;
