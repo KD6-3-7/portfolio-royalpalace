@@ -34,6 +34,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -393,7 +398,7 @@ aside div.sidemenu {
   }
 }
 
-section.des-1 {
+section.main-sec section.des-1 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
@@ -409,7 +414,7 @@ section.des-1 {
 }
 
 @media screen and (min-width: 1460px) {
-  section.des-1 {
+  section.main-sec section.des-1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -419,26 +424,26 @@ section.des-1 {
   }
 }
 
-section.des-1 .des-1-left {
+section.main-sec section.des-1 .des-1-left {
   width: 100%;
 }
 
-section.des-1 .des-1-left .des-1-image1 {
+section.main-sec section.des-1 .des-1-left .des-1-image1 {
   position: relative;
 }
 
-section.des-1 .des-1-left .des-1-image1 img {
+section.main-sec section.des-1 .des-1-left .des-1-image1 img {
   width: 100%;
 }
 
-section.des-1 .des-1-left .des-1-image1 p {
+section.main-sec section.des-1 .des-1-left .des-1-image1 p {
   position: absolute;
   left: 0;
   top: -15px;
   font-size: 0.9em;
 }
 
-section.des-1 .des-1-left .des-1-image1 p span {
+section.main-sec section.des-1 .des-1-left .des-1-image1 p span {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -446,77 +451,83 @@ section.des-1 .des-1-left .des-1-image1 p span {
   background-color: #000;
 }
 
-section.des-1 .des-1-right {
+section.main-sec section.des-2 .css3-tab {
+  list-style: none;
+  margin: 0 auto 40px;
+  padding: 38px 0 0 0;
+  position: relative;
+  width: 90%;
+}
+
+section.main-sec section.des-2 .css3-tab input[type='radio'] {
+  display: none;
+}
+
+section.main-sec section.des-2 .css3-tab .css3-tab-nav {
+  display: table;
+  table-layout: fixed;
   width: 100%;
 }
 
-section.des-1 .des-1-right .tab_content {
-  font-size: 0;
-  margin-top: 30px;
-  background-color: #000;
-}
-
-section.des-1 .des-1-right .tab_content input[type="radio"] {
-  display: none;
-}
-
-section.des-1 .des-1-right .tab_content input[type="radio"] + label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 15px;
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-  color: #999;
+section.main-sec section.des-2 .css3-tab .css3-tab-nav label {
+  display: table-cell;
   background-color: #ccc;
-}
-
-@media screen and (min-width: 768px) {
-  section.des-1 .des-1-right .tab_content input[type="radio"] + label {
-    display: inline-block;
-    width: 32.9%;
-  }
-}
-
-section.des-1 .des-1-right .tab_content input[type="radio"]:checked + label {
-  color: #000;
-  background-color: #aaa;
-}
-
-section.des-1 .des-1-right .tab_content input[id="tab01"]:checked ~ .con1 {
-  display: block;
-}
-
-section.des-1 .des-1-right .tab_content input[id="tab02"]:checked ~ .con2 {
-  display: block;
-}
-
-section.des-1 .des-1-right .tab_content input[id="tab03"]:checked ~ .con3 {
-  display: block;
-}
-
-section.des-1 .des-1-right .tab_content .conbox {
-  display: none;
-  font-size: 16px;
-  line-height: 22.4px;
-  margin-top: 3px;
+  color: #999;
   padding: 15px;
-  background-color: #aaa;
+  text-align: center;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
 }
 
-section.des-1 .des-1-right .tab_content label {
-  margin-right: 2px;
+section.main-sec section.des-2 .css3-tab .css3-tab-nav label:hover {
+  cursor: pointer;
+  background: white;
+  color: #666666;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
 }
 
-section.des-1 .des-1-right .tab_content label:last-child {
-  margin: 0;
+section.main-sec section.des-2 .css3-tab .css3-tab-content {
+  overflow: hidden;
+  padding: 25px;
+  display: none;
+  background: #fff;
+  clear: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
+  background: #aaa;
+  color: #000;
+  cursor: default;
+}
+
+section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ div.tab-one {
+  display: block;
+  border-top: solid 3px #aaa;
+}
+
+section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
+  background: #aaa;
+  color: #000;
+  cursor: default;
+}
+
+section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ div.tab-two {
+  display: block;
+  border-top: solid 3px #aaa;
+}
+
+section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
+  background: #aaa;
+  color: #000;
+  cursor: default;
+}
+
+section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ div.add-new {
+  display: block;
+  border-top: solid 3px #aaa;
 }
 
 footer {
