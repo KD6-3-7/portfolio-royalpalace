@@ -398,7 +398,7 @@ aside div.sidemenu {
   }
 }
 
-section.notice {
+section.notice-post {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
@@ -406,11 +406,11 @@ section.notice {
   margin: 100px auto;
 }
 
-section.notice div > h2 {
+section.notice-post div > h2 {
   padding-bottom: 20px;
 }
 
-section.notice div > table.bulletin {
+section.notice-post div > table.bulletin {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 1px;
@@ -420,39 +420,58 @@ section.notice div > table.bulletin {
   color: #2c2928;
 }
 
-section.notice div > table.bulletin tr {
+section.notice-post div > table.bulletin tr {
   border-bottom: 1px solid #a7a7a7;
 }
 
-section.notice div > table.bulletin tr th {
+section.notice-post div > table.bulletin tr.contents {
+  border-bottom: 1px solid #2c2928;
+}
+
+section.notice-post div > table.bulletin tr th {
   width: 20%;
   padding: 15px 10px;
   font-weight: normal;
   vertical-align: top;
+  white-space: nowrap;
 }
 
-section.notice div > table.bulletin tr td {
+section.notice-post div > table.bulletin tr td {
   width: 60%;
   padding: 15px 10px;
   vertical-align: top;
 }
 
-section.notice div > table.bulletin tr td.date {
+section.notice-post div > table.bulletin tr td.date {
   width: 20%;
   text-align: right;
 }
 
-section.notice div > table.bulletin tr:last-child {
+section.notice-post div > table.bulletin tr td.contents {
+  padding: 70px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  section.notice-post div > table.bulletin tr td.contents {
+    padding: 130px 10px;
+  }
+}
+
+section.notice-post div > table.bulletin tr td.contents p {
+  line-height: 2em;
+  font-weight: 500;
+}
+
+section.notice-post div > table.bulletin tr td p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+section.notice-post div > table.bulletin tr:last-child {
   border-bottom: 1px solid #2c2928;
 }
 
-section.notice div.page {
-  width: 310px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-section.notice div.page ul.pagination {
+section.notice-post div.button-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,50 +482,15 @@ section.notice div.page ul.pagination {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 
-section.notice div.page ul.pagination li {
-  text-align: center;
-}
-
-section.notice div.page ul.pagination li a {
-  font-size: 1em;
-  color: #2c2928;
-  line-height: 30px;
-}
-
-section.notice div.page ul.pagination li a.num, section.notice div.page ul.pagination li a.arrow {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 100%;
-}
-
-section.notice div.page ul.pagination li a.num:hover, section.notice div.page ul.pagination li a.arrow:hover {
-  background-color: #2c2928;
-  color: #f2ece4;
-}
-
-section.notice div.page ul.pagination li a.num:active, section.notice div.page ul.pagination li a.arrow:active {
-  background-color: #a7a7a7;
+section.notice-post div.button-flex-box button {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-}
-
-section.notice div.page ul.pagination li a.active {
-  cursor: default;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #a7a7a7;
-  border-radius: 100%;
-}
-
-section.notice div.page ul.pagination li a:active {
-  outline: none;
+  font-family: Pretendard;
+  font-size: 1.1em;
 }
 
 footer {
@@ -604,4 +588,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-/*# sourceMappingURL=notice.css.map */
+/*# sourceMappingURL=notice-post.css.map */

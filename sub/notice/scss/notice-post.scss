@@ -28,7 +28,7 @@ aside {
 }
 
 //section
-section.notice {
+section.notice-post {
     @include wrapper();
 
     width: 100%;
@@ -49,12 +49,17 @@ section.notice {
 
         tr {
             border-bottom: 1px solid $color-border;
-            
+
+            &.contents {
+                border-bottom: 1px solid $color-main;
+            }
+
             th {
                 width: 20%;
                 padding: 15px 10px;
                 font-weight: normal;
                 vertical-align: top;
+                white-space: nowrap;
             }
     
             td {
@@ -66,6 +71,26 @@ section.notice {
                     width: 20%;
                     text-align: right;
                 }
+
+                &.contents {
+                    padding: 70px 10px;
+
+                    @include responsive(tablet-size) {
+                        padding: 130px 10px;
+                    }
+                    
+                    p {
+                        line-height: 2em;
+                        font-weight: 500;
+                    }
+                }
+
+                p {
+                    font: {
+                        size: 1em;
+                        weight: 400;
+                    }
+                }
             }
 
             &:last-child {
@@ -74,57 +99,20 @@ section.notice {
         }
     }
 
-    div.page {
-        width: 310px;
-        margin: 0 auto;
-        text-align: center; // div 사이즈 영역 안에서의 center
-        
-        ul.pagination {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 65px;
+    div.button-flex-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
 
-            li {
-                text-align: center;
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
 
-                a {
-                    font-size: 1em;
-                    color: $color-main;
-                    line-height: 30px;
-
-                    &.num, &.arrow {
-                        width: 30px;
-                        height: 30px;
-                        line-height: 30px;
-                        border-radius: 100%;
-
-                        &:hover {
-                            background-color: $color-main;
-                            color: $color-background;
-                        }
-
-                        &:active {
-                            background-color: $color-border;
-                            cursor: pointer;
-                        }
-                    }
-
-                    &.active {
-                        cursor: default;
-                        width: 30px;
-                        height: 30px;
-                        line-height: 30px;
-                        border: 1px solid $color-border;
-                        border-radius: 100%;
-                    }
-
-                    &:active {
-                        outline: none;
-                    }
-
-                }
+            font: {
+                family: $font-sans;
+                size: 1.1em;
             }
         }
     }
