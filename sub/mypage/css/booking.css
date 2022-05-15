@@ -297,7 +297,7 @@ header ul.topmenu {
             justify-content: space-between;
   }
   header ul.topmenu li.submenu {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
@@ -404,6 +404,38 @@ section.reservation {
   padding: 0 7%;
   width: 100%;
   margin: 100px auto;
+}
+
+section.reservation div > a {
+  margin-bottom: 10px;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  background-color: #2c2928;
+  color: #fcfbfa;
+}
+
+section.reservation div > a i {
+  width: 10%;
+}
+
+section.reservation div > a i:first-child {
+  color: #2c2928;
+}
+
+@media screen and (min-width: 768px) {
+  section.reservation div > a {
+    display: none;
+  }
 }
 
 section.reservation div > h2 {
