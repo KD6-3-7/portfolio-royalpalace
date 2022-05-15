@@ -29,27 +29,39 @@ aside {
 
 //section
 section.main-sec {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    @include responsive(pc-size) {
+        flex-direction: row;
+    }
 
     section.des-1 {
         @include wrapper();
-    
-        padding-top: 70px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 700px;
-        
+
+        position: relative;
+        background-color: aqua;
+        height: 40%;
+
         @include responsive(pc-size) {
-            flex-direction: row;
-            justify-content: space-around;
+            width: 50%;
+            height: 0;
         }
-    
-        .des-1-left {
+        .des-1-converse-image {
+
             width: 100%;
+            
             .des-1-image1{
-                position: relative;
-    
+                background-color: aquamarine;
+                position: absolute;
+                padding-right: 7%;
+                
                 img {
                     width: 100%;
+
+                    @include responsive(pc-size) {
+                        height: 600px;
+                    }
                 }
     
                 p {
@@ -59,12 +71,11 @@ section.main-sec {
                     font-size: 0.9em;
     
                     span {
+                        
                         display:inline-block;
                         width: 10px;
                         height: 10px;
                         border-radius: 2px;
-                        background-color: #000;
-    
                     }
                 }
             }
@@ -72,12 +83,18 @@ section.main-sec {
     }
     
     section.des-2 {
+        padding: 38px 0;
+        height: 50%;
+        background-color: aqua;
+
+        @include responsive(pc-size) {
+            width: 50%;
+            height: 0;
+        }
+
         .css3-tab {
-            list-style: none;
-            margin: 0 auto 40px;
-            padding: 38px 0 0 0;
+            @include wrapper();
             position: relative;
-            width: 90%;
 
             input[type='radio'] {
                 display: none;

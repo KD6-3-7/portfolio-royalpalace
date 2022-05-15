@@ -398,11 +398,7 @@ aside div.sidemenu {
   }
 }
 
-section.main-sec section.des-1 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-  padding-top: 70px;
+section.main-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,53 +406,86 @@ section.main-sec section.des-1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 700px;
+  padding-top: 70px;
 }
 
 @media screen and (min-width: 1460px) {
-  section.main-sec section.des-1 {
+  section.main-sec {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
-section.main-sec section.des-1 .des-1-left {
+section.main-sec section.des-1 {
   width: 100%;
-}
-
-section.main-sec section.des-1 .des-1-left .des-1-image1 {
+  margin: 0 auto;
+  padding: 0 7%;
   position: relative;
+  background-color: aqua;
+  height: 40%;
 }
 
-section.main-sec section.des-1 .des-1-left .des-1-image1 img {
+@media screen and (min-width: 1460px) {
+  section.main-sec section.des-1 {
+    width: 50%;
+    height: 0;
+  }
+}
+
+section.main-sec section.des-1 .des-1-converse-image {
   width: 100%;
 }
 
-section.main-sec section.des-1 .des-1-left .des-1-image1 p {
+section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
+  background-color: aquamarine;
+  position: absolute;
+  padding-right: 7%;
+}
+
+section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
+    height: 600px;
+  }
+}
+
+section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
   position: absolute;
   left: 0;
   top: -15px;
   font-size: 0.9em;
 }
 
-section.main-sec section.des-1 .des-1-left .des-1-image1 p span {
+section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p span {
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 2px;
-  background-color: #000;
+}
+
+section.main-sec section.des-2 {
+  padding: 38px 0;
+  height: 50%;
+  background-color: aqua;
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-sec section.des-2 {
+    width: 50%;
+    height: 0;
+  }
 }
 
 section.main-sec section.des-2 .css3-tab {
-  list-style: none;
-  margin: 0 auto 40px;
-  padding: 38px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
   position: relative;
-  width: 90%;
 }
 
 section.main-sec section.des-2 .css3-tab input[type='radio'] {
