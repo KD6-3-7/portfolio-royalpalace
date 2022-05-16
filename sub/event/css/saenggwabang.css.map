@@ -5,8 +5,8 @@
         "../scss/saenggwabang.scss",
         "../../../scss/_style.scss",
         "../../../scss/_common.scss",
-        "../scss/mixin-menu-sub.scss",
-        "../scss/mixin-line.scss"
+        "../scss/_mixin-menu-sub.scss",
+        "../scss/_mixin-line.scss"
     ],
     "names": [],
     "file": "saenggwabang.css"
