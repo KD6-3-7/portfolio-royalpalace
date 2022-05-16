@@ -131,7 +131,7 @@ section {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;          
+            flex-direction: row;        
         }
         
         @include line-deco();

@@ -152,11 +152,43 @@ section {
                 .guide-box {
                     background-color: #cec4b6;
                     padding: 10px;
+                    @include responsive(pc-size) {
+                        margin-right: 30px;
+                        width: 50px;
+                    }
+                    p {
+                        @include responsive(pc-size) {
+                            padding: 10px;
+                        }
+                    }
                 }
-                @include responsive(tablet-size) {
+                @include responsive(pc-size) {
                     display: flex;
                 }
+                
+                .lunch {
+                    .lunch-img-flex {
+                        img {
+                            width: 49%;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                }
 
+                .vacation {
+                    .stay-img-flex {
+                        img {
+                            width: 49%;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                }
             }
         }
     }

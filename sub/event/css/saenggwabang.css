@@ -557,20 +557,7 @@ section .guide {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-bottom: 90px;
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 section .guide .little-title {

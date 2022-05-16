@@ -125,13 +125,7 @@ section {
 
     .guide {
         @include wrapper();
-        // display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;            
-        }
-        
+                
         @include line-deco();
 
         .line-flex {
