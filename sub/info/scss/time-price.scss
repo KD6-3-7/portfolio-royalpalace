@@ -26,10 +26,11 @@ aside {
 
 //section
 section {
-    @include responsive(pc-size) {
-        width: 70%;
-        margin-left: 170px
-    }
+    @include wrapper();
+    // @include responsive(pc-size) {
+    //     width: 70%;
+    //     margin-left: 170px
+    // }
     section.roy1 {
         @include wrapper();
 
@@ -42,14 +43,17 @@ section {
             margin: 50px 0;
             font-size: 1.875em;
         }
+
         ul {
             display: flex;
             flex-wrap: wrap;
+            width: 70%;
+            margin: 0 auto;
             li {
                 width: 50%;
                 padding-bottom: 25px;
                 @include responsive(pc-size) {
-                    padding-left: 125px;
+                    // padding-left: 125px;
                     p>br {
                         display: none;
                     }
@@ -72,19 +76,15 @@ section {
     }
 
     section.roy2 {
-        @include wrapper();
-
-        @include responsive(pc-size) {
-            width: 80%;
-            padding-left: 10px;
-        }
 
         h2 {
             text-align: center;
             margin: 50px 0;
             font-size: 1.875em;
         }
+        
         #roy2-price {
+            margin: 0 auto;
             th {
                 background-color: #d4cabd;
             }

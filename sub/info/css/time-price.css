@@ -320,11 +320,10 @@ aside div.sidemenu {
   }
 }
 
-@media screen and (min-width: 1460px) {
-  section {
-    width: 70%;
-    margin-left: 170px;
-  }
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
 }
 section section.roy1 {
   width: 100%;
@@ -344,15 +343,14 @@ section section.roy1 h2 {
 section section.roy1 ul {
   display: flex;
   flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
 }
 section section.roy1 ul li {
   width: 50%;
   padding-bottom: 25px;
 }
 @media screen and (min-width: 1460px) {
-  section section.roy1 ul li {
-    padding-left: 125px;
-  }
   section section.roy1 ul li p > br {
     display: none;
   }
@@ -371,16 +369,7 @@ section section.roy1 ul li:last-child p {
   font-size: 14px;
 }
 section section.roy2 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
   padding-bottom: 92px;
-}
-@media screen and (min-width: 1460px) {
-  section section.roy2 {
-    width: 80%;
-    padding-left: 10px;
-  }
 }
 section section.roy2 h2 {
   text-align: center;
@@ -388,6 +377,7 @@ section section.roy2 h2 {
   font-size: 1.875em;
 }
 section section.roy2 #roy2-price {
+  margin: 0 auto;
   border-collapse: collapse;
 }
 section section.roy2 #roy2-price th {
