@@ -32,6 +32,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -315,60 +320,90 @@ aside div.sidemenu {
   }
 }
 
-section.roy1 {
+@media screen and (min-width: 1460px) {
+  section {
+    width: 70%;
+    margin-left: 170px;
+  }
+}
+section section.roy1 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
 }
-section.roy1 h2 {
+@media screen and (min-width: 1460px) {
+  section section.roy1 {
+    width: 80%;
+  }
+}
+section section.roy1 h2 {
   text-align: center;
   margin: 50px 0;
   font-size: 1.875em;
 }
-section.roy1 ul {
+section section.roy1 ul {
   display: flex;
   flex-wrap: wrap;
 }
-section.roy1 ul li {
+section section.roy1 ul li {
   width: 50%;
   padding-bottom: 25px;
 }
-section.roy1 ul li h3 {
+@media screen and (min-width: 1460px) {
+  section section.roy1 ul li {
+    padding-left: 125px;
+  }
+  section section.roy1 ul li p > br {
+    display: none;
+  }
+}
+section section.roy1 ul li h3 {
   padding-bottom: 5px;
 }
-section.roy1 ul li:last-child {
+section section.roy1 ul li:last-child {
   transform: translateY(2px);
 }
-section.roy1 ul li:last-child h3 {
+section section.roy1 ul li:last-child h3 {
   font-size: 16px;
   font-weight: 500;
 }
-section.roy1 ul li:last-child p {
+section section.roy1 ul li:last-child p {
   font-size: 14px;
 }
-
-section.roy2 {
+section section.roy2 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
   padding-bottom: 92px;
 }
-section.roy2 h2 {
+@media screen and (min-width: 1460px) {
+  section section.roy2 {
+    width: 80%;
+    padding-left: 10px;
+  }
+}
+section section.roy2 h2 {
   text-align: center;
   margin: 50px 0;
   font-size: 1.875em;
 }
-section.roy2 #roy2-price {
+section section.roy2 #roy2-price {
   border-collapse: collapse;
 }
-section.roy2 #roy2-price th {
+section section.roy2 #roy2-price th {
   background-color: #d4cabd;
 }
-section.roy2 #roy2-price th,
-section.roy2 #roy2-price td {
+section section.roy2 #roy2-price th,
+section section.roy2 #roy2-price td {
   border: 1px solid #c1b7aa;
   padding: 7px;
   text-align: center;
+}
+@media screen and (min-width: 1460px) {
+  section section.roy2 #roy2-price th,
+section section.roy2 #roy2-price td {
+    padding: 40px 50px;
+  }
 }
 
 footer {

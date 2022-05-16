@@ -25,57 +25,84 @@ aside {
 }
 
 //section
-section.roy1 {
-    @include wrapper();
-    h2 {
-        text-align: center;
-        margin: 50px 0;
-        font-size: 1.875em;
+section {
+    @include responsive(pc-size) {
+        width: 70%;
+        margin-left: 170px
     }
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        li {
-            width: 50%;
-            padding-bottom: 25px;
-            h3 {
-                padding-bottom: 5px;
-            }
-            &:last-child {
-                transform: translateY(2px);
-                h3 {
-                    font-size: 16px;
-                    font-weight: 500;
-                }
-                p {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-}
+    section.roy1 {
+        @include wrapper();
 
-section.roy2 {
-    @include wrapper();
-    h2 {
-        text-align: center;
-        margin: 50px 0;
-        font-size: 1.875em;
-    }
-    #roy2-price {
-        th {
-            background-color: #d4cabd;
+        @include responsive(pc-size) {
+            width: 80%;
         }
-        th,
-        td {
-            border: 1px solid #c1b7aa;
-            padding: 7px;
+
+        h2 {
             text-align: center;
+            margin: 50px 0;
+            font-size: 1.875em;
         }
-        border-collapse: collapse;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 50%;
+                padding-bottom: 25px;
+                @include responsive(pc-size) {
+                    padding-left: 125px;
+                    p>br {
+                        display: none;
+                    }
+                }
+                h3 {
+                    padding-bottom: 5px;
+                }
+                &:last-child {
+                    transform: translateY(2px);
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
-    // font-size: 1em;
-    padding-bottom: 92px;
+
+    section.roy2 {
+        @include wrapper();
+
+        @include responsive(pc-size) {
+            width: 80%;
+            padding-left: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 1.875em;
+        }
+        #roy2-price {
+            th {
+                background-color: #d4cabd;
+            }
+            th,
+            td {
+                border: 1px solid #c1b7aa;
+                padding: 7px;
+                text-align: center;
+
+                @include responsive(pc-size) {
+                    padding: 40px 50px;
+                }
+            }
+            border-collapse: collapse;
+        }
+        // font-size: 1em;
+        padding-bottom: 92px;
+    }
 }
 
 // footer

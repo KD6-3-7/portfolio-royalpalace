@@ -32,6 +32,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -325,12 +330,29 @@ section h2 {
   margin: 50px 0;
   font-size: 1.875em;
 }
+@media screen and (min-width: 1460px) {
+  section .map-all {
+    display: flex;
+  }
+}
 section iframe {
   width: 100%;
   height: 200px;
 }
+@media screen and (min-width: 1460px) {
+  section iframe {
+    width: 800px;
+    height: 500px;
+    padding-right: 50px;
+  }
+}
 section .subway div {
   padding: 55px 0;
+}
+@media screen and (min-width: 1460px) {
+  section .subway div {
+    padding: 25px 0 50px 0;
+  }
 }
 section .subway div h3 {
   padding-bottom: 20px;
