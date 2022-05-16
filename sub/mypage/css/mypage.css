@@ -283,6 +283,7 @@ header ul.topmenu {
   }
   header ul.topmenu {
     margin-left: 200px;
+    padding: 0 7%;
     height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -296,7 +297,7 @@ header ul.topmenu {
             justify-content: space-between;
   }
   header ul.topmenu li.submenu {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
@@ -397,89 +398,29 @@ aside div.sidemenu {
   }
 }
 
-section h1 {
-  display: none;
-}
-
-section .img-text {
-  margin-top: 50px;
-  position: relative;
-  margin-bottom: 55px;
-}
-
-section .img-text .main-text {
-  text-align: right;
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  -webkit-transform: translate(-10%, -50%);
-          transform: translate(-10%, -50%);
-  color: white;
-  font-family: serif;
-}
-
-@media screen and (min-width: 768px) {
-  section .img-text .main-text {
-    top: 50%;
-    right: 10%;
-  }
-}
-
-section .img-text .main-text h2 {
-  font-size: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  section .img-text .main-text h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .img-text .main-text h2 {
-    font-size: 44px;
-    margin-bottom: 74px;
-  }
-}
-
-section .img-text .main-text p {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  section .img-text .main-text p {
-    display: block;
-    font-size: 16px;
-    font-family: "Noto Serif KR", serif;
-    font-weight: 100;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .img-text .main-text p {
-    font-size: 21px;
-    font-weight: 100;
-    line-height: 1.5em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  section .img-text .main-text .person {
-    margin-top: 15px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .img-text .main-text .person {
-    margin-top: 40px;
-  }
-}
-
-section .info {
+section.mypage {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+  width: 100%;
+  margin: 100px auto;
+}
+
+section.mypage div > h2 {
+  padding-bottom: 20px;
+}
+
+section.mypage div.mypage-form {
+  width: 100%;
+}
+
+section.mypage div.mypage-form form {
+  border-top: 1px solid #2c2928;
+  border-bottom: 1px solid #2c2928;
+}
+
+section.mypage div.mypage-form form div.row {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,77 +428,31 @@ section .info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #a7a7a7;
 }
 
-@media screen and (min-width: 1460px) {
-  section .info {
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-section .info .little-title {
-  position: relative;
-  margin-bottom: 33px;
-}
-
-section .info .little-title h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-section .info .little-title h3 span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-section .info .little-title h3 span::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  z-index: 1;
-  background: #949392;
-}
-
-section .info .little-title::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 2px;
-  background: #c4c3c2;
-}
-
-section .info .line-flex {
-  width: 205px;
-}
-
-section .info p {
-  font-size: 18px;
-  line-height: 2em;
-}
-
-@media screen and (min-width: 1460px) {
-  section .info .info-text {
-    margin-top: 20px;
-    width: 75%;
+  section.mypage div.mypage-form form div.row:nth-child(5), section.mypage div.mypage-form form div.row:nth-child(6) {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
-section .guide {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section.mypage div.mypage-form form div.row:last-child {
+  border-bottom: none;
+}
+
+section.mypage div.mypage-form form div.row:last-child div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,11 +460,133 @@ section .guide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
-  section .guide {
+section.mypage div.mypage-form form div.row:last-child div span {
+  padding-top: 5px;
+  font-size: 0.8em;
+  color: #a7a7a7;
+}
+
+section.mypage div.mypage-form form div.row span.title {
+  width: 100%;
+  word-break: keep-all;
+  line-height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row span.title {
+    width: 20%;
+  }
+}
+
+section.mypage div.mypage-form form div.row > input {
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  color: #2c2928;
+  border: 1px solid #a7a7a7;
+  font-family: Pretendard;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row > input {
+    width: 80%;
+  }
+}
+
+section.mypage div.mypage-form form div.row div.flexbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row div.flexbox {
+    width: 80%;
+  }
+}
+
+section.mypage div.mypage-form form div.row div.flexbox input, section.mypage div.mypage-form form div.row div.flexbox textarea {
+  height: 35px;
+  padding-left: 10px;
+  color: #2c2928;
+  border: 1px solid #a7a7a7;
+  font-family: Pretendard;
+  font-size: 1em;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox textarea {
+  height: 166px;
+  padding: 8px 10px;
+  resize: none;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox select {
+  width: 190px;
+  height: 35px;
+  padding-left: 5px;
+  color: #2c2928;
+  border: 1px solid #a7a7a7;
+  font-family: Pretendard;
+  font-size: 1em;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox button.btn {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  border: none;
+  background-color: #2c2928;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Pretendard;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row div.flexbox button.btn {
+    width: 100px;
+  }
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.userid-flex-box input, section.mypage div.mypage-form form div.row div.flexbox.username-flex-box input {
+  width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row div.flexbox.userid-flex-box input, section.mypage div.mypage-form form div.row div.flexbox.username-flex-box input {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row div.flexbox.userid-flex-box input, section.mypage div.mypage-form form div.row div.flexbox.username-flex-box input {
+    width: 88%;
+  }
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -577,333 +594,200 @@ section .guide {
   }
 }
 
-section .guide .little-title {
-  position: relative;
-  margin-bottom: 33px;
-}
-
-section .guide .little-title h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-section .guide .little-title h3 span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-section .guide .little-title h3 span::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  z-index: 1;
-  background: #949392;
-}
-
-section .guide .little-title::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 2px;
-  background: #c4c3c2;
-}
-
-section .guide .line-flex {
-  width: 205px;
-}
-
-section .guide p {
-  font-size: 18px;
-  line-height: 2em;
-}
-
-section .guide .guide-info .guide-food {
-  margin-bottom: 33px;
-}
-
-section .guide .guide-info .guide-food .guide-box {
-  background-color: #cec4b6;
-}
-
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food .guide-box {
-    width: 162px;
-    height: 450px;
+  section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box {
+    width: 70%;
   }
 }
 
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food .guide-box p {
-    text-align: center;
-    padding-top: 30px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food .guide-box-text p {
-    margin-bottom: 65px;
-  }
-}
-
-section .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
+section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box div {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
-  margin-bottom: 15px;
+section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box div input {
+  width: 45%;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box select {
+  width: 100%;
+  margin-top: 5px;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
-    margin-right: 15px;
+  section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box select {
+    width: 200px;
+    margin-top: 0;
+    margin-left: 10px;
   }
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.phone-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
-    margin-right: 44px;
+  section.mypage div.mypage-form form div.row div.flexbox.phone-flex-box {
+    width: 25%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 48%;
-  }
+section.mypage div.mypage-form form div.row div.flexbox.phone-flex-box select {
+  width: 28%;
 }
 
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food {
-    margin-bottom: 33px;
-  }
+section.mypage div.mypage-form form div.row div.flexbox.phone-flex-box input {
+  width: 28%;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.address-flex-box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div {
+    width: 17%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
 
-section .guide .guide-info .guide-exp .guide-box {
-  background-color: #cec4b6;
+section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div input {
+  width: 53%;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box {
-    width: 162px;
-    height: 450px;
-    margin-right: 133px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box p {
-    text-align: center;
-    padding-top: 30px;
+  section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box-text p {
-    margin-bottom: 65px;
+  section.mypage div.mypage-form form div.row div.flexbox.address-flex-box button {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
-section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
-    margin-right: 44px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 48%;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
-    width: 843px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-section .operation {
+section.mypage div.mypage-form form div.row div.flexbox.address-flex-box > input {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 1460px) {
+  section.mypage div.mypage-form form div.row div.flexbox.address-flex-box input#address1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 68.5%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.mypage div.mypage-form form div.row div.flexbox.address-flex-box input#address2 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.terms-flex-box {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
-  section .operation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-section .operation .little-title {
-  position: relative;
-  margin-bottom: 33px;
-}
-
-section .operation .little-title h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-section .operation .little-title h3 span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-section .operation .little-title h3 span::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  z-index: 1;
-  background: #949392;
-}
-
-section .operation .little-title::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 2px;
-  background: #c4c3c2;
-}
-
-section .operation .line-flex {
-  width: 205px;
-}
-
-section .operation p {
-  font-size: 18px;
-  line-height: 2em;
-}
-
-section .participate {
+section.mypage div.mypage-form form div.row div.flexbox.terms-flex-box textarea {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+}
+
+section.mypage div.mypage-form form div.row div.flexbox.terms-flex-box div {
+  width: 100%;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 90px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 1460px) {
-  section .participate {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+section.mypage div.mypage-form form div.row div.flexbox.terms-flex-box div label {
+  padding-left: 10px;
+  font-family: Pretendard;
+  font-size: 0.9em;
 }
 
-section .participate .little-title {
-  position: relative;
-  margin-bottom: 33px;
+section.mypage div.mypage-form div.button-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
 }
 
-section .participate .little-title h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-section .participate .little-title h3 span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-section .participate .little-title h3 span::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  z-index: 1;
-  background: #949392;
-}
-
-section .participate .little-title::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 2px;
-  background: #c4c3c2;
-}
-
-section .participate .line-flex {
-  width: 205px;
-}
-
-section .participate p {
-  font-size: 18px;
-  line-height: 2em;
+section.mypage div.mypage-form div.button-flex-box button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Pretendard;
+  font-size: 1.1em;
 }
 
 footer {
@@ -1001,4 +885,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-/*# sourceMappingURL=star.css.map */
+/*# sourceMappingURL=mypage.css.map */

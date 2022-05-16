@@ -399,6 +399,9 @@ aside div.sidemenu {
 }
 
 section.main-sec {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,7 +409,8 @@ section.main-sec {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 70px;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 1460px) {
@@ -419,18 +423,14 @@ section.main-sec {
 }
 
 section.main-sec section.des-1 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
   position: relative;
-  background-color: aqua;
-  height: 40%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1460px) {
   section.main-sec section.des-1 {
-    width: 50%;
-    height: 0;
+    width: 70%;
+    height: 0%;
   }
 }
 
@@ -439,9 +439,14 @@ section.main-sec section.des-1 .des-1-converse-image {
 }
 
 section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
-  background-color: aquamarine;
-  position: absolute;
-  padding-right: 7%;
+  background-color: #dfd4c2;
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
+    padding: 80px 5px;
+    margin-right: 5%;
+  }
 }
 
 section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
@@ -450,15 +455,28 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
 
 @media screen and (min-width: 1460px) {
   section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
-    height: 600px;
+    height: 400px;
   }
 }
 
 section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
-  position: absolute;
-  left: 0;
-  top: -15px;
   font-size: 0.9em;
+  -webkit-transform: translatex(5px);
+          transform: translatex(5px);
+}
+
+@media screen and (min-width: 768px) {
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
+    font-size: 1.0em;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
+    font-size: 1.1em;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
 }
 
 section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p span {
@@ -469,22 +487,18 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p span {
 }
 
 section.main-sec section.des-2 {
-  padding: 38px 0;
-  height: 50%;
-  background-color: aqua;
+  width: 100%;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1460px) {
   section.main-sec section.des-2 {
-    width: 50%;
-    height: 0;
+    width: 60%;
+    margin-top: 0px;
   }
 }
 
 section.main-sec section.des-2 .css3-tab {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
   position: relative;
 }
 
@@ -500,7 +514,7 @@ section.main-sec section.des-2 .css3-tab .css3-tab-nav {
 
 section.main-sec section.des-2 .css3-tab .css3-tab-nav label {
   display: table-cell;
-  background-color: #ccc;
+  background-color: #fcfbfa;
   color: #999;
   padding: 15px;
   text-align: center;
@@ -510,8 +524,8 @@ section.main-sec section.des-2 .css3-tab .css3-tab-nav label {
 
 section.main-sec section.des-2 .css3-tab .css3-tab-nav label:hover {
   cursor: pointer;
-  background: white;
-  color: #666666;
+  background: #333;
+  color: #fff;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
 }
@@ -520,43 +534,43 @@ section.main-sec section.des-2 .css3-tab .css3-tab-content {
   overflow: hidden;
   padding: 25px;
   display: none;
-  background: #fff;
+  background: #f2ece4;
   clear: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
-  background: #aaa;
-  color: #000;
+  background: #333;
+  color: #fff;
   cursor: default;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ div.tab-one {
   display: block;
-  border-top: solid 3px #aaa;
+  border-top: solid 3px #333;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
-  background: #aaa;
-  color: #000;
+  background: #333;
+  color: #fff;
   cursor: default;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ div.tab-two {
   display: block;
-  border-top: solid 3px #aaa;
+  border-top: solid 3px #333;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
-  background: #aaa;
-  color: #000;
+  background: #333;
+  color: #fff;
   cursor: default;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ div.add-new {
   display: block;
-  border-top: solid 3px #aaa;
+  border-top: solid 3px #333;
 }
 
 footer {
