@@ -444,7 +444,7 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
 
 @media screen and (min-width: 1460px) {
   section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
-    padding: 80px 5px;
+    padding: 50px 5px;
     margin-right: 5%;
   }
 }
@@ -474,8 +474,8 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
 @media screen and (min-width: 1460px) {
   section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
     font-size: 1.1em;
-    -webkit-transform: translateY(-80px);
-            transform: translateY(-80px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
 }
 
