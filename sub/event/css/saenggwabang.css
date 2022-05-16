@@ -34,6 +34,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -552,9 +557,6 @@ section .guide {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -619,6 +621,10 @@ section .guide p {
   line-height: 2em;
 }
 
+section .guide .guide-info {
+  margin-bottom: 90px;
+}
+
 @media screen and (min-width: 1460px) {
   section .guide .guide-info {
     width: 75%;
@@ -628,13 +634,56 @@ section .guide p {
 section .guide .guide-info .guide-flex .guide-box {
   background-color: #cec4b6;
   padding: 10px;
+  margin-bottom: 10px;
+}
+
+section .guide .guide-info .guide-flex .snack-list div img,
+section .guide .guide-info .guide-flex .tea-list div img {
+  width: 50%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex {
+  section .guide .guide-info .guide-flex .snack-list div img,
+  section .guide .guide-info .guide-flex .tea-list div img {
+    width: 100%;
+  }
+}
+
+section .guide .guide-info .guide-flex .snack-list div p,
+section .guide .guide-info .guide-flex .tea-list div p {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-flex .snack-list div,
+  section .guide .guide-info .guide-flex .tea-list div {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .snack-list div,
+  section .guide .guide-info .guide-flex .tea-list div {
+    width: 30%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-flex .snack-list,
+  section .guide .guide-info .guide-flex .tea-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

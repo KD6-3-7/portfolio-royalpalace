@@ -125,7 +125,7 @@ section {
 
     .guide {
         @include wrapper();
-        display: flex;
+        // display: flex;
         flex-direction: column;
         
         @include responsive(pc-size) {
@@ -152,12 +152,39 @@ section {
                 .guide-box {
                     background-color: #cec4b6;
                     padding: 10px;
+                    margin-bottom: 10px;
                 }
-                @include responsive(tablet-size) {
-                    display: flex;
+                
+                .snack-list,
+                .tea-list {
+                    div {
+                        img {
+                            width: 50%;
+                            margin: 0 auto;
+                            @include responsive(tablet-size) {
+                                width: 100%;
+                            }
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        @include responsive(tablet-size) {
+                            width: 40%;
+                        }
+                        @include responsive(pc-size) {
+                            width: 30%;
+                            margin-top: 20px;
+                        }
+                    }
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                    }
                 }
-
             }
+            margin-bottom: 90px;
         }
     }
 

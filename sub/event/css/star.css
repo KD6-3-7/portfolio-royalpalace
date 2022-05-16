@@ -625,6 +625,12 @@ section .guide p {
   line-height: 2em;
 }
 
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info {
+    width: 75%;
+  }
+}
+
 section .guide .guide-info .guide-food {
   margin-bottom: 33px;
 }

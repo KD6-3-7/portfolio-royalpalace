@@ -99,6 +99,7 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        // justify-content: space-between;
         
         @include responsive(pc-size) {
             flex-direction: row;            
@@ -107,7 +108,7 @@ section {
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 205px;;
         }
 
         p {
@@ -119,6 +120,7 @@ section {
         .info-text {
             @include responsive(pc-size) {
                 margin-top: 20px;
+                width: 75%;
             }
         }
     }
@@ -129,13 +131,13 @@ section {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;          
         }
         
         @include line-deco();
 
         .line-flex {
-            width: 25%;;
+            width: 205px;
         }
 
         p {
@@ -148,15 +150,103 @@ section {
             @include responsive(pc-size) {
                 width: 75%;
             }
-            .guide-flex {
+            .guide-food {
+                margin-bottom: 33px;
+
                 .guide-box {
                     background-color: #cec4b6;
-                    padding: 10px;
+                    @include responsive(pc-size) {
+                        width: 162px;
+                        height: 450px;
+                        // margin-right: 133px;
+                    }
+                    p {
+                        @include responsive(pc-size) {
+                            text-align: center;
+                            padding-top: 30px;
+                        }
+                    }
+                }
+                .guide-box-text {
+                    p {
+                        @include responsive(pc-size) {
+                            margin-bottom: 65px;
+                        }
+                    }
+                    .guide-flex-img {
+                        width: 100%;
+
+                        img {
+                            margin-bottom: 15px;
+                            @include responsive(tablet-size) {
+                                margin-right: 15px;
+                            }
+                            @include responsive(pc-size) {
+                                margin-right: 44px;
+                            }
+                        }
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            width: 48%;
+                        }
+                        @include responsive(pc-size) {
+                            // width: 843px;
+                        }
+                    }
                 }
                 @include responsive(tablet-size) {
+                    margin-bottom: 33px;
+                }
+                @include responsive(pc-size) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .guide-exp {
+                .guide-box {
+                    background-color: #cec4b6;
+                    @include responsive(pc-size) {
+                        width: 162px;
+                        height: 450px;
+                        margin-right: 133px;
+                    }
+                    p {
+                        @include responsive(pc-size) {
+                            text-align: center;
+                            padding-top: 30px;
+                        }
+                    }
+                }
+                .guide-box-text {
+                    p {
+                        @include responsive(pc-size) {
+                            margin-bottom: 65px;
+                        }
+                    }
+                    .guide-flex-img {
+                        img {
+                            margin-bottom: 15px;
+                            @include responsive(tablet-size) {
+                                margin-right: 15px;
+                            }
+                            @include responsive(pc-size) {
+                                margin-right: 44px;
+                            }
+                        }
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            width: 48%;
+                        }
+                        @include responsive(pc-size) {
+                            width: 843px;
+                        }
+                    }
+                }
+                @include responsive(pc-size) {
                     display: flex;
                 }
-
             }
         }
     }
@@ -173,29 +263,7 @@ section {
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
-    }
-
-    .inquiry {
-        @include wrapper();
-        display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;            
-        }
-        
-        @include line-deco();
-        
-        .line-flex {
-            width: 25%;;
+            width: 205px;;
         }
 
         p {
@@ -217,7 +285,7 @@ section {
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 205px;;
         }
 
         p {
