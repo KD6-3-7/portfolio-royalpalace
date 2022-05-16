@@ -29,49 +29,58 @@ aside {
 
 //section
 section.main-sec {
+    @include wrapper();
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+
     @include responsive(pc-size) {
         flex-direction: row;
     }
 
     section.des-1 {
-        @include wrapper();
-
         position: relative;
-        background-color: aqua;
-        height: 40%;
+        width: 100%;
 
         @include responsive(pc-size) {
-            width: 50%;
-            height: 0;
+            width: 70%;
+            height: 0%;
         }
-        .des-1-converse-image {
 
+        .des-1-converse-image {
             width: 100%;
             
             .des-1-image1{
-                background-color: aquamarine;
-                position: absolute;
-                padding-right: 7%;
+                background-color: #dfd4c2;
+
+                @include responsive(pc-size) {
+                    padding: 80px 5px;
+                    margin-right: 5%;
+                }
                 
                 img {
                     width: 100%;
 
                     @include responsive(pc-size) {
-                        height: 600px;
+                        height: 400px;
                     }
                 }
     
                 p {
-                    position: absolute;
-                    left: 0;
-                    top: -15px;
                     font-size: 0.9em;
-    
+                    transform: translatex(5px);
+                    
+                    @include responsive(tablet-size) {
+                        font-size: 1.0em;
+                    }
+
+                    @include responsive(pc-size) {
+                        font-size: 1.1em;
+                        transform: translateY(-80px);
+                    }
+
                     span {
-                        
                         display:inline-block;
                         width: 10px;
                         height: 10px;
@@ -83,17 +92,15 @@ section.main-sec {
     }
     
     section.des-2 {
-        padding: 38px 0;
-        height: 50%;
-        background-color: aqua;
+        width: 100%;
+        margin-top: 10px;
 
         @include responsive(pc-size) {
-            width: 50%;
-            height: 0;
+            width: 60%;
+            margin-top: 0px;
         }
 
         .css3-tab {
-            @include wrapper();
             position: relative;
 
             input[type='radio'] {
@@ -107,7 +114,7 @@ section.main-sec {
 
                 label {
                     display: table-cell;
-                    background-color: #ccc;
+                    background-color: #fcfbfa;
                     color: #999;
                     padding: 15px;
                     text-align: center;
@@ -115,8 +122,8 @@ section.main-sec {
 
                     &:hover {
                         cursor: pointer;
-                        background: white;
-                        color: #666666;
+                        background: #333;
+                        color: #fff;
                         transition: all .3s ease 0s;
                     }
                 }
@@ -126,44 +133,42 @@ section.main-sec {
                 overflow: hidden;
                 padding: 25px;
                 display: none;
-                background: #fff;
+                background: #f2ece4;
                 clear: left;
                 box-sizing: border-box;
-
-                
             }
 
             input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
-                background: #aaa;
-                color: #000;
+                background: #333;
+                color: #fff;
                 cursor: default;
             }
 
             input[id='tabOne']:checked ~ div.tab-one {
                 display: block;
-                border-top: solid 3px #aaa;
+                border-top: solid 3px #333;
             }
 
             input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
-                background: #aaa;
-                color: #000;
+                background: #333;
+                color: #fff;
                 cursor: default;
             }
 
             input[id='tabTwo']:checked ~ div.tab-two {
                 display: block;
-                border-top: solid 3px #aaa;
+                border-top: solid 3px #333;
             }
 
             input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
-                background: #aaa;
-                color: #000;
+                background: #333;
+                color: #fff;
                 cursor: default;
             }
 
             input[id='addNew']:checked ~ div.add-new {
                 display: block;
-                border-top: solid 3px #aaa;
+                border-top: solid 3px #333;
             }
         }
     }

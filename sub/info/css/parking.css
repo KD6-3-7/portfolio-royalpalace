@@ -32,6 +32,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -331,15 +336,31 @@ section .map-pic {
 section .map-pic img {
   width: 100%;
 }
+@media screen and (min-width: 1460px) {
+  section .map-pic img {
+    width: 80%;
+  }
+}
 section .map-pic span {
   padding-left: 60px;
   font-size: 0.9em;
+}
+@media screen and (min-width: 1460px) {
+  section .map-pic {
+    width: 80%;
+    margin-left: 270px;
+  }
 }
 section .parking-price {
   padding-bottom: 70px;
 }
 section .parking-price #pk-price {
   border-collapse: collapse;
+}
+@media screen and (min-width: 1460px) {
+  section .parking-price #pk-price {
+    margin-left: 258px;
+  }
 }
 section .parking-price #pk-price thead tr {
   background-color: #d4cabd;
@@ -350,12 +371,25 @@ section .parking-price #pk-price td {
   padding: 10px;
   text-align: center;
 }
+@media screen and (min-width: 1460px) {
+  section .parking-price #pk-price th,
+section .parking-price #pk-price td {
+    padding: 40px 75px;
+  }
+}
 section .parking-price span {
   padding-left: 130px;
   font-size: 0.9em;
 }
 section .parking-discount {
   padding-bottom: 70px;
+}
+@media screen and (min-width: 1460px) {
+  section .parking-discount {
+    width: 80%;
+    margin-left: 100px;
+    padding-bottom: 170px;
+  }
 }
 section .parking-discount #pk-discount {
   border-collapse: collapse;
@@ -368,6 +402,12 @@ section .parking-discount #pk-discount td {
   border: 1px solid #c1b7aa;
   padding: 7px;
   text-align: center;
+}
+@media screen and (min-width: 1460px) {
+  section .parking-discount #pk-discount th,
+section .parking-discount #pk-discount td {
+    padding: 40px 5px;
+  }
 }
 section .parking-discount span {
   padding-left: 169px;

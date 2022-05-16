@@ -37,17 +37,29 @@ section {
     .map-pic {
         padding-bottom: 70px;
 
-        img{ width: 100%; }
+        img{ width: 100%;
+            @include responsive(pc-size) {
+                width: 80%;
+            }
+        }
     
         span { 
             padding-left: 60px;
             font-size: 0.9em
+        }
+
+        @include responsive(pc-size) {
+            width: 80%;
+            margin-left: 270px;
         }
     }
 
     .parking-price{
         padding-bottom: 70px;
         #pk-price{
+            @include responsive(pc-size) {
+                margin-left: 258px;
+            }
             thead{
                 tr{
                     background-color: #d4cabd;
@@ -58,6 +70,9 @@ section {
                 border: 1px solid #c1b7aa;
                 padding: 10px;
                 text-align: center;
+                @include responsive(pc-size) {
+                    padding: 40px 75px;
+                }
             }
             border-collapse: collapse;
         }
@@ -71,6 +86,11 @@ section {
     .parking-discount {
         padding-bottom: 70px;
 
+        @include responsive(pc-size) {
+            width: 80%;
+            margin-left: 100px;
+            padding-bottom: 170px;
+        }
         #pk-discount{
             thead{
                 tr{
@@ -82,6 +102,10 @@ section {
                 border: 1px solid #c1b7aa;
                 padding: 7px;
                 text-align: center;
+
+                @include responsive(pc-size) {
+                    padding: 40px 5px;
+                }
             }
             border-collapse: collapse;
         }
