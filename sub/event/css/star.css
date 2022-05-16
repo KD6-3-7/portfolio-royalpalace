@@ -34,6 +34,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -534,7 +539,7 @@ section .info .little-title::after {
 }
 
 section .info .line-flex {
-  width: 25%;
+  width: 205px;
 }
 
 section .info p {
@@ -545,6 +550,7 @@ section .info p {
 @media screen and (min-width: 1460px) {
   section .info .info-text {
     margin-top: 20px;
+    width: 75%;
   }
 }
 
@@ -611,7 +617,7 @@ section .guide .little-title::after {
 }
 
 section .guide .line-flex {
-  width: 25%;
+  width: 205px;
 }
 
 section .guide p {
@@ -619,19 +625,139 @@ section .guide p {
   line-height: 2em;
 }
 
+section .guide .guide-info .guide-food {
+  margin-bottom: 33px;
+}
+
+section .guide .guide-info .guide-food .guide-box {
+  background-color: #cec4b6;
+}
+
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info {
-    width: 75%;
+  section .guide .guide-info .guide-food .guide-box {
+    width: 162px;
+    height: 450px;
   }
 }
 
-section .guide .guide-info .guide-flex .guide-box {
-  background-color: #cec4b6;
-  padding: 10px;
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-food .guide-box p {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-food .guide-box-text p {
+    margin-bottom: 65px;
+  }
+}
+
+section .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
+  width: 100%;
+}
+
+section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex {
+  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
+    margin-right: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-food {
+    margin-bottom: 33px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-food {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+section .guide .guide-info .guide-exp .guide-box {
+  background-color: #cec4b6;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp .guide-box {
+    width: 162px;
+    height: 450px;
+    margin-right: 133px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp .guide-box p {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp .guide-box-text p {
+    margin-bottom: 65px;
+  }
+}
+
+section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
+    margin-right: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
+    width: 843px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -701,81 +827,10 @@ section .operation .little-title::after {
 }
 
 section .operation .line-flex {
-  width: 25%;
+  width: 205px;
 }
 
 section .operation p {
-  font-size: 18px;
-  line-height: 2em;
-}
-
-section .inquiry {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 90px;
-}
-
-@media screen and (min-width: 1460px) {
-  section .inquiry {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-section .inquiry .little-title {
-  position: relative;
-  margin-bottom: 33px;
-}
-
-section .inquiry .little-title h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-section .inquiry .little-title h3 span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-section .inquiry .little-title h3 span::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  z-index: 1;
-  background: #949392;
-}
-
-section .inquiry .little-title::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 2px;
-  background: #c4c3c2;
-}
-
-section .inquiry .line-flex {
-  width: 25%;
-}
-
-section .inquiry p {
   font-size: 18px;
   line-height: 2em;
 }
@@ -843,7 +898,7 @@ section .participate .little-title::after {
 }
 
 section .participate .line-flex {
-  width: 25%;
+  width: 205px;
 }
 
 section .participate p {
