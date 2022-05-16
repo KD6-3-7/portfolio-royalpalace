@@ -33,14 +33,29 @@ section {
         margin: 50px 0;
         font-size: 1.875em;
     }
+    .map-all{
+        @include responsive(pc-size) {
+            display: flex;
+        }
+    }
+
     iframe{
         width: 100%;
         height: 200px;
+        @include responsive(pc-size) {
+            width: 800px;
+            height: 500px;
+            padding-right: 50px;
+        }
     }
     
     .subway div{
         padding: 55px 0;
         
+        @include responsive(pc-size) {
+            padding: 25px 0 50px 0;
+        }
+
         h3{
             padding-bottom: 20px;
         }

@@ -28,14 +28,24 @@ aside {
 //section
 section {
     @include wrapper();
+
+    @include responsive(pc-size) {
+        width: 80%;
+    }
     padding-bottom: 150px;
     h2 {
         text-align: center;
         margin: 50px 0;
         font-size: 1.875em;
     }
+    .ex-exp {
+        @include responsive(pc-size) {
+            margin-left: 132px;
+        }
+    }
     .ex{
         #exp{
+            background-color: #e7dfd4;
             thead{
                 tr{
                     background-color: #d4cabd;
@@ -43,9 +53,13 @@ section {
             }
             th,
             td{
-                border: 1px solid #c1b7aa;
+                border: 1px solid #aaa19a;
                 padding: 17px 17px;
                 text-align: center;
+
+                @include responsive(pc-size) {
+                    padding: 50px 75px;
+                }
             }
             border-collapse: collapse;
         }
