@@ -26,6 +26,39 @@ aside {
 }
 
 //section
+section {
+    @include wrapper();
+    padding-bottom: 150px;
+    h2 {
+        text-align: center;
+        margin: 50px 0;
+        font-size: 1.875em;
+    }
+    .ex{
+        #exp{
+            thead{
+                tr{
+                    background-color: #d4cabd;
+                }
+            }
+            th,
+            td{
+                border: 1px solid #c1b7aa;
+                padding: 17px 17px;
+                text-align: center;
+            }
+            border-collapse: collapse;
+        }
+
+    }
+    .exp-txt{
+        padding-top: 10px;
+        font-size: 0.9em;
+        .exp-txt2{
+            padding-top: 10px;
+        }
+    }
+}
 
 
 // footer

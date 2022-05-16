@@ -28,109 +28,143 @@ aside {
 }
 
 //section
-section.des-1 {
-    @include wrapper();
-
-    padding-top: 70px;
+section.main-sec {
     display: flex;
     flex-direction: column;
-    margin-bottom: 700px;
-    
+    padding-top: 70px;
     @include responsive(pc-size) {
         flex-direction: row;
-        justify-content: space-around;
     }
 
-    .des-1-left {
-        width: 100%;
-        .des-1-image1{
-            position: relative;
+    section.des-1 {
+        @include wrapper();
 
-            img {
-                width: 100%;
-            }
+        position: relative;
+        background-color: aqua;
+        height: 40%;
 
-            p {
+        @include responsive(pc-size) {
+            width: 50%;
+            height: 0;
+        }
+        .des-1-converse-image {
+
+            width: 100%;
+            
+            .des-1-image1{
+                background-color: aquamarine;
                 position: absolute;
-                left: 0;
-                top: -15px;
-                font-size: 0.9em;
+                padding-right: 7%;
+                
+                img {
+                    width: 100%;
 
-                span {
-                    display:inline-block;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 2px;
-                    background-color: #000;
-
+                    @include responsive(pc-size) {
+                        height: 600px;
+                    }
+                }
+    
+                p {
+                    position: absolute;
+                    left: 0;
+                    top: -15px;
+                    font-size: 0.9em;
+    
+                    span {
+                        
+                        display:inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 2px;
+                    }
                 }
             }
         }
     }
+    
+    section.des-2 {
+        padding: 38px 0;
+        height: 50%;
+        background-color: aqua;
 
-    .des-1-right {
-        width: 100%;
+        @include responsive(pc-size) {
+            width: 50%;
+            height: 0;
+        }
 
-        .tab_content {
-            font-size: 0;
-            margin-top: 30px;
+        .css3-tab {
+            @include wrapper();
+            position: relative;
 
-            input[type="radio"] {
+            input[type='radio'] {
                 display: none;
             }
-            
-            input[type="radio"] + label {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                @include responsive(tablet-size) {
-                    display: inline-block;
-                    width: 32.9%;
+
+            .css3-tab-nav {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+
+                label {
+                    display: table-cell;
+                    background-color: #ccc;
+                    color: #999;
+                    padding: 15px;
+                    text-align: center;
+                    transition: all .3s ease 0s;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: white;
+                        color: #666666;
+                        transition: all .3s ease 0s;
+                    }
                 }
-                padding: 15px;
-                font-size: 20px;
-                text-align: center;
-                cursor: pointer;
-                color: #999;
-                background-color: #ccc;
+            }
+
+            .css3-tab-content {
+                overflow: hidden;
+                padding: 25px;
+                display: none;
+                background: #fff;
+                clear: left;
+                box-sizing: border-box;
+
                 
             }
-            input[type="radio"]:checked + label {
+
+            input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
+                background: #aaa;
                 color: #000;
-                background-color: #aaa;
+                cursor: default;
             }
-            
-            input[id="tab01"]:checked ~ .con1{
+
+            input[id='tabOne']:checked ~ div.tab-one {
                 display: block;
+                border-top: solid 3px #aaa;
             }
-    
-            input[id="tab02"]:checked ~ .con2{
+
+            input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
+                background: #aaa;
+                color: #000;
+                cursor: default;
+            }
+
+            input[id='tabTwo']:checked ~ div.tab-two {
                 display: block;
+                border-top: solid 3px #aaa;
             }
-            
-            input[id="tab03"]:checked ~ .con3{
+
+            input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
+                background: #aaa;
+                color: #000;
+                cursor: default;
+            }
+
+            input[id='addNew']:checked ~ div.add-new {
                 display: block;
+                border-top: solid 3px #aaa;
             }
-            
-            .conbox {
-                display: none;
-                font-size: 16px;
-                line-height: 22.4px;
-                margin-top: 3px;
-                padding: 15px;
-                background-color: #aaa;
-            }
-            background-color: #000;
-            
-            label {
-                // width: 9.8em;
-                // width: 30%;
-                margin-right: 2px;
-                &:last-child {
-                    margin: 0;
-                }
-            }
-            
         }
     }
 }

@@ -315,6 +315,37 @@ aside div.sidemenu {
   }
 }
 
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  padding-bottom: 150px;
+}
+section h2 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1.875em;
+}
+section .ex #exp {
+  border-collapse: collapse;
+}
+section .ex #exp thead tr {
+  background-color: #d4cabd;
+}
+section .ex #exp th,
+section .ex #exp td {
+  border: 1px solid #c1b7aa;
+  padding: 17px 17px;
+  text-align: center;
+}
+section .exp-txt {
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+section .exp-txt .exp-txt2 {
+  padding-top: 10px;
+}
+
 footer {
   background-color: #2c2928;
 }

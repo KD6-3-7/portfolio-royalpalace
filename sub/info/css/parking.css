@@ -329,10 +329,10 @@ section .map-pic {
   padding-bottom: 70px;
 }
 section .map-pic img {
-  width: 400px;
+  width: 100%;
 }
 section .map-pic span {
-  padding-left: 140px;
+  padding-left: 60px;
   font-size: 0.9em;
 }
 section .parking-price {
@@ -347,21 +347,31 @@ section .parking-price #pk-price thead tr {
 section .parking-price #pk-price th,
 section .parking-price #pk-price td {
   border: 1px solid #c1b7aa;
-  padding: 7px;
+  padding: 10px;
   text-align: center;
+}
+section .parking-price span {
+  padding-left: 130px;
+  font-size: 0.9em;
 }
 section .parking-discount {
   padding-bottom: 70px;
+}
+section .parking-discount #pk-discount {
   border-collapse: collapse;
 }
-section .parking-discount thead tr {
+section .parking-discount #pk-discount thead tr {
   background-color: #d4cabd;
 }
-section .parking-discount th,
-section .parking-discount td {
+section .parking-discount #pk-discount th,
+section .parking-discount #pk-discount td {
   border: 1px solid #c1b7aa;
   padding: 7px;
   text-align: center;
+}
+section .parking-discount span {
+  padding-left: 169px;
+  font-size: 0.9em;
 }
 
 footer {
