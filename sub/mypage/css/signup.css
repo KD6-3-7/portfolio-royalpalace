@@ -34,6 +34,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -292,7 +297,7 @@ header ul.topmenu {
             justify-content: space-between;
   }
   header ul.topmenu li.submenu {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
@@ -559,12 +564,6 @@ section.signup div.signup-form form div.row div.flexbox button.btn {
 
 section.signup div.signup-form form div.row div.flexbox.userid-flex-box input, section.signup div.signup-form form div.row div.flexbox.username-flex-box input {
   width: 70%;
-}
-
-@media screen and (min-width: 768px) {
-  section.signup div.signup-form form div.row div.flexbox.userid-flex-box input, section.signup div.signup-form form div.row div.flexbox.username-flex-box input {
-    width: 85%;
-  }
 }
 
 @media screen and (min-width: 768px) {

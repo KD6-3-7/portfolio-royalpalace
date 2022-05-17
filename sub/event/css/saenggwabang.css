@@ -496,6 +496,9 @@ section .info {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -539,10 +542,10 @@ section .info .little-title::after {
 }
 
 section .info .line-flex {
-  width: 25%;
+  width: 19%;
 }
 
-section .info p {
+section .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }
@@ -550,6 +553,7 @@ section .info p {
 @media screen and (min-width: 1460px) {
   section .info .info-text {
     margin-top: 20px;
+    width: 80%;
   }
 }
 
@@ -557,26 +561,49 @@ section .guide {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 90px;
 }
 
-section .guide .little-title {
+@media screen and (min-width: 1460px) {
+  section .guide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+section .guide .line-flex {
+  width: 19%;
+}
+
+section .guide .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .guide .little-title h3 {
+section .guide .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .guide .little-title h3 span {
+section .guide .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .guide .little-title h3 span::before {
+section .guide .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -588,7 +615,7 @@ section .guide .little-title h3 span::before {
   background: #949392;
 }
 
-section .guide .little-title::after {
+section .guide .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -599,66 +626,115 @@ section .guide .little-title::after {
   background: #c4c3c2;
 }
 
-section .guide .line-flex {
-  width: 25%;
-}
-
-section .guide p {
+section .guide .guide-info p {
   font-size: 18px;
   line-height: 2em;
 }
 
-section .guide .guide-info {
-  margin-bottom: 90px;
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+section .guide .guide-info .guide-flex {
+  margin-bottom: 33px;
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info {
-    width: 75%;
+  section .guide .guide-info .guide-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 section .guide .guide-info .guide-flex .guide-box {
   background-color: #cec4b6;
-  padding: 10px;
   margin-bottom: 10px;
 }
 
-section .guide .guide-info .guide-flex .snack-list div img,
-section .guide .guide-info .guide-flex .tea-list div img {
-  width: 50%;
-  margin: 0 auto;
+section .guide .guide-info .guide-flex .guide-box p {
+  padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .snack-list div img,
-  section .guide .guide-info .guide-flex .tea-list div img {
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .guide-box p {
+    padding: 0;
     width: 100%;
   }
 }
 
-section .guide .guide-info .guide-flex .snack-list div p,
-section .guide .guide-info .guide-flex .tea-list div p {
-  text-align: center;
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .guide-box {
+    height: 450px;
+    padding: 0 30px;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+section .guide .guide-info .guide-flex .snack-list {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .snack-list div,
-  section .guide .guide-info .guide-flex .tea-list div {
-    width: 40%;
+  section .guide .guide-info .guide-flex .snack-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-flex .snack-list div,
-  section .guide .guide-info .guide-flex .tea-list div {
-    width: 30%;
-    margin-top: 20px;
+  section .guide .guide-info .guide-flex .snack-list {
+    width: 85%;
   }
 }
 
+section .guide .guide-info .guide-flex .snack-list div img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section .guide .guide-info .guide-flex .snack-list div p {
+  text-align: center;
+}
+
+section .guide .guide-info .guide-flex .snack-list div .little-text {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .snack-list,
+  section .guide .guide-info .guide-flex .snack-list div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .snack-list div {
+    width: 33.3%;
+  }
+}
+
+section .guide .guide-info .guide-flex .tea-list {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
   section .guide .guide-info .guide-flex .tea-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -669,8 +745,40 @@ section .guide .guide-info .guide-flex .tea-list div p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .tea-list {
+    width: 85%;
+  }
+}
+
+section .guide .guide-info .guide-flex .tea-list div img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section .guide .guide-info .guide-flex .tea-list div p {
+  text-align: center;
+}
+
+section .guide .guide-info .guide-flex .tea-list div .little-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-flex .tea-list div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .tea-list div {
+    width: 33.3%;
   }
 }
 
@@ -694,26 +802,33 @@ section .operation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .operation .little-title {
+section .operation .line-flex {
+  width: 19%;
+}
+
+section .operation .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .operation .little-title h3 {
+section .operation .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .operation .little-title h3 span {
+section .operation .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .operation .little-title h3 span::before {
+section .operation .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -725,7 +840,7 @@ section .operation .little-title h3 span::before {
   background: #949392;
 }
 
-section .operation .little-title::after {
+section .operation .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -736,8 +851,53 @@ section .operation .little-title::after {
   background: #c4c3c2;
 }
 
-section .operation .line-flex {
-  width: 25%;
+section .operation .operation-info .operation-term {
+  margin-bottom: 40px;
+}
+
+section .operation .operation-info .operation-term .operation-info-box {
+  background-color: #cec4b6;
+  padding: 10px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .operation .operation-info .operation-term .operation-info-box {
+    margin-bottom: 33px;
+    height: 145px;
+    padding: 0 45px;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+section .operation .operation-info .operation-term .operation-info-box p {
+  width: 100%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .operation .operation-info .operation-term {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+section .operation .operation-info .operation-term .info-center {
+  width: 80%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .operation .operation-info {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 section .operation p {
@@ -745,75 +905,11 @@ section .operation p {
   line-height: 2em;
 }
 
-section .inquiry {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 90px;
-}
-
 @media screen and (min-width: 1460px) {
-  section .inquiry {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  section .operation p {
+    width: 80%;
+    margin-top: 20px;
   }
-}
-
-section .inquiry .little-title {
-  position: relative;
-  margin-bottom: 33px;
-}
-
-section .inquiry .little-title h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-section .inquiry .little-title h3 span {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-section .inquiry .little-title h3 span::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  z-index: 1;
-  background: #949392;
-}
-
-section .inquiry .little-title::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 2px;
-  background: #c4c3c2;
-}
-
-section .inquiry .line-flex {
-  width: 25%;
-}
-
-section .inquiry p {
-  font-size: 18px;
-  line-height: 2em;
 }
 
 section .participate {
@@ -836,26 +932,33 @@ section .participate {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .participate .little-title {
+section .participate .line-flex {
+  width: 19%;
+}
+
+section .participate .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .participate .little-title h3 {
+section .participate .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .participate .little-title h3 span {
+section .participate .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .participate .little-title h3 span::before {
+section .participate .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -867,7 +970,7 @@ section .participate .little-title h3 span::before {
   background: #949392;
 }
 
-section .participate .little-title::after {
+section .participate .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -878,13 +981,16 @@ section .participate .little-title::after {
   background: #c4c3c2;
 }
 
-section .participate .line-flex {
-  width: 25%;
-}
-
 section .participate p {
   font-size: 18px;
   line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .participate p {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 footer {
