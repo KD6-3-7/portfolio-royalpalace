@@ -30,30 +30,32 @@ aside {
 section.main-flex {
     overflow: hidden;
     margin-top: 70px;
+
     @include responsive(pc-size) {
-        overflow: visible;
+        overflow: hidden;
+        width: 100%;
     }
+    
     section.des-1 {
         @include wrapper();
         width: 70em;
-
+        
         @include responsive(tablet-size) {
             width: 75em;
         }
-
+        
         @include responsive(pc-size) {
             width: 80em;
         }
 
         .des-1-box {
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
 
             .des-1-set {
                 position: relative;
                 width: 20%;
-
+                
                 a {
                     width: 100%;
 
@@ -104,15 +106,22 @@ section.main-flex {
         margin-top: 90px;
         margin-bottom: 90px;
 
-        .des-2-text {
+        .des-2-wrapper {
+            @include wrapper();
+            
+            .des-2-text {
+                .show-one,
+                .show-two,
+                .show-thr,
+                .show-four,
+                .show-five {
+                    display: none;
+                }
 
-            .wrapper {
-                @include wrapper();
-                
                 .des-2-flex{
                     margin-top: 50px;
+
                     @include responsive(pc-size) {
-                        
                         display: flex;
                         justify-content: space-around;
                         width: 92%;

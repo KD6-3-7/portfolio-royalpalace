@@ -405,7 +405,8 @@ section.main-flex {
 
 @media screen and (min-width: 1460px) {
   section.main-flex {
-    overflow: visible;
+    overflow: hidden;
+    width: 100%;
   }
 }
 
@@ -432,12 +433,9 @@ section.main-flex section.des-1 .des-1-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.main-flex section.des-1 .des-1-box .des-1-set {
@@ -491,18 +489,26 @@ section.main-flex section.des-2 {
   margin-bottom: 90px;
 }
 
-section.main-flex section.des-2 .des-2-text .wrapper {
+section.main-flex section.des-2 .des-2-wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
 }
 
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-one,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-two,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-thr,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-four,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-five {
+  display: none;
+}
+
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex {
   margin-top: 50px;
 }
 
 @media screen and (min-width: 1460px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -514,12 +520,12 @@ section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex {
   }
 }
 
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img {
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-left img {
   display: none;
 }
 
 @media screen and (min-width: 1460px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-left img {
     display: block;
     width: 550px;
     opacity: 0.8;
@@ -527,12 +533,12 @@ section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-left img
 }
 
 @media screen and (min-width: 1460px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right {
     margin-left: 30px;
   }
 }
 
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2 {
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right h2 {
   font-size: 26px;
   text-align: center;
   font-weight: bold;
@@ -540,12 +546,12 @@ section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2
 }
 
 @media screen and (min-width: 768px) {
-  section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right h2 {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right h2 {
     text-align: start;
   }
 }
 
-section.main-flex section.des-2 .des-2-text .wrapper .des-2-flex .des-2-right p {
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right p {
   line-height: 1.4em;
 }
 
