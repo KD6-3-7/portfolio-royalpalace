@@ -552,6 +552,7 @@ section .info .info-text p {
 
 @media screen and (min-width: 1460px) {
   section .info .info-text {
+    margin-top: 20px;
     width: 80%;
   }
 }
