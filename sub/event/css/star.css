@@ -568,6 +568,7 @@ section .guide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 90px;
 }
 
 @media screen and (min-width: 1460px) {
@@ -656,6 +657,16 @@ section .guide .guide-info .guide-food .guide-box {
   background-color: #cec4b6;
 }
 
+section .guide .guide-info .guide-food .guide-box p {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-food .guide-box p {
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 1460px) {
   section .guide .guide-info .guide-food .guide-box {
     height: 450px;
@@ -717,6 +728,16 @@ section .guide .guide-info .guide-exp {
 
 section .guide .guide-info .guide-exp .guide-box {
   background-color: #cec4b6;
+}
+
+section .guide .guide-info .guide-exp .guide-box p {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-exp .guide-box p {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1460px) {
@@ -840,6 +861,7 @@ section .operation p {
 @media screen and (min-width: 1460px) {
   section .operation p {
     width: 80%;
+    margin-top: 20px;
   }
 }
 
@@ -919,6 +941,7 @@ section .participate .participate-text p {
 
 @media screen and (min-width: 1460px) {
   section .participate .participate-text {
+    margin-top: 20px;
     width: 80%;
   }
 }

@@ -99,16 +99,17 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
             flex-direction: row;
             justify-content: space-between;         
         }
         
+        @include line-deco();
         
         .line-flex {
-            @include line-deco();
-            width: 15%;;
+            width: 19%;;
         }
 
         
@@ -127,127 +128,217 @@ section {
 
     .guide {
         @include wrapper();
-                
-        @include line-deco();
-
-        .line-flex {
-            width: 25%;;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
+        display: flex;
+        flex-direction: column;
         margin-bottom: 90px;
         
+        @include responsive(pc-size) {
+            flex-direction: row;
+            justify-content: space-between;  
+        }
+        
+        .line-flex {
+            @include line-deco();
+            width: 19%;
+        }
+        
         .guide-info {
-            @include responsive(pc-size) {
-                width: 75%;
+            p {
+                font-size: 18px;
+                line-height: 2em;
             }
+
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
+
             .guide-flex {
+                margin-bottom: 33px;
+
+                @include responsive(pc-size) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
                 .guide-box {
                     background-color: #cec4b6;
-                    padding: 10px;
                     margin-bottom: 10px;
-                }
-                
-                .snack-list,
-                .tea-list {
-                    div {
-                        img {
-                            width: 50%;
-                            margin: 0 auto;
-                            @include responsive(tablet-size) {
-                                width: 100%;
-                            }
-                        }
-                        p {
-                            text-align: center;
-                        }
-                        @include responsive(tablet-size) {
-                            width: 40%;
-                        }
+
+                    p {
+                        padding: 10px;
                         @include responsive(pc-size) {
-                            width: 30%;
-                            margin-top: 20px;
+                            padding: 0;
+                            width: 100%;
                         }
                     }
+
+                    @include responsive(pc-size) {
+                        height: 450px;
+                        padding: 0 30px;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+                }
+
+                .snack-list {
+                    width: 100%;
                     @include responsive(tablet-size) {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
-                        justify-content: space-around;
+                        justify-content: space-between;
+                    }
+                    @include responsive(pc-size) {
+                        width: 85%;
+                    }
+
+                    div {
+                        img {
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        .little-text {
+                            font-size: 14px;
+                        }
+                        @include responsive(tablet-size) {
+                            width: 50%;
+                        }
+                        @include responsive(pc-size) {
+                            width: 33.3%;
+                        }
                     }
                 }
+
+                .tea-list {
+                    width: 100%;
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    @include responsive(pc-size) {
+                        width: 85%;
+                    }
+
+                    div {
+                        img {
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        .little-text {
+                            font-size: 14px;
+                        }
+                        @include responsive(tablet-size) {
+                            width: 50%;
+                        }
+                        @include responsive(pc-size) {
+                            width: 33.3%;
+                        }
+                    }
+                }
+
+
             }
-            margin-bottom: 90px;
         }
     }
-
     .operation {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;     
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 19%;
         }
 
+        .operation-info {
+            .operation-term {
+                margin-bottom: 40px;
+                .operation-info-box {
+                    background-color: #cec4b6;
+                    padding: 10px;
+                    
+                    @include responsive(pc-size) {
+                        margin-bottom: 33px;
+                        height: 145px;
+                        padding: 0 45px;
+                        text-align: center;
+                        padding-top: 30px;
+
+                    }
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                @include responsive(pc-size) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;;
+                }
+
+                .info-center {
+                    width: 80%;
+                }
+            }
+
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
         p {
             font-size: 18px;
             line-height: 2em;
-        }
-        margin-bottom: 90px;
-    }
 
-    .inquiry {
-        @include wrapper();
-        display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;            
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
         }
-        
-        @include line-deco();
-        
-        .line-flex {
-            width: 25%;;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
     }
 
     .participate {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;          
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 19%;;
         }
 
         p {
             font-size: 18px;
             line-height: 2em;
+
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
         }
-        margin-bottom: 90px;
     }
 }
 

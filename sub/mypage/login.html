@@ -4,9 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>로그인</title>
 </head>
 <body>
+    <header>
+        <div class="header-mobile">
+            <div class="header-flex-box">
+                <h1 class="logo">
+                    <img src="./images/logo_wt.png" alt="main-logo">
+                </h1> <!-- logo -->
+                <div class="hamburger">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div> <!-- hamburger -->
+            </div> <!-- header-flex-box -->
+            
+            <div class="mobilemenu">
+                <ul class="mobile-gnb">
+                    <li class="mobilemenu-home mobilemenu">
+                        <a href="#">첫 화면</a>
+                    </li> <!-- mobilemenu-home -->
     
+                    <li class="mobilemenu-history mobilemenu">
+                        <button class="accordion">역사 알기</button>
+                        <ul class="small-menu">
+                            <li><a href="#">경복궁의 역사</a></li>
+                            <li><a href="#">알고싶은 이야기</a></li>
+                            <li><a href="#">복원사업에 관해</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mobilemenu-history -->
+                    
+                    <li class="mobilemenu-map mobilemenu">
+                        <a href="#">경복궁 지도</a>
+                    </li> <!-- mobilemenu-map -->
+                    
+                    <li class="mobilemenu-info mobilemenu">
+                        <button class="accordion">관람 안내</button>
+                        <ul class="small-menu">
+                            <li><a href="#">시간 및 요금</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                            <li><a href="#">주차 안내</a></li>
+                            <li><a href="#">해설 안내</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mobilemenu-info -->
+    
+                    <li class="mobilemenu-event mobilemenu">
+                        <button class="accordion">행사 안내</button>
+                        <ul class="small-menu">
+                            <li><a href="#">수문장 교대의식</a></li>
+                            <li><a href="#">수라간 시식공감</a></li>
+                            <li><a href="#">별빛야행</a></li>
+                            <li><a href="#">생과방</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mobilemenu-event -->
+                    
+                    <li class="mobilemenu-notice mobilemenu">
+                        <button class="accordion">소식 알림</button>
+                        <ul class="small-menu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">1:1 문의하기</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mobilemenu-notice -->
+                    
+                    <div class="login-flex-box">
+                        <li class="mobilemenu-login mobilemenu">
+                            <a href="#">로그인</a>
+                        </li> <!-- mobilemenu-login -->
+                        
+                        <li class="mobilemenu-mypage mobilemenu">
+                            <a href="#">내 정보</a>
+                        </li> <!-- mobilemenu-mypage -->
+                        
+                        <li class="mobilemenu-reservation mobilemenu">
+                            <a href="#">예약·예매</a>
+                        </li> <!-- mobilemenu-reservation -->
+                    </div> <!-- mobile-flex-box -->
+                </ul> <!-- mobile-gnb -->
+            </div> <!-- mobilemenu -->
+        </div> <!-- header-mobile -->
+        <script src="./js/mobile-menu.js" type="text/javascript"></script>
+        
+        <div class="header-pc">
+            <div class="header-flex-box">
+                <h1 class="header-logo">
+                    <img src="./../../images/logo.svg" alt="main-logo">
+                </h1> <!-- header-logo -->
+                <div class="hamburger">
+                    <span>MENU</span>
+                    <input type="checkbox" id="mainmenu">
+                    <label for="mainmenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div> <!-- hamburger -->
+            </div> <!-- header-flex-box -->
+
+            <div class="mainmenu">
+                <ul class="main-gnb">
+                    <li class="mainmenu-home mainmenu">
+                        <a href="#">첫 화면</a>
+                    </li> <!-- mainmenu-home -->
+    
+                    <li class="mainmenu-history mainmenu">
+                        <button class="accordion">역사 알기</button>
+                        <ul class="small-menu">
+                            <li><a href="#">경복궁의 역사</a></li>
+                            <li><a href="#">알고싶은 이야기</a></li>
+                            <li><a href="#">복원사업에 관해</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mainmenu-history -->
+                    
+                    <li class="mainmenu-map mainmenu">
+                        <a href="#">경복궁 지도</a>
+                    </li> <!-- mainmenu-map -->
+                    
+                    <li class="mainmenu-info mainmenu">
+                        <button class="accordion">관람 안내</button>
+                        <ul class="small-menu">
+                            <li><a href="#">시간 및 요금</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                            <li><a href="#">주차 안내</a></li>
+                            <li><a href="#">해설 안내</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mainmenu-info -->
+    
+                    <li class="mainmenu-event mainmenu">
+                        <button class="accordion">행사 안내</button>
+                        <ul class="small-menu">
+                            <li><a href="#">수문장 교대의식</a></li>
+                            <li><a href="#">수라간 시식공감</a></li>
+                            <li><a href="#">별빛야행</a></li>
+                            <li><a href="#">생과방</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mainmenu-event -->
+                    
+                    <li class="mainmenu-notice mainmenu">
+                        <button class="accordion">소식 알림</button>
+                        <ul class="small-menu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">1:1 문의하기</a></li>
+                        </ul> <!-- small-menu -->
+                    </li> <!-- mainmenu-notice -->
+                    
+                    <div class="login-flex-box">
+                        <li class="mainmenu-login mainmenu">
+                            <a href="#">로그인</a>
+                        </li> <!-- mainmenu-login -->
+                        
+                        <li class="mainmenu-mypage mainmenu">
+                            <a href="#">내 정보</a>
+                        </li> <!-- mainmenu-mypage -->
+                        
+                        <li class="mainmenu-reservation mainmenu">
+                            <a href="#">예약·예매</a>
+                        </li> <!-- mainmenu-reservation -->
+                    </div> <!-- login-flex-box -->
+                </ul> <!-- mainmenu-gnb -->
+            </div> <!-- mainmenu -->
+        </div> <!-- header-pc -->
+        <script src="./js/login-main-menu.js" type="text/javascript"></script>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="logo">
+                <img src="./images/logo-shape.svg" alt="logo-shape">
+            </div>
+            <p>로그인</p>
+            <div class="flexbox">
+                <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요.">
+                <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요.">
+                <div class="row">
+                    <button class="find-btn userid" type="button">아이디 찾기</button>
+                    <button class="find-btn password" type="button">비밀번호 찾기</button>
+                </div>
+                <button class="login btn" type="button"><i class="fa-solid fa-angle-left"></i>로그인<i class="fa-solid fa-angle-right"></i></button>
+                <hr>
+                <button class="signup btn" type="button"><i class="fa-solid fa-angle-left"></i><span><span>처음이신가요?</span><span>&nbsp;회원가입</span></span><i class="fa-solid fa-angle-right"></i></button>
+            </div> <!-- flexbox -->
+		</section> <!-- login -->
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="policy">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">개인정보침해신고센터</a></li>
+                </ul>
+            </div> <!-- policy -->
+            
+            <div class="copyright">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="footer-logo">
+                </div>
+                <div class="contact">
+                    <p>문화재청 경복궁</p>
+                    <p>우)03045 서울특별시 종로구 사직로 161<br>전화번호 (02) 3700-3900 팩스 (02) 3700-3909</p>
+                    <p>COPYRIGHT 2022 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div> <!-- copyright -->
+        </div> <!-- wrapper -->
+    </footer>
 </body>
 </html>
