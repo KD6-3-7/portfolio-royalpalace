@@ -439,6 +439,7 @@ section.main-sec section.des-1 .des-1-converse-image {
 }
 
 section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
+  display: none;
   background-color: #dfd4c2;
 }
 
