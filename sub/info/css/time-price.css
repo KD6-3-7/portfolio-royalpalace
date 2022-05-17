@@ -326,6 +326,7 @@ section {
   padding: 0 7%;
 }
 section section.roy1 {
+  background-color: #aa9172;
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
@@ -343,14 +344,15 @@ section section.roy1 h2 {
 section section.roy1 ul {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto;
 }
 section section.roy1 ul li {
   width: 50%;
   padding-bottom: 25px;
 }
 @media screen and (min-width: 1460px) {
+  section section.roy1 ul li {
+    padding-left: 125px;
+  }
   section section.roy1 ul li p > br {
     display: none;
   }
@@ -369,6 +371,7 @@ section section.roy1 ul li:last-child p {
   font-size: 14px;
 }
 section section.roy2 {
+  background-color: #968a7b;
   padding-bottom: 92px;
 }
 section section.roy2 h2 {

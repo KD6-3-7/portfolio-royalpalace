@@ -32,6 +32,7 @@ section {
     //     margin-left: 170px
     // }
     section.roy1 {
+        background-color: #aa9172;
         @include wrapper();
 
         @include responsive(pc-size) {
@@ -43,17 +44,18 @@ section {
             margin: 50px 0;
             font-size: 1.875em;
         }
-
         ul {
             display: flex;
             flex-wrap: wrap;
-            width: 70%;
-            margin: 0 auto;
+            
             li {
                 width: 50%;
                 padding-bottom: 25px;
+
                 @include responsive(pc-size) {
-                    // padding-left: 125px;
+                    // width: 70%;
+                    // margin: 0 auto;
+                    padding-left: 125px;
                     p>br {
                         display: none;
                     }
@@ -76,7 +78,7 @@ section {
     }
 
     section.roy2 {
-
+        background-color: #968a7b;
         h2 {
             text-align: center;
             margin: 50px 0;
