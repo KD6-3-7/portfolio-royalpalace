@@ -1,7 +1,7 @@
-@import "./../../../scss/style";
-@import "./../../../scss/common";
-@import "./mixin-menu-sub";
-@import "mixin-line.scss";
+@import "./../../../scss/_style.scss";
+@import "./../../../scss/_common.scss";
+@import "./_mixin-menu-sub.scss";
+@import "./_mixin-line.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -101,13 +101,14 @@ section.event {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;          
         }
         
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 15%;;
         }
 
         p {
@@ -119,6 +120,7 @@ section.event {
         .info-text {
             @include responsive(pc-size) {
                 margin-top: 20px;
+                width: 80%;
             }
         }
     }
@@ -130,12 +132,13 @@ section.event {
         
         @include responsive(pc-size) {
             flex-direction: row;
+            justify-content: space-between;
         }
 
         @include line-deco();
 
         .line-flex {
-            width: 25%;;
+            width: 15%;;
         }
 
         .pro-flex-img {
@@ -166,7 +169,7 @@ section.event {
             }
 
             @include responsive(pc-size) {
-                width: 75%;
+                width: 80%;
             }
         }
 
@@ -179,13 +182,14 @@ section.event {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;           
         }
         
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 15%;;
         }
 
         p {
@@ -242,7 +246,7 @@ section.event {
             }
 
             @include responsive(pc-size) {
-                width: 75%;
+                width: 80%;
                 margin-top: 20px;
             }
         }

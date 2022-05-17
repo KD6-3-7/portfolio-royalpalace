@@ -1,7 +1,7 @@
-@import "./../../../scss/style";
-@import "./../../../scss/common";
-@import "./mixin-menu-sub.scss";
-@import "./mixin-line.scss";
+@import "./../../../scss/_style.scss";
+@import "./../../../scss/_common.scss";
+@import "./_mixin-menu-sub.scss";
+@import "./_mixin-line.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -125,13 +125,7 @@ section {
 
     .guide {
         @include wrapper();
-        display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;            
-        }
-        
+                
         @include line-deco();
 
         .line-flex {
@@ -152,12 +146,39 @@ section {
                 .guide-box {
                     background-color: #cec4b6;
                     padding: 10px;
+                    margin-bottom: 10px;
                 }
-                @include responsive(tablet-size) {
-                    display: flex;
+                
+                .snack-list,
+                .tea-list {
+                    div {
+                        img {
+                            width: 50%;
+                            margin: 0 auto;
+                            @include responsive(tablet-size) {
+                                width: 100%;
+                            }
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        @include responsive(tablet-size) {
+                            width: 40%;
+                        }
+                        @include responsive(pc-size) {
+                            width: 30%;
+                            margin-top: 20px;
+                        }
+                    }
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                    }
                 }
-
             }
+            margin-bottom: 90px;
         }
     }
 

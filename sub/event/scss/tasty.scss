@@ -1,7 +1,7 @@
-@import "./../../../scss/style";
-@import "./../../../scss/common";
-@import "./mixin-menu-sub.scss";
-@import "./mixin-line.scss";
+@import "./../../../scss/_style.scss";
+@import "./../../../scss/_common.scss";
+@import "./_mixin-menu-sub.scss";
+@import "./_mixin-line.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -152,11 +152,43 @@ section {
                 .guide-box {
                     background-color: #cec4b6;
                     padding: 10px;
+                    @include responsive(pc-size) {
+                        margin-right: 30px;
+                        width: 50px;
+                    }
+                    p {
+                        @include responsive(pc-size) {
+                            padding: 10px;
+                        }
+                    }
                 }
-                @include responsive(tablet-size) {
+                @include responsive(pc-size) {
                     display: flex;
                 }
+                
+                .lunch {
+                    .lunch-img-flex {
+                        img {
+                            width: 49%;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                }
 
+                .vacation {
+                    .stay-img-flex {
+                        img {
+                            width: 49%;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                }
             }
         }
     }

@@ -34,6 +34,11 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.4em;
@@ -630,12 +635,63 @@ section .guide .guide-info .guide-flex .guide-box {
   padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .guide-box {
+    margin-right: 30px;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .guide-box p {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
   section .guide .guide-info .guide-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+section .guide .guide-info .guide-flex .lunch .lunch-img-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+  width: 49%;
+}
+
+section .guide .guide-info .guide-flex .vacation .stay-img-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .guide .guide-info .guide-flex .vacation .stay-img-flex img {
+  width: 49%;
 }
 
 section .operation {

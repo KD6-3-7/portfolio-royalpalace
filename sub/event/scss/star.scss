@@ -1,7 +1,7 @@
-@import "./../../../scss/style";
-@import "./../../../scss/common";
-@import "./mixin-menu-sub.scss";
-@import "./mixin-line.scss";
+@import "./../../../scss/_style.scss";
+@import "./../../../scss/_common.scss";
+@import "./_mixin-menu-sub.scss";
+@import "./_mixin-line.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -99,26 +99,27 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;           
         }
-        
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 15%;
         }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
 
         .info-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+
             @include responsive(pc-size) {
                 margin-top: 20px;
+                width: 80%;
             }
         }
     }
@@ -129,34 +130,117 @@ section {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;  
         }
         
-        @include line-deco();
-
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 15%;
         }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
         
         .guide-info {
-            @include responsive(pc-size) {
-                width: 75%;
+            p {
+                font-size: 18px;
+                line-height: 2em;
             }
-            .guide-flex {
-                .guide-box {
-                    background-color: #cec4b6;
-                    padding: 10px;
-                }
-                @include responsive(tablet-size) {
+
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
+
+            .guide-food {
+                margin-bottom: 33px;
+
+                @include responsive(pc-size) {
                     display: flex;
+                    justify-content: space-between;
                 }
 
+                .guide-box {
+                    background-color: #cec4b6;
+
+                    @include responsive(pc-size) {
+                        height: 450px;
+                        padding: 0 30px;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+                }
+
+                .guide-box-text {
+                    width: 80%;
+
+                    p {
+                        @include responsive(pc-size) {
+                            margin-bottom: 65px;
+                        }
+                    }
+
+                    .guide-flex-img {
+                        width: 100%;
+
+                        img {
+                            margin-bottom: 15px;
+
+                            @include responsive(tablet-size) {
+                                width: 48%;
+                            }
+                        }
+
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+
+            .guide-exp {
+                margin-bottom: 33px;
+
+                @include responsive(pc-size) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .guide-box {
+                    background-color: #cec4b6;
+                    @include responsive(pc-size) {
+                        height: 450px;
+                        padding: 0 30px;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+                }
+
+                .guide-box-text {
+                    width: 80%;
+
+                    p {
+                        @include responsive(pc-size) {
+                            margin-bottom: 65px;
+                        }
+                    }
+
+                    .guide-flex-img {
+                        width: 100%;
+
+                        img {
+                            margin-bottom: 15px;
+
+                            @include responsive(tablet-size) {
+                                width: 48%;
+                            }
+                        }
+
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
             }
         }
     }
@@ -165,68 +249,59 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;          
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 15%;
         }
 
         p {
             font-size: 18px;
             line-height: 2em;
-        }
-        margin-bottom: 90px;
-    }
 
-    .inquiry {
-        @include wrapper();
-        display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;            
+            @include responsive(pc-size) {
+                // margin-top: 20px;
+                width: 80%;
+            }
         }
-        
-        @include line-deco();
-        
-        .line-flex {
-            width: 25%;;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
     }
 
     .participate {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;      
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 15%;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
+        .participate-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+
+            @include responsive(pc-size) {
+                // margin-top: 20px;
+                width: 80%;
+            }
         }
-        margin-bottom: 90px;
     }
-    
 }
 
 // footer

@@ -496,26 +496,33 @@ section .info {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .info .little-title {
+section .info .line-flex {
+  width: 15%;
+}
+
+section .info .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .info .little-title h3 {
+section .info .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .info .little-title h3 span {
+section .info .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .info .little-title h3 span::before {
+section .info .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -527,7 +534,7 @@ section .info .little-title h3 span::before {
   background: #949392;
 }
 
-section .info .little-title::after {
+section .info .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -538,11 +545,7 @@ section .info .little-title::after {
   background: #c4c3c2;
 }
 
-section .info .line-flex {
-  width: 205px;
-}
-
-section .info p {
+section .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }
@@ -550,7 +553,7 @@ section .info p {
 @media screen and (min-width: 1460px) {
   section .info .info-text {
     margin-top: 20px;
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -565,7 +568,6 @@ section .guide {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 90px;
 }
 
 @media screen and (min-width: 1460px) {
@@ -574,26 +576,33 @@ section .guide {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .guide .little-title {
+section .guide .line-flex {
+  width: 15%;
+}
+
+section .guide .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .guide .little-title h3 {
+section .guide .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .guide .little-title h3 span {
+section .guide .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .guide .little-title h3 span::before {
+section .guide .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -605,7 +614,7 @@ section .guide .little-title h3 span::before {
   background: #949392;
 }
 
-section .guide .little-title::after {
+section .guide .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -616,17 +625,31 @@ section .guide .little-title::after {
   background: #c4c3c2;
 }
 
-section .guide .line-flex {
-  width: 205px;
-}
-
-section .guide p {
+section .guide .guide-info p {
   font-size: 18px;
   line-height: 2em;
 }
 
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
 section .guide .guide-info .guide-food {
   margin-bottom: 33px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 section .guide .guide-info .guide-food .guide-box {
@@ -635,16 +658,15 @@ section .guide .guide-info .guide-food .guide-box {
 
 @media screen and (min-width: 1460px) {
   section .guide .guide-info .guide-food .guide-box {
-    width: 162px;
     height: 450px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food .guide-box p {
+    padding: 0 30px;
     text-align: center;
     padding-top: 30px;
   }
+}
+
+section .guide .guide-info .guide-food .guide-box-text {
+  width: 80%;
 }
 
 @media screen and (min-width: 1460px) {
@@ -663,13 +685,7 @@ section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
 
 @media screen and (min-width: 768px) {
   section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
-    margin-right: 44px;
+    width: 48%;
   }
 }
 
@@ -678,19 +694,18 @@ section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 48%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food {
-    margin-bottom: 33px;
-  }
+section .guide .guide-info .guide-exp {
+  margin-bottom: 33px;
 }
 
 @media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-food {
-    width: 100%;
+  section .guide .guide-info .guide-exp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -706,17 +721,15 @@ section .guide .guide-info .guide-exp .guide-box {
 
 @media screen and (min-width: 1460px) {
   section .guide .guide-info .guide-exp .guide-box {
-    width: 162px;
     height: 450px;
-    margin-right: 133px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box p {
+    padding: 0 30px;
     text-align: center;
     padding-top: 30px;
   }
+}
+
+section .guide .guide-info .guide-exp .guide-box-text {
+  width: 80%;
 }
 
 @media screen and (min-width: 1460px) {
@@ -725,19 +738,17 @@ section .guide .guide-info .guide-exp .guide-box {
   }
 }
 
+section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
+  width: 100%;
+}
+
 section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
   section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
-    margin-right: 44px;
+    width: 48%;
   }
 }
 
@@ -746,21 +757,9 @@ section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 48%;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
-    width: 843px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-exp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -784,26 +783,33 @@ section .operation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .operation .little-title {
+section .operation .line-flex {
+  width: 15%;
+}
+
+section .operation .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .operation .little-title h3 {
+section .operation .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .operation .little-title h3 span {
+section .operation .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .operation .little-title h3 span::before {
+section .operation .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -815,7 +821,7 @@ section .operation .little-title h3 span::before {
   background: #949392;
 }
 
-section .operation .little-title::after {
+section .operation .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -826,13 +832,15 @@ section .operation .little-title::after {
   background: #c4c3c2;
 }
 
-section .operation .line-flex {
-  width: 205px;
-}
-
 section .operation p {
   font-size: 18px;
   line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .operation p {
+    width: 80%;
+  }
 }
 
 section .participate {
@@ -855,26 +863,33 @@ section .participate {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .participate .little-title {
+section .participate .line-flex {
+  width: 15%;
+}
+
+section .participate .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .participate .little-title h3 {
+section .participate .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .participate .little-title h3 span {
+section .participate .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .participate .little-title h3 span::before {
+section .participate .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -886,7 +901,7 @@ section .participate .little-title h3 span::before {
   background: #949392;
 }
 
-section .participate .little-title::after {
+section .participate .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -897,13 +912,15 @@ section .participate .little-title::after {
   background: #c4c3c2;
 }
 
-section .participate .line-flex {
-  width: 205px;
-}
-
-section .participate p {
+section .participate .participate-text p {
   font-size: 18px;
   line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .participate .participate-text {
+    width: 80%;
+  }
 }
 
 footer {
