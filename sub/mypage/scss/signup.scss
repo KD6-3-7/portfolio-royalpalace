@@ -169,10 +169,6 @@ section.signup {
                             width: 70%;
 
                             @include responsive(tablet-size) {
-                                width: 85%;
-                            }
-
-                            @include responsive(tablet-size) {
                                 width: 88%;
                             }
                         }

@@ -496,6 +496,9 @@ section.event .info {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -539,10 +542,10 @@ section.event .info .little-title::after {
 }
 
 section.event .info .line-flex {
-  width: 25%;
+  width: 19%;
 }
 
-section.event .info p {
+section.event .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }
@@ -550,6 +553,7 @@ section.event .info p {
 @media screen and (min-width: 1460px) {
   section.event .info .info-text {
     margin-top: 20px;
+    width: 80%;
   }
 }
 
@@ -573,6 +577,9 @@ section.event .procedure {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -616,7 +623,7 @@ section.event .procedure .little-title::after {
 }
 
 section.event .procedure .line-flex {
-  width: 25%;
+  width: 19%;
 }
 
 section.event .procedure .pro-flex-img div p {
@@ -660,7 +667,7 @@ section.event .procedure .pro-flex-img div img {
 
 @media screen and (min-width: 1460px) {
   section.event .procedure .pro-flex-img {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -684,6 +691,9 @@ section.event .operation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -727,7 +737,7 @@ section.event .operation .little-title::after {
 }
 
 section.event .operation .line-flex {
-  width: 25%;
+  width: 19%;
 }
 
 section.event .operation p {
@@ -798,7 +808,7 @@ section.event .operation .operation-info .operation-term .operation-info-box {
 
 @media screen and (min-width: 1460px) {
   section.event .operation .operation-info {
-    width: 75%;
+    width: 80%;
     margin-top: 20px;
   }
 }

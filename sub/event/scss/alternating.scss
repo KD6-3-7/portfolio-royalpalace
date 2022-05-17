@@ -99,26 +99,28 @@ section.event {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;          
         }
         
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 19%;;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
-
+        
         .info-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
             @include responsive(pc-size) {
                 margin-top: 20px;
+                width: 80%;
             }
         }
     }
@@ -130,12 +132,13 @@ section.event {
         
         @include responsive(pc-size) {
             flex-direction: row;
+            justify-content: space-between;
         }
 
         @include line-deco();
 
         .line-flex {
-            width: 25%;;
+            width: 19%;;
         }
 
         .pro-flex-img {
@@ -166,7 +169,7 @@ section.event {
             }
 
             @include responsive(pc-size) {
-                width: 75%;
+                width: 80%;
             }
         }
 
@@ -179,13 +182,14 @@ section.event {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;           
         }
         
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 19%;;
         }
 
         p {
@@ -242,7 +246,7 @@ section.event {
             }
 
             @include responsive(pc-size) {
-                width: 75%;
+                width: 80%;
                 margin-top: 20px;
             }
         }
