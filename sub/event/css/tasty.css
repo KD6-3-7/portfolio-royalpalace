@@ -496,6 +496,9 @@ section .info {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -539,10 +542,10 @@ section .info .little-title::after {
 }
 
 section .info .line-flex {
-  width: 25%;
+  width: 19%;
 }
 
-section .info p {
+section .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }
@@ -550,6 +553,7 @@ section .info p {
 @media screen and (min-width: 1460px) {
   section .info .info-text {
     margin-top: 20px;
+    width: 80%;
   }
 }
 
@@ -573,6 +577,9 @@ section .guide {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -616,7 +623,7 @@ section .guide .little-title::after {
 }
 
 section .guide .line-flex {
-  width: 25%;
+  width: 19%;
 }
 
 section .guide p {
@@ -624,28 +631,20 @@ section .guide p {
   line-height: 2em;
 }
 
+section .guide .guide-info p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
 @media screen and (min-width: 1460px) {
   section .guide .guide-info {
-    width: 75%;
+    width: 80%;
+    margin-top: 20px;
   }
 }
 
-section .guide .guide-info .guide-flex .guide-box {
-  background-color: #cec4b6;
-  padding: 10px;
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-flex .guide-box {
-    margin-right: 30px;
-    width: 50px;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  section .guide .guide-info .guide-flex .guide-box p {
-    padding: 10px;
-  }
+section .guide .guide-info .guide-flex {
+  margin-bottom: 33px;
 }
 
 @media screen and (min-width: 1460px) {
@@ -653,6 +652,31 @@ section .guide .guide-info .guide-flex .guide-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+section .guide .guide-info .guide-flex .guide-box {
+  background-color: #cec4b6;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .guide-box {
+    padding: 0 30px;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+section .guide .guide-info .guide-flex .lunch {
+  width: 80%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .lunch p {
+    margin-top: 20px;
   }
 }
 
@@ -675,6 +699,28 @@ section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
   width: 49%;
 }
 
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+    margin-bottom: 40px;
+  }
+}
+
+section .guide .guide-info .guide-flex .vacation {
+  width: 80%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .vacation p {
+    margin-top: 20px;
+  }
+}
+
 section .guide .guide-info .guide-flex .vacation .stay-img-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,6 +738,12 @@ section .guide .guide-info .guide-flex .vacation .stay-img-flex {
 
 section .guide .guide-info .guide-flex .vacation .stay-img-flex img {
   width: 49%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .vacation .stay-img-flex img {
+    margin-bottom: 40px;
+  }
 }
 
 section .operation {
@@ -714,26 +766,33 @@ section .operation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .operation .little-title {
+section .operation .line-flex {
+  width: 19%;
+}
+
+section .operation .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .operation .little-title h3 {
+section .operation .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .operation .little-title h3 span {
+section .operation .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .operation .little-title h3 span::before {
+section .operation .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -745,7 +804,7 @@ section .operation .little-title h3 span::before {
   background: #949392;
 }
 
-section .operation .little-title::after {
+section .operation .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -756,13 +815,16 @@ section .operation .little-title::after {
   background: #c4c3c2;
 }
 
-section .operation .line-flex {
-  width: 25%;
-}
-
-section .operation p {
+section .operation .operation-text p {
   font-size: 18px;
   line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .operation .operation-text {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 section .inquiry {
@@ -785,26 +847,33 @@ section .inquiry {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .inquiry .little-title {
+section .inquiry .line-flex {
+  width: 19%;
+}
+
+section .inquiry .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .inquiry .little-title h3 {
+section .inquiry .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .inquiry .little-title h3 span {
+section .inquiry .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .inquiry .little-title h3 span::before {
+section .inquiry .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -816,7 +885,7 @@ section .inquiry .little-title h3 span::before {
   background: #949392;
 }
 
-section .inquiry .little-title::after {
+section .inquiry .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -827,13 +896,16 @@ section .inquiry .little-title::after {
   background: #c4c3c2;
 }
 
-section .inquiry .line-flex {
-  width: 25%;
-}
-
-section .inquiry p {
+section .inquiry .inquiry-text p {
   font-size: 18px;
   line-height: 2em;
+}
+
+@media screen and (min-width: 1460px) {
+  section .inquiry .inquiry-text {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 footer {

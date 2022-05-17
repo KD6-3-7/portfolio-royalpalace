@@ -99,26 +99,28 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;           
         }
         
         @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            width: 19%;;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
-
+        
         .info-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
             @include responsive(pc-size) {
                 margin-top: 20px;
+                width: 80%;
             }
         }
     }
@@ -127,61 +129,94 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;        
         }
         
         @include line-deco();
 
         .line-flex {
-            width: 25%;;
+            width: 19%;;
         }
 
         p {
             font-size: 18px;
             line-height: 2em;
         }
-        margin-bottom: 90px;
         
         .guide-info {
-            @include responsive(pc-size) {
-                width: 75%;
+            p {
+                font-size: 18px;
+                line-height: 2em;
             }
+
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
+
             .guide-flex {
-                .guide-box {
-                    background-color: #cec4b6;
-                    padding: 10px;
-                    @include responsive(pc-size) {
-                        margin-right: 30px;
-                        width: 50px;
-                    }
-                    p {
-                        @include responsive(pc-size) {
-                            padding: 10px;
-                        }
-                    }
-                }
+                margin-bottom: 33px;
+
                 @include responsive(pc-size) {
                     display: flex;
+                    justify-content: space-between;
+                }
+
+                .guide-box {
+                    background-color: #cec4b6;
+
+                    @include responsive(pc-size) {
+                        padding: 0 30px;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+
                 }
                 
                 .lunch {
+                    width: 80%;
+                    p {
+                        @include responsive(pc-size) {
+                            margin-top: 20px;
+                        }
+                    }
+
                     .lunch-img-flex {
                         img {
                             width: 49%;
+                            @include responsive(tablet-size) {
+                                margin-bottom: 20px;
+                            }
+                            @include responsive(pc-size) {
+                                margin-bottom: 40px;
+                            }
                         }
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
                         justify-content: space-between;
+
                     }
                 }
 
                 .vacation {
+                    width: 80%;
+                    p {
+                        @include responsive(pc-size) {
+                            margin-top: 20px;
+                        }
+                    }
+
                     .stay-img-flex {
                         img {
                             width: 49%;
+                            @include responsive(pc-size) {
+                                margin-bottom: 40px;
+                            }
                         }
                         display: flex;
                         flex-direction: row;
@@ -197,44 +232,62 @@ section {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content:space-between;         
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 19%;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
+        .operation-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+            
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
         }
-        margin-bottom: 90px;
+
     }
 
     .inquiry {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;         
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 19%;;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
+
+        .inquiry-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+
+            @include responsive(pc-size) {
+                width: 80%;
+                margin-top: 20px;
+            }
         }
-        margin-bottom: 90px;
     }
 }
 

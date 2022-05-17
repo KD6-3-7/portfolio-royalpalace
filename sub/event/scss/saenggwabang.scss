@@ -101,24 +101,26 @@ section {
         flex-direction: column;
         
         @include responsive(pc-size) {
-            flex-direction: row;            
+            flex-direction: row;
+            justify-content: space-between;         
         }
         
-        @include line-deco();
         
         .line-flex {
-            width: 25%;;
+            @include line-deco();
+            width: 15%;;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
-
+        
         .info-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+            
             @include responsive(pc-size) {
                 margin-top: 20px;
+                width: 80%;
             }
         }
     }

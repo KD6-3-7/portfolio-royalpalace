@@ -542,7 +542,7 @@ section.event .info .little-title::after {
 }
 
 section.event .info .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section.event .info p {
@@ -623,7 +623,7 @@ section.event .procedure .little-title::after {
 }
 
 section.event .procedure .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section.event .procedure .pro-flex-img div p {
@@ -737,7 +737,7 @@ section.event .operation .little-title::after {
 }
 
 section.event .operation .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section.event .operation p {

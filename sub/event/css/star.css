@@ -503,7 +503,7 @@ section .info {
 }
 
 section .info .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section .info .line-flex .little-title {
@@ -583,7 +583,7 @@ section .guide {
 }
 
 section .guide .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section .guide .line-flex .little-title {
@@ -790,7 +790,7 @@ section .operation {
 }
 
 section .operation .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section .operation .line-flex .little-title {
@@ -870,7 +870,7 @@ section .participate {
 }
 
 section .participate .line-flex {
-  width: 15%;
+  width: 19%;
 }
 
 section .participate .line-flex .little-title {

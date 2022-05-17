@@ -487,7 +487,6 @@ section .info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 90px;
 }
 
 @media screen and (min-width: 1460px) {
@@ -496,26 +495,33 @@ section .info {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-section .info .little-title {
+section .info .line-flex {
+  width: 15%;
+}
+
+section .info .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .info .little-title h3 {
+section .info .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section .info .little-title h3 span {
+section .info .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .info .little-title h3 span::before {
+section .info .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -527,7 +533,7 @@ section .info .little-title h3 span::before {
   background: #949392;
 }
 
-section .info .little-title::after {
+section .info .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -538,11 +544,7 @@ section .info .little-title::after {
   background: #c4c3c2;
 }
 
-section .info .line-flex {
-  width: 25%;
-}
-
-section .info p {
+section .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }
@@ -550,6 +552,7 @@ section .info p {
 @media screen and (min-width: 1460px) {
   section .info .info-text {
     margin-top: 20px;
+    width: 80%;
   }
 }
 
