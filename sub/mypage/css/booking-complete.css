@@ -426,7 +426,7 @@ section.complete div.result div.logo {
 }
 
 section.complete div.result P {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   font-family: "Noto Serif KR", serif;
   font-size: 1.4em;
@@ -435,7 +435,7 @@ section.complete div.result P {
 
 @media screen and (min-width: 768px) {
   section.complete div.result P {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 }
 
