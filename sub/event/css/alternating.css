@@ -545,7 +545,7 @@ section.event .info .line-flex {
   width: 19%;
 }
 
-section.event .info p {
+section.event .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }

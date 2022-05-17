@@ -659,7 +659,18 @@ section .guide .guide-info .guide-flex {
 }
 
 section .guide .guide-info .guide-flex .guide-box {
+  margin-bottom: 10px;
   background-color: #cec4b6;
+}
+
+section .guide .guide-info .guide-flex .guide-box p {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .guide-box p {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1460px) {
@@ -671,7 +682,13 @@ section .guide .guide-info .guide-flex .guide-box {
 }
 
 section .guide .guide-info .guide-flex .lunch {
-  width: 80%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .lunch {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1460px) {
@@ -680,27 +697,14 @@ section .guide .guide-info .guide-flex .lunch {
   }
 }
 
-section .guide .guide-info .guide-flex .lunch .lunch-img-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
-  width: 49%;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
   section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+    width: 49%;
     margin-bottom: 20px;
   }
 }
@@ -711,8 +715,32 @@ section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  section .guide .guide-info .guide-flex .lunch .lunch-img-flex {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 section .guide .guide-info .guide-flex .vacation {
-  width: 80%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1460px) {
+  section .guide .guide-info .guide-flex .vacation {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1460px) {

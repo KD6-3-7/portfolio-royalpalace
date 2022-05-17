@@ -99,6 +99,7 @@ section.event {
         @include wrapper();
         display: flex;
         flex-direction: column;
+        margin-bottom: 90px;
         
         @include responsive(pc-size) {
             flex-direction: row;
@@ -111,13 +112,12 @@ section.event {
             width: 19%;;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        margin-bottom: 90px;
-
+        
         .info-text {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
             @include responsive(pc-size) {
                 margin-top: 20px;
                 width: 80%;
