@@ -177,25 +177,25 @@
 
             <section class="des-1">
                 <div class="des-1-converse-image">
-                    <div class="des-1-image1">
+                    <div class="des-1-image1" id="imageOne" style="display: block;">
                         <p>
                             <span style="background-color: blue;"></span> 파란색 - 흥선대원군 때 중건하여 현재까지 남아있는 부분<br>
                             <span style="background-color: yellow;"></span> 노란색 - 1990년 이전에 복원한 부분
                         </p>
                         <img src="./images/1.png" alt="복원1">
                     </div>
-                    <!-- <div class="des-1-image1">
+                    <div class="des-1-image1" id="imageTwo">
                         <p>
                             <span style="background-color: red;"></span> 빨간색 - 1차 복원 정비사업(1990~2010)으로 복원한 부분
                         </p>
                         <img src="./images/2.png" alt="복원2">
                     </div>
-                    <div class="des-1-image1">
+                    <div class="des-1-image1" id="imageThr">
                         <p>
                             <span style="background-color: orange;"></span> 주황색- 2차 복원 정비사업(2011~2030예정)으로 복원될 부분
                         </p>
                         <img src="./images/3.png" alt="복원3">
-                    </div> -->
+                    </div>
                 </div>
             </section>
     
@@ -273,5 +273,33 @@
             </div> <!-- copyright -->
         </div> <!-- wrapper -->
     </footer>
+    <script>
+        const tabOne = document.getElementById("tabOne");
+        const imageOne = document.getElementById("imageOne");
+
+        const tabTwo = document.getElementById("tabTwo");
+        const imageTwo = document.getElementById("imageTwo");
+
+        const addNew = document.getElementById("addNew");
+        const imageThr = document.getElementById("imageThr");
+
+        tabOne.addEventListener("click", function() {
+            imageOne.style.display = "block";
+            imageTwo.style.display = "none";
+            imageThr.style.display = "none";
+        });
+
+        tabTwo.addEventListener("click", function() {
+            imageOne.style.display = "none";
+            imageTwo.style.display = "block";
+            imageThr.style.display = "none";
+        });
+
+        addNew.addEventListener("click", function() {
+            imageOne.style.display = "none";
+            imageTwo.style.display = "none";
+            imageThr.style.display = "block";
+        });
+    </script>
 </body>
 </html>
