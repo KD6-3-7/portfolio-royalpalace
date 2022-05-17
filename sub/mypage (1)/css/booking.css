@@ -1,0 +1,1037 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard;
+  background-color: #f2ece4;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #2c2928;
+}
+
+a:hover {
+  color: #2c2928;
+}
+
+h1 {
+  width: 200px;
+}
+
+h2 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul, li {
+  list-style: none;
+  list-style-position: inside;
+}
+
+header div.header-mobile {
+  width: 100%;
+}
+
+header div.header-mobile div.header-flex-box {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2c2928;
+}
+
+header div.header-mobile div.header-flex-box h1.logo {
+  margin: 0 20px;
+  line-height: 80px;
+}
+
+header div.header-mobile div.header-flex-box h1.logo img {
+  width: 100px;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger {
+  width: 25px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] {
+  display: none;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(1) {
+  top: 0;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(1) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  -webkit-transform: translateY(50%) rotate(-45deg);
+          transform: translateY(50%) rotate(-45deg);
+}
+
+header div.header-mobile div.mobilemenu {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb {
+  height: 0vh;
+  padding: 0 20px;
+  list-style: none;
+  overflow: hidden;
+  -webkit-transition: height ease-in-out 1s 0s;
+  transition: height ease-in-out 1s 0s;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
+  padding: 20px 0;
+  border-bottom: 1px solid #dddddd;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background: url("./../images/icon-circle.svg") no-repeat center;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu.selected::before {
+  background: url("./../images/icon-circle_h.svg") no-repeat center;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu > a, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
+  display: inline-block;
+  padding-left: 10px;
+  color: #231f20;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  width: calc(100% - 30px);
+  border: none;
+  font-family: Pretendard;
+  font-size: 1em;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: left;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
+  background-image: url("./../images/icon-circle.svg");
+  width: 13px;
+  height: 13px;
+  content: "";
+  float: right;
+  position: relative;
+  top: 7px;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
+  background-image: url("./../images/icon-circle_h.svg");
+  content: "";
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 27px;
+  line-height: 1.4em;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li {
+  padding: 5px 0;
+  width: 50%;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:nth-child(2) {
+  padding-top: 10px;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a {
+  display: inline-block;
+  color: #999999;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
+  width: calc(100% / 3);
+  padding: 10px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:nth-child(2) {
+  border-right: none;
+}
+
+header ul.topmenu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header div.header-mobile {
+    display: none;
+  }
+  header ul.topmenu {
+    margin-left: 200px;
+    padding: 0 7%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header ul.topmenu li.submenu {
+    width: calc(100% / 3);
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    line-height: 80px;
+    border-bottom: 1px solid #a7a7a7;
+  }
+  header ul.topmenu li.submenu a {
+    position: relative;
+  }
+  header ul.topmenu li.submenu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    border-bottom: 2px solid #2c2928;
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transition: all 0.3s ease 0s, left 0.3s ease 0s;
+    transition: all 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  header ul.topmenu li.submenu:hover > a::after {
+    width: 100%;
+    left: 0;
+  }
+  header ul.topmenu li.submenu.selected {
+    border-bottom: 2px solid #2c2928;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+aside div.sidemenu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    background-color: #ffffff;
+  }
+  aside div.sidemenu {
+    display: block;
+    width: 200px;
+    height: 100%;
+    float: left;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+    background-color: #ffffff;
+  }
+  aside div.sidemenu h1.header-logo {
+    padding: 10px 30px 25px 25px;
+  }
+  aside div.sidemenu ul.gnb {
+    padding-left: 30px;
+  }
+  aside div.sidemenu ul.gnb li.menu {
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  aside div.sidemenu ul.gnb li.menu::before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: url("./../images/icon-circle.svg") no-repeat center;
+  }
+  aside div.sidemenu ul.gnb li.menu.selected::before {
+    background: url("./../images/icon-circle_h.svg") no-repeat center;
+  }
+  aside div.sidemenu ul.gnb li.menu > a {
+    display: inline-block;
+    padding-left: 10px;
+    color: #231f20;
+  }
+  aside div.sidemenu ul.gnb li.menu ul.small-menu {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    line-height: 1.4em;
+  }
+  aside div.sidemenu ul.gnb li.menu ul.small-menu li {
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  aside div.sidemenu ul.gnb li.menu ul.small-menu li a {
+    display: inline-block;
+    color: #999999;
+  }
+}
+
+section.reservation {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+  width: 100%;
+  margin: 100px auto;
+}
+
+section.reservation div > a {
+  margin-bottom: 10px;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  background-color: #2c2928;
+  color: #fcfbfa;
+}
+
+section.reservation div > a i {
+  width: 10%;
+}
+
+section.reservation div > a i:first-child {
+  color: #2c2928;
+}
+
+@media screen and (min-width: 768px) {
+  section.reservation div > a {
+    display: none;
+  }
+}
+
+section.reservation div > h2 {
+  padding-bottom: 20px;
+}
+
+section.reservation div.reservation-form {
+  width: 100%;
+  border-top: 1px solid #2c2928;
+  border-bottom: 1px solid #2c2928;
+}
+
+section.reservation div.reservation-form div.option {
+  padding: 15px 0;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.option.personnel-list:last-child {
+    padding-bottom: 30px;
+  }
+}
+
+section.reservation div.reservation-form div.option > div.subtitle {
+  margin-bottom: 10px;
+}
+
+section.reservation div.reservation-form div.option > ul {
+  border-top: 1px solid #a7a7a7;
+  border-bottom: 1px solid #a7a7a7;
+  background-color: #fcfbfa;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  section.reservation div.reservation-form div.row div.calendar {
+    width: 30%;
+    margin-right: 50px;
+  }
+  section.reservation div.reservation-form div.row div.event-list {
+    width: 70%;
+  }
+}
+
+section.reservation div.reservation-form div.calendar div.calendar-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section.reservation div.reservation-form div.calendar div.calendar-title div.btn {
+  display: inline-block;
+}
+
+section.reservation div.reservation-form div.calendar div.calendar-title div.btn i {
+  width: 2rem;
+  line-height: 39px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.reservation div.reservation-form div.calendar div.calendar-title div.btn i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+}
+
+section.reservation div.reservation-form div.calendar div.calendar-title div#year, section.reservation div.reservation-form div.calendar div.calendar-title div#month {
+  margin: 5px;
+  font-size: 1.1em;
+}
+
+section.reservation div.reservation-form div.calendar div#container {
+  width: 100%;
+  color: #2c2928;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#weekDic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Noto Serif KR", serif;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#weekDic div.dic {
+  width: calc(100% / 7);
+  padding: 5px;
+  text-align: center;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#weekDic div#SUN {
+  color: red;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#weekDic div#SAT {
+  color: dodgerblue;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar {
+  height: 302px;
+  border-top: 1px solid #a7a7a7;
+  border-bottom: 1px solid #a7a7a7;
+  background-color: #fcfbfa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar div.day {
+  width: calc(100% / 7);
+  height: calc(100% / 6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border: 1px solid #f2ece4;
+  border-top: none;
+  border-left: none;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar div.day:nth-child(7n) {
+  border-right: none;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar div.day input {
+  display: none;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar div.day input:checked + label {
+  background-color: #2c2928;
+  color: #fcfbfa;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar div.day label {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  line-height: 49px;
+  text-align: center;
+}
+
+section.reservation div.reservation-form div.calendar div#container div#calendar div.today {
+  background-color: #a7a7a7;
+  color: #fcfbfa;
+}
+
+section.reservation div.reservation-form div.list ul li {
+  height: 50px;
+  border-bottom: 1px solid #f2ece4;
+}
+
+section.reservation div.reservation-form div.list ul li:last-child {
+  border-bottom: none;
+}
+
+section.reservation div.reservation-form div.list ul li input {
+  display: none;
+}
+
+section.reservation div.reservation-form div.list ul li input:checked + label {
+  background-color: #2c2928;
+  color: #fcfbfa;
+}
+
+section.reservation div.reservation-form div.list ul li label {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+section.reservation div.reservation-form div.list ul li label span {
+  padding: 10px;
+  line-height: 29px;
+}
+
+section.reservation div.reservation-form div.list ul li label span:last-child {
+  font-size: 0.9em;
+}
+
+section.reservation div.reservation-form div.event-list div.subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.reservation div.reservation-form div.time-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.reservation div.reservation-form div.time-list ul li.time {
+  width: 50%;
+}
+
+section.reservation div.reservation-form div.time-list ul li.time:nth-child(odd) {
+  border-right: 1px solid #f2ece4;
+}
+
+section.reservation div.reservation-form div.time-list ul li.time:nth-child(9) {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.time-list ul li.time {
+    width: 20%;
+    border-right: 1px solid #f2ece4;
+  }
+  section.reservation div.reservation-form div.time-list ul li.time:nth-child(5n) {
+    border-right: none;
+  }
+  section.reservation div.reservation-form div.time-list ul li.time:nth-child(6), section.reservation div.reservation-form div.time-list ul li.time:nth-child(7), section.reservation div.reservation-form div.time-list ul li.time:nth-child(8) {
+    border-bottom: none;
+  }
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid #a7a7a7;
+    border-bottom: 1px solid #a7a7a7;
+  }
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box > div {
+  width: 100%;
+  padding: 10px 0;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.desc {
+  padding: 20px 10px;
+  border-top: 1px solid #a7a7a7;
+  border-bottom: 1px solid #a7a7a7;
+  background-color: #fcfbfa;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.desc {
+    width: 30%;
+    height: 152px;
+    margin-right: 30px;
+    padding: 20px;
+    border: none;
+  }
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.desc p {
+  padding-left: 9px;
+  font-size: 0.9em;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.desc p:first-child {
+  padding-left: 0;
+  padding-bottom: 5px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age {
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age {
+    height: 50px;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 50px;
+  }
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age:first-child, section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age:nth-child(2) {
+    margin-bottom: 1px;
+  }
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.label {
+  width: 100%;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.label span:last-child {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.label {
+    width: 40%;
+    margin-right: 30px;
+    padding: 0;
+  }
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fcfbfa;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count input {
+  display: none;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count input:checked + label {
+  background-color: #2c2928;
+  color: #fcfbfa;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count label {
+  width: 20%;
+  height: 50px;
+  padding: 10px;
+  border-right: 1px solid #f2ece4;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count label:last-child {
+  border-right: none;
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count label {
+    padding: 0;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count {
+    width: 60%;
+  }
+}
+
+section.reservation div.button-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+section.reservation div.button-flex-box button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Pretendard;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #2c2928;
+}
+
+footer div.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+footer div.wrapper div.policy > ul {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div.wrapper div.policy > ul li > a {
+  color: #ffffff;
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
+footer div.wrapper div.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+footer div.wrapper div.copyright div.footer-logo {
+  display: none;
+}
+
+footer div.wrapper div.copyright div.contact {
+  color: #ffffff;
+  line-height: 1.1em;
+}
+
+footer div.wrapper div.copyright div.contact p {
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
+footer div.wrapper div.copyright div.contact p:first-child {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 0 200px;
+  }
+  footer div.wrapper div.policy > ul {
+    width: 50%;
+  }
+  footer div.wrapper div.policy > ul li > a {
+    font-size: 0.9em;
+  }
+  footer div.wrapper div.copyright div.footer-logo {
+    display: block;
+    width: 145px;
+    padding-bottom: 0;
+  }
+  footer div.wrapper div.copyright div.footer-logo img {
+    -webkit-filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
+            filter: invert(96%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(105%);
+  }
+  footer div.wrapper div.copyright div.contact {
+    width: 85%;
+    line-height: 1.6em;
+  }
+  footer div.wrapper div.copyright div.contact p {
+    padding-left: 10%;
+    font-size: 0.9em;
+    font-weight: 200;
+  }
+  footer div.wrapper div.copyright div.contact p:first-child {
+    display: none;
+  }
+}
+/*# sourceMappingURL=booking.css.map */

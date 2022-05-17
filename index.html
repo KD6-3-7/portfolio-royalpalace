@@ -1,172 +1,351 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="./js/main.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrapper">
-        <nav class="gnb">
-            <div>
-                <img class="logo" src="./images/logo_wt.png" alt="경복궁로고">
-            </div>
-            <div id="hb">MENU</div>
-        </nav><!--gnb-->
-
-        <div id="slide-nav">
-            <a href=""><img src="./images/arr_top.gif" alt="위로가기"></a>
-            <a href="#none"><span>제일위로</span><span></span></a>
-            <a href="#none"><span>경복궁의 눈물</span><span></span></a>
-            <a href="#none"><span>복원30주년</span><span></span></a>
-            <a href="#none"><span>경복궁에 가려면</span><span></span></a>
-            <a href="#none"><span>경복궁 행사</span><span></span></a>
-            <a href="#none"><span>경복궁의 사계</span><span></span></a>
-            <a href=""><img src="./images/arr_bottom.gif" alt="위로가기"></a>
-
+      <div id="overlay">
+        <div id="modalmenu">
         </div>
+      </div>
+      <nav class="gnb">
+        <div>
+          <img class="logo" src="./images/logo_wt.svg" alt="경복궁로고" />
+        </div>
+        <div id="hb">MENU</div>
+      </nav>
+      <!--gnb-->
 
-        <section id="content1">
-            <div class="intro">
+      <div id="slide-nav">
+        <a href="#content1"
+          ><span>제일 위로 &nbsp;</span
+          ><img src="./images/arr_top.png" alt="위로가기"
+        /></a>
+        <a href="#content2"><span>경복궁의 눈물</span><span></span></a>
+        <a href="#content3"><span>복원30주년</span><span></span></a>
+        <a href="#content4"><span>경복궁에 가려면</span><span></span></a>
+        <a href="#content5"><span>경복궁 행사</span><span></span></a>
+        <a href="#content6"><span>경복궁의 사계</span><span></span></a>
+        <a href="#content6"
+          ><span>제일 아래로 &nbsp;</span
+          ><img src="./images/arr_bottom.png" alt="밑으로가기"
+        /></a>
+      </div>
 
-                <div class="move-box area1">
-                    <div class="txt-area">
-                        <div class="flex"><h2>景福&nbsp;</h2><span>(경복)</span></div>
-                        <p>
-                            “이미 술에 취하고 이미 덕에 배부르니<br>군자는 영원히 그 ‘큰 복’(경복)을 도우리라”<br>
-                            <span>정 도 전</span>
-                        </p>
-                    </div>
-                </div><!--move-box-->
-    
-                <div class="move-box area2">
-                    <div class="txt-area">
-                        <h2>처음 전깃불을 밝힌곳 </h2>
-                        <p>
-                            “ 개똥불로 글을 읽고<br>
-                            &nbsp; 눈빛으로 글을 읽던<br>
-                            &nbsp; 그 옛날 선비들은<br>
-                            &nbsp; 평생 불을 소원하였으리”<br>
-                            <span>- 1947년 전등 찬양시 중에서 -</span>
-                            
-                        </p>
-                    </div>
-                </div><!--move-box-->
-    
-                <div class="move-box area3">
-                    <div class="txt-area">
-                        <h2>경회루 </h2>
-                        <p>
-                            1412년 태종은<br> 
-                            경복궁의 연못을 크게 넓히고<br> 
-                            섬 위에 경회루를 만들었다.
-                         
-                        </p>
-                    </div>
-                </div><!--move-box-->
-    
-                <div class="move-box area4">
-                    <div class="txt-area">
-                        <h2>景福 </h2>
-                        <p>
-                            “이미 술에 취하고 이미 덕에 배부르니<br>군자는 영원히 그 ‘큰 복’(경복)을 도우리라”<br>
-                            정 도 전
-                        </p>
-                    </div>
-                </div><!--move-box-->
-    
-                <div class="move-box area5">
-                    <div class="txt-area">
-                        <h2>고궁을 거닐다 </h2>
-                        <p>
-                            600년전 시작되었던 찬란한 역사 속<br>조선 왕들의 공간으로!
-                        
-                        </p>
-                    </div>
-                </div><!--move-box-->
-    
-            </div><!--intro-->
-
-        </section><!--content1-->
-
-        <section id="content2">
+      <section id="content1">
+        <div class="intro">
+          <div class="move-box1">
+            <div class="bg1"></div>
+            <video muted autoplay>
+              <source src="./images/intro.mp4" type="video/mp4" />
+            </video>
             <div class="txt-area">
-                <h2>역사속으로</h2>
-                <p>
-                    경복궁이 우리 앞에 당당히 있기까지는<br>
-                    많은 우여곡절을 거쳐야했습니다.<br>
-                    조선의 개국과 함께 첫 궁궐로 세워졌으나<br>
-                    역사의 소용돌이속에서 <br>
-                    불타고 스러지며 다시 세워지기까지<br>
-                    경복궁에는 많은 눈물이 있었습니다.<br>
-                    그 생생한 이야기들을 지금 들려드립니다.
-                
-                </p>
+              <div class="flex">
+                <h2>景福&nbsp;</h2>
+                <span>(경복)</span>
+              </div>
+              <p>
+                “이미 술에 취하고 이미 덕에 배부르니<br />군자는 영원히 그 ‘큰
+                복’(경복)을 도우리라”<br />
+                <span>정 도 전</span>
+              </p>
             </div>
-        </section><!--content2-->
+          </div>
+          <!--move-box-->
 
-        <section id="content3">
-            <div class="txt-center">
-                <h2>경복궁 복원 30주년</h2>
-                <span>일제가 훼손한 상징을 되찾다</span>
+          <div class="move-box2">
+            <div class="txt-area">
+              <h2>처음 전깃불을 밝힌곳</h2>
+              <p>
+                “ 개똥불로 글을 읽고<br />
+                &nbsp; 눈빛으로 글을 읽던<br />
+                &nbsp; 그 옛날 선비들은<br />
+                &nbsp; 평생 불을 소원하였으리”<br />
+                <span>- 1947년 전등 찬양시 중에서 -</span>
+              </p>
             </div>
-            <div class="text-box">
+          </div>
+          <!--move-box-->
 
+          <div class="move-box3">
+            <div class="txt-area">
+              <h2>경회루</h2>
+              <p>
+                1412년 태종은<br />
+                경복궁의 연못을 크게 넓히고<br />
+                섬 위에 경회루를 만들었다.
+              </p>
             </div>
-        </section><!--content3-->
+          </div>
+          <!--move-box-->
 
-        <section id="content4" class="txt-area">
-            <div class="info-time">
-                <h4>관람시간</h4>
-                <div>
-                    1월 ~ 2월<br>
-                    : 09:00~17:00(입장마감은 16:00)<br><br>
-
-                    3월 ~ 5월<br>
-                    : 09:00~18:00(입장마감은 17:00)<br><br>
-
-                    6월 ~ 8월<br>
-                    : 09:00~18:30(입장마감은 17:30)<br><br>
-
-                    9월 ~ 10월<br>
-                    : 09:00~18:00(입장마감은 17:00)<br><br>
-
-                    11월 ~ 12월<br>
-                    : 09:00~17:00(입장마감은 16:00)<br><br>
-
-                    기관 사정에 따라 관람시간 단축 및 <br>
-                    조정이 있을 수 있습니다.
-                </div>
+          <div class="move-box4">
+            <div class="txt-area">
+              <h2>고궁을 거닐다</h2>
+              <p>
+                600년전 시작되었던 찬란한 역사 속<br />조선 왕들의 공간으로!
+              </p>
             </div>
-            <div class="info-how">
-                <h4>오시는길</h4>
-                <div>
-                    지하철<br>
-                    - 3호선 경복궁역 5번출구 도보 5분<br>
-                    - 5호선 광화문역 2번출구 도보 약 10분<br><br>
+          </div>
+          <!--move-box-->
+        </div>
+        <!--intro-->
+      </section>
+      <!--content1-->
 
-                    버스<br>
-                    - 경복궁 남측 : 109, 171, 272, 601, 606, 1020, 7025<br>
-                    - 경복궁 서측 : 1020, 1711, 7016, 7018, 7022, 7212, 6011, 9703<br><br>
-                    자세한 버스노선은 서울시 홈페이지 (http://topis.seoul.go.kr/)를 <br>
-                    참고하시기 바랍니다.<br><br>
+      <section id="content2">
+        <div class="txt-center">
+          <h2>역사속으로</h2>
+          <p>
+            경복궁이 우리 앞에 당당히 있기까지는 수많은 우여곡절을
+            거쳐야했습니다.<br />
+            조선의 개국과 함께 첫 궁궐로 세워졌으나<br />
+            역사의 소용돌이속에서 불타고 스러지며 다시 세워지기까지<br />
+            경복궁에는 많은 눈물이 있었습니다.<br />
+            그 생생한 이야기들을 지금 들려드립니다.
+          </p>
+          <div class="detailview"><a href="#none">자세히 보기</a></div>
+        </div>
+        <video muted autoplay loop>
+          <source src="./images/fire.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <!--content2-->
 
-                </div>
+      <section id="content3">
+        <div class="txt-center">
+          <h2>경복궁 복원 30주년</h2>
+          <p>일제가 훼손한 상징을 되찾다</p>
+        </div>
+        <div class="more">
+          <img src="./images/prev.svg" alt="prev" />
+          <img src="./images/next.svg" alt="next" />
+        </div>
+        <div class="restore-area">
+          <div id="restore">
+            <div class="restore-txt">
+              <div class="year">1592</div>
+              <div class="title">임진왜란</div>
+              <p>
+                경복궁은 조선 개국 직후인 1395년 창건돼 200년간 조선 왕조를
+                상징하는 법궁으로 자리잡았으나, 1592년 임진왜란 때 완전히 불에
+                타 폐허가 됐다
+              </p>
             </div>
-        </section><!--content4-->
+            <div class="restore-img img01">
+              <div class="tooltip">
+                임진왜란 이후 제작된<br />
+                경복궁전도
+              </div>
+            </div>
+          </div>
+          <!--#restore-->
 
-        <section id="content5">
+          <div id="restore">
+            <div class="restore-txt">
+              <div class="year">1863</div>
+              <div class="title">흥선대원군 복원</div>
+              <p>
+                고종이 즉위하자 정권을 잡게 된 흥선대원군은 왕실의 존엄성을
+                내세우기 위해 임진왜란 때 타버린 후 방치되어있던 경복궁 중건에
+                착수하여 1872년 완공하였다.
+              </p>
+            </div>
+            <div class="restore-img img02">
+              <div class="tooltip">
+                1873년 향원지 북쪽에 지어진<br />
+                건청궁의 모습
+              </div>
+            </div>
+          </div>
+          <!--#restore-->
 
-        </section><!--content5-->
+          <div id="restore">
+            <div class="restore-txt">
+              <div class="year">1910</div>
+              <div class="title">일제강점기 훼손</div>
+              <p>
+                일제는 침략후 전통 전각을 허물어 부재를 팔아넘기고, 으뜸이 되는
+                건축물인 근정전 앞에 조선총독부 청사를 지었다. 고종 중건 당시
+                500여 동이던 건물은 36동만 있었다.
+              </p>
+            </div>
+            <div class="restore-img img03">
+              <div class="tooltip">한국전쟁직후 경복궁 전경</div>
+            </div>
+          </div>
+          <!--#restore-->
 
-        <section id="content6">
+          <div id="restore">
+            <div class="restore-txt">
+              <div class="year">1991</div>
+              <div class="title">1차 복원 시작</div>
+              <p>
+                훼손된 경복궁의 원형을 복원하고자 시작된 1차 복원사업으로 새롭게
+                모습을 드러낸 건물은 모두 89동이었다. 2010년 광복절에 이뤄진
+                새로운 광화문 공개는 경복궁 복원 1차 사업의 백미였다.
+              </p>
+            </div>
+            <div class="restore-img img04">
+              <div class="tooltip">
+                1차 복원을 마친<br />
+                경복궁의 모습
+              </div>
+            </div>
+          </div>
+          <!--#restore-->
 
-        </section><!--content6-->
-    </div><!--wrapper-->
-</body>
+          <div id="restore">
+            <div class="restore-txt">
+              <div class="year">2045</div>
+              <div class="title">2차 복원중</div>
+              <p>
+                2011년부터 시작한 2차 복원계획에 따라 80동 건물과 223동
+                기단·초석 및 유구 등이 총 5단계에 걸쳐 복원된다. 1단계로는
+                소주방, 흥복전 영역이 복원되었고 2019년부터 2단계가 시작되었다
+              </p>
+            </div>
+            <div class="restore-img img05">
+              <div class="tooltip">
+                1차 복원을 마친<br />
+                경복궁의 모습
+              </div>
+            </div>
+          </div>
+          <!--#restore-->
+        </div>
+        <!--restore-area-->
+      </section>
+      <!--content3-->
+
+      <section id="content4" class="txt-area">
+        <div class="info-time">
+          <h4>관람시간</h4>
+          <div>
+            1월 ~ 2월<br />
+            : 09:00~17:00(입장마감은 16:00)<br /><br />
+
+            3월 ~ 5월<br />
+            : 09:00~18:00(입장마감은 17:00)<br /><br />
+
+            6월 ~ 8월<br />
+            : 09:00~18:30(입장마감은 17:30)<br /><br />
+
+            9월 ~ 10월<br />
+            : 09:00~18:00(입장마감은 17:00)<br /><br />
+
+            11월 ~ 12월<br />
+            : 09:00~17:00(입장마감은 16:00)<br /><br />
+
+            기관 사정에 따라 관람시간 단축 및 <br />
+            조정이 있을 수 있습니다.
+          </div>
+        </div>
+        <div class="info-how">
+          <h4>오시는길</h4>
+          <div>
+            지하철<br />
+            - 3호선 경복궁역 5번출구 도보 5분<br />
+            - 5호선 광화문역 2번출구 도보 약 10분<br /><br />
+
+            버스<br />
+            - 경복궁 남측 : 109, 171, 272, 601, 606, 1020, 7025<br />
+            - 경복궁 서측 : 1020, 1711, 7016, 7018, 7022, 7212, 6011, 9703<br /><br />
+            자세한 버스노선은 서울시 홈페이지 (http://topis.seoul.go.kr/)를
+            <br />
+            참고하시기 바랍니다.<br /><br />
+          </div>
+          <button class="button1" href="#none">예매하러 가기</button>
+        </div>
+      </section>
+      <!--content4-->
+
+      <section id="content5">
+        <div id="event-area">
+          <ul class="event-poster">
+            <li href="#none"></li>
+            <li href="#none"></li>
+            <li href="#none"></li>
+          </ul>
+          <div class="event-guide">
+            <div class="event-schedule">
+              <table>
+                <colgroup>
+                  <col style="width: 50px" />
+                  <col />
+                  <col />
+                </colgroup>
+                <tr>
+                  <td>· 일정 :</td>
+                  <td>
+                    2022년<br />
+                    04월 01일(금) ~ 05월 29일(일)
+                  </td>
+                </tr>
+                <tr>
+                  <td>· 시간 :</td>
+                  <td>19:00 ~21:30</td>
+                </tr>
+              </table>
+              <button class="button1" href="#none">예매하러 가기</button>
+            </div>
+            <div class="summary">
+              <h3>경복궁 별빛축제</h3>
+              <p>
+                따스함이 찾아오는 봄, 그리고 어두운 밤, 하늘을 아름답게 수놓은
+                별빛과 함께<br />
+                경복궁에 불이 켜졌습니다. <br />
+                은은하게 밝힌 조명아래 꽃이 흐드러지게 핀 고궁의 길을
+                걷다보면<br />
+                마치 오랜 옛날 조선의 왕들이 머리를식히러 야행했듯 <br />
+                우리도 복잡한 생각들을 내려 놓을 수 있게 될 것입니다.<br />
+                고즈넉한 조선의 밤, 그날의 시공간으로 여러분을 초대합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--content5-->
+
+      <section id="content6"></section>
+      <!--content6-->
+
+      <footer>
+        <div class="wrapper">
+          <div class="policy">
+            <ul>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">저작권정책</a></li>
+              <li><a href="#">개인정보침해신고센터</a></li>
+            </ul>
+          </div>
+          <!-- policy -->
+
+          <div class="copyright">
+            <div class="footer-logo">
+              <img src="./images/logo.png" alt="footer-logo" />
+            </div>
+            <div class="contact">
+              <p>문화재청 경복궁</p>
+              <p>
+                우)03045 서울특별시 종로구 사직로 161<br />전화번호 (02)
+                3700-3900 팩스 (02) 3700-3909
+              </p>
+              <p>COPYRIGHT 2022 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+        <!-- wrapper -->
+      </footer>
+    </div>
+    <!--wrapper-->
+  </body>
 </html>

@@ -1,0 +1,181 @@
+@import "./../../../scss/_style.scss";
+@import "./../../../scss/_common.scss";
+@import "./map-mixin";
+@import "./_mixin-menu-sub.scss";
+@import "./_mixin-line.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+// header
+header {
+    @include topmenu-mobile();
+
+    @include responsive(tablet-size) {
+        @include topmenu-pc();
+    }
+}
+
+// main
+main {
+    @include menu-flex();
+}
+
+// aside
+aside {
+    @include sidemenu-mobile();
+
+    @include responsive(tablet-size) {
+        @include sidemenu-pc();
+    }
+}
+
+//section
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    // background-color: aqua;
+    h2 {
+        font-size: 3em;
+    }
+
+    #map-area {
+        width: 70%;
+        // background-color: #4d351b;
+
+        .buttons {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 20vh;
+            padding-top: 4.4vh;
+            background-color: burlywood;
+            z-index: 5;
+            
+
+            .info {
+                width: 500px;
+                // width: 45%;
+                height: 100%;
+                background-color: cornflowerblue;
+                
+                table {
+                    font-size: 0.9em;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 3vh;
+                    background-color: rgba(188, 164, 136, 0);
+                    border-spacing: 1px;
+                    margin: auto;
+
+                    tr {
+                        background-color: #bca488;
+
+                        &:first-child {
+                            background-color: #958271;
+                    }
+                        td {
+                    padding:0.3vh 1vw;
+                        }
+                    }
+                }
+            }
+
+            .restore {
+                width: 360px;
+                height: 100%;
+                text-align: center;
+                // background-color: #4b6492;
+
+                h2 {
+                    font-size: 1.6em;
+                    color: #7e6754;
+                }
+
+                .step {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        width: 18%;
+                        line-height: 58px;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 20%;
+                        background-color: #7e6754;
+                    }
+                }
+
+            }
+        }
+
+        .map {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            // background-color: #5f924b;
+            overflow: auto;
+
+            & > * {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 1128px;
+                transform: translate(-50%, -50%);
+
+                img {
+
+                }
+            }
+
+            div {
+                visibility: hidden;
+            }
+
+            .road {
+                visibility: visible;
+            }
+
+        }
+    }
+
+    #guidance {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        color: #4c4742;
+        padding: 4vw;
+        background-color: #e1d4c6;
+
+        .place-name {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+
+        p {
+            padding: 4vh 0;
+        }
+
+        .place-img {
+            width: 100%;
+            height: 20vh;
+            @include item-bg ("hayngwonjung");
+            // background-color: #4c4742;
+            
+        }
+    }
+    
+}
+
+// footer
+footer {
+    @include footer-mobile();
+
+    @include responsive(tablet-size) {
+        @include footer-pc();
+    }
+}

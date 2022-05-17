@@ -1,14 +1,20 @@
-@mixin fullbg-right ($img-name){
-    width: 100%;
+@mixin bg-right ($img-name){
+    width: 100vw;
     height: 100vh;
     background: url(../images/#{$img-name}.jpg) no-repeat right top /cover;
     overflow: hidden;
 }
 
-@mixin fullbg-center ($img-name){
-    width: 100%;
+@mixin bg-center ($img-name){
+    width: 100vw;
     height: 100vh;
     background: url(../images/#{$img-name}.jpg) no-repeat center bottom /cover;
+    overflow: hidden;
+}
+
+@mixin item-bg ($img-name){
+
+    background: url(../images/#{$img-name}.jpg) no-repeat right top /cover;
     overflow: hidden;
 }
 
