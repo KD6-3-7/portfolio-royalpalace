@@ -33,37 +33,35 @@ aside {
 section.main-flex {
     overflow: hidden;
     margin-top: 70px;
+    width: 100%;
 
-    @include responsive(pc-size) {
-        overflow: hidden;
-        width: 100%;
-    }
-    
     section.des-1 {
         @include wrapper();
-        width: 70em;
+        width: 100%;
         
         @include responsive(tablet-size) {
-            width: 75em;
+            // width: 75vw;
         }
         
         @include responsive(pc-size) {
-            width: 80em;
+            // width: 80em;
         }
 
         .des-1-box {
             display: flex;
             justify-content: center;
-
+            width: 100%;
+            
             .des-1-set {
                 position: relative;
-                width: 20%;
+                width: calc(100%/5);
+                height: 0%;
                 
                 a {
                     width: 100%;
-
+                    
                     .des-img {
-                        margin: 5px;
+                        height: 100%;
                         
                         img {
                             width: 100%;
@@ -71,6 +69,14 @@ section.main-flex {
                             transition: all 1s;
                         }
                     }
+
+                    // .one-1 {
+                    //     background-image: url(../images/select1.png);
+                    //     background-repeat: no-repeat;
+                    //     background-size: cover;
+                    //     width: 100%;
+                    //     height: 195px;
+                    // }
                     
                     .des-1-text {
                         p {
@@ -85,11 +91,12 @@ section.main-flex {
                             color:#474646;
                         }
                     }
+
                     .top {
                         position: absolute;
                         top: 12px;
                     }
-                    
+
                     &:hover {
                         img {
                             opacity: 1;
@@ -99,11 +106,12 @@ section.main-flex {
                             color: white;
                         }
                     }
-
                 }
             }
         }
     }
+    
+    
 
     section.des-2 {
         margin-top: 90px;
