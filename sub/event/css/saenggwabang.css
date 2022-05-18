@@ -295,6 +295,19 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  header ul.topmenu {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 4);
     font-size: 1.2em;
@@ -436,7 +449,7 @@ section .img-text .main-text h2 {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .img-text .main-text h2 {
     font-size: 44px;
     margin-bottom: 74px;
@@ -456,7 +469,7 @@ section .img-text .main-text p {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .img-text .main-text p {
     font-size: 21px;
     font-weight: 100;
@@ -470,7 +483,7 @@ section .img-text .main-text p {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .img-text .main-text .person {
     margin-top: 40px;
   }
@@ -490,7 +503,14 @@ section .info {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section .info {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -550,7 +570,7 @@ section .info .info-text p {
   line-height: 2em;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .info .info-text {
     margin-top: 20px;
     width: 80%;
@@ -571,7 +591,14 @@ section .guide {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section .guide {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section .guide {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -631,7 +658,7 @@ section .guide .guide-info p {
   line-height: 2em;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info {
     width: 80%;
     margin-top: 20px;
@@ -642,7 +669,7 @@ section .guide .guide-info .guide-flex {
   margin-bottom: 33px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -662,14 +689,14 @@ section .guide .guide-info .guide-flex .guide-box p {
   padding: 10px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .guide-box p {
     padding: 0;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .guide-box {
     height: 450px;
     padding: 0 30px;
@@ -699,7 +726,7 @@ section .guide .guide-info .guide-flex .snack-list {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .snack-list {
     width: 85%;
   }
@@ -724,7 +751,7 @@ section .guide .guide-info .guide-flex .snack-list div .little-text {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .snack-list div {
     width: 33.3%;
   }
@@ -751,7 +778,7 @@ section .guide .guide-info .guide-flex .tea-list {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .tea-list {
     width: 85%;
   }
@@ -776,7 +803,7 @@ section .guide .guide-info .guide-flex .tea-list div .little-text {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .tea-list div {
     width: 33.3%;
   }
@@ -796,7 +823,14 @@ section .operation {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section .operation {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section .operation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -860,7 +894,7 @@ section .operation .operation-info .operation-term .operation-info-box {
   padding: 10px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .operation .operation-info .operation-term .operation-info-box {
     margin-bottom: 33px;
     height: 145px;
@@ -874,7 +908,7 @@ section .operation .operation-info .operation-term .operation-info-box p {
   width: 100%;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .operation .operation-info .operation-term {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -893,7 +927,7 @@ section .operation .operation-info .operation-term .info-center {
   width: 80%;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .operation .operation-info {
     width: 80%;
     margin-top: 20px;
@@ -905,7 +939,7 @@ section .operation p {
   line-height: 2em;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .operation p {
     width: 80%;
     margin-top: 20px;
@@ -926,7 +960,14 @@ section .participate {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section .participate {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section .participate {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -986,7 +1027,7 @@ section .participate p {
   line-height: 2em;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section .participate p {
     width: 80%;
     margin-top: 20px;

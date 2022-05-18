@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none;
 }
 
@@ -80,6 +81,7 @@ span {
   padding: 14px;
   margin: 4vh 0;
   background: url(../images/arr_right.png) no-repeat 90% 50%;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -96,6 +98,7 @@ span {
   line-height: 1.5rem;
   margin: auto;
   opacity: 0.6;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   z-index: 2;
 }
@@ -117,12 +120,17 @@ span {
   display: block;
   width: 15px;
   border-bottom: 1px solid #eee;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 header, main, aside, section, article, footer, img {
@@ -138,9 +146,15 @@ header, main, aside, section, article, footer, img {
   position: fixed;
   left: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 100vh;
   z-index: 999;
@@ -156,8 +170,12 @@ header, main, aside, section, article, footer, img {
 
 #wrapper .gnb {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   padding: 40px 48px;
   z-index: 3;
@@ -177,17 +195,28 @@ header, main, aside, section, article, footer, img {
   position: fixed;
   right: 64px;
   top: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-family: Pretendard;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 3;
 }
 
 #wrapper #slide-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   right: -4px;
   height: 20px;
@@ -207,11 +236,13 @@ header, main, aside, section, article, footer, img {
 
 #wrapper #slide-nav a span:first-child {
   opacity: 0;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 #wrapper #slide-nav a span:last-child {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   background-clip: content-box;
   width: 7px;
   height: 7px;
@@ -219,6 +250,7 @@ header, main, aside, section, article, footer, img {
   border-radius: 50%;
   margin-left: 10px;
   background-color: #fff;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 
@@ -228,12 +260,22 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #slide-nav a:hover span:last-child {
-  transform: translateX(28%);
+  -webkit-transform: translateX(28%);
+          transform: translateX(28%);
   border: 4px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   background-color: #fff;
   opacity: 1;
   margin-left: 10px;
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
@@ -258,6 +300,8 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content1 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: calc(100% * 5);
   height: 100vh;
@@ -282,8 +326,10 @@ header, main, aside, section, article, footer, img {
   min-height: 100%;
   width: auto;
   height: auto;
-  animation: fadeout 2s 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeout 2s 4s;
+          animation: fadeout 2s 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #wrapper #content1 .intro .move-box1 .bg1 {
@@ -294,8 +340,10 @@ header, main, aside, section, article, footer, img {
   height: 100vh;
   background: url(../images/intro04.jpg) no-repeat right top/cover;
   overflow: hidden;
-  animation: fadeout 2s 6s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeout 2s 6s;
+          animation: fadeout 2s 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #wrapper #content1 .intro .move-box2 {
@@ -356,9 +404,14 @@ header, main, aside, section, article, footer, img {
   position: absolute;
   left: 50%;
   top: 80%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 74vw;
   margin: auto;
   cursor: pointer;
@@ -366,6 +419,8 @@ header, main, aside, section, article, footer, img {
 
 #wrapper #content3 .restore-area {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 3vw;
   width: 60vw;
@@ -376,10 +431,19 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content3 .restore-area #restore {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 328px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 328px;
+          flex: 0 0 328px;
   height: 60vh;
   font-family: Pretendard;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -404,9 +468,15 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content3 .restore-area #restore .restore-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 18vh;
   margin-top: 2vh;
@@ -450,8 +520,12 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 100vh;
   background: url(../images/main_info.jpg) no-repeat center bottom/cover;
@@ -475,8 +549,12 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 100vh;
   background: url(../images/main_event.jpg) no-repeat center bottom/cover;
@@ -490,8 +568,12 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content5 #event-area .event-poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 6vw;
   width: 100%;
   height: 42vh;
@@ -500,7 +582,9 @@ header, main, aside, section, article, footer, img {
 
 #wrapper #content5 #event-area .event-poster li {
   height: 42vh;
-  flex: 0 0 280px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 280px;
+          flex: 0 0 280px;
   overflow: hidden;
   opacity: 0.5;
 }
@@ -525,8 +609,12 @@ header, main, aside, section, article, footer, img {
 }
 
 #wrapper #content5 #event-area .event-guide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 8vh;
 }
 

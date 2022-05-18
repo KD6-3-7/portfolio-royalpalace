@@ -296,6 +296,19 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  header ul.topmenu {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 3);
     font-size: 1.2em;
@@ -404,6 +417,13 @@ section.mypage {
   padding: 0 7%;
   width: 100%;
   margin: 100px auto;
+}
+
+@media screen and (min-width: 1520px) {
+  section.mypage {
+    max-width: 1320px;
+    padding: 0;
+  }
 }
 
 section.mypage div > h2 {
@@ -575,7 +595,7 @@ section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.mail-flex-box {
     width: 70%;
   }
@@ -627,7 +647,7 @@ section.mypage div.mypage-form form div.row div.flexbox.phone-flex-box {
           align-items: center;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.phone-flex-box {
     width: 25%;
   }
@@ -663,7 +683,7 @@ section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div {
           align-items: center;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div {
     width: 17%;
     -webkit-box-pack: justify;
@@ -677,7 +697,7 @@ section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div inp
   margin-left: 10px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -685,7 +705,7 @@ section.mypage div.mypage-form form div.row div.flexbox.address-flex-box div inp
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.address-flex-box button {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -698,7 +718,7 @@ section.mypage div.mypage-form form div.row div.flexbox.address-flex-box > input
   margin-top: 5px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.address-flex-box input#address1 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -708,7 +728,7 @@ section.mypage div.mypage-form form div.row div.flexbox.address-flex-box > input
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.address-flex-box input#address2 {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -720,7 +740,7 @@ section.mypage div.mypage-form form div.row div.flexbox.resign-flex-box div.moda
   display: none;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.row div.flexbox.resign-flex-box {
     width: 25%;
   }
@@ -763,7 +783,7 @@ section.mypage div.mypage-form form div.modal div.modal-body {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.mypage div.mypage-form form div.modal div.modal-body {
     width: 40%;
     padding: 3%;

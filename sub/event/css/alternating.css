@@ -295,6 +295,19 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  header ul.topmenu {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 4);
     font-size: 1.2em;
@@ -436,7 +449,7 @@ section.event .img-text .main-text h2 {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .img-text .main-text h2 {
     font-size: 44px;
     margin-bottom: 74px;
@@ -456,7 +469,7 @@ section.event .img-text .main-text p {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .img-text .main-text p {
     font-size: 21px;
     font-weight: 100;
@@ -470,7 +483,7 @@ section.event .img-text .main-text p {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .img-text .main-text .person {
     margin-top: 40px;
   }
@@ -490,7 +503,14 @@ section.event .info {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section.event .info {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section.event .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -550,7 +570,7 @@ section.event .info .info-text p {
   line-height: 2em;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .info .info-text {
     margin-top: 20px;
     width: 80%;
@@ -571,7 +591,14 @@ section.event .procedure {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section.event .procedure {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section.event .procedure {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -641,7 +668,7 @@ section.event .procedure .pro-flex-img div img {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .procedure .pro-flex-img div {
     width: 24.1%;
     margin-top: 20px;
@@ -665,7 +692,7 @@ section.event .procedure .pro-flex-img div img {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .procedure .pro-flex-img {
     width: 80%;
   }
@@ -685,7 +712,14 @@ section.event .operation {
   margin-bottom: 90px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section.event .operation {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section.event .operation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -764,7 +798,7 @@ section.event .operation .operation-info .operation-term .operation-info-box {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .operation .operation-info .operation-term .operation-info-box {
     width: 165px;
     margin-right: 10%;
@@ -788,7 +822,7 @@ section.event .operation .operation-info .operation-term .operation-info-box {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .operation .operation-info .operation-term {
     margin-bottom: 25px;
   }
@@ -800,13 +834,13 @@ section.event .operation .operation-info .operation-term .operation-info-box {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .operation .operation-info .operation-term .info-center {
     margin-top: 20px;
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.event .operation .operation-info {
     width: 80%;
     margin-top: 20px;

@@ -296,6 +296,19 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  header ul.topmenu {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 3);
     font-size: 1.2em;
@@ -413,7 +426,14 @@ section.main-sec {
   margin-bottom: 100px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
+  section.main-sec {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
   section.main-sec {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -427,7 +447,7 @@ section.main-sec section.des-1 {
   width: 100%;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.main-sec section.des-1 {
     width: 70%;
     height: 0%;
@@ -443,7 +463,7 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
   background-color: #dfd4c2;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
     padding: 50px 5px;
     margin-right: 5%;
@@ -454,7 +474,7 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
   width: 100%;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
     height: 400px;
   }
@@ -472,7 +492,7 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
     font-size: 1.1em;
     -webkit-transform: translateY(-50px);
@@ -492,7 +512,7 @@ section.main-sec section.des-2 {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.main-sec section.des-2 {
     width: 60%;
     margin-top: 0px;

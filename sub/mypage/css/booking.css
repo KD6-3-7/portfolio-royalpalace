@@ -296,6 +296,19 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  header ul.topmenu {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 3);
     font-size: 1.2em;
@@ -406,6 +419,13 @@ section.reservation {
   margin: 100px auto;
 }
 
+@media screen and (min-width: 1520px) {
+  section.reservation {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
 section.reservation div > a {
   margin-bottom: 10px;
   padding: 15px 0;
@@ -452,7 +472,7 @@ section.reservation div.reservation-form div.option {
   padding: 15px 0;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.option.personnel-list:last-child {
     padding-bottom: 30px;
   }
@@ -468,7 +488,7 @@ section.reservation div.reservation-form div.option > ul {
   background-color: #fcfbfa;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -711,7 +731,7 @@ section.reservation div.reservation-form div.time-list ul li.time:nth-child(9) {
   border-bottom: none;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.time-list ul li.time {
     width: 20%;
     border-right: 1px solid #f2ece4;
@@ -737,7 +757,7 @@ section.reservation div.reservation-form div.personnel-list div.personnel-flex-b
           align-items: center;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -763,7 +783,7 @@ section.reservation div.reservation-form div.personnel-list div.personnel-flex-b
   background-color: #fcfbfa;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.desc {
     width: 30%;
     height: 152px;
@@ -798,7 +818,7 @@ section.reservation div.reservation-form div.personnel-list div.personnel-flex-b
           align-items: center;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count {
     width: 70%;
     padding: 0;
@@ -820,7 +840,7 @@ section.reservation div.reservation-form div.personnel-list div.personnel-flex-b
           align-items: center;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age {
     height: 50px;
     padding: 0;
@@ -857,7 +877,7 @@ section.reservation div.reservation-form div.personnel-list div.personnel-flex-b
   font-weight: 500;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.label {
     width: 40%;
     margin-right: 30px;
@@ -904,14 +924,14 @@ section.reservation div.reservation-form div.personnel-list div.personnel-flex-b
   border-right: none;
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count label {
     padding: 0;
     line-height: 50px;
   }
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1520px) {
   section.reservation div.reservation-form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count {
     width: 60%;
   }
