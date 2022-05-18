@@ -410,6 +410,10 @@ aside div.sidemenu {
   }
 }
 
+section {
+  width: 100%;
+}
+
 section h1 {
   display: none;
 }

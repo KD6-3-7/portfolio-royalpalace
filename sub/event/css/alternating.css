@@ -410,6 +410,10 @@ aside div.sidemenu {
   }
 }
 
+section.event {
+  width: 100%;
+}
+
 section.event h1 {
   display: none;
 }
@@ -489,10 +493,20 @@ section.event .img-text .main-text p {
   }
 }
 
-section.event .info {
+section.event .wrapper-box {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+}
+
+@media screen and (min-width: 1520px) {
+  section.event .wrapper-box {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+section.event .wrapper-box .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,14 +518,7 @@ section.event .info {
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .info {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.event .info {
+  section.event .wrapper-box .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -522,23 +529,23 @@ section.event .info {
   }
 }
 
-section.event .info .little-title {
+section.event .wrapper-box .info .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section.event .info .little-title h3 {
+section.event .wrapper-box .info .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section.event .info .little-title h3 span {
+section.event .wrapper-box .info .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section.event .info .little-title h3 span::before {
+section.event .wrapper-box .info .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -550,7 +557,7 @@ section.event .info .little-title h3 span::before {
   background: #949392;
 }
 
-section.event .info .little-title::after {
+section.event .wrapper-box .info .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -561,26 +568,23 @@ section.event .info .little-title::after {
   background: #c4c3c2;
 }
 
-section.event .info .line-flex {
+section.event .wrapper-box .info .line-flex {
   width: 19%;
 }
 
-section.event .info .info-text p {
+section.event .wrapper-box .info .info-text p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .info .info-text {
+  section.event .wrapper-box .info .info-text {
     margin-top: 20px;
     width: 80%;
   }
 }
 
-section.event .procedure {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section.event .wrapper-box .procedure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,14 +596,7 @@ section.event .procedure {
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .procedure {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.event .procedure {
+  section.event .wrapper-box .procedure {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -610,23 +607,23 @@ section.event .procedure {
   }
 }
 
-section.event .procedure .little-title {
+section.event .wrapper-box .procedure .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section.event .procedure .little-title h3 {
+section.event .wrapper-box .procedure .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section.event .procedure .little-title h3 span {
+section.event .wrapper-box .procedure .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section.event .procedure .little-title h3 span::before {
+section.event .wrapper-box .procedure .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -638,7 +635,7 @@ section.event .procedure .little-title h3 span::before {
   background: #949392;
 }
 
-section.event .procedure .little-title::after {
+section.event .wrapper-box .procedure .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -649,34 +646,34 @@ section.event .procedure .little-title::after {
   background: #c4c3c2;
 }
 
-section.event .procedure .line-flex {
+section.event .wrapper-box .procedure .line-flex {
   width: 19%;
 }
 
-section.event .procedure .pro-flex-img div p {
+section.event .wrapper-box .procedure .pro-flex-img div p {
   margin-bottom: 18px;
   font-size: 18px;
 }
 
-section.event .procedure .pro-flex-img div img {
+section.event .wrapper-box .procedure .pro-flex-img div img {
   margin-bottom: 35px;
 }
 
 @media screen and (min-width: 768px) {
-  section.event .procedure .pro-flex-img div {
+  section.event .wrapper-box .procedure .pro-flex-img div {
     width: 48%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .procedure .pro-flex-img div {
+  section.event .wrapper-box .procedure .pro-flex-img div {
     width: 24.1%;
     margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  section.event .procedure .pro-flex-img {
+  section.event .wrapper-box .procedure .pro-flex-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -693,15 +690,12 @@ section.event .procedure .pro-flex-img div img {
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .procedure .pro-flex-img {
+  section.event .wrapper-box .procedure .pro-flex-img {
     width: 80%;
   }
 }
 
-section.event .operation {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section.event .wrapper-box .operation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,14 +707,7 @@ section.event .operation {
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .operation {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.event .operation {
+  section.event .wrapper-box .operation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -731,23 +718,23 @@ section.event .operation {
   }
 }
 
-section.event .operation .little-title {
+section.event .wrapper-box .operation .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section.event .operation .little-title h3 {
+section.event .wrapper-box .operation .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section.event .operation .little-title h3 span {
+section.event .wrapper-box .operation .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section.event .operation .little-title h3 span::before {
+section.event .wrapper-box .operation .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -759,7 +746,7 @@ section.event .operation .little-title h3 span::before {
   background: #949392;
 }
 
-section.event .operation .little-title::after {
+section.event .wrapper-box .operation .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -770,46 +757,46 @@ section.event .operation .little-title::after {
   background: #c4c3c2;
 }
 
-section.event .operation .line-flex {
+section.event .wrapper-box .operation .line-flex {
   width: 19%;
 }
 
-section.event .operation p {
+section.event .wrapper-box .operation p {
   font-size: 18px;
   line-height: 2em;
 }
 
-section.event .operation .operation-info .operation-term {
+section.event .wrapper-box .operation .operation-info .operation-term {
   margin-bottom: 50px;
   height: 145px;
 }
 
-section.event .operation .operation-info .operation-term .operation-info-box {
+section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
   background-color: #cec4b6;
 }
 
 @media screen and (min-width: 768px) {
-  section.event .operation .operation-info .operation-term .operation-info-box {
+  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
     width: 15%;
     height: 145px;
   }
-  section.event .operation .operation-info .operation-term .operation-info-box p {
+  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box p {
     padding: 10%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .operation .operation-info .operation-term .operation-info-box {
+  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
     width: 165px;
     margin-right: 10%;
   }
-  section.event .operation .operation-info .operation-term .operation-info-box p {
+  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box p {
     padding: 36px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  section.event .operation .operation-info .operation-term {
+  section.event .wrapper-box .operation .operation-info .operation-term {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -817,31 +804,31 @@ section.event .operation .operation-info .operation-term .operation-info-box {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  section.event .operation .operation-info .operation-term p {
+  section.event .wrapper-box .operation .operation-info .operation-term p {
     width: 80%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .operation .operation-info .operation-term {
+  section.event .wrapper-box .operation .operation-info .operation-term {
     margin-bottom: 25px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  section.event .operation .operation-info .operation-term .info-center {
+  section.event .wrapper-box .operation .operation-info .operation-term .info-center {
     margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .operation .operation-info .operation-term .info-center {
+  section.event .wrapper-box .operation .operation-info .operation-term .info-center {
     margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section.event .operation .operation-info {
+  section.event .wrapper-box .operation .operation-info {
     width: 80%;
     margin-top: 20px;
   }
