@@ -33,6 +33,7 @@ aside {
 
 //section
 section.event {
+    width: 100%;
     h1 {
         display: none;
     }
@@ -98,166 +99,166 @@ section.event {
         }
     }
 
-    .info {
+    .wrapper-box {
         @include wrapper();
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 90px;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;
-            justify-content: space-between;          
-        }
-        
-        @include line-deco();
-        
-        .line-flex {
-            width: 19%;;
-        }
 
-        
-        .info-text {
-            p {
-                font-size: 18px;
-                line-height: 2em;
-            }
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 90px;
+            
             @include responsive(pc-size) {
-                margin-top: 20px;
-                width: 80%;
-            }
-        }
-    }
-
-    .procedure {
-        @include wrapper();
-        display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        @include line-deco();
-
-        .line-flex {
-            width: 19%;;
-        }
-
-        .pro-flex-img {
-            div {
-                p {
-                    margin-bottom: 18px;
-                    font-size: 18px;
-                }
-    
-                img {
-                    margin-bottom: 35px;
-                }
-
-                @include responsive(tablet-size) {
-                    width: 48%;
-                }
-                @include responsive(pc-size) {
-                    width: 24.1%;
-                    margin-top: 20px;
-                }
+                flex-direction: row;
+                justify-content: space-between;          
             }
             
-            @include responsive(tablet-size) {
+            @include line-deco();
+            
+            .line-flex {
+                width: 19%;;
+            }
+    
+            
+            .info-text {
+                p {
+                    font-size: 18px;
+                    line-height: 2em;
+                }
+                @include responsive(pc-size) {
+                    margin-top: 20px;
+                    width: 80%;
+                }
+            }
+        }//info
+    
+        .procedure {
+            display: flex;
+            flex-direction: column;
+            
+            @include responsive(pc-size) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+    
+            @include line-deco();
+    
+            .line-flex {
+                width: 19%;;
+            }
+    
+            .pro-flex-img {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
-            }
 
-            @include responsive(pc-size) {
-                width: 80%;
-            }
-        }
-
-        margin-bottom: 90px;
-    }
-
-    .operation {
-        @include wrapper();
-        display: flex;
-        flex-direction: column;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;
-            justify-content: space-between;           
-        }
-        
-        @include line-deco();
-        
-        .line-flex {
-            width: 19%;;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-
-        .operation-info {
-            .operation-term {
-                margin-bottom: 50px;
-                height: 145px;
-
-                .operation-info-box {
-                    background-color: #cec4b6;
-                    
-                    @include responsive(tablet-size) {
-                        width: 15%;
-                        height: 145px;
-                        p {
-                            padding: 10%;
+                div {
+                    width: 48%;
+                    p {
+                        margin-bottom: 18px;
+                        font-size: 18px;
+                        @include responsive(tablet-size) {
+                            font-size: 14px;
                         }
-
+                        @include responsive(pc-size) {
+                            font-size: 18px;
+                        }
+                    }
+        
+                    img {
+                        margin-bottom: 35px;
+                    }
+    
+                    @include responsive(tablet-size) {
+                        width: 33%;
                     }
                     @include responsive(pc-size) {
-                        width: 165px;
-                        margin-right: 10%;
-                        p {
-                            padding: 36px;
-                        }
+                        width: 24.1%;
+                        margin-top: 20px;
                     }
                 }
-
+                
                 @include responsive(tablet-size) {
                     display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                     justify-content: space-between;
-                    p {
+                }
+    
+                @include responsive(pc-size) {
+                    width: 80%;
+                }
+            }
+    
+            margin-bottom: 90px;
+        } //procedure
+    
+        .operation {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 90px;
+            
+            @include responsive(pc-size) {
+                flex-direction: row;
+                justify-content: space-between;           
+            }
+            
+            
+            .line-flex {
+                @include line-deco();
+                width: 19%;;
+            }
+ 
+            .operation-info {
+                .operation-term {
+                    margin-bottom: 40px;
+                    .operation-info-box {
+                        background-color: #cec4b6;
+                        padding: 10px;
+                        margin-bottom: 10px;
+
+                        @include responsive(pc-size) {
+                            margin-bottom: 33px;
+                            height: 145px;
+                            padding: 0 45px;
+                            text-align: center;
+                            padding-top: 30px;
+                        }
+
+                        p {
+                            width: 100%;
+                        }
+                    }
+
+                    @include responsive(pc-size) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                    .info-center {
                         width: 80%;
                     }
                 }
 
                 @include responsive(pc-size) {
-                    margin-bottom: 25px;
-                }
-
-                .info-center {
-                    @include responsive(tablet-size) {
-                        margin-top: 10px;
-                    }
-
-                    @include responsive(pc-size) {
-                        margin-top: 20px;
-                    }
+                    width: 80%;
+                    margin-top: 20px;
                 }
             }
+            p {
+                font-size: 18px;
+                line-height: 2em;
 
-            @include responsive(pc-size) {
-                width: 80%;
-                margin-top: 20px;
+                @include responsive(pc-size) {
+                    width: 80%;
+                    margin-top: 20px;
+                }
             }
-        }
-    
-        margin-bottom: 90px;
-
-    }
+        } //operation
+    } //wrapper-box
 }
+
 
 
 
