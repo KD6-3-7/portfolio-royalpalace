@@ -418,6 +418,7 @@ article.des-1 {
 
 @media screen and (min-width: 768px) {
   article.des-1 {
+    margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 100px;
   }

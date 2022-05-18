@@ -71,17 +71,21 @@ section.main-sec {
                     }
                 }
     
-                p {
+                .des-1-text {
                     font-size: 0.9em;
-                    transform: translatex(5px);
+                    transform: translateY(10px);
+                    padding-left: 10px;
                     
                     @include responsive(tablet-size) {
-                        font-size: 1.0em;
+                        font-size: 1.1em;
+                        transform: translateY(20px);
+                        padding-left: 15px;
+
                     }
 
                     @include responsive(pc-size) {
-                        font-size: 1.1em;
-                        transform: translateY(-50px);
+                        transform: translateY(-30px);
+                        padding-left: 20px;
                     }
 
                     span {
@@ -89,6 +93,11 @@ section.main-sec {
                         width: 10px;
                         height: 10px;
                         border-radius: 2px;
+
+                        @include responsive(tablet-size) {
+                            width: 13px;
+                            height: 13px;
+                        }
                     }
                 }
             }
@@ -127,7 +136,7 @@ section.main-sec {
                     &:hover {
                         cursor: pointer;
                         background: #333;
-                        color: #fff;
+                        color: $color-white;
                         transition: all .3s ease 0s;
                     }
                 }
@@ -135,8 +144,9 @@ section.main-sec {
 
             .css3-tab-content {
                 overflow: hidden;
-                padding: 25px;
                 display: none;
+                text-align: justify;
+                padding: 25px 0;
                 background: #f2ece4;
                 clear: left;
                 box-sizing: border-box;
@@ -144,35 +154,35 @@ section.main-sec {
 
             input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
                 background: #333;
-                color: #fff;
+                color: $color-white;
                 cursor: default;
             }
 
             input[id='tabOne']:checked ~ div.tab-one {
                 display: block;
-                border-top: solid 3px #333;
+                // border-top: solid 3px #333;
             }
 
             input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
                 background: #333;
-                color: #fff;
+                color: $color-white;
                 cursor: default;
             }
 
             input[id='tabTwo']:checked ~ div.tab-two {
                 display: block;
-                border-top: solid 3px #333;
+                // border-top: solid 3px #333;
             }
 
             input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
                 background: #333;
-                color: #fff;
+                color: $color-white;
                 cursor: default;
             }
 
             input[id='addNew']:checked ~ div.add-new {
                 display: block;
-                border-top: solid 3px #333;
+                // border-top: solid 3px #333;
             }
         }
     }

@@ -414,38 +414,20 @@ aside div.sidemenu {
 section.main-flex {
   overflow: hidden;
   margin-top: 70px;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-flex {
-    overflow: hidden;
-    width: 100%;
-  }
+  width: 100%;
 }
 
 section.main-flex section.des-1 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  width: 70em;
+  width: 100%;
 }
 
 @media screen and (min-width: 1520px) {
   section.main-flex section.des-1 {
     max-width: 1320px;
     padding: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  section.main-flex section.des-1 {
-    width: 75em;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-flex section.des-1 {
-    width: 80em;
   }
 }
 
@@ -456,11 +438,13 @@ section.main-flex section.des-1 .des-1-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 section.main-flex section.des-1 .des-1-box .des-1-set {
   position: relative;
-  width: 20%;
+  width: calc(100%/5);
+  height: 0%;
 }
 
 section.main-flex section.des-1 .des-1-box .des-1-set a {
@@ -468,7 +452,7 @@ section.main-flex section.des-1 .des-1-box .des-1-set a {
 }
 
 section.main-flex section.des-1 .des-1-box .des-1-set a .des-img {
-  margin: 5px;
+  height: 100%;
 }
 
 section.main-flex section.des-1 .des-1-box .des-1-set a .des-img img {

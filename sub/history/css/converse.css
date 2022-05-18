@@ -480,31 +480,42 @@ section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
   }
 }
 
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
+section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
   font-size: 0.9em;
-  -webkit-transform: translatex(5px);
-          transform: translatex(5px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
-    font-size: 1.0em;
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
+    font-size: 1.1em;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    padding-left: 15px;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p {
-    font-size: 1.1em;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    padding-left: 20px;
   }
 }
 
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 p span {
+section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text span {
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text span {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 section.main-sec section.des-2 {
@@ -546,15 +557,16 @@ section.main-sec section.des-2 .css3-tab .css3-tab-nav label {
 section.main-sec section.des-2 .css3-tab .css3-tab-nav label:hover {
   cursor: pointer;
   background: #333;
-  color: #fff;
+  color: #fcfbfa;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
 }
 
 section.main-sec section.des-2 .css3-tab .css3-tab-content {
   overflow: hidden;
-  padding: 25px;
   display: none;
+  text-align: justify;
+  padding: 25px 0;
   background: #f2ece4;
   clear: left;
   -webkit-box-sizing: border-box;
@@ -563,35 +575,32 @@ section.main-sec section.des-2 .css3-tab .css3-tab-content {
 
 section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
   background: #333;
-  color: #fff;
+  color: #fcfbfa;
   cursor: default;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ div.tab-one {
   display: block;
-  border-top: solid 3px #333;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
   background: #333;
-  color: #fff;
+  color: #fcfbfa;
   cursor: default;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ div.tab-two {
   display: block;
-  border-top: solid 3px #333;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
   background: #333;
-  color: #fff;
+  color: #fcfbfa;
   cursor: default;
 }
 
 section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ div.add-new {
   display: block;
-  border-top: solid 3px #333;
 }
 
 footer {
