@@ -295,19 +295,6 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1520px) {
-  header ul.topmenu {
-    margin: 0 auto;
-    width: 1320px;
-    padding: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-}
-
-@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 4);
     font-size: 1.2em;
@@ -650,9 +637,40 @@ section.event .wrapper-box .procedure .line-flex {
   width: 19%;
 }
 
+section.event .wrapper-box .procedure .pro-flex-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.event .wrapper-box .procedure .pro-flex-img div {
+  width: 48%;
+}
+
 section.event .wrapper-box .procedure .pro-flex-img div p {
   margin-bottom: 18px;
   font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  section.event .wrapper-box .procedure .pro-flex-img div p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  section.event .wrapper-box .procedure .pro-flex-img div p {
+    font-size: 18px;
+  }
 }
 
 section.event .wrapper-box .procedure .pro-flex-img div img {
@@ -661,7 +679,7 @@ section.event .wrapper-box .procedure .pro-flex-img div img {
 
 @media screen and (min-width: 768px) {
   section.event .wrapper-box .procedure .pro-flex-img div {
-    width: 48%;
+    width: 33%;
   }
 }
 
@@ -718,23 +736,27 @@ section.event .wrapper-box .operation {
   }
 }
 
-section.event .wrapper-box .operation .little-title {
+section.event .wrapper-box .operation .line-flex {
+  width: 19%;
+}
+
+section.event .wrapper-box .operation .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section.event .wrapper-box .operation .little-title h3 {
+section.event .wrapper-box .operation .line-flex .little-title h3 {
   font-size: 22px;
   font-weight: 500;
 }
 
-section.event .wrapper-box .operation .little-title h3 span {
+section.event .wrapper-box .operation .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section.event .wrapper-box .operation .little-title h3 span::before {
+section.event .wrapper-box .operation .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -746,7 +768,7 @@ section.event .wrapper-box .operation .little-title h3 span::before {
   background: #949392;
 }
 
-section.event .wrapper-box .operation .little-title::after {
+section.event .wrapper-box .operation .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -757,8 +779,54 @@ section.event .wrapper-box .operation .little-title::after {
   background: #c4c3c2;
 }
 
-section.event .wrapper-box .operation .line-flex {
-  width: 19%;
+section.event .wrapper-box .operation .operation-info .operation-term {
+  margin-bottom: 40px;
+}
+
+section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
+  background-color: #cec4b6;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1520px) {
+  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
+    margin-bottom: 33px;
+    height: 145px;
+    padding: 0 45px;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box p {
+  width: 100%;
+}
+
+@media screen and (min-width: 1520px) {
+  section.event .wrapper-box .operation .operation-info .operation-term {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+section.event .wrapper-box .operation .operation-info .operation-term .info-center {
+  width: 80%;
+}
+
+@media screen and (min-width: 1520px) {
+  section.event .wrapper-box .operation .operation-info {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 section.event .wrapper-box .operation p {
@@ -766,69 +834,8 @@ section.event .wrapper-box .operation p {
   line-height: 2em;
 }
 
-section.event .wrapper-box .operation .operation-info .operation-term {
-  margin-bottom: 50px;
-  height: 145px;
-}
-
-section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
-  background-color: #cec4b6;
-}
-
-@media screen and (min-width: 768px) {
-  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
-    width: 15%;
-    height: 145px;
-  }
-  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box p {
-    padding: 10%;
-  }
-}
-
 @media screen and (min-width: 1520px) {
-  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box {
-    width: 165px;
-    margin-right: 10%;
-  }
-  section.event .wrapper-box .operation .operation-info .operation-term .operation-info-box p {
-    padding: 36px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  section.event .wrapper-box .operation .operation-info .operation-term {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  section.event .wrapper-box .operation .operation-info .operation-term p {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.event .wrapper-box .operation .operation-info .operation-term {
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  section.event .wrapper-box .operation .operation-info .operation-term .info-center {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.event .wrapper-box .operation .operation-info .operation-term .info-center {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.event .wrapper-box .operation .operation-info {
+  section.event .wrapper-box .operation p {
     width: 80%;
     margin-top: 20px;
   }

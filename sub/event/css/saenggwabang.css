@@ -295,19 +295,6 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1520px) {
-  header ul.topmenu {
-    margin: 0 auto;
-    width: 1320px;
-    padding: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-}
-
-@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 4);
     font-size: 1.2em;
@@ -669,10 +656,6 @@ section .guide .guide-info p {
   }
 }
 
-section .guide .guide-info .guide-flex {
-  margin-bottom: 33px;
-}
-
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex {
     display: -webkit-box;
@@ -681,6 +664,7 @@ section .guide .guide-info .guide-flex {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 33px;
   }
 }
 
@@ -702,47 +686,49 @@ section .guide .guide-info .guide-flex .guide-box p {
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .guide-box {
-    height: 450px;
+    height: 300px;
     padding: 0 30px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 33px;
     text-align: center;
     padding-top: 30px;
   }
 }
 
 section .guide .guide-info .guide-flex .snack-list {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .snack-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .snack-list {
-    width: 85%;
+    width: 87%;
   }
 }
 
+section .guide .guide-info .guide-flex .snack-list div {
+  width: 48%;
+  margin-bottom: 40px;
+}
+
 section .guide .guide-info .guide-flex .snack-list div img {
-  width: 50%;
-  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 section .guide .guide-info .guide-flex .snack-list div p {
   text-align: center;
+  line-height: 1.3em;
 }
 
 section .guide .guide-info .guide-flex .snack-list div .little-text {
@@ -751,50 +737,51 @@ section .guide .guide-info .guide-flex .snack-list div .little-text {
 
 @media screen and (min-width: 768px) {
   section .guide .guide-info .guide-flex .snack-list div {
-    width: 50%;
+    width: 32%;
   }
 }
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .snack-list div {
-    width: 33.3%;
+    width: 15%;
+    height: 300px;
+    vertical-align: middle;
   }
 }
 
 section .guide .guide-info .guide-flex .tea-list {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .tea-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .tea-list {
-    width: 85%;
+    width: 87%;
   }
 }
 
+section .guide .guide-info .guide-flex .tea-list div {
+  width: 48%;
+  margin-bottom: 40px;
+}
+
 section .guide .guide-info .guide-flex .tea-list div img {
-  width: 50%;
-  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 section .guide .guide-info .guide-flex .tea-list div p {
   text-align: center;
+  line-height: 1.3em;
 }
 
 section .guide .guide-info .guide-flex .tea-list div .little-text {
@@ -803,13 +790,15 @@ section .guide .guide-info .guide-flex .tea-list div .little-text {
 
 @media screen and (min-width: 768px) {
   section .guide .guide-info .guide-flex .tea-list div {
-    width: 50%;
+    width: 32%;
   }
 }
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .tea-list div {
-    width: 33.3%;
+    width: 15%;
+    height: 300px;
+    vertical-align: middle;
   }
 }
 

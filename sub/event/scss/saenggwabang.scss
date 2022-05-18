@@ -158,11 +158,11 @@ section {
             }
 
             .guide-flex {
-                margin-bottom: 33px;
-
+                
                 @include responsive(pc-size) {
                     display: flex;
                     justify-content: space-between;
+                    margin-bottom: 33px;
                 }
 
                 .guide-box {
@@ -178,78 +178,85 @@ section {
                     }
 
                     @include responsive(pc-size) {
-                        height: 450px;
+                        height: 300px;
                         padding: 0 30px;
+                        text-align: center;
+                        padding-top: 30px;
+                        margin-bottom: 33px;
                         text-align: center;
                         padding-top: 30px;
                     }
                 }
 
                 .snack-list {
-                    width: 100%;
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
                     @include responsive(pc-size) {
-                        width: 85%;
+                        width: 87%;
                     }
 
                     div {
+                        width: 48%;
+                        margin-bottom: 40px;
                         img {
-                            width: 50%;
-                            margin: 0 auto;
+                            margin-bottom: 15px;
                         }
                         p {
                             text-align: center;
+                            line-height: 1.3em;
                         }
                         .little-text {
                             font-size: 14px;
                         }
+                        
                         @include responsive(tablet-size) {
-                            width: 50%;
+                            width: 32%;
                         }
                         @include responsive(pc-size) {
-                            width: 33.3%;
+                            width: 15%;
+                            height: 300px;
+                            vertical-align: middle;
                         }
                     }
                 }
 
                 .tea-list {
-                    width: 100%;
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
                     @include responsive(pc-size) {
-                        width: 85%;
+                        width: 87%;
                     }
 
                     div {
+                        width: 48%;
+                        margin-bottom: 40px;
                         img {
-                            width: 50%;
-                            margin: 0 auto;
+                            margin-bottom: 15px;
                         }
                         p {
                             text-align: center;
+                            line-height: 1.3em;
                         }
                         .little-text {
                             font-size: 14px;
                         }
+                        
                         @include responsive(tablet-size) {
-                            width: 50%;
+                            width: 32%;
                         }
                         @include responsive(pc-size) {
-                            width: 33.3%;
+                            width: 15%;
+                            height: 300px;
+                            vertical-align: middle;
                         }
                     }
                 }
-
-
             }
         }
     }
@@ -283,8 +290,8 @@ section {
                         padding: 0 45px;
                         text-align: center;
                         padding-top: 30px;
-
                     }
+
                     p {
                         width: 100%;
                     }
