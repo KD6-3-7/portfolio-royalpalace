@@ -178,7 +178,7 @@ section {
                     }
 
                     @include responsive(pc-size) {
-                        height: 300px;
+                        height: 280px;
                         padding: 0 30px;
                         text-align: center;
                         padding-top: 30px;
@@ -193,8 +193,9 @@ section {
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: space-between;
-
+                    
                     @include responsive(pc-size) {
+                        align-items: center;
                         width: 87%;
                     }
 
@@ -208,7 +209,13 @@ section {
                             text-align: center;
                             line-height: 1.3em;
                         }
+                        .img-padding {
+                            margin-bottom: 16px;
+                        }
+
                         .little-text {
+                            display: block;
+                            text-align: center;
                             font-size: 14px;
                         }
                         
@@ -217,8 +224,6 @@ section {
                         }
                         @include responsive(pc-size) {
                             width: 15%;
-                            height: 300px;
-                            vertical-align: middle;
                         }
                     }
                 }
@@ -228,8 +233,9 @@ section {
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: space-between;
-
+                    
                     @include responsive(pc-size) {
+                        align-items: center;
                         width: 87%;
                     }
 
@@ -243,17 +249,12 @@ section {
                             text-align: center;
                             line-height: 1.3em;
                         }
-                        .little-text {
-                            font-size: 14px;
-                        }
                         
                         @include responsive(tablet-size) {
                             width: 32%;
                         }
                         @include responsive(pc-size) {
                             width: 15%;
-                            height: 300px;
-                            vertical-align: middle;
                         }
                     }
                 }

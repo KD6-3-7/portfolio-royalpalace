@@ -150,10 +150,12 @@ section.event {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                margin: 0 auto;
+                justify-content: center;
 
                 div {
                     width: 48%;
+                    padding: 3px;
                     p {
                         margin-bottom: 18px;
                         font-size: 18px;
@@ -171,6 +173,7 @@ section.event {
     
                     @include responsive(tablet-size) {
                         width: 33%;
+                        padding: 5px;
                     }
                     @include responsive(pc-size) {
                         width: 24.1%;
@@ -182,11 +185,12 @@ section.event {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                 }
     
                 @include responsive(pc-size) {
                     width: 80%;
+                    justify-content: space-between;
                 }
             }
     
