@@ -219,12 +219,12 @@
         flex-direction: row;
         justify-content: space-between;
 
-        @include responsive(pc-size) {
-            margin: 0 auto;
-            width: 1320px;
-            padding: 0;
-            transform: translateX(100px);
-        }
+        // @include responsive(pc-size) {
+        //     margin: 0 auto;
+        //     width: 1320px;
+        //     padding: 0;
+        //     transform: translateX(100px);
+        // }
 
         li.submenu {
             width: calc(100% / 4); // calc(100% / [서브메뉴 개수])

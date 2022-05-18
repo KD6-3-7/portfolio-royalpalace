@@ -426,17 +426,11 @@ section.complete {
   }
 }
 
-section.complete div > h2 {
-  padding-bottom: 20px;
-}
-
 section.complete div.result {
   width: 100%;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 100px;
-  border-top: 1px solid #2c2928;
-  border-bottom: 1px solid #2c2928;
 }
 
 section.complete div.result div.logo {

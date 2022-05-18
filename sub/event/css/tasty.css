@@ -295,19 +295,6 @@ header ul.topmenu {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1520px) {
-  header ul.topmenu {
-    margin: 0 auto;
-    width: 1320px;
-    padding: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-}
-
-@media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
     width: calc(100% / 4);
     font-size: 1.2em;
@@ -408,6 +395,10 @@ aside div.sidemenu {
     display: inline-block;
     color: #999999;
   }
+}
+
+section {
+  width: 100%;
 }
 
 section h1 {
