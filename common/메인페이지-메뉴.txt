@@ -1,0 +1,44 @@
+* href="#"로 검색하셔서 # 부분 전부 바꿔주세요.
+* 본인이 작업한 폴더 (같은 경로) 내에 있는 페이지 링크 시 앞의 점은 다 없애주세요. (ex. ./../history/history.html -> history.html)
+
+main
+- 첫 화면			index.html
+
+- 역사 알기		./sub/history/history.html
+	- 경복궁의 역사	./sub/history/history.html
+	- 알고싶은 이야기	./sub/history/converse.html
+	- 복원 사업에 관해	./sub/history/restoration.html
+
+- 경복궁 지도		./sub/map/map.html
+
+- 관람 안내		./sub/info/time-price.html
+	- 시간 및 요금	./sub/info/time-price.html
+	- 오시는 길	./sub/info/road.html
+	- 주차 안내	./sub/info/parking.html
+	- 해설 안내	./sub/info/explain.html
+
+- 행사 안내		./sub/event/alternating.html
+	- 수문장 교대의식	./sub/event/alternating.html
+	- 수라간 시식공감	./sub/event/tasty.html
+	- 별빛야행	./sub/event/star.html
+	- 생과방		./sub/event/saenggwabang.html
+
+- 소식 알림		./sub/notice/notice.html
+	- 공지사항	./sub/notice/notice.html
+		(- 게시글)	./sub/notice/notice-post.html
+	- 자주하는 질문	./sub/notice/faq.html
+	- 1:1 문의하기	./sub/notice/inquire.html
+
+- 로그인 			./sub/mypage/login.html
+	(- 회원가입)	./sub/mypage/signup.html
+- 내 정보 		./sub/mypage/mypage.html
+- 예약·예매		./sub/mypage/booking.html
+	(- 예약 완료)	./sub/mypage/booking-complete.html
+	(- 예약 확인)	./sub/mypage/booking-check.html
+
+
+
+footer
+- 개인정보처리방침		./sub/service/privacy.html
+- 저작권정책		./sub/service/copyright.html
+- 개인정보침해신고센터	https://www.cha.go.kr/cop/bbs/selectBoardNameCheck.do?bbsId=BBSMSTR_1049&checkType=regist (target="_blank" 설정도 해주세요.)
