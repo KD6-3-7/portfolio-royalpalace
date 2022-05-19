@@ -106,6 +106,9 @@ section.event {
             display: flex;
             flex-direction: column;
             margin-bottom: 90px;
+            font-size: 18px;
+            line-height: 2em;
+
             
             @include responsive(pc-size) {
                 flex-direction: row;
@@ -118,17 +121,35 @@ section.event {
                 width: 19%;;
             }
     
-            
-            .info-text {
+            .info-text-mobile {
                 p {
                     font-size: 18px;
                     line-height: 2em;
                 }
+                display: block;
+                @include responsive(tablet-size) {
+                    display: block;
+                }
                 @include responsive(pc-size) {
+                    display: none;
+                }
+            }
+            .info-text-pc {
+                p {
+                    font-size: 18px;
+                    line-height: 2em;
+                }
+                display: none;
+                @include responsive(tablet-size) {
+                    display: none;
+                }
+                @include responsive(pc-size) {
+                    display: block;
                     margin-top: 20px;
                     width: 80%;
                 }
             }
+
         }//info
     
         .procedure {
@@ -158,9 +179,9 @@ section.event {
                     padding: 3px;
                     p {
                         margin-bottom: 18px;
-                        font-size: 18px;
+                        font-size: 16px;
                         @include responsive(tablet-size) {
-                            font-size: 14px;
+                            font-size: 13px;
                         }
                         @include responsive(pc-size) {
                             font-size: 18px;

@@ -502,6 +502,8 @@ section.event .wrapper-box .info {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 90px;
+  font-size: 18px;
+  line-height: 2em;
 }
 
 @media screen and (min-width: 1520px) {
@@ -559,13 +561,45 @@ section.event .wrapper-box .info .line-flex {
   width: 19%;
 }
 
-section.event .wrapper-box .info .info-text p {
+section.event .wrapper-box .info .info-text-mobile {
+  display: block;
+}
+
+section.event .wrapper-box .info .info-text-mobile p {
   font-size: 18px;
   line-height: 2em;
 }
 
+@media screen and (min-width: 768px) {
+  section.event .wrapper-box .info .info-text-mobile {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1520px) {
-  section.event .wrapper-box .info .info-text {
+  section.event .wrapper-box .info .info-text-mobile {
+    display: none;
+  }
+}
+
+section.event .wrapper-box .info .info-text-pc {
+  display: none;
+}
+
+section.event .wrapper-box .info .info-text-pc p {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  section.event .wrapper-box .info .info-text-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  section.event .wrapper-box .info .info-text-pc {
+    display: block;
     margin-top: 20px;
     width: 80%;
   }
@@ -660,12 +694,12 @@ section.event .wrapper-box .procedure .pro-flex-img div {
 
 section.event .wrapper-box .procedure .pro-flex-img div p {
   margin-bottom: 18px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   section.event .wrapper-box .procedure .pro-flex-img div p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 

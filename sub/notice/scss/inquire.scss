@@ -46,21 +46,20 @@ section.inquire {
 
         form {
             border-top: 1px solid $color-main;
-            border-bottom: 1px solid $color-main;
-
+            
             div.row {
                 padding: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 border-bottom: 1px solid $color-border;
-
+                
                 @include responsive(tablet-size) {
                     flex-direction: row;
                 }
-
-                &:last-child {
-                    border-bottom: none;
+                
+                &:nth-child(7) {
+                    border-bottom: 1px solid $color-main;
                     
                      div {
                          display: flex;
@@ -135,27 +134,26 @@ section.inquire {
                     resize: none;
                 }
             }
-        }
 
-        div.button-flex-box {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 50px;
-
-            button {
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-
-                font: {
-                    family: $font-sans;
-                    size: 1.1em;
+            div.button-flex-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 50px;
+    
+                button {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+    
+                    font: {
+                        family: $font-sans;
+                        size: 1.1em;
+                    }
                 }
             }
         }
     }
-    
 }
 
 // footer
