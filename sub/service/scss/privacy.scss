@@ -47,6 +47,10 @@ section {
 
     ul > li {
         margin-top: 40px;
+        line-height: 20px;
+        padding: 3px 0;
+        color: $color-main;
+        opacity: 0.8;
 
         h2 {
             font-weight: bold;
@@ -56,6 +60,7 @@ section {
             color: $color-main;
             opacity: 0.8;
         }
+        
         p {
             text-align: justify;
             font-size: 1em;
@@ -64,13 +69,17 @@ section {
             color: $color-main;
             opacity: 0.8;
         }
+
         ol {
+
             li {
+                text-align: justify;
                 line-height: 20px;
                 padding: 3px 0;
                 color: $color-main;
                 opacity: 0.8;
             }
+
             .table-3 {
                 h3, p {
                     font-weight: 400;
