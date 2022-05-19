@@ -686,7 +686,7 @@ section .guide .guide-info .guide-flex .guide-box p {
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .guide-box {
-    height: 300px;
+    height: 280px;
     padding: 0 30px;
     text-align: center;
     padding-top: 30px;
@@ -713,6 +713,9 @@ section .guide .guide-info .guide-flex .snack-list {
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .snack-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 87%;
   }
 }
@@ -731,7 +734,13 @@ section .guide .guide-info .guide-flex .snack-list div p {
   line-height: 1.3em;
 }
 
+section .guide .guide-info .guide-flex .snack-list div .img-padding {
+  margin-bottom: 16px;
+}
+
 section .guide .guide-info .guide-flex .snack-list div .little-text {
+  display: block;
+  text-align: center;
   font-size: 14px;
 }
 
@@ -744,8 +753,6 @@ section .guide .guide-info .guide-flex .snack-list div .little-text {
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .snack-list div {
     width: 15%;
-    height: 300px;
-    vertical-align: middle;
   }
 }
 
@@ -766,6 +773,9 @@ section .guide .guide-info .guide-flex .tea-list {
 
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .tea-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 87%;
   }
 }
@@ -784,10 +794,6 @@ section .guide .guide-info .guide-flex .tea-list div p {
   line-height: 1.3em;
 }
 
-section .guide .guide-info .guide-flex .tea-list div .little-text {
-  font-size: 14px;
-}
-
 @media screen and (min-width: 768px) {
   section .guide .guide-info .guide-flex .tea-list div {
     width: 32%;
@@ -797,8 +803,6 @@ section .guide .guide-info .guide-flex .tea-list div .little-text {
 @media screen and (min-width: 1520px) {
   section .guide .guide-info .guide-flex .tea-list div {
     width: 15%;
-    height: 300px;
-    vertical-align: middle;
   }
 }
 

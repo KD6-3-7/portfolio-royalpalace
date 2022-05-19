@@ -647,13 +647,15 @@ section.event .wrapper-box .procedure .pro-flex-img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.event .wrapper-box .procedure .pro-flex-img div {
   width: 48%;
+  padding: 3px;
 }
 
 section.event .wrapper-box .procedure .pro-flex-img div p {
@@ -680,6 +682,7 @@ section.event .wrapper-box .procedure .pro-flex-img div img {
 @media screen and (min-width: 768px) {
   section.event .wrapper-box .procedure .pro-flex-img div {
     width: 33%;
+    padding: 5px;
   }
 }
 
@@ -701,15 +704,18 @@ section.event .wrapper-box .procedure .pro-flex-img div img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 @media screen and (min-width: 1520px) {
   section.event .wrapper-box .procedure .pro-flex-img {
     width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
