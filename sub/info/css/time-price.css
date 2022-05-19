@@ -342,7 +342,6 @@ section {
   }
 }
 section section.roy1 {
-  background-color: #aa9172;
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
@@ -355,7 +354,7 @@ section section.roy1 {
 }
 @media screen and (min-width: 1520px) {
   section section.roy1 {
-    width: 80%;
+    width: 75%;
   }
 }
 section section.roy1 h2 {
@@ -392,8 +391,10 @@ section section.roy1 ul li:last-child h3 {
 section section.roy1 ul li:last-child p {
   font-size: 14px;
 }
+section section.roy1 ul .p_list p {
+  width: 80%;
+}
 section section.roy2 {
-  background-color: #968a7b;
   padding-bottom: 92px;
 }
 section section.roy2 h2 {
@@ -403,6 +404,7 @@ section section.roy2 h2 {
 }
 section section.roy2 #roy2-price {
   margin: 0 auto;
+  word-break: keep-all;
   border-collapse: collapse;
 }
 section section.roy2 #roy2-price th {
@@ -414,11 +416,21 @@ section section.roy2 #roy2-price td {
   padding: 7px;
   text-align: center;
 }
+section section.roy2 #roy2-price th .br_list,
+section section.roy2 #roy2-price td .br_list {
+  text-align: left;
+}
 @media screen and (min-width: 1520px) {
   section section.roy2 #roy2-price th,
 section section.roy2 #roy2-price td {
     padding: 40px 50px;
   }
+}
+section section.roy2 #roy2-price tr .br_list {
+  text-align: left;
+}
+section section.roy2 #roy2-price tr .last_list a {
+  text-decoration: underline;
 }
 
 footer {

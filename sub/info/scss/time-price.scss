@@ -31,16 +31,12 @@ aside {
 //section
 section {
     @include wrapper();
-    // @include responsive(pc-size) {
-    //     width: 70%;
-    //     margin-left: 170px
-    // }
+
     section.roy1 {
-        background-color: #aa9172;
         @include wrapper();
 
         @include responsive(pc-size) {
-            width: 80%;
+            width: 75%;
         }
 
         h2 {
@@ -57,8 +53,6 @@ section {
                 padding-bottom: 25px;
 
                 @include responsive(pc-size) {
-                    // width: 70%;
-                    // margin: 0 auto;
                     padding-left: 125px;
                     p>br {
                         display: none;
@@ -78,11 +72,13 @@ section {
                     }
                 }
             }
+            .p_list p{
+                width: 80%;
+            }
         }
     }
 
     section.roy2 {
-        background-color: #968a7b;
         h2 {
             text-align: center;
             margin: 50px 0;
@@ -91,6 +87,7 @@ section {
         
         #roy2-price {
             margin: 0 auto;
+            word-break: keep-all;
             th {
                 background-color: #d4cabd;
             }
@@ -100,11 +97,25 @@ section {
                 padding: 7px;
                 text-align: center;
 
+                .br_list {
+                    text-align: left;
+                }
+
                 @include responsive(pc-size) {
                     padding: 40px 50px;
                 }
             }
             border-collapse: collapse;
+            
+            tr{
+                .br_list{
+                    text-align: left;
+                }
+
+                .last_list a{
+                   text-decoration: underline;
+                }
+            }
         }
         // font-size: 1em;
         padding-bottom: 92px;
