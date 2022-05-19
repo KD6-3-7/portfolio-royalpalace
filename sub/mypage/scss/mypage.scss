@@ -44,9 +44,8 @@ section.mypage {
     div.mypage-form {
         width: 100%;
 
-        form {
+        form#frmEdit {
             border-top: 1px solid $color-main;
-            border-bottom: 1px solid $color-main;
 
             div.row {
                 padding: 10px;
@@ -58,13 +57,13 @@ section.mypage {
                 @include responsive(tablet-size) {
                     flex-direction: row;
 
-                    &:nth-child(5), &:nth-child(6), &:last-child {
+                    &:nth-child(5), &:nth-child(6), &:nth-child(8) {
                         justify-content: left;
                     }
                 }
 
-                &:last-child {
-                    border-bottom: none;
+                &:nth-child(8) {
+                    border-bottom: 1px solid $color-main;
                 }
 
                 span.title {
@@ -287,6 +286,26 @@ section.mypage {
                 }
             }
 
+            div.button-flex-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-top: 50px;
+    
+                button {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+    
+                    font: {
+                        family: $font-sans;
+                        size: 1.1em;
+                    }
+                }
+            }
+        }
+
+        form#frmResign {
             div.modal {
                 position: fixed;
                 top: 0;
@@ -388,24 +407,6 @@ section.mypage {
                             color: $color-main;
                         }
                     }
-                }
-            }
-        }
-
-        div.button-flex-box {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 50px;
-
-            button {
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-
-                font: {
-                    family: $font-sans;
-                    size: 1.1em;
                 }
             }
         }
