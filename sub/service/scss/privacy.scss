@@ -42,7 +42,6 @@ section {
     }
 
     .main-privacy {
-        font-size: 1em;
         text-align: justify;
         padding: 10px;
         margin-top: 20px;
@@ -58,16 +57,17 @@ section {
         h2 {
             font-family: $font-sans;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            text-align: justify;
             margin-bottom: 20px;
             color: $color-main;
             opacity: 0.8;
         }
 
         p {
-            text-align: justify;
-            font-size: 1em;
             font-weight: 500;
+            font-size: 1em;
+            text-align: justify;
             margin-bottom: 10px;
             color: $color-main;
             opacity: 0.8;
