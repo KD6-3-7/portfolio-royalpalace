@@ -415,12 +415,80 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1520px) {
   section {
     max-width: 1320px;
     padding: 0;
+  }
+}
+
+section .main-privacy {
+  font-size: 1em;
+  text-align: justify;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+section ul > li {
+  margin-top: 40px;
+}
+
+section ul > li h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+section ul > li p {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section ul > li ol li {
+  line-height: 20px;
+  padding: 3px 0;
+}
+
+section ul > li ol li img {
+  margin: 0 auto;
+}
+
+section ul > li ol .table-3 h3, section ul > li ol .table-3 p {
+  font-weight: 400;
+  font-size: 1em;
+  padding: 3px 0;
+}
+
+section ul > li ol .table-3 table,
+section ul > li ol .table-3 tr,
+section ul > li ol .table-3 th,
+section ul > li ol .table-3 td {
+  border: 1px solid #a7a7a7;
+  border-collapse: collapse;
+}
+
+section ul > li ol .table-3 table {
+  width: 100%;
+  text-align: center;
+}
+
+section ul > li ol .table-3 table th, section ul > li ol .table-3 table td {
+  padding: 5px;
+}
+
+section ul > li ol .table-3 table td {
+  background-color: #fcfbfa;
+}
+
+@media screen and (min-width: 768px) {
+  section ul > li ol .table-3 table td > br {
+    display: none;
   }
 }
 
