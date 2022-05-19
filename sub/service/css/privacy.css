@@ -431,6 +431,8 @@ section .main-privacy {
   text-align: justify;
   padding: 10px;
   border: 2px solid #ccc;
+  color: #2c2928;
+  opacity: 0.8;
 }
 
 section ul > li {
@@ -442,6 +444,8 @@ section ul > li h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   font-family: Pretendard;
+  color: #2c2928;
+  opacity: 0.8;
 }
 
 section ul > li p {
@@ -449,15 +453,15 @@ section ul > li p {
   font-size: 1em;
   font-weight: 500;
   margin-bottom: 10px;
+  color: #2c2928;
+  opacity: 0.8;
 }
 
 section ul > li ol li {
   line-height: 20px;
   padding: 3px 0;
-}
-
-section ul > li ol li img {
-  margin: 0 auto;
+  color: #2c2928;
+  opacity: 0.8;
 }
 
 section ul > li ol .table-3 h3, section ul > li ol .table-3 p {
