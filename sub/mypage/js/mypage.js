@@ -1,6 +1,6 @@
 // 회원가입 페이지 목록에서 선택한 이메일 주소 자동 입력
 function input_email() {
-	document.frm.mailServer1.value = document.frm.mailServer2.value;
+	document.frmEdit.mailServer1.value = document.frmEdit.mailServer2.value;
 }
 
 

@@ -436,7 +436,6 @@ section.signup div.signup-form {
 
 section.signup div.signup-form form {
   border-top: 1px solid #2c2928;
-  border-bottom: 1px solid #2c2928;
 }
 
 section.signup div.signup-form form div.row {
@@ -468,11 +467,11 @@ section.signup div.signup-form form div.row {
   }
 }
 
-section.signup div.signup-form form div.row:last-child {
-  border-bottom: none;
+section.signup div.signup-form form div.row:nth-child(8) {
+  border-bottom: 1px solid #2c2928;
 }
 
-section.signup div.signup-form form div.row:last-child div {
+section.signup div.signup-form form div.row:nth-child(8) div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +481,7 @@ section.signup div.signup-form form div.row:last-child div {
           flex-direction: column;
 }
 
-section.signup div.signup-form form div.row:last-child div span {
+section.signup div.signup-form form div.row:nth-child(8) div span {
   padding-top: 5px;
   font-size: 0.8em;
   color: #a7a7a7;
@@ -782,7 +781,7 @@ section.signup div.signup-form form div.row div.flexbox.terms-flex-box div label
   font-size: 0.9em;
 }
 
-section.signup div.signup-form div.button-flex-box {
+section.signup div.signup-form form div.button-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,7 +795,7 @@ section.signup div.signup-form div.button-flex-box {
   margin-top: 50px;
 }
 
-section.signup div.signup-form div.button-flex-box button {
+section.signup div.signup-form form div.button-flex-box button {
   background-color: transparent;
   border: none;
   cursor: pointer;

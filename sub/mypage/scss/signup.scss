@@ -46,7 +46,6 @@ section.signup {
 
         form {
             border-top: 1px solid $color-main;
-            border-bottom: 1px solid $color-main;
 
             div.row {
                 padding: 10px;
@@ -63,8 +62,8 @@ section.signup {
                     }
                 }
 
-                &:last-child {
-                    border-bottom: none;
+                &:nth-child(8) {
+                    border-bottom: 1px solid $color-main;
                     
                     div {
                         display: flex;
@@ -308,22 +307,22 @@ section.signup {
                     }
                 }
             }
-        }
 
-        div.button-flex-box {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 50px;
-
-            button {
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-
-                font: {
-                    family: $font-sans;
-                    size: 1.1em;
+            div.button-flex-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 50px;
+    
+                button {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+    
+                    font: {
+                        family: $font-sans;
+                        size: 1.1em;
+                    }
                 }
             }
         }

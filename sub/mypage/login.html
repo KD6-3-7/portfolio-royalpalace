@@ -181,15 +181,17 @@
             </div>
             <p>로그인</p>
             <div class="flexbox">
-                <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요.">
-                <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요.">
-                <div class="row">
-                    <button class="find-btn userid" type="button">아이디 찾기</button>
-                    <button class="find-btn password" type="button">비밀번호 찾기</button>
-                </div>
-                <button class="login btn" type="button"><i class="fa-solid fa-angle-left"></i>로그인<i class="fa-solid fa-angle-right"></i></button>
-                <hr>
-                <button class="signup btn" type="button"><i class="fa-solid fa-angle-left"></i><span><span>처음이신가요?</span><span>&nbsp;회원가입</span></span><i class="fa-solid fa-angle-right"></i></button>
+                <form action="#" method="post">
+                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요.">
+                    <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요.">
+                    <div class="row">
+                        <button class="find-btn userid" type="button">아이디 찾기</button>
+                        <button class="find-btn password" type="button">비밀번호 찾기</button>
+                    </div>
+                    <button class="login btn" type="submit"><i class="fa-solid fa-angle-left"></i>로그인<i class="fa-solid fa-angle-right"></i></button>
+                    <hr>
+                    <button class="signup btn" type="button"><i class="fa-solid fa-angle-left"></i><span><span>처음이신가요?</span><span>&nbsp;회원가입</span></span><i class="fa-solid fa-angle-right"></i></button>
+                </form>
             </div> <!-- flexbox -->
 		</section> <!-- login -->
     </main>
