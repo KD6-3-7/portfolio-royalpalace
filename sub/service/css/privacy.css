@@ -437,10 +437,6 @@ section .main-privacy {
 
 section ul > li {
   margin-top: 40px;
-  line-height: 20px;
-  padding: 3px 0;
-  color: #2c2928;
-  opacity: 0.8;
 }
 
 section ul > li h2 {

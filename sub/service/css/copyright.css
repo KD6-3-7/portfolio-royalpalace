@@ -415,6 +415,8 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1520px) {
@@ -422,6 +424,22 @@ section {
     max-width: 1320px;
     padding: 0;
   }
+}
+
+section p {
+  text-align: justify;
+  color: #2c2928;
+  opacity: 0.8;
+}
+
+section p a {
+  display: inline;
+  text-decoration: underline;
+  color: blue;
+}
+
+section p a:hover {
+  color: blue;
 }
 
 footer {

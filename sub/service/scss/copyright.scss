@@ -33,6 +33,23 @@ aside {
 //section
 section {
     @include wrapper();
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    p {
+        text-align: justify;
+        color: $color-main;
+        opacity: 0.8;
+
+        a {
+            display: inline;
+            text-decoration: underline;
+            color: blue;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
 }
 
 
