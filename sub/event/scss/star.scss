@@ -104,7 +104,8 @@ section {
         display: flex;
         flex-direction: column;
         margin-bottom: 90px;
-        
+
+
         @include responsive(pc-size) {
             flex-direction: row;
             justify-content: space-between;           
@@ -115,13 +116,32 @@ section {
             width: 19%;
         }
 
-        .info-text {
+        .info-text-mobile {
             p {
                 font-size: 18px;
                 line-height: 2em;
             }
 
+            display: block;
+            @include responsive(tablet-size) {
+                display: block;
+            }
             @include responsive(pc-size) {
+                display: none;
+            }
+        }
+        .info-text-pc {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+            
+            display: none;
+            @include responsive(tablet-size) {
+                display: none;
+            }
+            @include responsive(pc-size) {
+                display: block;
                 margin-top: 20px;
                 width: 80%;
             }
@@ -173,7 +193,7 @@ section {
                     background-color: #cec4b6;
 
                     @include responsive(pc-size) {
-                        height: 450px;
+                        height: 410px;
                         padding: 0 30px;
                         text-align: center;
                         padding-top: 30px;
@@ -181,13 +201,23 @@ section {
                 }
 
                 .guide-box-text {
-                    width: 80%;
+                    width: 100%;
+                    
+                    @include responsive(tablet-size) {
+                        width: 100%;
+                    }
+                    @include responsive(pc-size) {
+                        width: 80%;
+                        margin-top: 20px;
+                    }
 
                     p {
                         @include responsive(pc-size) {
-                            margin-bottom: 65px;
+                            margin-bottom: 20px;
                         }
                     }
+
+
 
                     .guide-flex-img {
                         width: 100%;
@@ -225,7 +255,7 @@ section {
                     }
                     background-color: #cec4b6;
                     @include responsive(pc-size) {
-                        height: 450px;
+                        height: 490px;
                         padding: 0 30px;
                         text-align: center;
                         padding-top: 30px;
@@ -233,11 +263,23 @@ section {
                 }
 
                 .guide-box-text {
-                    width: 80%;
+                    width: 100%;
+
+                    @include responsive(tablet-size) {
+                        width: 100%;
+                    }
+                    @include responsive(pc-size) {
+                        width: 80%;
+                        margin-top: 20px;
+                    }
 
                     p {
                         @include responsive(pc-size) {
-                            margin-bottom: 65px;
+                            margin-bottom: 20px;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 20px;
                         }
                     }
 

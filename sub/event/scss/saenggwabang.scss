@@ -117,13 +117,30 @@ section {
         }
 
         
-        .info-text {
+        .info-text-mobile {
             p {
                 font-size: 18px;
                 line-height: 2em;
             }
-            
+            display: block;
+            @include responsive(tablet-size) {
+                display: block;
+            }
             @include responsive(pc-size) {
+                display: none;
+            }
+        }
+        .info-text-pc {
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+            display: none;
+            @include responsive(tablet-size) {
+                display: none;
+            }
+            @include responsive(pc-size) {
+                display: block;
                 margin-top: 20px;
                 width: 80%;
             }
