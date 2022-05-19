@@ -411,196 +411,159 @@ aside div.sidemenu {
   }
 }
 
-section.main-sec {
+section.main-flex {
+  overflow: hidden;
+  margin-top: 70px;
+  width: 100%;
+}
+
+section.main-flex section.des-1 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 70px;
-  margin-bottom: 100px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1520px) {
-  section.main-sec {
+  section.main-flex section.des-1 {
     max-width: 1320px;
     padding: 0;
   }
 }
 
-@media screen and (min-width: 1520px) {
-  section.main-sec {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+section.main-flex section.des-1 .des-1-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
-section.main-sec section.des-1 {
+section.main-flex section.des-1 .des-1-box .des-1-set {
   position: relative;
+  width: calc(100%/5);
+  height: 0%;
+}
+
+section.main-flex section.des-1 .des-1-box .des-1-set a {
   width: 100%;
 }
 
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 {
-    width: 70%;
-    height: 0%;
-  }
+section.main-flex section.des-1 .des-1-box .des-1-set a .des-img {
+  height: 100%;
 }
 
-section.main-sec section.des-1 .des-1-converse-image {
+section.main-flex section.des-1 .des-1-box .des-1-set a .des-img img {
   width: 100%;
+  opacity: 0.15;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
-  display: none;
-  background-color: #dfd4c2;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
-    padding: 50px 5px;
-    margin-right: 5%;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
-  width: 100%;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
-    height: 400px;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
-  font-size: 0.9em;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  padding-left: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
-    font-size: 1.1em;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    padding-left: 15px;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-    padding-left: 20px;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text span {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text span {
-    width: 13px;
-    height: 13px;
-  }
-}
-
-section.main-sec section.des-2 {
-  width: 100%;
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-2 {
-    width: 60%;
-    margin-top: 0px;
-  }
-}
-
-section.main-sec section.des-2 .css3-tab {
-  position: relative;
-}
-
-section.main-sec section.des-2 .css3-tab input[type='radio'] {
-  display: none;
-}
-
-section.main-sec section.des-2 .css3-tab .css3-tab-nav {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-
-section.main-sec section.des-2 .css3-tab .css3-tab-nav label {
-  display: table-cell;
-  background-color: #fcfbfa;
-  color: #999;
-  padding: 15px;
+section.main-flex section.des-1 .des-1-box .des-1-set a .des-1-text p {
+  position: absolute;
+  left: 33px;
+  top: 70px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+  width: 7.5em;
+  opacity: 0.8;
+  color: #474646;
 }
 
-section.main-sec section.des-2 .css3-tab .css3-tab-nav label:hover {
-  cursor: pointer;
-  background: #333;
-  color: #fcfbfa;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+section.main-flex section.des-1 .des-1-box .des-1-set a .top {
+  position: absolute;
+  top: 12px;
 }
 
-section.main-sec section.des-2 .css3-tab .css3-tab-content {
-  overflow: hidden;
+section.main-flex section.des-1 .des-1-box .des-1-set a:hover img {
+  opacity: 1;
+}
+
+section.main-flex section.des-1 .des-1-box .des-1-set a:hover p {
+  opacity: 1;
+  color: white;
+}
+
+section.main-flex section.des-2 {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+section.main-flex section.des-2 .des-2-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+
+@media screen and (min-width: 1520px) {
+  section.main-flex section.des-2 .des-2-wrapper {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-one,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-two,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-thr,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-four,
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .show-five {
   display: none;
-  text-align: justify;
-  padding: 25px 0;
-  background: #f2ece4;
-  clear: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
-  background: #333;
-  color: #fcfbfa;
-  cursor: default;
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex {
+  margin-top: 50px;
 }
 
-section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ div.tab-one {
-  display: block;
+@media screen and (min-width: 1520px) {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 }
 
-section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
-  background: #333;
-  color: #fcfbfa;
-  cursor: default;
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-left img {
+  display: none;
 }
 
-section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ div.tab-two {
-  display: block;
+@media screen and (min-width: 1520px) {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-left img {
+    display: block;
+    width: 550px;
+    opacity: 0.8;
+  }
 }
 
-section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
-  background: #333;
-  color: #fcfbfa;
-  cursor: default;
+@media screen and (min-width: 1520px) {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right {
+    margin-left: 30px;
+  }
 }
 
-section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ div.add-new {
-  display: block;
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right h2 {
+    text-align: start;
+  }
+}
+
+section.main-flex section.des-2 .des-2-wrapper .des-2-text .des-2-flex .des-2-right p {
+  line-height: 1.4em;
 }
 
 footer {

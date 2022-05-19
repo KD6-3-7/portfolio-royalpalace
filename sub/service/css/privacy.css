@@ -411,196 +411,17 @@ aside div.sidemenu {
   }
 }
 
-section.main-sec {
+section {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 70px;
-  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 1520px) {
-  section.main-sec {
+  section {
     max-width: 1320px;
     padding: 0;
   }
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-section.main-sec section.des-1 {
-  position: relative;
-  width: 100%;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 {
-    width: 70%;
-    height: 0%;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image {
-  width: 100%;
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
-  display: none;
-  background-color: #dfd4c2;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 {
-    padding: 50px 5px;
-    margin-right: 5%;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
-  width: 100%;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 img {
-    height: 400px;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
-  font-size: 0.9em;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  padding-left: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
-    font-size: 1.1em;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    padding-left: 15px;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-    padding-left: 20px;
-  }
-}
-
-section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text span {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) {
-  section.main-sec section.des-1 .des-1-converse-image .des-1-image1 .des-1-text span {
-    width: 13px;
-    height: 13px;
-  }
-}
-
-section.main-sec section.des-2 {
-  width: 100%;
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 1520px) {
-  section.main-sec section.des-2 {
-    width: 60%;
-    margin-top: 0px;
-  }
-}
-
-section.main-sec section.des-2 .css3-tab {
-  position: relative;
-}
-
-section.main-sec section.des-2 .css3-tab input[type='radio'] {
-  display: none;
-}
-
-section.main-sec section.des-2 .css3-tab .css3-tab-nav {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-
-section.main-sec section.des-2 .css3-tab .css3-tab-nav label {
-  display: table-cell;
-  background-color: #fcfbfa;
-  color: #999;
-  padding: 15px;
-  text-align: center;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
-}
-
-section.main-sec section.des-2 .css3-tab .css3-tab-nav label:hover {
-  cursor: pointer;
-  background: #333;
-  color: #fcfbfa;
-  -webkit-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
-}
-
-section.main-sec section.des-2 .css3-tab .css3-tab-content {
-  overflow: hidden;
-  display: none;
-  text-align: justify;
-  padding: 25px 0;
-  background: #f2ece4;
-  clear: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
-  background: #333;
-  color: #fcfbfa;
-  cursor: default;
-}
-
-section.main-sec section.des-2 .css3-tab input[id='tabOne']:checked ~ div.tab-one {
-  display: block;
-}
-
-section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
-  background: #333;
-  color: #fcfbfa;
-  cursor: default;
-}
-
-section.main-sec section.des-2 .css3-tab input[id='tabTwo']:checked ~ div.tab-two {
-  display: block;
-}
-
-section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
-  background: #333;
-  color: #fcfbfa;
-  cursor: default;
-}
-
-section.main-sec section.des-2 .css3-tab input[id='addNew']:checked ~ div.add-new {
-  display: block;
 }
 
 footer {
@@ -698,4 +519,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-/*# sourceMappingURL=restoration.css.map */
+/*# sourceMappingURL=privacy.css.map */
