@@ -30,73 +30,80 @@ aside {
     }
 }
 
-//section
-section.main-sec {
-    @include wrapper();
-    display: flex;
-    flex-direction: column;
+section.main-flex {
+    overflow: hidden;
     margin-top: 70px;
-    margin-bottom: 100px;
-
-    @include responsive(pc-size) {
-        flex-direction: row;
-    }
+    width: 100%;
 
     section.des-1 {
-        position: relative;
+        @include wrapper();
         width: 100%;
-
+        
+        @include responsive(tablet-size) {
+            // width: 75vw;
+        }
+        
         @include responsive(pc-size) {
-            width: 70%;
-            height: 0%;
+            // width: 80em;
         }
 
-        .des-1-converse-image {
+        .des-1-box {
+            display: flex;
+            justify-content: center;
             width: 100%;
             
-            .des-1-image1{
-                display: none;
-                background-color: #dfd4c2;
-
-                @include responsive(pc-size) {
-                    padding: 50px 5px;
-                    margin-right: 5%;
-                }
+            .des-1-set {
+                position: relative;
+                width: calc(100%/5);
+                height: 0%;
                 
-                img {
+                a {
                     width: 100%;
-
-                    @include responsive(pc-size) {
-                        height: 400px;
-                    }
-                }
-    
-                .des-1-text {
-                    font-size: 0.9em;
-                    transform: translateY(10px);
-                    padding-left: 10px;
                     
-                    @include responsive(tablet-size) {
-                        font-size: 1.1em;
-                        transform: translateY(20px);
-                        padding-left: 15px;
-
+                    .des-img {
+                        height: 100%;
+                        
+                        img {
+                            width: 100%;
+                            opacity: 0.15;
+                            transition: all 1s;
+                        }
                     }
 
-                    @include responsive(pc-size) {
-                        transform: translateY(-30px);
-                        padding-left: 20px;
+                    // .one-1 {
+                    //     background-image: url(../images/select1.png);
+                    //     background-repeat: no-repeat;
+                    //     background-size: cover;
+                    //     width: 100%;
+                    //     height: 195px;
+                    // }
+                    
+                    .des-1-text {
+                        p {
+                            position: absolute;
+                            left: 33px;
+                            top: 70px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-align: center;
+                            width: 7.5em;
+                            opacity: 0.8;
+                            color:#474646;
+                        }
                     }
 
-                    span {
-                        display:inline-block;
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 2px;
+                    .top {
+                        position: absolute;
+                        top: 12px;
+                    }
 
-                        @include responsive(tablet-size) {
-                            width: 13px;
-                            height: 13px;
+                    &:hover {
+                        img {
+                            opacity: 1;
+                        }
+                        p {
+                            opacity: 1;
+                            color: white;
                         }
                     }
                 }
@@ -104,85 +111,68 @@ section.main-sec {
         }
     }
     
+    
+
     section.des-2 {
-        width: 100%;
-        margin-top: 10px;
+        margin-top: 90px;
+        margin-bottom: 90px;
 
-        @include responsive(pc-size) {
-            width: 60%;
-            margin-top: 0px;
-        }
+        .des-2-wrapper {
+            @include wrapper();
+            
+            .des-2-text {
+                .show-one,
+                .show-two,
+                .show-thr,
+                .show-four,
+                .show-five {
+                    display: none;
+                }
 
-        .css3-tab {
-            position: relative;
+                .des-2-flex{
+                    margin-top: 50px;
 
-            input[type='radio'] {
-                display: none;
-            }
+                    @include responsive(pc-size) {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 92%;
+                        margin: 0 auto;
+                        margin-top: 50px;
+                    }
 
-            .css3-tab-nav {
-                display: table;
-                table-layout: fixed;
-                width: 100%;
+                    .des-2-left{
+                        
+                        img {
+                            display: none;
 
-                label {
-                    display: table-cell;
-                    background-color: #fcfbfa;
-                    color: #999;
-                    padding: 15px;
-                    text-align: center;
-                    transition: all .3s ease 0s;
+                            @include responsive(pc-size) {
+                                display: block;
+                                width: 550px;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
 
-                    &:hover {
-                        cursor: pointer;
-                        background: #333;
-                        color: $color-white;
-                        transition: all .3s ease 0s;
+                    .des-2-right{
+                        @include responsive(pc-size) {
+                            margin-left: 30px;
+                        }
+                        
+                        h2{
+                            font-size: 26px;
+                            text-align: center;
+                            font-weight: bold;
+                            margin-bottom: 20px;
+
+                            @include responsive(tablet-size) {
+                                text-align: start;
+                            }
+                        }
+                        p {
+                            line-height: 1.4em;
+                        }
                     }
                 }
-            }
-
-            .css3-tab-content {
-                overflow: hidden;
-                display: none;
-                text-align: justify;
-                padding: 25px 0;
-                background: #f2ece4;
-                clear: left;
-                box-sizing: border-box;
-            }
-
-            input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
-                background: #333;
-                color: $color-white;
-                cursor: default;
-            }
-
-            input[id='tabOne']:checked ~ div.tab-one {
-                display: block;
-                // border-top: solid 3px #333;
-            }
-
-            input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
-                background: #333;
-                color: $color-white;
-                cursor: default;
-            }
-
-            input[id='tabTwo']:checked ~ div.tab-two {
-                display: block;
-                // border-top: solid 3px #333;
-            }
-
-            input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
-                background: #333;
-                color: $color-white;
-                cursor: default;
-            }
-
-            input[id='addNew']:checked ~ div.add-new {
-                display: block;
-                // border-top: solid 3px #333;
             }
         }
     }

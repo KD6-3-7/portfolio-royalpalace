@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Decription" content="복원 사업에 관해">
+    <meta name="Decription" content="알고싶은이야기">
     <meta name="Author" content="Dong">
     <link rel="stylesheet" href="./css/restoration.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/restoration.js"></script>
-    <title>복원 사업에 관해</title>
+    <title>복원사업에 관해</title>
 </head>
 <body>
     <header>
@@ -38,8 +38,8 @@
                         <button class="accordion">역사 알기</button>
                         <ul class="small-menu">
                             <li><a href="./history.html">경복궁의 역사</a></li>
-                            <li><a href="./restoration.html">알고싶은 이야기</a></li>
-                            <li><a href="./converse.html">복원사업에 관해</a></li>
+                            <li><a href="./converse.html">알고싶은 이야기</a></li>
+                            <li><a href="./restoration.html">복원사업에 관해</a></li>
                         </ul> <!-- small-menu -->
                     </li> <!-- mobilemenu-history -->
                     
@@ -98,11 +98,11 @@
             <li class="submenu">
                 <a href="./history.html">경복궁의 역사</a>
             </li>
-            <li class="submenu selected">
-                <a href="./restoration.html">알고싶은 이야기</a>
-            </li>
             <li class="submenu">
-                <a href="./converse.html">복원사업에 관해</a>
+                <a href="./converse.html">알고싶은 이야기</a>
+            </li>
+            <li class="submenu selected">
+                <a href="./restoration.html">복원사업에 관해</a>
             </li>
         </ul> <!-- topmenu -->
     </header>
@@ -122,8 +122,8 @@
                         <a href="#">역사 알기</a>
                         <ul class="small-menu">
                             <li><a href="./history.html">경복궁의 역사</a></li>
-                            <li><a href="./restoration.html">알고싶은 이야기</a></li>
-                            <li><a href="./converse.html">복원사업에 관해</a></li>
+                            <li><a href="./converse.html">알고싶은 이야기</a></li>
+                            <li><a href="./restoration.html">복원사업에 관해</a></li>
                         </ul> <!-- small-menu -->
                     </li> <!-- sidemenu-history -->
     
@@ -174,151 +174,86 @@
                 </ul> <!-- gnb -->
             </div> <!-- sidemenu -->
         </aside>
+        
+        <section class="main-sec">
 
-        <section class="main-flex">
             <section class="des-1">
-                <div class="des-1-box">
-                    <div class="des-1-set">
-                        <a href="#" id="clickOne">
-                            <div class="des-img one-1">
-                                <img src="./images/select1.png" alt="select1">
-                            </div>
-                            <div class="des-1-text top">
-                                <p>경복궁 만드는데<br>얼마나 걸렸을까?</p>
-                            </div>
-                        </a>
+                <div class="des-1-converse-image">
+                    <div class="des-1-image1" id="imageOne" style="display: block;">
+                        <div class="des-1-text">
+                            <span style="background-color: blue;"></span> 파란색 - 흥선대원군 때 중건하여 현재까지 남아있는 부분<br>
+                            <span style="background-color: yellow;"></span> 노란색 - 1990년 이전에 복원한 부분
+                        </div>
+                        <img src="./images/1.png" alt="복원1">
                     </div>
-                    <div class="des-1-set" id="clickTwo">
-                        <a href="#">
-                            <div class="des-img">
-                                <img src="./images/select2.png" alt="select2">
-                            </div>
-                            <div class="des-1-text top">
-                                <p>한글은 어디서<br>만들어졌을까?</p>
-                            </div>
-                        </a>
+                    <div class="des-1-image1" id="imageTwo">
+                        <div class="des-1-text">
+                            <span style="background-color: red;"></span> 빨간색 - 1차 복원 정비사업(1990~2010)으로 복원한 부분<br>
+                            <span></span>
+                        </div>
+                        <img src="./images/2.png" alt="복원2">
                     </div>
-                    <div class="des-1-set" id="clickThr">
-                        <a href="#">
-                            <div class="des-img">
-                                <img src="./images/select3.png" alt="select3">
-                            </div>
-                            <div class="des-1-text">
-                                <p>조선시대<br>임금의 하루일과는<br>어땠을까?</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="des-1-set" id="clickFour">
-                        <a href="#">
-                            <div class="des-img">
-                                <img src="./images/select4.png" alt="select4">
-                            </div>
-                            <div class="des-1-text">
-                                <p>조선시대<br> 경복궁에는 몇 명이<br> 살고 있었을까?</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="des-1-set nomargin" id="clickFive">
-                        <a href="#">
-                            <div class="des-img"> 
-                                <img src="./images/select5.png" alt="select5">
-                            </div>
-                            <div class="des-1-text">
-                                <p> 명성황후는<br>어디에서<br>시해되었나?</p>
-                            </div>
-                        </a>
+                    <div class="des-1-image1" id="imageThr">
+                        <div class="des-1-text">
+                            <span style="background-color: orange;"></span> 주황색- 2차 복원 정비사업(2011~2030예정)으로 복원될 부분<br>
+                            <span></span>
+                        </div>
+                        <img src="./images/3.png" alt="복원3">
                     </div>
                 </div>
             </section>
-            
+    
             <section class="des-2">
-                <div class="des-2-wrapper">
-                    <div class="des-2-text">
-                        <div class="show-one">
-                            <div class="des-2-flex">
-                                <div class="des-2-left">
-                                    <img src="./images/text-images1.jpg" alt="images1">
-                                </div> <!-- des-2-left -->
-                                <div class="des-2-right">
-                                    <h2>경복궁을 만드는데 얼마나 걸렸을까?</h2>
-                                    <p> 
-                                        태조 임금님이 새로운 나라 조선을 세우고 가장 먼저 시작한 일은 왕의 조상님들을 모시는 ‘종묘’를 짓고 왕실가족과 나랏일을 돕는 신하들이 머무르는 ‘궁궐’을 짓는 일이었습니다. 궁궐을 짓는데 걸린 시간은 10개월 정도였습니다.<br><br>
-                                        궁궐 공사 이전에 먼저 땅을 잘 살피는 조사를 하였고 태조 3년(1395) 12월부터 공사를 시작하여 다음해 9월에 완성하였습니다.<br><br>
-                                        궁궐 안에는 나랏일을 의논하는 곳, 왕과 왕비께서 사는 곳, 신하들이 출근해서 일하는 곳, 궁궐담장과 출입문 등이 있었고 궁궐의 이름을 ‘경복궁’이라고 지었답니다.
-                                    </p>
-                                </div> <!-- des-2-right -->
-                            </div> <!-- des-2-flex -->
-                        </div> <!-- show-one -->
-
-                        <div class="show-two">
-                            <div class="des-2-flex">
-                                <div class="des-2-left">
-                                    <img src="./images/text-images2.png" alt="images2">
-                                </div> <!-- des-2-left -->
-                                <div class="des-2-right">
-                                    <h2>한글은 어디서 만들어졌을까?</h2>
-                                    <p> 
-                                        세종대왕과 집현전 학자들은 많은 사람들이 편리하게 글자를 사용하도록 ‘훈민정음’을 만들었어요. 다른 나라 글자들은 많은 세월이 지나면서 만들어지고 누가 만들었는지 정확히 알 수 없지요. 하지만 한글은 만든 사람들과 만든 시간을 알 수 있고 과학적이기 때문에 외국 사람들의 부러움을 사고 있어요. 그리고 한글은 훌륭한 문화유산으로 인정을 받아서 세계문화유산으로 등록되었습니다.<br><br>
-                                        <strong>한글을 발명한 장소인 집현전은 지금의 수정전 자리에 있었으나 안타깝게도 임진왜란 때 소실되었습니다.</strong>
-                                    </p>
-                                </div> <!-- des-2-right -->
-                            </div> <!-- des-2-flex -->
-                        </div> <!-- show-two -->
-                        
-                        <div class="show-thr">
-                            <div class="des-2-flex">
-                                <div class="des-2-left">
-                                    <img src="./images/text-images3.jpg" alt="images3">
-                                </div> <!-- des-2-left -->
-                                <div class="des-2-right">
-                                    <h2>조선시대 임금의 하루일과는 어땠을까?</h2>
-                                    <p> 
-                                        임금님은 무척 바쁜 하루를 보냅니다.<br>
-                                        임금님이 해야 할 일은 만 가지 넘는다고 하는데, 임금님의 하루는 대개 어른들께 인사를 드리고 신하들을 만나서 나랏일을 의논합니다. 그리고 나라를 잘 다스리기 위해서 공부도 열심히 하셨지요. 하루에 3번 이상 공부하는 시간이 있었고 저녁 늦게 신하들을 불러서 궁금한 것을 묻기도 했어요. 임금님이 하시는 공부는 유교와 역사 공부를 많이 하셨어요. 가장 중요한 공부는 몸과 마음을 바르게 하는 것이었지요.<br><br> 
-                                        임금님의 하루는 조금씩 다를 수 있지만 시간별로 알아보면 임금님이 아침에 일어나시면 부모님께 잘 지내셨는지 인사를 드립니다. 그리고 아침 식사를 하기 전에 신하들을 만나고 공부를 하십니다. 아침을 드신 후에 어떤 일이 있었는지 신하들에게 이야기를 듣습니다. 점심시간이 되면, 간단하게 식사를 하시고 공부를 하세요. 그리고 지방으로 떠나는 신하들을 만나고 다른 일을 보십니다. 저녁에는 궁궐을 잘 지키기 위해서 밤을 새는 신하들이 누구인지 확인을 하고 궁궐에 들어오고 나갈 때 사용되는 암호를 정하기도 합니다. 저녁이 되면, 식사를 하시고 낮에 다 하지 못한 일들을 마무리 하시죠. 그리고 어른들께 잘 주무시라고 인사를 드립니다. 하루의 일을 마치시면 잠시 쉬기도 하지만 책을 읽거나 궁궐에 있는 신하를 불러서 궁금한 점을 물어보기도 합니다.<br><br>
-                                        이렇게 하루를 마치면 편안히 잠자리에 드십니다.
-                                    </p>
-                                </div> <!-- des-2-right -->
-                            </div> <!-- des-2-flex -->
-                        </div> <!-- show-Thr -->
-            
-                        <div class="show-four">
-                            <div class="des-2-flex">
-                                <div class="des-2-left">
-                                    <img src="./images/text-images4.jpg" alt="images4">
-                                </div> <!-- des-2-left -->
-                                <div class="des-2-right">
-                                    <h2>조선시대 경복궁에는 몇 명이 살고 있었을까?</h2>
-                                    <p> 
-                                        궁궐은 나라를 다스리는 왕과 그 가족들이 생활을 하던 곳입니다. 그리고 왕과 왕비를 도와서 여러 가지 일을 하는 사람들이 있었지요. 나랏일을 보는 관리, 왕실가족들이 생활하는데 불편하지 않도록 일을 하는 궁녀와 내시, 궁궐을 지키는 군인, 음식을 만드는 요리사와 병을 고치는 의사 등 많은 사람들이 궁궐에서 살거나 출입을 하면서 일을 했습니다.<br><br>
-                                        <strong>그러면 경복궁에는 몇 명이 살고 있었을까요?</strong><br>
-                                        정확히는 알 수 없지만 대개 3000명 정도가 궁궐에서 살거나 궁궐을 드나들었다고 합니다. 왕실가족, 궁녀, 내시 등이 500명 정도이고 궁궐을 지키는 군인이 2,000명 정도 그리고 나랏일을 보는 신하들과 궁궐에서 일하는 사람이 500명 정도입니다.
-                                    </p>
-                                </div> <!-- des-2-right -->
-                            </div> <!-- des-2-flex -->
-                        </div> <!-- show-four -->
-            
-                        <div class="show-five">
-                            <div class="des-2-flex">
-                                <div class="des-2-left">
-                                    <img src="./images/text-images5.jpg" alt="images5">
-                                </div> <!-- des-2-left -->
-                                <div class="des-2-right">
-                                    <h2>명성황후는 어디에서 시해되었나?</h2>
-                                    <p> 
-                                        명성황후는 향원정 북쪽에 있는 건청궁 곤녕합에서 일본인들에게 시해되었어요. 일본은 조선을 지배하려고 했는데 명성황후가 러시아와 친하게 지내려고 하자 명성황후를 시해한 것이죠.<br><br> 
-                                        <strong>어떻게 일본은 경복궁에 들어와 명성황후를 시해했을까요?</strong><br>
-                                        1895년 10월 8일 새벽, 경복궁 광화문으로 들어와 근정전 서쪽 담장을 돌아서 경복궁 뒤편에 있는 건청궁으로 몰래 들어갔어요. 건청궁에는 임금님이 계시던 장안당과 명성황후가 계시던 곤녕합이 있었는데 일본인들이 곤녕합으로 가서 명성황후를 살해했다고 합니다.<br>
-                                        명성황후가 숨을 거두자 건청궁 동쪽에 있던 언덕(녹산)에서 시체를 태우고 재는 향원정 연못에 버리고 타다남은 시신은 녹산에 묻었다고 합니다. 정말 끔찍한 일이죠. 궁궐을 침입하여 한 나라의 왕비를 죽인 일은 제국주의 일본의 야만성을 드러낸 것이지요.
-                                    </p>
-                                </div> <!-- des-2-right -->
-                            </div> <!-- des-2-flex -->
-                        </div> <!-- show-five -->
-                    </div> <!-- des-2-text -->
-                </div> <!-- des-2-wrapper -->
+                <div class="des-2-wrap">
+                    <div class='css3-tab'>
+                        <input type='radio' name='a' id='tabOne' tabindex="1" checked>
+                        <input type='radio' name='a' id='tabTwo' tabindex="2">
+                        <input type='radio' name='a' id='addNew' tabindex="3">
+                    
+                        <div class="css3-tab-nav">
+                            <label for='tabOne'>복원사업</label>
+                            <label for='tabTwo'>1차 복원사업</label>
+                            <label for='addNew'>2차 복원사업</label>
+                        </div>
+                    
+                        <div class='css3-tab-content tab-one'>
+                            <p>
+                                &nbsp;광복 이후 경복궁을 다시 복원하려는 노력이 여러 차례 있었으나, 무산되거나 체계적이지 않게 복원되었다. 1955년부터 구황실재산사무총국이 경복궁사무소를 설치해 관리하기 시작했다.<br><br>
+                                &nbsp;1990년에 들어서 2030년 완료를 목표로 경복궁 복원사업을 시작하였다. 1915년 조선총독부 미술관으로 건립되어 공진회 이후 박물관으로 사용된 철근콘크리트 건물을 1995년 철거 하였으며, 1926년 건립된 조선총독부 청사를 1997년 철거, 1935년 건립된 조선총독부 미술관을 1999년 철거, 일제강점기 때 건립된 것으로 추정된 수정전 남측의 한식 건물인 무명각을 1998년 철거했다. 다만 조선총독부 박물관 창고로 건립(1915년)된 부속 건물은 현재 경복궁 관리소로 사용 중이다. 2010년 기준으로, 경복궁 1차 복원정비사업이 완료되어 89동의 건물이 복원됐다.<br><br> 
+                                &nbsp;일제의 철거를 피해 남아 있던 건물 36동을 포함해 현재 총 125동의 건물이 들어서 고종 당시 경복궁 건물 500여 동의 약 25% 수준에 도달하였다. 2010년 9월 이후 광화문 권역이 완전 개방되었다.<br><br>
+                                &nbsp;2011년부터 약 20년에 걸쳐 경복궁 전각을 76%까지 복원하는 2차 복원정비사업이 추진 중으로 1차 복원이 중심 건물들로 경복궁의 뼈대를 갖추는 것이었다면, 2차 복원은 임금의 수라간과 궐내각사 등 많은 부속건물을 지어 살을 붙이는 과정이다.
+                            </p>
+                        </div>
+                    
+                        <div class='css3-tab-content tab-two'>
+                            <p>
+                                &nbsp;지난 1990년 시작하여 당초 2009년 완료될 예정이었던 1단계 종합정비 사업은 총 1789억원의 예산을 투입하여 강녕전 등 93동을 복원할 계획이었다. 사업기간을 1년 연장한 2010년 기준으로 1572억원의 예산이 투입되어 89동의 건물이 복원되었다.<br><br>
+                                &nbsp;일제의 철거를 피하여 남아 있던 건물 36동을 포함하여 현재 총 125동의 건물이 들어서 고종 당시 500여 동의 25% 정도 수준까지 도달하였다.<br><br>
+                                &nbsp;사업기간 중만성 옛 조선총독부 청사와 옛 조선 총독부박물관(국립민속박물관), 옛 조선 총독부 미술관(전통공예전시관) 등을 철거하고 광화문을 이전 복원한 데서 나타나듯 일제의 유산인 네거티브 문화재를 철거하고 조선 정궁의 기본 궁제(宮制)를 완비하는 것이 1단계 종합정비 사업의 목표였다.<br><br>
+                                · <strong>1단계</strong>  :  강녕전, 교태전 등 침전 권역 12동  복원<br>
+                                · <strong>2단계 (1994년 ~ 1999년)</strong> :  자선당, 비현각 등 동궁 권역 18동 복원<br>
+                                · <strong>3단계 (1996년 ~ 2001년)</strong> : 흥례문 등, 흥례문 권역  6동 복원<br>
+                                · <strong>4단계 (1997년 ~ 2005년)</strong> : 태원전 등, 태원전 권역 25동 복원<br>
+                                · <strong>5단계 (2001년 ~ 2010년)</strong> : 광화문, 건청궁, 함화당, 집경당 등 기타 권역 복원 32동 복원<br>
+                                · <strong>광화문 제 모습 찾기 사업 (2006년 ~ 2010년)</strong> : 광화문 권역 복원
+                            </p>
+                        </div>
+                    
+                        <div class='css3-tab-content add-new'>
+                            <p>
+                                &nbsp;문화재청은 2010년 1차 복원 정비 사업이 완료된 후 2011년부터 2030년까지 20년 계획의 제2차 경복궁 종합정비 사업을 추진하고 있다. <br><br>
+                                · <strong>1단계 궁중생활 권역 (2011년 ~ 2021년)</strong> : 소주방 영역, 흥복전 영역 등 총 28동 원형 복원 등 기단·초석으로 복원.<br><br>
+                                · <strong>2단계 제왕교육 권역 (2019년 ~ 2023년)</strong> : 동궁영역, 건춘문영역, 오위도총부 영역 총 14동 원형 복원 등 기단·초석으로 복원.<br><br>
+                                · <strong>3단계 궁중통치 권역 ( 2026년 ~ 2034년)</strong> : 영추문 영역, 궐내각사 영역, 등 총 14동 원형 복원 등 기단·초석으로 복원.<br><br>
+                                · <strong>4단계 궁중의례 권역 (2031년 ~ 2042년)</strong> : 문경전 및 회안전 영역, 신무문 영역, 만경전 권역, 선원전 권역, 등 총 23동 원형 복원 등 기단·초석으로 복원.<br><br>
+                                · <strong>5단계 궁중방어 권역 (2040년 ~ 2045년)</strong> : 서십자각 영역, 동십자각 궁장 복원.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
-        
+
     </main>
     <footer>
         <div class="wrapper">
@@ -342,5 +277,33 @@
             </div> <!-- copyright -->
         </div> <!-- wrapper -->
     </footer>
+    <script>
+        const tabOne = document.getElementById("tabOne");
+        const imageOne = document.getElementById("imageOne");
+
+        const tabTwo = document.getElementById("tabTwo");
+        const imageTwo = document.getElementById("imageTwo");
+
+        const addNew = document.getElementById("addNew");
+        const imageThr = document.getElementById("imageThr");
+
+        tabOne.addEventListener("click", function() {
+            imageOne.style.display = "block";
+            imageTwo.style.display = "none";
+            imageThr.style.display = "none";
+        });
+
+        tabTwo.addEventListener("click", function() {
+            imageOne.style.display = "none";
+            imageTwo.style.display = "block";
+            imageThr.style.display = "none";
+        });
+
+        addNew.addEventListener("click", function() {
+            imageOne.style.display = "none";
+            imageTwo.style.display = "none";
+            imageThr.style.display = "block";
+        });
+    </script>
 </body>
 </html>

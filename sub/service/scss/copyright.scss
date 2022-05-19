@@ -30,6 +30,10 @@ aside {
     }
 }
 
+//section
+section {
+    @include wrapper();
+}
 
 
 // footer
