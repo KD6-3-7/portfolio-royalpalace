@@ -33,13 +33,20 @@ aside {
 //section
 section {
     @include wrapper();
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    > h2 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $color-main;
+    }
 
     .main-privacy {
         font-size: 1em;
         text-align: justify;
         padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 40px;
         border: 2px solid #ccc;
         color: $color-main;
         opacity: 0.8;
@@ -49,10 +56,10 @@ section {
         margin-top: 40px;
 
         h2 {
+            font-family: $font-sans;
             font-weight: bold;
             font-size: 1.2em;
-            margin-bottom: 10px;
-            font-family: $font-sans;
+            margin-bottom: 20px;
             color: $color-main;
             opacity: 0.8;
         }
@@ -77,11 +84,13 @@ section {
             }
 
             .table-3 {
+
                 h3, p {
                     font-weight: 400;
                     font-size: 1em;
                     padding: 3px 0;
                 }
+
                 table,
                 tr,
                 th,
@@ -89,15 +98,19 @@ section {
                     border: 1px solid $color-border;
                     border-collapse: collapse; 
                 }
+
                 table {
                     width: 100%;
                     text-align: center;
+
                     th, td {
                         padding: 5px;
                     }
+
                     td {
                         background-color: $color-white;
                     }
+
                     td > br {
                         @include responsive(tablet-size) {
                             display: none;

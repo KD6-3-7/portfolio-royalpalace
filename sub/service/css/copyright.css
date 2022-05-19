@@ -415,8 +415,8 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 1520px) {
@@ -426,8 +426,14 @@ section {
   }
 }
 
+section > h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2c2928;
+}
+
 section p {
   text-align: justify;
+  margin-top: 20px;
   color: #2c2928;
   opacity: 0.8;
 }
