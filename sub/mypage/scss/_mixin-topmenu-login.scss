@@ -105,6 +105,11 @@
                         height: 13px;
                         width: 13px;
                         background: url("./../images/icon-circle.svg") no-repeat center;
+                        transition: background 0.3s ease;
+                    }
+
+                    &:hover::before {
+                        background: url("./../images/icon-circle_h.svg") no-repeat center;
                     }
                     
                     &.selected::before {
@@ -337,6 +342,11 @@
                         height: 13px;
                         width: 13px;
                         background: url("./../images/icon-circle.svg") no-repeat center;
+                        transition: background 0.3s ease;
+                    }
+
+                    &:hover::before {
+                        background: url("./../images/icon-circle_h.svg") no-repeat center;
                     }
                     
                     &.selected::before {
