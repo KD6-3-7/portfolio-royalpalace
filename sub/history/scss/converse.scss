@@ -35,16 +35,19 @@ section.main-flex {
     margin-top: 70px;
     width: 100%;
 
+
     section.des-1 {
+        
         @include wrapper();
-        width: 100%;
+        width: 70em;
         
         @include responsive(tablet-size) {
-            // width: 75vw;
+            overflow: hidden;
+            width: 75em;
         }
         
         @include responsive(pc-size) {
-            // width: 80em;
+            width: 80em;
         }
 
         .des-1-box {
