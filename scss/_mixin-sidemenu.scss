@@ -21,7 +21,7 @@
         background-color: $sidemenu-background;
 
         h1.header-logo {
-            padding: 10px 30px 25px 25px; 
+            padding: 10px 30px 25px 21px; 
         }
     
         ul.gnb {
@@ -31,7 +31,7 @@
                 padding: 10px 0;
 
                 font: {
-                    size: 1em;
+                    size: 1.1em;
                     weight: 600;
                 }
                 
@@ -55,8 +55,8 @@
     
                 ul.small-menu {
                     margin-top: 5px;
-                    margin-bottom: 30px;
-                    padding-left: 25px;
+                    margin-bottom: 20px;
+                    padding-left: 24px;
                     line-height: 1.4em;
     
                     li {
@@ -64,10 +64,21 @@
                             size: 0.9em;
                             weight: 400;
                         }
-
+                        
                         a {
                             display: inline-block;
                             color: $sidemenu-gray;
+                            transition: color 0.3s ease, font-weight 0.3s ease;
+
+                            &:hover {
+                                color: $sidemenu-black;
+                                font-weight: 500;
+                            }
+
+                            &.selected {
+                                color: $sidemenu-black;
+                                font-weight: 500;
+                            }
                         }
                     }
 
