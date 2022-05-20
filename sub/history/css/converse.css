@@ -421,13 +421,26 @@ section.main-flex section.des-1 {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  width: 100%;
+  width: 70em;
 }
 
 @media screen and (min-width: 1520px) {
   section.main-flex section.des-1 {
     max-width: 1320px;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.main-flex section.des-1 {
+    overflow: hidden;
+    width: 75em;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  section.main-flex section.des-1 {
+    width: 80em;
   }
 }
 
