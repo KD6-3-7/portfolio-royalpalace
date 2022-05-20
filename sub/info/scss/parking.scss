@@ -59,7 +59,7 @@ section {
     }
 
     .parking-price{
-        background-color: rgb(212, 236, 165); 
+        // background-color: rgb(212, 236, 165); 
         padding-bottom: 70px;
 
         @include responsive(pc-size) {
@@ -91,7 +91,7 @@ section {
 
 
     .parking-discount {
-        background-color: rgb(192, 181, 240); 
+        // background-color: rgb(192, 181, 240); 
         padding-bottom: 70px;
 
         @include responsive(pc-size) {
