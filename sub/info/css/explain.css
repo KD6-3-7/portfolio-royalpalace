@@ -314,6 +314,10 @@ aside div.sidemenu {
     height: 10px;
     width: 10px;
     background: url("./../images/icon-circle.svg") no-repeat center;
+    transition: background 0.3s ease;
+  }
+  aside div.sidemenu ul.gnb li.menu:hover::before {
+    background: url("./../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
     background: url("./../images/icon-circle_h.svg") no-repeat center;
@@ -352,7 +356,6 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
-  padding-bottom: 150px;
 }
 @media screen and (min-width: 1520px) {
   section {
@@ -360,46 +363,42 @@ section {
     padding: 0;
   }
 }
-@media screen and (min-width: 1520px) {
-  section {
-    width: 80%;
-  }
-}
 section h2 {
   text-align: center;
   margin: 50px 0;
   font-size: 1.875em;
 }
-@media screen and (min-width: 1520px) {
-  section .ex-exp {
-    margin-left: 132px;
-  }
+section ul.ex1 {
+  width: 100%;
 }
-section .ex #exp {
-  background-color: #e7dfd4;
-  border-collapse: collapse;
+section ul.ex1 div.exp-txt1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  border-bottom: 1px solid #a7a7a7;
 }
-section .ex #exp thead tr {
-  background-color: #d4cabd;
+section ul.ex1 div.exp-txt1 .num {
+  width: 40%;
 }
-section .ex #exp th,
-section .ex #exp td {
-  border: 1px solid #aaa19a;
-  padding: 17px 17px;
-  text-align: center;
+section ul.ex1 div.exp-txt1 .time {
+  width: 60%;
 }
 @media screen and (min-width: 1520px) {
-  section .ex #exp th,
-section .ex #exp td {
-    padding: 50px 75px;
+  section ul.ex1 div.exp-txt1 .num {
+    width: 30%;
+  }
+  section ul.ex1 div.exp-txt1 .time {
+    width: 70%;
   }
 }
-section .exp-txt {
-  padding-top: 10px;
-  font-size: 0.9em;
+section .ex2 {
+  padding: 60px 0;
 }
-section .exp-txt .exp-txt2 {
-  padding-top: 10px;
+section .ex2 .exp-txt2 li {
+  text-align: start;
+  list-style: outside;
+  padding-bottom: 5px;
 }
 
 footer {

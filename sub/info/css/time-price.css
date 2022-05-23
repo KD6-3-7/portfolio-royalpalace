@@ -314,6 +314,10 @@ aside div.sidemenu {
     height: 10px;
     width: 10px;
     background: url("./../images/icon-circle.svg") no-repeat center;
+    transition: background 0.3s ease;
+  }
+  aside div.sidemenu ul.gnb li.menu:hover::before {
+    background: url("./../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
     background: url("./../images/icon-circle_h.svg") no-repeat center;
@@ -361,19 +365,6 @@ section {
 }
 section section.roy1 {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
-}
-@media screen and (min-width: 1520px) {
-  section section.roy1 {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-@media screen and (min-width: 1520px) {
-  section section.roy1 {
-    width: 75%;
-  }
 }
 section section.roy1 h2 {
   text-align: center;
@@ -381,22 +372,35 @@ section section.roy1 h2 {
   font-size: 1.875em;
 }
 section section.roy1 ul {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 section section.roy1 ul li {
   width: 50%;
   padding-bottom: 25px;
 }
 @media screen and (min-width: 1520px) {
-  section section.roy1 ul li {
-    padding-left: 125px;
-  }
   section section.roy1 ul li p > br {
     display: none;
   }
 }
-section section.roy1 ul li h3 {
+section section.roy1 ul li div.month {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  section section.roy1 ul li div.month {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1520px) {
+  section section.roy1 ul li div.month {
+    width: 50%;
+  }
+}
+section section.roy1 ul li div.month h3 {
   padding-bottom: 5px;
 }
 section section.roy1 ul li:last-child {
@@ -409,9 +413,6 @@ section section.roy1 ul li:last-child h3 {
 section section.roy1 ul li:last-child p {
   font-size: 14px;
 }
-section section.roy1 ul .p_list p {
-  width: 80%;
-}
 section section.roy2 {
   padding-bottom: 92px;
 }
@@ -421,9 +422,14 @@ section section.roy2 h2 {
   font-size: 1.875em;
 }
 section section.roy2 #roy2-price {
-  margin: 0 auto;
+  width: 100%;
   word-break: keep-all;
   border-collapse: collapse;
+}
+@media screen and (min-width: 768px) {
+  section section.roy2 #roy2-price {
+    padding: 30px;
+  }
 }
 section section.roy2 #roy2-price th {
   background-color: #d4cabd;
@@ -444,7 +450,9 @@ section section.roy2 #roy2-price td {
     padding: 40px 50px;
   }
 }
-section section.roy2 #roy2-price tr .br_list {
+section section.roy2 #roy2-price tr .br_list div.list_align {
+  width: 60%;
+  margin: 0 auto;
   text-align: left;
 }
 section section.roy2 #roy2-price tr .last_list a {

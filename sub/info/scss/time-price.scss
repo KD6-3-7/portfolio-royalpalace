@@ -33,11 +33,8 @@ section {
     @include wrapper();
 
     section.roy1 {
-        @include wrapper();
-
-        @include responsive(pc-size) {
-            width: 75%;
-        }
+        width: 100%;
+   
 
         h2 {
             text-align: center;
@@ -45,21 +42,35 @@ section {
             font-size: 1.875em;
         }
         ul {
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
+            margin: 0 auto;
             
             li {
                 width: 50%;
                 padding-bottom: 25px;
 
                 @include responsive(pc-size) {
-                    padding-left: 125px;
                     p>br {
                         display: none;
                     }
                 }
-                h3 {
-                    padding-bottom: 5px;
+
+                div.month {
+                    width: 100%;
+                    margin: 0 auto;
+
+                    @include responsive(tablet-size) {
+                        width:60%;
+                    }
+
+                    @include responsive(pc-size) {
+                        width:50%;
+                    }
+                    h3 {
+                        padding-bottom: 5px;
+                    }
                 }
                 &:last-child {
                     transform: translateY(2px);
@@ -72,13 +83,12 @@ section {
                     }
                 }
             }
-            .p_list p{
-                width: 80%;
-            }
+          
         }
     }
 
     section.roy2 {
+        padding-bottom: 92px;
         h2 {
             text-align: center;
             margin: 50px 0;
@@ -86,8 +96,11 @@ section {
         }
         
         #roy2-price {
-            margin: 0 auto;
+            width: 100%;
             word-break: keep-all;
+            @include responsive(tablet-size) {
+                padding: 30px;
+            }
             th {
                 background-color: #d4cabd;
             }
@@ -100,6 +113,7 @@ section {
                 .br_list {
                     text-align: left;
                 }
+               
 
                 @include responsive(pc-size) {
                     padding: 40px 50px;
@@ -109,18 +123,21 @@ section {
             
             tr{
                 .br_list{
-                    text-align: left;
+                    div.list_align {
+                        width: 60%;
+                        margin: 0 auto;
+                        text-align: left;
+                    }
                 }
 
                 .last_list a{
                    text-decoration: underline;
                 }
             }
-        }
-        // font-size: 1em;
-        padding-bottom: 92px;
-    }
+        }    
+    }    
 }
+
 
 // footer
 footer {

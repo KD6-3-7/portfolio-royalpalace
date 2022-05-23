@@ -31,48 +31,50 @@ aside {
 //section
 section {
     @include wrapper();
-
-    @include responsive(pc-size) {
-        width: 80%;
-    }
-    padding-bottom: 150px;
+    
     h2 {
         text-align: center;
         margin: 50px 0;
         font-size: 1.875em;
     }
-    .ex-exp {
-        @include responsive(pc-size) {
-            margin-left: 132px;
-        }
-    }
-    .ex{
-        #exp{
-            background-color: #e7dfd4;
-            thead{
-                tr{
-                    background-color: #d4cabd;
+
+    ul.ex1{
+        width: 100%;
+        
+        div.exp-txt1{
+            display: flex;
+            // word-break: break-all;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px 10px;
+            border-bottom: 1px solid $color-border;
+            .num{
+                width: 40%;
+            }
+            .time{
+                width: 60%;
+
+            }
+            @include responsive(pc-size) {
+                .num{
+                    width: 30%;
+                }
+                .time{
+                    width: 70%;
                 }
             }
-            th,
-            td{
-                border: 1px solid #aaa19a;
-                padding: 17px 17px;
-                text-align: center;
-
-                @include responsive(pc-size) {
-                    padding: 50px 75px;
-                }
-            }
-            border-collapse: collapse;
         }
 
     }
-    .exp-txt{
-        padding-top: 10px;
-        font-size: 0.9em;
+    .ex2{
+        padding: 60px 0;
+   
         .exp-txt2{
-            padding-top: 10px;
+            li{
+                text-align: start;
+                list-style: outside;
+                padding-bottom: 5px
+            }
         }
     }
 }

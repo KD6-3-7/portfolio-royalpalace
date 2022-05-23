@@ -314,6 +314,10 @@ aside div.sidemenu {
     height: 10px;
     width: 10px;
     background: url("./../images/icon-circle.svg") no-repeat center;
+    transition: background 0.3s ease;
+  }
+  aside div.sidemenu ul.gnb li.menu:hover::before {
+    background: url("./../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
     background: url("./../images/icon-circle_h.svg") no-repeat center;
@@ -365,36 +369,25 @@ section h2 {
   font-size: 1.875em;
 }
 section .map-pic {
-  padding-bottom: 70px;
-}
-@media screen and (min-width: 1520px) {
-  section .map-pic {
-    width: 65%;
-    margin-left: 270px;
-  }
-}
-section .map-pic img {
   width: 100%;
+  padding-bottom: 150px;
 }
-section .map-pic span {
+section .map-pic p {
   float: right;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  margin-top: 15px;
 }
 @media screen and (min-width: 1520px) {
-  section .map-pic span {
-    float: right;
+  section .map-pic p {
+    font-size: 1.1em;
   }
 }
 section .parking-price {
-  padding-bottom: 70px;
-}
-@media screen and (min-width: 1520px) {
-  section .parking-price {
-    width: 65%;
-    margin-left: 257px;
-  }
+  padding-bottom: 150px;
+  word-break: keep-all;
 }
 section .parking-price #pk-price {
+  width: 100%;
   border-collapse: collapse;
 }
 section .parking-price #pk-price thead tr {
@@ -403,30 +396,31 @@ section .parking-price #pk-price thead tr {
 section .parking-price #pk-price th,
 section .parking-price #pk-price td {
   border: 1px solid #c1b7aa;
-  padding: 10px;
+  padding: 25px 7px;
   text-align: center;
 }
 @media screen and (min-width: 1520px) {
   section .parking-price #pk-price th,
 section .parking-price #pk-price td {
-    padding: 40px 75px;
+    padding: 50px 5px;
   }
 }
-section .parking-price span {
+section .parking-price p {
   float: right;
-  font-size: 0.9em;
-}
-section .parking-discount {
-  padding-bottom: 70px;
+  font-size: 0.8em;
+  margin-top: 15px;
 }
 @media screen and (min-width: 1520px) {
-  section .parking-discount {
-    width: 65%;
-    margin-left: 257px;
-    padding-bottom: 170px;
+  section .parking-price p {
+    font-size: 1.1em;
   }
 }
+section .parking-discount {
+  padding-bottom: 150px;
+  word-break: keep-all;
+}
 section .parking-discount #pk-discount {
+  width: 100%;
   border-collapse: collapse;
 }
 section .parking-discount #pk-discount thead tr {
@@ -435,7 +429,7 @@ section .parking-discount #pk-discount thead tr {
 section .parking-discount #pk-discount th,
 section .parking-discount #pk-discount td {
   border: 1px solid #c1b7aa;
-  padding: 7px;
+  padding: 25px 7px;
   text-align: center;
 }
 @media screen and (min-width: 1520px) {
@@ -444,9 +438,27 @@ section .parking-discount #pk-discount td {
     padding: 40px 5px;
   }
 }
-section .parking-discount span {
+@media screen and (min-width: 1520px) {
+  section .parking-discount #pk-discount tr .dis .dis_hello {
+    width: 22%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  section .parking-discount #pk-discount tr .dis .dis_hi {
+    width: 63%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+section .parking-discount p {
   float: right;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  margin-top: 15px;
+}
+@media screen and (min-width: 1520px) {
+  section .parking-discount p {
+    font-size: 1.1em;
+  }
 }
 
 footer {
