@@ -164,7 +164,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb {
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
   padding: 20px 0;
   border-bottom: 1px solid #dddddd;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 600;
 }
 
@@ -240,12 +240,24 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-m
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:nth-child(2) {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a {
   display: inline-block;
   color: #999999;
+  -webkit-transition: color 0.3s ease, font-weight 0.3s ease;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a:hover {
+  color: #231f20;
+  font-weight: 500;
+}
+
+header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a.selected {
+  color: #231f20;
+  font-weight: 500;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
@@ -356,14 +368,14 @@ aside div.sidemenu {
     background-color: #ffffff;
   }
   aside div.sidemenu h1.header-logo {
-    padding: 10px 30px 25px 25px;
+    padding: 10px 30px 25px 21px;
   }
   aside div.sidemenu ul.gnb {
     padding-left: 30px;
   }
   aside div.sidemenu ul.gnb li.menu {
     padding: 10px 0;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
   }
   aside div.sidemenu ul.gnb li.menu::before {
@@ -372,6 +384,11 @@ aside div.sidemenu {
     height: 10px;
     width: 10px;
     background: url("./../images/icon-circle.svg") no-repeat center;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+  }
+  aside div.sidemenu ul.gnb li.menu:hover::before {
+    background: url("./../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
     background: url("./../images/icon-circle_h.svg") no-repeat center;
@@ -383,8 +400,8 @@ aside div.sidemenu {
   }
   aside div.sidemenu ul.gnb li.menu ul.small-menu {
     margin-top: 5px;
-    margin-bottom: 30px;
-    padding-left: 25px;
+    margin-bottom: 20px;
+    padding-left: 24px;
     line-height: 1.4em;
   }
   aside div.sidemenu ul.gnb li.menu ul.small-menu li {
@@ -394,6 +411,16 @@ aside div.sidemenu {
   aside div.sidemenu ul.gnb li.menu ul.small-menu li a {
     display: inline-block;
     color: #999999;
+    -webkit-transition: color 0.3s ease, font-weight 0.3s ease;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  aside div.sidemenu ul.gnb li.menu ul.small-menu li a:hover {
+    color: #231f20;
+    font-weight: 500;
+  }
+  aside div.sidemenu ul.gnb li.menu ul.small-menu li a.selected {
+    color: #231f20;
+    font-weight: 500;
   }
 }
 
