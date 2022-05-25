@@ -131,13 +131,16 @@ section.main-flex {
                 .show-five {
                     display: none;
                 }
-
+                .on {
+                    display: none;
+                }
+                
                 .des-2-flex{
                     margin-top: 50px;
 
                     @include responsive(pc-size) {
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: center;
                         width: 92%;
                         margin: 0 auto;
                         margin-top: 50px;
@@ -149,8 +152,9 @@ section.main-flex {
                             display: none;
 
                             @include responsive(pc-size) {
+                                width: 50%;
                                 display: block;
-                                width: 550px;
+                                width: 400px;
                                 opacity: 0.8;
                             }
                         }
@@ -158,6 +162,7 @@ section.main-flex {
 
                     .des-2-right{
                         @include responsive(pc-size) {
+                            width: 50%;
                             margin-left: 30px;
                         }
                         
@@ -173,6 +178,10 @@ section.main-flex {
                         }
                         p {
                             line-height: 1.4em;
+                            
+                            @include responsive(tablet-size) {
+                                text-align: justify;
+                            }
                         }
                     }
                 }
