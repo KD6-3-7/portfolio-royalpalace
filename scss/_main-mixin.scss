@@ -1,22 +1,56 @@
-@mixin bg-right ($img-name){
+@mixin bg-full ($img-name, $position){
     width: 100vw;
     height: 100vh;
-    background: url(../images/#{$img-name}.jpg) no-repeat right top /cover;
+    background: url(../images/#{$img-name}.jpg) no-repeat $position /cover;
     overflow: hidden;
 }
 
-@mixin bg-center ($img-name){
-    width: 100vw;
-    height: 100vh;
-    background: url(../images/#{$img-name}.jpg) no-repeat center bottom /cover;
-    overflow: hidden;
-}
 
 @mixin item-bg ($img-name){
 
-    background: url(../images/#{$img-name}.jpg) no-repeat right top /cover;
+    background: url(../images/#{$img-name}.jpg) no-repeat center top /cover;
     overflow: hidden;
 }
 
+@mixin item-map ($img-name){
 
+    background: url(../images/#{$img-name}.png) no-repeat center;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+}
+
+
+@mixin both-arrow ($top){
+    position: absolute;
+    left:50%;
+    top: $top;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1740px;
+    margin: auto;
+    cursor: pointer;
+
+    img {
+        width: 20px;
+        height: 40px;
+        opacity: 0.7;
+        transform: transition(0.3s);
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @include responsive (tablet-size) {
+        width: 74vw;
+        
+        img {
+            width: 28px;
+            height: 56px;
+        }
+
+    }
+}
 
