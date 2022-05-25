@@ -178,10 +178,7 @@ section.main-flex {
                         }
                         p {
                             line-height: 1.4em;
-                            
-                            @include responsive(tablet-size) {
-                                text-align: justify;
-                            }
+                            text-align: justify;
                         }
                     }
                 }
