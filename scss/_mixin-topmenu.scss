@@ -18,8 +18,11 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            // background-color: $color-main;
+            background-color: $color-main;
 
+            @include responsive (tablet-size) {
+                background: none;
+            }
 
             h1.logo {
                 margin: 0 20px;
@@ -43,7 +46,6 @@
                 width: 25px;
                 height: 20px;
                 margin-right: 20px;
-                // background-color: chocolate;
 
                 @include responsive (tablet-size) {
                     width: 86px;
@@ -119,6 +121,7 @@
         
         div.mobilemenu {
             position: absolute;
+            top: 80px;
             z-index: 1;
             width: 100%;
             background-color: $sidemenu-background;
@@ -128,7 +131,7 @@
                 left: 50%;
                 top: 4vh;
                 transform: translate(-50%, 0);
-                width: 70%;
+                width: 60%;
                 background-color: rgba(255, 255, 255, 0.97);
                 overflow: hidden;
             }
@@ -138,7 +141,6 @@
             }
 
             ul.mobile-gnb {
-                box-sizing: border-box;
                 height: 0vh;
                 padding: 0 20px;
                 list-style: none;
@@ -146,22 +148,22 @@
                 transition: height ease-in-out 1s 0s;
 
                 @include responsive(tablet-size) {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    gap: 4vw;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-items: center;
+                    // place-items: center;
+                    grid-gap: 2vw;
                     margin: auto;
                 }
 
                 @include responsive(pc-size) {
-                    width: 80%;
+                    width: 70%;
                 }
 
                 .sh-logo {
                     display: none;
-                    width: 100%;
-                    margin-top: 100px;
+                    margin-top: 70px;
+
                     img {
                         width: 70px;
                         margin: auto;
@@ -169,6 +171,7 @@
 
                     @include responsive(tablet-size) {
                         display: block;
+                        grid-column: 1/4;
                     }
                 }
 
@@ -188,7 +191,6 @@
                         min-width: 140px;
                         margin:0 3%;
                         border-bottom:0;
-                        // background-color: aquamarine;
                     }
 
                     font: {
@@ -201,7 +203,6 @@
                             background: url("./../../../images/icon-circle_h.svg") no-repeat center;
                         }
                     }
-
 
                     &::before {
                         content:"";
@@ -342,6 +343,7 @@
 
                     @include responsive(tablet-size) {
                         display: block;
+                        grid-column: 1/4;
                     }
                 }
 
@@ -386,9 +388,6 @@
 }
 
 @mixin topmenu-pc() {
-    div.header-mobile {
-        // display: none;
-    }
 
     ul.topmenu {
         margin-left: 200px;

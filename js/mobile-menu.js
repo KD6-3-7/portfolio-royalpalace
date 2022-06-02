@@ -14,6 +14,7 @@ function showMenu(){
 }
 
 hamburger.addEventListener("click", showMenu);
+document.querySelector(".close-btn").addEventListener("click", showMenu);
 
 
 // 모바일 메뉴 아코디언

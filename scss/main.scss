@@ -1,18 +1,10 @@
 @import "../scss/_style.scss";
 @import "../scss/common";
 @import "../scss/mixin-responsive-wrapper";
-// @import "../scss/_main-menu.scss";
 @import "../scss/mixin-topmenu";
 @import "../scss/_main-reset";
 @import "../scss/_main-mixin.scss";
 @import "../scss/_mixin-footer.scss";
-
-
-audio {
-    position: fixed;
-    FILTER: xray gray;
-    display: none;
-}
 
 
 #wrapper {
@@ -31,20 +23,10 @@ audio {
         }
     }
 
-
-    
-
     header {
         position: relative;
         @include topmenu-mobile();
-    
-        // @include responsive(tablet-size) {
-        //     @include topmenu-pc();
-        // }
-    }// header
-
-
-
+    }
 
     .top {
         position: fixed;
@@ -59,8 +41,6 @@ audio {
             width: 137px;
             height: auto;
         }
-
-        // background-color: aqua;
 
         #hb {
             font-family: $font-sans;
@@ -90,7 +70,6 @@ audio {
                 height: 20px;
                 margin-bottom: 10px;
                 
-                // background-color: pink;
                 img {
                     width: 15px;
                     height: 8px;
@@ -130,7 +109,6 @@ audio {
                 
                 
                 &:hover {
-                    // right: -7px;
                     
                     span {
                         &:first-child{
@@ -139,7 +117,6 @@ audio {
                         }
                         &:last-child {
                             transform: translateX(28%);
-                            // transform: scale(1.1);
                             border: 4px solid rgba(255, 255, 255, 0.3);
                             border-radius: 50%;
                             background-color: #fff;
