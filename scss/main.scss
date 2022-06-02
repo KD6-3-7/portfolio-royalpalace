@@ -7,6 +7,7 @@
 @import "../scss/_main-mixin.scss";
 @import "../scss/_mixin-footer.scss";
 
+
 audio {
     position: fixed;
     FILTER: xray gray;
@@ -37,9 +38,9 @@ audio {
         position: relative;
         @include topmenu-mobile();
     
-        @include responsive(tablet-size) {
-            @include topmenu-pc();
-        }
+        // @include responsive(tablet-size) {
+        //     @include topmenu-pc();
+        // }
     }// header
 
 
