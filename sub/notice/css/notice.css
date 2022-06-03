@@ -173,17 +173,17 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
   display: inline-block;
   height: 13px;
   width: 13px;
-  background: url("./../images/icon-circle.svg") no-repeat center;
+  background: url("./../../../images/icon-circle.svg") no-repeat center;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu:hover::before {
-  background: url("./../images/icon-circle_h.svg") no-repeat center;
+  background: url("./../../../images/icon-circle_h.svg") no-repeat center;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu.selected::before {
-  background: url("./../images/icon-circle_h.svg") no-repeat center;
+  background: url("./../../../images/icon-circle_h.svg") no-repeat center;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu > a, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
@@ -206,17 +206,17 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
-  background-image: url("./../images/icon-circle.svg");
+  background: url("./../../../images/arr_bottom.svg") no-repeat;
   width: 13px;
   height: 13px;
   content: "";
   float: right;
   position: relative;
-  top: 7px;
+  top: 5px;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
-  background-image: url("./../images/icon-circle_h.svg");
+  background: url("./../../../images/arr_up.svg") no-repeat;
   content: "";
 }
 
@@ -403,15 +403,15 @@ aside div.sidemenu {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: url("./../images/icon-circle.svg") no-repeat center;
+    background: url("./../../../images/icon-circle.svg") no-repeat center;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
   }
   aside div.sidemenu ul.gnb li.menu:hover::before {
-    background: url("./../images/icon-circle_h.svg") no-repeat center;
+    background: url("./../../../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
-    background: url("./../images/icon-circle_h.svg") no-repeat center;
+    background: url("./../../../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu > a {
     display: inline-block;
@@ -629,6 +629,15 @@ footer div.wrapper div.copyright div.contact p:first-child {
   footer {
     padding: 0 200px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  footer div.wrapper {
+    padding: 0 13%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   footer div.wrapper div.policy > ul {
     width: 50%;
   }

@@ -764,6 +764,15 @@ footer div.wrapper div.copyright div.contact p:first-child {
   footer {
     padding: 0 200px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  footer div.wrapper {
+    padding: 0 13%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   footer div.wrapper div.policy > ul {
     width: 50%;
   }
