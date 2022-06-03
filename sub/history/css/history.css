@@ -206,7 +206,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
   content: "";
   float: right;
   position: relative;
-  top: 7px;
+  top: 5px;
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
