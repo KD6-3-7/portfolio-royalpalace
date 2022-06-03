@@ -520,7 +520,7 @@ section.booking div.booking-form form div.option > div.subtitle {
 section.booking div.booking-form form div.option > ul {
   border-top: 1px solid #a7a7a7;
   border-bottom: 1px solid #a7a7a7;
-  background-color: #fcfbfa;
+  background-color: #ffffff;
 }
 
 section.booking div.booking-form form div.option.personnel-list {
@@ -629,7 +629,7 @@ section.booking div.booking-form form div.calendar div#container div#calendar {
   height: 302px;
   border-top: 1px solid #a7a7a7;
   border-bottom: 1px solid #a7a7a7;
-  background-color: #fcfbfa;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,7 +819,7 @@ section.booking div.booking-form form div.personnel-list div.personnel-flex-box 
   padding: 20px 10px;
   border-top: 1px solid #a7a7a7;
   border-bottom: 1px solid #a7a7a7;
-  background-color: #fcfbfa;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1520px) {
@@ -937,7 +937,7 @@ section.booking div.booking-form form div.personnel-list div.personnel-flex-box 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fcfbfa;
+  background-color: #ffffff;
 }
 
 section.booking div.booking-form form div.personnel-list div.personnel-flex-box div.count div.age div.personnel-count input {

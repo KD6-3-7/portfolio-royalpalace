@@ -86,7 +86,7 @@ section.booking {
                 & > ul {
                     border-top: 1px solid $color-border;
                     border-bottom: 1px solid $color-border;
-                    background-color: $color-white;
+                    background-color: $sidemenu-background;
                 }
 
                 &.personnel-list {
@@ -170,7 +170,7 @@ section.booking {
                         height: 302px;
                         border-top: 1px solid $color-border;
                         border-bottom: 1px solid $color-border;
-                        background-color: $color-white;
+                        background-color: $sidemenu-background;
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
@@ -321,7 +321,7 @@ section.booking {
                         padding: 20px 10px;
                         border-top: 1px solid $color-border;
                         border-bottom: 1px solid $color-border;
-                        background-color: $color-white;
+                        background-color: $sidemenu-background;
         
                         @include responsive(pc-size) {
                             width: 30%;
@@ -403,7 +403,7 @@ section.booking {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
-                                background-color: $color-white;
+                                background-color: $sidemenu-background;
         
                                 input {
                                     display: none;
