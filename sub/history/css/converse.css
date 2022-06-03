@@ -200,7 +200,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
-  background-image: url("./../images/icon-circle.svg");
+  background: url("../../../images/arr_bottom.svg") no-repeat;
   width: 13px;
   height: 13px;
   content: "";
@@ -210,7 +210,7 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
 }
 
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
-  background-image: url("./../images/icon-circle_h.svg");
+  background: url("../../../images/arr_up.svg") no-repeat;
   content: "";
 }
 
