@@ -58,6 +58,10 @@
     padding: 0 200px;
 
     div.wrapper {
+        @include responsive(pc-size) {
+            padding: 0 13%;
+        }
+        
         div.policy > ul {
             width: 50%;
 
