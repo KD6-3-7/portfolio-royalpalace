@@ -95,7 +95,7 @@
                     border-bottom: 1px solid $mobilemenu-border;
 
                     font: {
-                        size: 1em;
+                        size: 1.1em;
                         weight: 600;
                     }
 
@@ -180,6 +180,17 @@
                             a {
                                 display: inline-block;
                                 color: $sidemenu-gray;
+                                transition: color 0.3s ease, font-weight 0.3s ease;
+
+                                &:hover {
+                                    color: $sidemenu-black;
+                                    font-weight: 500;
+                                }
+
+                                &.selected {
+                                    color: $sidemenu-black;
+                                    font-weight: 500;
+                                }
                             }
                         }
                     }    
