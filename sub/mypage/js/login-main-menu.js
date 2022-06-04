@@ -1,19 +1,20 @@
 // 로그인 페이지 메인 햄버거 버튼
-const mainHamburger = document.getElementById("mainmenu");
-const mainMenuBar = document.querySelector(".main-gnb");
+const hamburger = document.getElementById("menu");
+const menuBar = document.querySelector(".mobile-gnb");
 
-let mainToggle = true;
+let subToggle = true;
 function showMenu(){
-    if(mainToggle) {
-        mainMenuBar.style.setProperty('height', 'calc(100vh - 80px)');
-        mainToggle =! mainToggle;
+    if(subToggle) {
+        menuBar.style.setProperty('height', 'calc(100vh - 80px)');
+        subToggle =! subToggle;
       } else {
-        mainMenuBar.style.height = "0px";
-        mainToggle =! mainToggle;
+        menuBar.style.height = "0px";
+        subToggle =! subToggle;
     }
 }
 
-mainHamburger.addEventListener("click", showMenu);
+hamburger.addEventListener("click", showMenu);
+document.querySelector(".close-btn").addEventListener("click", showMenu);
 
 
 // 로그인 페이지 메인 메뉴 아코디언

@@ -12,7 +12,7 @@ header {
     @include topmenu-mobile();
 
     @include responsive(tablet-size) {
-        @include topmenu-pc();
+        padding-top: 13px;
     }
 }
 
