@@ -185,7 +185,7 @@
                         <span class="title">문의 분류</span>
                         <div class="radio-btn">
                             <div>
-                                <input type="radio" name="category" id="viewing">
+                                <input type="radio" name="category" id="viewing" required>
                                 <label for="viewing">관람</label>
                             </div>
                             <div>
@@ -204,23 +204,23 @@
                     </div>
                     <div class="row">
                         <span class="title">아이디</span>
-                        <input type="text" name="userid" id="userid" value="gyeongbokgung" disabled>
+                        <input type="text" name="userid" id="userid" value="gyeongbokgung" minlength="8" maxlength="16" required disabled>
                     </div>
                     <div class="row">
                         <span class="title">이름</span>
-                        <input type="text" name="username" id="username" value="경복궁" disabled>
+                        <input type="text" name="username" id="username" value="경복궁" minlength="2" maxlength="8" required disabled>
                     </div>
                     <div class="row">
                         <span class="title">연락받으실 이메일</span>
-                        <input type="text" name="mail" id="mail" value="gyeongbokgung@palace.kr" placeholder="연락받으실 이메일을 입력해주세요.">
+                        <input type="text" name="mail" id="mail" value="gyeongbokgung@palace.kr" placeholder="연락받으실 이메일을 입력해주세요." maxlength="50" required>
                     </div>
                     <div class="row">
                         <span class="title">문의 제목</span>
-                        <input type="text" name="title" id="title" placeholder="문의 제목을 입력해주세요.">
+                        <input type="text" name="title" id="title" placeholder="문의 제목을 입력해주세요." maxlength="25" required>
                     </div>
                     <div class="row">
                         <span class="title">문의 내용</span>
-                        <textarea name="inquire" id="inquire" cols="30" rows="10" placeholder="문의 내용을 입력해주세요."></textarea>
+                        <textarea name="inquire" id="inquire" cols="30" rows="10" placeholder="문의 내용을 입력해주세요." required></textarea>
                     </div>
                     <div class="row">
                         <span class="title">첨부 파일</span>

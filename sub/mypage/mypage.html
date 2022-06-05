@@ -184,30 +184,30 @@
                     <div class="row">
                         <span class="title">아이디</span>
                         <div class="userid-flex-box flexbox">
-                            <input type="text" name="userid" id="userid" value="gyeongbokgung" disabled>
+                            <input type="text" name="userid" id="userid" value="gyeongbokgung" minlength="8" maxlength="16" required disabled>
                         </div> <!-- userid-flex-box -->
                     </div>
                     <div class="row">
                         <span class="title">이름</span>
                         <div class="username-flex-box flexbox">
-                            <input type="text" name="username" id="username" value="경복궁" disabled>
+                            <input type="text" name="username" id="username" value="경복궁" minlength="2" maxlength="8" required disabled>
                         </div> <!-- userid-flex-box -->
                     </div>
                     <div class="row">
                         <span class="title">새 비밀번호</span>
-                        <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요.">
+                        <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요." minlength="8" maxlength="16" required>
                     </div>
                     <div class="row">
                         <span class="title">새 비밀번호 확인</span>
-                        <input type="password" name="userpw2" id="userpw2" placeholder="비밀번호를 한번 더 입력해주세요.">
+                        <input type="password" name="userpw2" id="userpw2" placeholder="비밀번호를 한번 더 입력해주세요." minlength="8" maxlength="16" required>
                     </div>
                     <div class="row">
                         <span class="title">이메일</span>
                         <div class="mail-flex-box flexbox">
                             <div>
-                                <input type="text" name="mail" id="mail" value="gyeongbokgung" placeholder="이메일 아이디">
+                                <input type="text" name="mail" id="mail" value="gyeongbokgung" placeholder="이메일 아이디" maxlength="16" required>
                                 <span>@</span>
-                                <input type="text" name="mailServer1" id="mailServer1" value="palace.kr">
+                                <input type="text" name="mailServer1" id="mailServer1" value="palace.kr" maxlength="16" required>
                             </div>
                             <select id="mailServer2" name="mailServer2" title="이메일 주소 선택" onchange="input_email();">
                                 <option value="">직접 입력</option>
@@ -222,7 +222,7 @@
                     <div class="row">
                         <span class="title">전화번호</span>
                         <div class="phone-flex-box flexbox">
-                            <select id="phone1" name="phone1" onchange="input_email();">
+                            <select id="phone1" name="phone1" onchange="input_email();" required>
                                 <option value="">선택</option>
                                 <option value="010" selected>010</option>
                                 <option value="011">011</option>
@@ -232,9 +232,9 @@
                                 <option value="019">019</option>
                             </select>
                             <span>-</span>
-                            <input type="tel" name="phone2" id="phone2" value="1234">
+                            <input type="tel" name="phone2" id="phone2" value="1234" maxlength="4" required pattern="[0-9]+">
                             <span>-</span>
-                            <input type="tel" name="phone3" id="phone3" value="5678">
+                            <input type="tel" name="phone3" id="phone3" value="5678" maxlength="4" required pattern="[0-9]+">
                         </div> <!-- phone-flex-box -->
                     </div>
                     <div class="row">
@@ -242,13 +242,13 @@
                         <div class="address-flex-box flexbox">
                             <div>
                                 <span>우편번호</span>
-                                <input type="number" name="zipcode" id="zipcode" value="03045">
+                                <input type="number" name="zipcode" id="zipcode" value="03045" required pattern="[0-9]+">
                             </div>
                             <button class="address btn" type="button" onclick="location.href('#')">
                                 <span>주소 검색</span>
                             </button>
-                            <input type="text" name="address1" id="address1" value="서울특별시 종로구 사직로 161">
-                            <input type="text" name="address2" id="address2" value="경복궁관리소" placeholder="나머지 주소를 입력해주세요.">
+                            <input type="text" name="address1" id="address1" value="서울특별시 종로구 사직로 161" minlength="5" maxlength="50" required>
+                            <input type="text" name="address2" id="address2" value="경복궁관리소" placeholder="나머지 주소를 입력해주세요." minlength="5" maxlength="50" required>
                         </div> <!-- address-flex-box -->
                     </div>
                     <div class="row">

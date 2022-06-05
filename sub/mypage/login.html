@@ -118,8 +118,8 @@
             <p>로그인</p>
             <div class="flexbox">
                 <form action="#" method="post">
-                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요.">
-                    <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요.">
+                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요." minlength="8" maxlength="16" required>
+                    <input type="password" name="userpw" id="userpw" placeholder="비밀번호를 입력해주세요." minlength="8" maxlength="16" required>
                     <div class="row">
                         <button class="find-btn userid" type="button" onclick="location.href('#')">아이디 찾기</button>
                         <button class="find-btn password" type="button" onclick="location.href('#')">비밀번호 찾기</button>
