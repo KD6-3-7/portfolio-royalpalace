@@ -17,6 +17,7 @@
 
                 img {
                     width: 100px;
+                    display: block;
                 }
             }
 
@@ -95,7 +96,7 @@
                     border-bottom: 1px solid $mobilemenu-border;
 
                     font: {
-                        size: 1.1em;
+                        size: 1.1em; // 모바일 메뉴 호버 시 트랜지션 추가 및 폰트 사이즈 수정 (1em -> 1.1em)
                         weight: 600;
                     }
 
@@ -104,11 +105,18 @@
                         display: inline-block;
                         height: 13px;
                         width: 13px;
-                        background: url("./../../../images/icon-circle.svg") no-repeat center;
+                        background: url("./../images/icon-circle.svg") no-repeat center;
+                        // ==================== 다른 페이지에 여기서부터 ====================
+                        transition: background 0.3s ease; // 모바일 메뉴 호버 시 아이콘 트랜지션 추가
+                    }
+
+                    &:hover::before { // 모바일 메뉴 호버 시 아이콘 트랜지션 추가
+                        background: url("./../images/icon-circle_h.svg") no-repeat center;
+                        // ====================== 여기까지 추가해야 함 ======================
                     }
                     
                     &.selected::before {
-                        background: url("./../../../images/icon-circle_h.svg") no-repeat center;
+                        background: url("./../images/icon-circle_h.svg") no-repeat center;
                     }
                     
                     & > a, button.accordion {
@@ -133,7 +141,7 @@
                         text-align: left;
 
                         &::after {
-                            background-image: url("./../images/icon-circle.svg");
+                            background: url("./../images/arr_bottom.svg") no-repeat;
                             width: 13px;
                             height: 13px;
                             content: "";
@@ -143,7 +151,7 @@
                         }
 
                         &.active::after {
-                            background-image: url("./../images/icon-circle_h.svg");
+                            background: url("./../images/arr_up.svg") no-repeat;
                             content: "";
                         }
                     }
@@ -169,13 +177,13 @@
                             }
 
                             &:first-child, &:nth-child(2) {
-                                padding-top: 15px;
+                                padding-top: 15px; // 모바일 메뉴 호버 시 트랜지션 추가 및 폰트 사이즈 수정 (10px -> 15px)
                             }
 
                             a {
                                 display: inline-block;
                                 color: $sidemenu-gray;
-                                transition:color 0.3s ease, font-weight 0.3s ease;
+                                transition: color 0.3s ease, font-weight 0.3s ease; // 모바일 메뉴 호버 시 트랜지션 추가 및 폰트 사이즈 수정 (여기부터)
 
                                 &:hover {
                                     color: $sidemenu-black;
@@ -185,7 +193,7 @@
                                 &.selected {
                                     color: $sidemenu-black;
                                     font-weight: 500;
-                                }
+                                } // (여기까지)
                             }
                         }
                     }    
@@ -224,18 +232,18 @@
 
     ul.topmenu {
         margin-left: 200px;
-        // padding: 0 7%; // full menu 할 경우 주석처리
+        padding: 0 7%; // full menu 할 경우 주석처리
         height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         
-        // @include responsive(pc-size) {
-        //     margin: 0 auto;
-        //     width: 1320px;
-        //     padding: 0;
-        //     transform: translateX(100px);
-        // }
+        @include responsive(pc-size) {
+            margin: 0 auto;
+            width: 1320px;
+            padding: 0;
+            transform: translateX(100px);
+        }
 
         li.submenu {
             width: calc(100% / 3); // calc(100% / [서브메뉴 개수])

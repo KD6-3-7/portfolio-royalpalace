@@ -54,17 +54,13 @@ p {
     }
 }
 
-span{
-    // font-size: 0.9em;
-}
-
 .txt-area {
-    width: 70vw;
-    padding: 20px;
+    width: 90vw;
+    padding: 30px;
 
     @include responsive (tablet-size) {
         width: 95vw;
-        padding-left: 200px;
+        padding-left: 10vw;
     }
 }
 
@@ -92,7 +88,6 @@ span{
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.7);
     padding: 14px;
-    margin: 4vh 0;
     background: url(../images/arr_right.png) no-repeat 90% 50%;
 
     transition: all 0.5s;

@@ -26,17 +26,26 @@ main {
 
 // aside
 aside {
-    .header-logo {
-        img {
-            width: 100%;
-            display: block;
-        }
-    }
+
+
 
     @include sidemenu-mobile();
 
     @include responsive(tablet-size) {
         @include sidemenu-pc();
+    }
+
+    div.sidemenu {
+        transform: translateY(0);
+
+        .header-logo {
+            img {
+                width: 100%;
+                display: block;
+                
+            }
+        }
+
     }
 }
 
@@ -202,32 +211,18 @@ section {
                 }
             }
 
-            .mobile-btn {
-                a {
-                    width: 161px;
-                    border: 1px solid #ccc;
-
-                    &:hover {
-                        background-color: #fff;
-                    }
-                }
-
-
-                @include responsive (tablet-size) {
-                    display: none;
-                }
-            }
-
             .info-menu {
+                // display: none;
+                visibility: hidden;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 360px;
+                width: 400px;
                 text-align: center;
-                // background-color: darkkhaki;
-                // padding-bottom: 4vh;
+
 
                 @include responsive (tablet-size) {
+                    visibility: visible;
                     position: static;
                     transform: translateX(0);
                     display: block;
@@ -240,10 +235,6 @@ section {
                     // width: 640px;
                     min-width: 400px;
                     padding-bottom: 4vh;
-                }
-
-                .info-btn {
-                    margin-left: 3px;
                 }
 
                 ul {
@@ -259,8 +250,8 @@ section {
                     // background-color: $color-background;
 
                     li { 
-                        line-height: 2em;
-                        min-width: 80px;
+                        line-height: 3em;
+                        min-width: 86px;
                         background-color: #b59a7b;
                         
                         @include responsive (tablet-size) {
@@ -284,7 +275,9 @@ section {
                 }
             }
 
-            .restore {
+            .restore-menu {
+                visibility: hidden;
+                // display: none;
                 width: 360px;
                 color: #7e6754;
                 text-align: center;
@@ -292,60 +285,88 @@ section {
                 *{margin-bottom: 0.5vh;}
                 
                 @include responsive(tablet-size) {
+                    visibility: visible;
                     position: relative;
                     display: block;
                 }
 
-                .restore-btn {
-                    margin-left: 50%;
-                }
-                
-                .hidden-area {
-                    // display: none;
-                    width: 100%;
-                    h2 {
+                h2 {
+                    font-size: 1.6em;
+                    letter-spacing: -2px;
+
+                    @include responsive(tablet-size) {
                         font-size: 1.6em;
-                        letter-spacing: -2px;
-    
-                        @include responsive(tablet-size) {
-                            font-size: 1.6em;
-                        }
                     }
-    
-                    .area-menu {
-                        line-height: 1.6em;
-                    }
-    
-                    .step {
-                        display: flex;
-                        justify-content: center;
-    
-                        li {
-                            width: 63px;
-                            line-height: 45px;
-                            text-align: center;
-                            padding:2px;
-    
-                            a {
-                                color: $color-white;
-                                border-radius: 25%;
-                                background-color: #7e6754;
-    
-                                &:hover {
-                                    color :#4c4742;
-                                    background-color: $color-white;
-                                }
+                }
+
+                .area-menu {
+                    line-height: 1.6em;
+                }
+
+                .step {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        width: 63px;
+                        line-height: 45px;
+                        text-align: center;
+                        padding:2px;
+
+                        a {
+                            color: $color-white;
+                            border-radius: 25%;
+                            background-color: #7e6754;
+
+                            &:hover {
+                                color :#4c4742;
+                                background-color: $color-white;
                             }
                         }
                     }
-                    .comment{
-                        text-align: left;
-                        text-indent: 1em;
-                    }
-    
+                }
+                .comment{
+                    text-align: left;
+                    text-indent: 1em;
                 }
 
-            }//.restore
+            }//.restore-menu
+
+            .mobile-btn {
+                display:inline-block;
+                width: 48%;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+                margin: auto;
+                margin-left: 1%;
+
+                &:hover {
+                    background-color: #fff;
+                }
+
+                @include responsive (tablet-size) {
+                    display: none;
+                }
+            }
+
+            input {
+                display: none;
+            }
+
+            input:checked + label {
+                border-bottom: 2px solid #757575;
+            }
+            
+
+            #tab1:checked ~ .info-menu,
+            #tab2:checked ~ .restore-menu {
+                // display: block;
+                visibility: visible;
+            }
+
+            // @include responsible (tablet-size) {
+
+            // }
         }//.buttons
     }//#map-area
 
