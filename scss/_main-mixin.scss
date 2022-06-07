@@ -8,7 +8,7 @@
 
 @mixin item-bg ($img-name){
 
-    background: url(../images/#{$img-name}.jpg) no-repeat center top /cover;
+    background: url(../images/#{$img-name}.jpg) no-repeat center bottom /cover;
     overflow: hidden;
 }
 
@@ -21,17 +21,17 @@
 }
 
 
-@mixin both-arrow ($top){
+@mixin both-arrow ($top, $width){
     position: absolute;
     left:50%;
     top: $top;
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: space-between;
-    width: 90vw;
-    max-width: 1740px;
+    width: $width;
     margin: auto;
     cursor: pointer;
+    z-index: 0;
 
     img {
         width: 20px;
@@ -44,7 +44,7 @@
     }
 
     @include responsive (tablet-size) {
-        width: 74vw;
+        width: $width;
         
         img {
             width: 28px;

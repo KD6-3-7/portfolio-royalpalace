@@ -18,7 +18,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            background-color: $color-main;
+            background-color:rgba(0, 0, 0, 0.3);
 
             @include responsive (tablet-size) {
                 background: none;
@@ -46,6 +46,7 @@
                 width: 25px;
                 height: 20px;
                 margin-right: 20px;
+                z-index: 1000;
 
                 @include responsive (tablet-size) {
                     width: 86px;
@@ -65,7 +66,6 @@
                         line-height: 0.7em;
                         text-align: end;
                     }
-
                 }
                 input[id="menu"] {
                     display: none;
@@ -124,7 +124,7 @@
             top: 80px;
             z-index: 1;
             width: 100%;
-            background-color: $sidemenu-background;
+            background-color: rgba($sidemenu-background, 0.9);
 
             @include responsive(tablet-size) {
                 position: fixed;

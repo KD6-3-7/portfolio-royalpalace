@@ -4,10 +4,10 @@
 @import "../scss/mixin-topmenu";
 @import "../scss/_main-reset";
 @import "../scss/_main-mixin.scss";
-@import "../scss/_mixin-footer.scss";
+@import "../scss/mixin-footer";
 
 
-#wrapper {
+body {
     width: 100%;
 	position: relative;
     color: #fff;
@@ -28,32 +28,12 @@
         @include topmenu-mobile();
     }
 
-    .top {
-        position: fixed;
-        display: flex;
-		justify-content: space-between;
-        width: 100%;
-        padding: 40px 48px;
-		z-index: 3;
-        display: none;
-
-        img {
-            width: 137px;
-            height: auto;
-        }
-
-        #hb {
-            font-family: $font-sans;
-            font-size: 1.2em;
-		}
-    }
-
     #slide-nav {
         display: none;
 
         @include responsive(tablet-size) {
             position: fixed;
-            right: 64px;
+            right: 40px;
             top: 35vh;
             display: flex;
             flex-direction: column;
@@ -105,8 +85,6 @@
                         transition: all 0.1s;
                     }
                 }
-    
-                
                 
                 &:hover {
                     
@@ -126,7 +104,6 @@
                     }
                 }
             } //a
-    
         }
     }//#slide-nav
 
@@ -135,6 +112,7 @@
 		to {opacity: 0; }
 	}
 
+    
     section {
         position: relative;
         width: 100vw;
@@ -142,37 +120,56 @@
     }
 
     #content1 {
-        width: 100%;
-		height: 100%;
+        // position: relative;
+        // width: 100%;
+		// height: 100%;
 		overflow: hidden;
         p {
             font-family: $font-serif;
         }
 
-        .intro {
+        .more {
+            @include both-arrow (90%, 40%);
+            z-index: 5;
+
+            @include responsive (tablet-size) {
+                z-index: 5;
+                width: 10vw;
+                left: 10vw;
+                bottom: 90vh;
+                transform: translate(0, 0);
+            }
+        }
+
+        #intro {
+            position: absolute;
+            left: 0;
+            top: 0;
             display: flex;
 			width: calc(100% * 5);
             height: 100vh;
+            transition: left 0.5s ease-out;
 
             .move-box1{
                 width: 100vw;
                 overflow: hidden;
 				position: relative;
-                padding-top: 20vh;
-                @include bg-full ("intro01_m", top);
+                padding-top: 15vh;
+                @include bg-full ("intro04_m", top);
                     @include responsive (tablet-size) {
-                        @include bg-full ("intro01", right top);
+                        @include bg-full ("intro04", right top);
                     }
 
                 video {
 					position: absolute;
 					top: 0px;
-					left: 0px;
+					left: 50%;
+                    transform: translateX(-50%);
 					min-width: 100vw;
 					min-height: 100%;
 					width: auto;
 					height: auto;
-					animation: fadeout 2s 5s; //속도, 지연시간
+					animation: fadeout 2s 4s; //속도, 지연시간
 					animation-fill-mode: forwards;
                     background-color: #000;
 				}
@@ -181,10 +178,10 @@
                     position: absolute;
                     left: 0;
                     top:0;
-                    @include bg-full ("intro04_m", right top);
+                    @include bg-full ("intro01_m", right top);
 
                     @include responsive (tablet-size) {
-                        @include bg-full ("intro04", right top);
+                        @include bg-full ("intro01", right top);
                     }
                     animation: fadeout 2s 7s; //속도, 지연시간
                     animation-fill-mode: forwards;
@@ -196,9 +193,8 @@
             }
 
             .move-box2{
-				
 				@include bg-full ("intro02_m", right top);
-				padding-top: 20vh;
+				padding-top: 15vh;
 
                 @include responsive (tablet-size) {
                     @include bg-full ("intro02", right top);
@@ -207,7 +203,7 @@
 
             .move-box3{
 				@include bg-full ("intro03_m", right top);
-				padding-top: 20vh;
+				padding-top: 15vh;
                                 
                 @include responsive (tablet-size) {
                     @include bg-full ("intro03", right top);
@@ -215,17 +211,52 @@
 			}
 	
 			.move-box4{
-                @include bg-full ("intro05_m", right top);
+                @include bg-full ("intro05_m", center top);
 				padding-top: 20vh;
+
+                @keyframes scroll {
+                    0% {height: 40%;}
+                    80% {height: 100%;}
+                    100% {height: 40%;}
+                }
+                
+                .scroll {
+                    width: 59px;
+                    height: 60px;
+                    margin: 12vh  3.4vw;
+                    
+                    ul {
+                        position: relative;
+                        width: 17px;
+                        margin: auto;
+                        animation: scroll 1.4s infinite  linear;
+
+                        li {
+                            &:first-child {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                            }
+
+                            &:last-child{
+                                width: 50%;
+                                height: 100%;
+                                border-right: 1px solid rgba(255, 255, 255, 0.7);
+                            }
+                        }
+                    }
+
+                    .txt {
+                        text-align: center;
+                        margin:10px auto;
+                    }
+                }
 
                                 
                 @include responsive (tablet-size) {
                     @include bg-full ("intro05", right top);
                 }
 			}
-
-
-
         }
     }//#content1
 
@@ -269,101 +300,114 @@
         }
 
         .more {
-            @include both-arrow (80%);
+            @include both-arrow (80%, 90% );
+
+            @include responsive (tablet-size){
+                @include both-arrow (80%, 80% );
+            }
         }
 
-        .restore-area {
+        #restore-view {
             position: relative;
-            display: flex;
-            gap: 3vw;
             width: 70vw;
+            height: 70vh;
             text-align: center;
             padding-top: 8vh;
             margin: auto;
             overflow: hidden;
 
             @include responsive (tablet-size) {
-                width: 60vw;
+                width: 62vw;
                 padding-top: 8vh;
             }
             
 
-            #restore {
+            .slider {
+                position: absolute;
+                left: 0px;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                flex: 0 0 250px;
-                height: 60vh;
-                font-family: $font-sans;
-                border: 1px solid rgba(255, 255, 255, 0.5);
-                background-color: rgba(0, 0, 0, 0.4);
-                padding: 28px;
+                transition: left 1s ease-out;
 
-                @include responsive (tablet-size) {
-                    flex: 0 0 328px;
-                    padding: 32px;
-                }
-    
-                .year {
-                    font-size: 2.4em;
-                    font-weight: 500;
-                    padding-top: 2vh;
-                    
-                    @include responsive (tablet-size) {
-                        font-size: 2.8em;
-                        font-weight: 500;
-                        padding-top: 4.4vh;
-                    }
-                }
-    
-                .title {
-                    font-size: 1.2em;
-                    font-weight: 200;
-                    padding-bottom: 2vh;
-
-                    @include responsive (tablet-size) {
-                        font-size: 1.4em;
-                        font-weight: 200;
-                        padding-bottom: 4.4vh;
-                    }
-                }
-    
-                p{
-                    text-align: justify;
-
-                    @include responsive (tablet-size) {
-                        line-height: 1.6em;
-                        text-align: justify;
-                    }
-                }
-    
-                .restore-img {
+                .restore {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 18vh;
-                    margin-top: 2vh;
-                    
+                    flex-direction: column;
+                    justify-content: space-between;
 
-                    .tooltip {
-                        width: 90%;
-                        font-weight: 300;
-                        padding: 0.8em;
-                        background-color: rgba(32, 25, 25, 0.9);
-                        visibility: hidden;
+                    height: 60vh;
+                    font-family: $font-sans;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    background-color: rgba(0, 0, 0, 0.4);
+                    padding: 28px;
+    
+                    &:hover {
+                    border: 1px solid rgba(255, 255, 255, 0.8);
                     }
-
-                    &:hover .tooltip {
-                        visibility: visible;
+    
+                    @include responsive (tablet-size) {
+                        padding: 32px;
                     }
+        
+                    .year {
+                        font-size: 2.4em;
+                        font-weight: 500;
+                        padding-top: 2vh;
+                        
+                        @include responsive (tablet-size) {
+                            font-size: 2.8em;
+                            font-weight: 500;
+                            padding-top: 4.4vh;
+                        }
+                    }
+        
+                    .title {
+                        font-size: 1.2em;
+                        font-weight: 200;
+                        padding-bottom: 2vh;
+    
+                        @include responsive (tablet-size) {
+                            font-size: 1.4em;
+                            font-weight: 200;
+                            padding-bottom: 4.4vh;
+                        }
+                    }
+        
+                    p{
+                        text-align: justify;
+    
+                        @include responsive (tablet-size) {
+                            line-height: 1.6em;
+                            text-align: justify;
+                        }
+                    }
+        
+                    .restore-img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 18vh;
+                        margin-top: 2vh;
+                        
+    
+                        .tooltip {
+                            width: 90%;
+                            font-weight: 300;
+                            padding: 0.8em;
+                            background-color: rgba(32, 25, 25, 0.9);
+                            visibility: hidden;
+                        }
+    
+                        &:hover .tooltip {
+                            visibility: visible;
+                        }
+                    }
+    
+                    .img01 {@include item-bg ("restore01");}
+                    .img02 {@include item-bg ("restore02");}
+                    .img03 {@include item-bg ("restore03");}
+                    .img04 {@include item-bg ("restore04");}
+                    .img05 {@include item-bg ("restore05");}
                 }
-
-                .img01 {@include item-bg ("restore01");}
-                .img02 {@include item-bg ("restore02");}
-                .img03 {@include item-bg ("restore03");}
-                .img04 {@include item-bg ("restore04");}
-                .img04 {@include item-bg ("restore05");}
             }
     
         }
@@ -421,12 +465,12 @@
             height: 16vh;
             border: 1px solid  rgba(255, 255, 255, 0.5);
             overflow: hidden;
+            &:hover {
+            border: 1px solid  rgba(255, 255, 255, 0.8);
+            }
 
             @include responsive (tablet-size) {
-                width: 100%;
                 height: 250px;
-                border: 1px solid  rgba(255, 255, 255, 0.5);
-                overflow: hidden;      
                 }
 
             .tooltip {
@@ -442,7 +486,8 @@
                 border-radius: 50%;
                 font-size: 2em;
                 font-weight: 300;
-                background-color: rgba(255, 255, 255, 0.3);
+                color: #000;
+                background-color: rgba(255, 255, 255, 0.8);
                 visibility: hidden;
                 transition: 0.3s;
             }
@@ -464,7 +509,7 @@
             }
         }
 
-        .map-guid .map_img {@include item-map ("map");}
+        .map-guide .map_img {@include item-map ("map");}
         .map-info {
             .map_img {@include item-map ("map_info");}
 
@@ -478,60 +523,51 @@
 	}//content4
 
     #content5 {
-        display: flex;
-        align-items: center;
+        padding-top: 12vh;
         @include bg-full ("main_event_m", center);
         
         @include responsive (tablet-size) {
+            padding-top: 20vh;
             @include bg-full ("main_event", center);
         }
 
         .more {
-            @include both-arrow (40%);
-        }
-
-        #event-area {
-            width: 80%;
-            padding-top: 10vh;
-            margin: auto;
-            overflow: hidden;
+            @include both-arrow (40%, 90%);
 
             @include responsive (tablet-size) {
-                width: 60%;
-                max-width: 1264px;
+                @include both-arrow (40%, 74%);
+            }
+        }
+
+        #poster-view {
+            width: 52vw;
+            margin-top: 12vh;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #000;
+
+            @include responsive (tablet-size) {
+                width: 55vw;
             }
 
-            .event-poster{
-                display: flex;
-                justify-content: space-between;
-                gap: 7vw;
-                width: 55vw;
-                height: 40vh;
+            .slider{
+                position: relative;
                 cursor: pointer;
                 overflow: hidden;
                 margin: auto;
+                transition: left 1s ease-out;
 
-                @include responsive (tablet-size) {
-                    width: 100%;
-                    height: 42vh;
-                }
-                
 
                 li {
-                    // width: 280px;
-                    height: 42vh;
-                    flex: 0 0 200px; //flex-grow flex-shrink flex-basis
+                    height: 38vh;
                     overflow: hidden;
 
                     @include responsive (tablet-size) {
                         height: 42vh;
-                        flex: 0 0 280px; //flex-grow flex-shrink flex-basis
+                        opacity: 0.5;
                         overflow: hidden;
                     }
                     
-                    // padding-top: calc(0.35 * 100%) ;
-                    opacity: 0.5;
-
                     &:first-child {
                         @include item-bg ("event01")
                     }
@@ -545,102 +581,108 @@
                     }
 
                     &:nth-child(4) {
-                        @include item-bg ("event03")
+                        @include item-bg ("event04")
                     }
 
                     &:hover {
                         opacity: 1;
                     }
+
+                    &:focus {
+                        opacity: 1;
+                    }
                 }
             }
+        }
 
+        #event-hover {
             .event-guide{
-                display :flex;
                 flex-direction: column-reverse;
-                justify-content: space-between;
-                padding-top: 4vh;
-
+                padding: 1vh;
+                width: 86%;
+                display:none;
+                margin: auto;
+    
                 @include responsive (tablet-size) {
+                    gap: 0;
                     flex-direction: row;
-                    padding-top: 8vh;
+                    align-items: flex-end;
+                    width: 56%;
+                    padding-top: 6vh;
+                }
+
+                &:first-child {
+                    display: flex;
                 }
 
                 .event-schedule {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
                     font-family: $font-sans;
-
+                    margin: auto;
+    
                     @include responsive (tablet-size) {
-                        display: block;
                         width: 24vw;
+                        margin: 0;
                     }
-
+    
                     table {
                         display: none;
-
+    
                         td {
                             vertical-align: top;
                             line-height: 1.4em;
-                            padding: 0.5em 0;
+                            padding: 0.2em 0;
                         }
-
+    
                         @include responsive (tablet-size) {
                             display: block;
                         }
-
                     }
                     .button1 {
                         transform: scale(0.8);
+                        margin: auto;
+
                         @include responsive (tablet-size) {
                             transform: scale(1);
+                            margin:auto;
+                            margin-top: 2vh;
                         }
                     }
                 }
-
+    
                 .summary {
                     width: 100%;
-
+                    margin-top: 3vh;
+    
                     @include responsive (tablet-size) {
                         width: 76vw;
                         padding-left: 8vw;
                         padding-right: 40px;
-
+                        margin-top: 0;
                     }
-
+    
                     h2{
                         font-size: 1.6em;
                         font-weight: 100;
                         font-family: $font-serif;
                         text-align: center;
-                        padding-bottom: 2vh;
-
+    
                         @include responsive (tablet-size) {
                             font-size: 2.6em;
-                            font-weight: 100;
-                            font-family: $font-serif;
                             text-align: left;
                         }
                     }
-
+    
                     p {
-                        height: 16vh;
+                        height: 26vh;
                         overflow: auto;
-                        text-align: center;
+                        text-align: justify;
                         
                         @include responsive (tablet-size) {
-                            height: 20vh;
+                            height: unset;
                             overflow: visible;
-                            text-align: justify;
-
                         }
                     }
                 }
-            }
-            .txt-area {
-                height: 30vh;
-                background-color: chocolate
             }
         }
 	}//content5
@@ -648,81 +690,99 @@
     #content6 {
         height: 130vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
         @include bg-full ("main_gallery", center);
+        
         .more {
-            @include both-arrow (50%);
+            @include both-arrow (50%, 90%);
+
+            @include responsive (tablet-size) {
+                @include both-arrow (50%, 80%);
+            }
         }
 
-        .gallery-area {
+        #gallery-view {
+            width: 65vw;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.5);
 
-            .gallery {
+            &:hover {
+                border: 1px solid rgba(255, 255, 255, 1);
+            }
+
+            div {
                 position: relative;
                 display: flex;
-                width: 65vw;
-                height: 50vh;
-                border: 1px solid rgba(255, 255, 255, 0.5);
+                height: 60vh;
                 transition: 0.5s;
+                display: none;
 
-                overflow: hidden;
-                 &:hover {
-                border: 1px solid rgba(255, 255, 255, 1);
-
-                 }
+                &:nth-child(2) {
+                    display: flex;
+                }
     
                 img {
-                    display: block;
-                    min-width: 100%;
+                    min-width: 65vw;
                     min-height: 100%;
                     object-fit: cover;
                 }
             }
+        }
 
-            .gallery-nav {
-                font-family: $font-sans;
-                padding-top: 1vh;
+        .gallery-nav {
+            font-family: $font-sans;
+            padding-top: 1vh;
+            width: 65vw;
 
-                .line {
-                    line-height: 4em;
-                    text-align: center;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-                    margin-bottom: -4px;
-                }
-                ul {
-                    display: flex;
-                    justify-content: space-evenly;
-                    
+            .line {
+                line-height: 4em;
+                font-family: $font-serif;
+                font-size: 1.4em;
+                font-weight: 100;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+                margin-bottom: -4px;
+            }
 
-                    a {
-                        li {
-                            text-align: center;
-                            // opacity: 0.6;
-                            
-                            
-                           span {
-                               display: block;
-                                width: 10px;
-                                height: 10px;
-                                border: 0px solid rgba(255, 255, 255, 0.3);
-                                border-radius: 50%;
-                                margin-left: 10px;
-                                background-color: #fff;
-                                margin: 0 auto;
-                                margin-bottom: 10px;
-    
-                                opacity: 0;
-                                transition: all 0.1s;
-                                
-                            }
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                
+
+                a {
+                    li {
+                        text-align: center;
+                        
+                        span {
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            border: 0px solid rgba(255, 255, 255, 0.3);
+                            border-radius: 50%;
+                            margin-left: 10px;
+                            background-color: #fff;
+                            margin: 0 auto;
+                            margin-bottom: 10px;
+
+                            opacity: 0;
+                            transition: all 0.1s;
                         }
+                    }
 
-                        &:hover {
-                            
-                            font-weight: 600;
-                            span {
-                                opacity: 1;
-                            }
+                    &:hover {
+                        font-weight: 600;
+                        span {
+                            opacity: 1;
+                        }
+                    }
+
+                    &:focus {
+                        font-weight: 600;
+                        span {
+                            opacity: 1;
                         }
                     }
                 }
@@ -734,9 +794,18 @@
 		}
 	}//content6
 
-    #footer {
-        
-        @include footer-pc ()
+footer {
+    @include footer-mobile();
+
+    @include responsive(tablet-size) {
+        @include footer-pc();
     }
+
+    .footer-logo {
+        img {
+            width: 100px;
+        }
+    }
+}
 
 } //#wrapper 
