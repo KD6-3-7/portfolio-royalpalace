@@ -7,6 +7,8 @@
     <meta name="Decription" content="알고싶은 이야기">
     <meta name="Author" content="Dong">
     <link rel="stylesheet" href="./css/converse.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/converse.js"></script>
     <title>알고싶은 이야기</title>
@@ -345,5 +347,34 @@
             </div> <!-- copyright -->
         </div> <!-- wrapper -->
     </footer>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            "@0.00": {
+              slidesPerView: 1.2,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            "@1.50": {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          },
+        });
+      </script>
 </body>
 </html>
