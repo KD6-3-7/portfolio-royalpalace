@@ -6,6 +6,7 @@
 @import "_mixin-topmenu.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 
 // header
 header {
@@ -35,70 +36,60 @@ section.main-flex {
     margin-top: 70px;
     width: 100%;
 
-
+    
     section.des-1 {
         
-        @include wrapper();
-        width: 70em;
-        
-        @include responsive(tablet-size) {
-            overflow: hidden;
-            width: 75em;
-        }
-        
-        @include responsive(pc-size) {
-            width: 80em;
-        }
-
-        .des-1-box {
-            display: flex;
-            justify-content: center;
-            width: 100%;
+        .swiper {
+            margin-left: 5%;
             
-            .des-1-set {
-                position: relative;
-                width: calc(100%/5);
-                height: 0%;
-                
-                a {
+            @include responsive(tablet-size) {
+                @include wrapper();
+                overflow: hidden;
+                margin-top: 70px;
+            }
+
+            .swiper-wrapper {
+
+                .swiper-slide {
                     width: 100%;
-                    
-                    .des-img {
+                    height: 100%;
+    
+                    a {
+                        position: relative;
+                        width: 100%;
                         height: 100%;
-                        
-                        img {
+    
+                        .des-img {
                             width: 100%;
-                            opacity: 0.15;
-                            transition: all 1s;
+                            height: 100%;
+            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0.15;
+                                transition: all 1s;
+                            }
                         }
-                    }
-                    
-                    .des-1-text {
-                        p {
+                        .des-1-text {
                             position: absolute;
-                            left: 33px;
-                            top: 70px;
-                            font-size: 20px;
-                            font-weight: bold;
-                            text-align: center;
-                            width: 7.5em;
-                            opacity: 0.8;
-                            color:#474646;
+                            width: 250px;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%,-50%);
+                            p {
+                                font-size: 20px;
+                                font-weight: bold;
+                                opacity: 0.8;
+                                color:#474646;
+                            } 
                         }
-                    }
-
-                    .top {
-                        position: absolute;
-                        top: 12px;
-                    }
-
-                    &:hover {
-                        img {
-                            opacity: 1;
-                        }
-                        p {
-                            opacity: 1;
-                            color: white;
+                        &:hover {
+                            img {
+                                opacity: 1;
+                            }
+                            p {
+                                opacity: 1;
+                                color: white;
+                            }
                         }
                     }
                 }

@@ -12,6 +12,35 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/converse.js"></script>
     <title>알고싶은 이야기</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -181,9 +210,11 @@
             <h2 style="font-size: 0;">첫번째 section</h2>
             <section class="des-1">
                 <h2 style="font-size: 0;">두번째 section</h2>
-                    <div class="des-1-box">
-                        <div class="des-1-set">
-                            <a href="#" id="clickOne">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="slideOne">
+                            <a href="#" >
                                 <div class="des-img one-1">
                                     <img src="./images/select1.png" alt="select1">
                                 </div>
@@ -192,7 +223,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="des-1-set" id="clickTwo">
+
+                        <div class="swiper-slide" id="slideTwo">
                             <a href="#">
                                 <div class="des-img">
                                     <img src="./images/select2.png" alt="select2">
@@ -202,7 +234,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="des-1-set" id="clickThr">
+
+                        <div class="swiper-slide" id="slideThr">
                             <a href="#">
                                 <div class="des-img">
                                     <img src="./images/select3.png" alt="select3">
@@ -212,7 +245,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="des-1-set" id="clickFour">
+
+                        <div class="swiper-slide" id="slideFour">
                             <a href="#">
                                 <div class="des-img">
                                     <img src="./images/select4.png" alt="select4">
@@ -222,7 +256,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="des-1-set nomargin" id="clickFive">
+
+                        <div class="swiper-slide" id="slideFive">
                             <a href="#">
                                 <div class="des-img"> 
                                     <img src="./images/select5.png" alt="select5">
@@ -232,7 +267,11 @@
                                 </div>
                             </a>
                         </div>
+                        
                     </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
             </section>
             
             <section class="des-2">
@@ -358,15 +397,15 @@
           },
           breakpoints: {
             "@0.00": {
-              slidesPerView: 1.2,
-              spaceBetween: 10,
+              slidesPerView: 2,
+              spaceBetween: 20,
             },
             "@0.75": {
               slidesPerView: 2.5,
               spaceBetween: 20,
             },
             "@1.00": {
-              slidesPerView: 3,
+              slidesPerView: 3.5,
               spaceBetween: 40,
             },
             "@1.50": {

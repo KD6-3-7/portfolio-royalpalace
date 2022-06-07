@@ -1,29 +1,29 @@
 $(function() {
     const del = $(".show-one, .show-two, .show-thr, .show-four, .show-five")
+    $(del).hide();
 
-    $("#clickOne").on("click", function() {
+    $("#slideOne").on("click", function() {
         $(del).hide();
         $(".show-one").fadeIn(500);
     });
 
-    $("#clickTwo").on("click", function() {
+    $("#slideTwo").on("click", function() {
         $(del).hide();
         $(".show-two").fadeIn(500);
     });
 
-    $("#clickThr").on("click", function() {
+    $("#slideThr").on("click", function() {
         $(del).hide();
         $(".show-thr").fadeIn(500);
     });
 
-    $("#clickFour").on("click", function() {
+    $("#slideFour").on("click", function() {
         $(del).hide();
         $(".show-four").fadeIn(500);
     });
 
-    $("#clickFive").on("click", function() {
+    $("#slideFive").on("click", function() {
         $(del).hide();
         $(".show-five").fadeIn(500);
     });
-    $(del).hide();
 });
