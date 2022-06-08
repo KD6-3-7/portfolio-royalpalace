@@ -105,13 +105,11 @@
                         height: 13px;
                         width: 13px;
                         background: url("./../../../images/icon-circle.svg") no-repeat center;
-                        // ==================== 다른 페이지에 여기서부터 ====================
                         transition: background 0.3s ease;
                     }
 
                     &:hover::before {
                         background: url("./../../../images/icon-circle_h.svg") no-repeat center;
-                        // ====================== 여기까지 추가해야 함 ======================
                     }
                     
                     &.selected::before {
