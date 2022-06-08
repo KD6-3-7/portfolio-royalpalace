@@ -205,6 +205,68 @@ section {
                     }
                 }
 
+                #myModal {
+                    height: 100%;
+                    width: 100%;
+                    display: none;
+                    position: fixed;
+                    z-index: 100;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(172, 110, 110);
+                    background-color: rgba(0, 0, 0, 0.5);
+
+                    .modalBox {
+                        position: relative;
+                        top: 20%;
+                        width: 95%;
+                        height: 47%;
+                        text-align: center;
+                        margin-top: 30px;
+                        margin: auto;
+                        background-color: #fffaf4;
+                        padding: 40px;
+
+                        h4 {
+                            font-size: 1.5em;
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            font-size: 1.1em;
+                            margin-bottom: 5%;
+                        }
+
+                        .modal-flex {
+                            display: flex;
+                            text-align: left;
+                            justify-content: space-between;
+                            height: 40%;
+
+                            p {
+                                width: 55%;
+                                height: 80px;
+                                line-height: 50px;
+                                font-size: 0.9em;
+                            }
+
+                            .imgBox {
+                                width: 40%;
+                            }
+                        }
+                    }
+
+                    .closeBtn {
+                        position: absolute;
+                        top: 20px;
+                        right: 45px;
+                        font-size: 30px;
+                        cursor: pointer;
+                        color: black;
+                    }
+
+                }
+
                 .snack-list {
                     display: flex;
                     flex-direction: row;
@@ -244,7 +306,7 @@ section {
                         }
                     }
                 }
-
+                
                 .tea-list {
                     display: flex;
                     flex-direction: row;

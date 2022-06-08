@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/saenggwabang.css">
     <title>생과방</title>
+    <script>
+        window.onload = function() {
+            const myModal = document.getElementById("myModal")
+        }
+
+        function openImg() {
+            myModal.style.display = "block";
+        }
+
+        function closeImg() {
+            myModal.style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -230,34 +243,49 @@
                         <div class="guide-box">
                             <p>궁중병과</p>
                         </div>
+                        <div id="myModal" class="modal">
+                            <div class="modalBox">
+                                <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
+                                <h4>서여향병</h4>
+                                <p>2022년 경복궁 생과방에서만 맛 볼 수 있는 향기로운 떡입니다.</p>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox">
+                                        <img src="./images/snack2.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="snack-list">
-                            <div class="list01">
-                                <img src="./images/snack1.jpg" alt="궁중병과1">
+                            <div class="imgC">
+                                <img src="./images/snack1.jpg" alt="궁중병과1" class="openImg" onclick="openImg()">
                                 <p>구선왕도고<br>
                                 3,000원</p>
                                 <span class="little-text">(한정판매 1일 40개)</span>
                             </div>
-                            <div class="list02" >
+                            <div class="imgC">
                                 <img src="./images/snack2.jpg" alt="궁중병과2">
                                 <p class="img-padding">호두정과<br>
                                 1,000원</p>
                             </div>
-                            <div class="list03">
+                            <div class="imgC">
                                 <img src="./images/snack3.jpg" alt="궁중병과3">
                                 <p class="img-padding">매작과<br>
                                 1,000원</p>
                             </div>
-                            <div class="list04">
+                            <div class="imgC">
                                 <img src="./images/snack4.jpg" alt="궁중병과4">
                                 <p class="img-padding">사과정과<br>
                                 1,000원</p>
                             </div>
-                            <div class="list05">
+                            <div class="imgC">
                                 <img src="./images/snack5.jpg" alt="궁중병과5">
                                 <p class="img-padding">주악<br>
                                 2,000원</p>
                             </div>
-                            <div class="list06">
+                            <div class="imgC">
                                 <img src="./images/snack6.jpg" alt="궁중병과6">
                                 <p class="img-padding">약과<br>
                                 1,000원</p>
