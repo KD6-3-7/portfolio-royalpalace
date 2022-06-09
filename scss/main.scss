@@ -584,13 +584,13 @@ body {
                         @include item-bg ("event04")
                     }
 
-                    &:hover {
-                        opacity: 1;
-                    }
-
                     &:focus {
                         opacity: 1;
                     }
+                }
+
+                .view {
+                    opacity: 1;
                 }
             }
         }
@@ -771,19 +771,12 @@ body {
                             transition: all 0.1s;
                         }
                     }
+                }
 
-                    &:hover {
-                        font-weight: 600;
-                        span {
-                            opacity: 1;
-                        }
-                    }
-
-                    &:focus {
-                        font-weight: 600;
-                        span {
-                            opacity: 1;
-                        }
+                .view {
+                    font-weight: 600;
+                    span {
+                        opacity: 1;
                     }
                 }
             }
