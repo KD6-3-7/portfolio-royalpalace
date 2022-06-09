@@ -10,14 +10,11 @@
         window.onload = function() {
             const myModal = document.getElementById("myModal")
         }
-
-        for(let i=0; i<8; i ++) {
-        }
         
         function openImg() {
             myModal.style.display = "block";
         }
-        
+
         function closeImg() {
             myModal.style.display = "none";
         }
@@ -246,8 +243,9 @@
                         <div class="guide-box">
                             <p>궁중병과</p>
                         </div>
+                        <!-- 여기서부터 -->
                         <div id="myModal" class="modal">
-                            <div class="modalBox">
+                            <div class="modalBox" name="img1">
                                 <h4>구선왕도고</h4>
                                 <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
                                 <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
@@ -255,12 +253,12 @@
                                     <p> [ 재료 ] 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
                                         마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
                                     </p>
-                                    <div class="imgBox">
+                                    <div class="imgBox"> 
                                         <img src="./images/snack1.jpg" alt="1">
                                     </div>
                                 </div>
                             </div>
-                            <div class="modalBox">
+                            <div class="modalBox" name="img2">
                                 <h4>호두정과</h4>
                                 <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
                                 <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
@@ -268,21 +266,22 @@
                                     <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
                                         마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
                                     </p>
-                                    <div class="imgBox">
+                                    <div class="imgBox"> 
                                         <img src="./images/snack2.jpg" alt="2">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--여기까지-->
                         <div class="snack-list">
                             <div class="imgC">
-                                <img src="./images/snack1.jpg" alt="궁중병과1" class="openImg" onclick="openImg()">
+                                <img src="./images/snack1.jpg" alt="궁중병과1" class="openImg" onclick="openImg()" name="img1">
                                 <p>구선왕도고<br>
                                 3,000원</p>
                                 <span class="little-text">(한정판매 1일 40개)</span>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack2.jpg" alt="궁중병과2" class="openImg" onclick="openImg1()">
+                                <img src="./images/snack2.jpg" alt="궁중병과2" class="openImg" onclick="openImg()" name="img2">
                                 <p class="img-padding">호두정과<br>
                                 1,000원</p>
                             </div>
