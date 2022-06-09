@@ -1,5 +1,5 @@
 
-var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing){
+var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing, time){
     var containerWidth = 0;
     var sliderItemWidth = 0;
     var totalCount = 0;
@@ -72,8 +72,6 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing){
     }
     resize();
   
-
-  
     return {
       setDisplayCount: setDisplayCount,
       move: function(index){
@@ -105,7 +103,7 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing){
             left = 0;
           }
           document.querySelector('#'+ id + ' .slider').style.left = left + 'px';
-        }, 2000)
+        }, time)
       },
       stop: function(){
         clearInterval(interval);
@@ -116,13 +114,13 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing){
   let slider = document.querySelectorAll('.slider');
 
   //복원사업 슬라이드 
-  var restore = new Slider("restore-view", 5, 4, 3, 2, 1, 100);
+  var restore = new Slider("restore-view", 5, 4, 3, 2, 1, 100, 5000);
   restore.auto();
   slider[0].addEventListener("mouseover",restore.stop);
   slider[0].addEventListener("mouseout",restore.auto);
 
   //경복궁행사 슬라이드 
-  var poster = new Slider("poster-view", 4, 4, 3, 2, 1, 100);
+  var poster = new Slider("poster-view", 4, 4, 3, 2, 1, 100,  4000);
   var eventList = document.querySelector('#poster-view' + ' .slider').children;
   var eventGuide = document.querySelector('#event-hover').children;
   
@@ -137,12 +135,14 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing){
         for(let i=0; i < eventList.length; i++){
         poster.stop();
         eventGuide[i].style.display = 'none';
+        eventList[i].classList.remove('view');
         };
       };    
 
       function viewGuide(e) {
         poster.stop();
         eventGuide[i].style.display = 'flex';
+        eventList[i].classList.add('view');
       };
     };
 
@@ -159,18 +159,20 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing){
       for(let k = 0; k < galleryView.length; k++){
         galleryView[k].classList.remove('slider');
         galleryView[k].style.display = 'none';
+        galleryBtn[k].classList.remove('view');
       };
     };
   
     function seasonalView (e) {
       galleryView[j].classList.add('slider');
       galleryView[j].style.display = 'flex';
+      galleryBtn[j].classList.add('view');
       gallery.auto();
     };
   };
   console.log(sSlider);
 
-  var gallery = new Slider("gallery-view", 1, 1, 1, 1, 1, 0);
+  var gallery = new Slider("gallery-view", 1, 1, 1, 1, 1, 0,  3000);
   gallery.auto();
   
   slider[2].addEventListener("mouseover",gallery.stop);

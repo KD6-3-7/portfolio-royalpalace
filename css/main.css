@@ -1458,11 +1458,11 @@ body #content5 #poster-view .slider li:nth-child(4) {
   overflow: hidden;
 }
 
-body #content5 #poster-view .slider li:hover {
+body #content5 #poster-view .slider li:focus {
   opacity: 1;
 }
 
-body #content5 #poster-view .slider li:focus {
+body #content5 #poster-view .slider .view {
   opacity: 1;
 }
 
@@ -1717,19 +1717,11 @@ body #content6 .gallery-nav ul a li span {
   transition: all 0.1s;
 }
 
-body #content6 .gallery-nav ul a:hover {
+body #content6 .gallery-nav ul .view {
   font-weight: 600;
 }
 
-body #content6 .gallery-nav ul a:hover span {
-  opacity: 1;
-}
-
-body #content6 .gallery-nav ul a:focus {
-  font-weight: 600;
-}
-
-body #content6 .gallery-nav ul a:focus span {
+body #content6 .gallery-nav ul .view span {
   opacity: 1;
 }
 
@@ -1790,6 +1782,15 @@ body footer div.wrapper div.copyright div.contact p:first-child {
   body footer {
     padding: 0 200px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  body footer div.wrapper {
+    padding: 0 13%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   body footer div.wrapper div.policy > ul {
     width: 50%;
   }

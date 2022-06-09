@@ -27,8 +27,6 @@ main {
 // aside
 aside {
 
-
-
     @include sidemenu-mobile();
 
     @include responsive(tablet-size) {
@@ -42,10 +40,8 @@ aside {
             img {
                 width: 100%;
                 display: block;
-                
             }
         }
-
     }
 }
 
@@ -127,27 +123,33 @@ section {
                 }
     
                 & >li{
-                    visibility: hidden;
+                    display: none;
                     img {
                         object-fit: none;
                     }
                 }
 
-                #place {
+                #btn_guidance {
 
                     li {
                         position: absolute;
 
                         img {
                             size:auto;
-                            filter: grayscale(100%);
-
-                            &:hover {
-                                filter: sepia(100%)
-                            }
+                            filter: sepia(100%)
+                                    contrast(90%)
+                                    hue-rotate(350deg)
+                                    brightness(90%);
+                        }
+                        .view {
+                            filter: none;
+                            filter:contrast(120%)
+                                    brightness(55%);
                         }
                     }
 
+                    .ghm {left: 151px; top: 499px;}
+                    .jg {left: 706px; top: 107px;}
                     .hhd {left: 728px; top: 127px;}
                     .twj {left: 599px; top: 20px;}
                     .hwj {left: 830px; top: 85px;}
@@ -167,15 +169,21 @@ section {
                 }
 
                 .bd {
-                    visibility: visible;
-                    filter: grayscale(100%);;
-                    // opacity: 0.5;
+                    display: block;
+                    filter: grayscale(100%) 
+                    sepia(100%)
+                    contrast(80%)
+                    hue-rotate(350deg);
                 }
 
                 .road {
-                    visibility: visible;
+                    display: block;
                 }
-            }
+
+                .view {
+                    display: flex;
+                }
+            }//map
         }
 
         .buttons {
@@ -247,15 +255,13 @@ section {
                     flex-wrap: wrap;
                     gap: 1px;
                     padding-bottom: 9vh;
-                    // background-color: $color-background;
 
                     li { 
-                        line-height: 3em;
+                        line-height: 2em;
                         min-width: 86px;
                         background-color: #b59a7b;
                         
                         @include responsive (tablet-size) {
-                            line-height: 2em;
                             min-width: 100px;
                             background-color: #b59a7b;
                         }
@@ -269,7 +275,7 @@ section {
                             }
                         }
                     }
-                    .course {
+                    .btn_course {
                         background-color: #7e6754;
                     }
                 }
@@ -299,11 +305,25 @@ section {
                     }
                 }
 
-                .area-menu {
+                .btn_step1 {
+                    display: flex;
+                    justify-content: center;
                     line-height: 1.6em;
+
+                    a {
+                        border:1px solid #75757584;
+                        padding: 1px 7px;
+                        margin: 2px;
+                    }
+
+                    .view {
+                        // font-weight: 700;
+                        background-color: #fff;
+                    }
+
                 }
 
-                .step {
+                .btn_step2 {
                     display: flex;
                     justify-content: center;
 
@@ -317,17 +337,24 @@ section {
                             color: $color-white;
                             border-radius: 25%;
                             background-color: #7e6754;
+                        }
 
-                            &:hover {
-                                color :#4c4742;
-                                background-color: $color-white;
-                            }
+                        .view {
+                            color :#4c4742;
+                            background-color: $color-white;
                         }
                     }
                 }
                 .comment{
-                    text-align: left;
-                    text-indent: 1em;
+                    text-align: center;
+
+                    span {
+                    display: none;
+                    }
+                    
+                    .view {
+                        display: block;
+                    }
                 }
 
             }//.restore-menu
@@ -356,109 +383,143 @@ section {
             input:checked + label {
                 border-bottom: 2px solid #757575;
             }
-            
 
             #tab1:checked ~ .info-menu,
             #tab2:checked ~ .restore-menu {
                 // display: block;
                 visibility: visible;
             }
-
-            // @include responsible (tablet-size) {
-
-            // }
         }//.buttons
     }//#map-area
 
-    #guidance { //모바일
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        gap: 2vh;
-        align-items: top;
-        width: 100%;
-        padding: 4vh;
-        text-align: justify;
-        color: #4c4742;
-        background-color: #e1d4c6;
-        
-        @include responsive(tablet-size) {
-            align-content: space-between;
-            gap: 0;
-            height: calc(100vh-5vw);
-            padding: 5vh;
+    @keyframes emphasis {
+        from{opacity: 0.3;}
+        to{opacity: 1;}
+    }
 
+    #guidance-area {
+        position: relative;
+        padding: 4vh;
+        background-color: #e1d4c6;
+
+        @include responsive(tablet-size) {
+            padding: 5vh;
         }
 
         @include responsive(pc-size) {
-            flex-flow: column nowrap;
-            justify-content: center;
             width:30vw;
-            height: auto;
-            padding: 4vw;
-
+            height: unset;
+            padding: 3vw;
+            padding-bottom: 20vh;
         }
 
-        .place-name {
+        .guidance-comment {
+            display: none;
+            position: absolute;
+            z-index: 50;
+            animation: emphasis 1s alternate infinite;
+
+
+            @include responsive(pc-size) {
+                display: block;
+                left: 3vw;
+                top: 5vh;
+            }
+        }
+        .guidance { //모바일
+            display: none;
+            flex-flow: column wrap;
+            gap: 2vh;
+            align-items: top;
             width: 100%;
-            display: flex;
-            align-items: baseline;
-
-            @include responsive(tablet-size){
-                max-width: 30vw;
-                padding-bottom: 2vh;
+            height: 100%;
+            text-align: justify;
+            color: #4c4742;
+            
+            @include responsive(tablet-size) {
+                flex-flow: row nowrap;
+                align-content: space-between;
+                gap: 0;
             }
-
-            @include responsive(pc-size){
-                padding-bottom: 0;
-                flex-wrap: wrap;
+    
+            @include responsive(pc-size) {
+                flex-flow: column nowrap;
+                justify-content: start;
+                margin-top: 20vh;
             }
-
-            h2 {
-                font-size: 8vw;
-
+    
+            .place-txt {
+                width: 100%;
+                align-items: baseline;
+    
                 @include responsive(tablet-size){
-                    font-size: 2.4em;
+                    max-width: 40vw;
+                    padding-bottom: 2vh;
+                }
+    
+                @include responsive(pc-size){
+                    padding-bottom: 0;
+                    flex-wrap: wrap;
+                }
+    
+                h2 {
+                    font-size: 7vw;
+                    display: inline;
+    
+                    @include responsive(tablet-size){
+                        font-size: 8vw;
+                        font-size: 2.4em;
+                    }
+                }
+                
+                p {
+                    width: 100%;
+                    font-size: 1em;
+                    letter-spacing: -1px;
+                    padding: 1.6vh 0;
+        
+                    @include responsive(tablet-size){
+                        padding: 2vh 0;
+                    }
+        
+                    @include responsive(pc-size){
+                        width: 100%;
+                        line-height: 1.5em;
+                        padding-bottom: 5vh;
+                    }
+                }
+            }
+    
+            .place-img {
+                width: 100%;
+                height: 20vh;
+                
+                @include responsive(tablet-size) {
+                    width: 46%;
+                    height: 30vh;
+                    margin-left: 2em;
+                }
+                
+                @include responsive(pc-size){
+                    width: 100%;
+                    height: 30vh;
+                    margin: 0;
+                }
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }
 
-        p {
-            width: 100%;
-            font-size: 1em;
-            letter-spacing: -1px;
-
-            @include responsive(tablet-size){
-                width: 50%;
-            }
-
-            @include responsive(pc-size){
-                width: 30%;
-                width: 100%;
-                padding: 4vh 0;
-            }
-        }
-
-        .place-img {
-            width: 100%;
-            height: 20vh;
-            @include item-bg ("hwj");
-
-            @include responsive(tablet-size) {
-                width: 46%;
-                height: 100%;
-                margin-left: 2em;
-            }
-            
-            @include responsive(pc-size){
-                width: 100%;
-                height: 30vh;
-                margin: 0;
-            }
-            
+        .view {
+            display: flex;
         }
     }
-    
+
+
 }//section
 
 // footer

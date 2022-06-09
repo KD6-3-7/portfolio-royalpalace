@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/mixin-menu-sub.scss"
-    ],
-    "names": [],
-    "file": "mixin-menu-sub.css"
-}
