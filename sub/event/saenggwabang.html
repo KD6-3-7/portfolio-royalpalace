@@ -11,10 +11,13 @@
             const myModal = document.getElementById("myModal")
         }
 
+        for(let i=0; i<8; i ++) {
+        }
+        
         function openImg() {
             myModal.style.display = "block";
         }
-
+        
         function closeImg() {
             myModal.style.display = "none";
         }
@@ -245,15 +248,28 @@
                         </div>
                         <div id="myModal" class="modal">
                             <div class="modalBox">
+                                <h4>구선왕도고</h4>
                                 <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
-                                <h4>서여향병</h4>
-                                <p>2022년 경복궁 생과방에서만 맛 볼 수 있는 향기로운 떡입니다.</p>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> [ 재료 ] 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox">
+                                        <img src="./images/snack1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modalBox">
+                                <h4>호두정과</h4>
+                                <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
                                 <div class="modal-flex">
                                     <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
                                         마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
                                     </p>
                                     <div class="imgBox">
-                                        <img src="./images/snack2.jpg" alt="1">
+                                        <img src="./images/snack2.jpg" alt="2">
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +282,7 @@
                                 <span class="little-text">(한정판매 1일 40개)</span>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack2.jpg" alt="궁중병과2">
+                                <img src="./images/snack2.jpg" alt="궁중병과2" class="openImg" onclick="openImg1()">
                                 <p class="img-padding">호두정과<br>
                                 1,000원</p>
                             </div>
