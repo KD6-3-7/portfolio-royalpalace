@@ -197,22 +197,23 @@
                         weight: 600;
                     }
                     
-                    &:hover {
-                        &::before {
-                            background: url("./../../../images/icon-circle_h.svg") no-repeat center;
-                        }
-                    }
-
                     &::before {
                         content:"";
                         display: inline-block;
                         height: 13px;
                         width: 13px;
-                        background: url("./../../../images/icon-circle.svg") no-repeat center;
+                        background: url("./../images/icon-circle.svg") no-repeat center;
+                        // ==================== 다른 페이지에 여기서부터 ====================
+                        transition: 0.3s ease; // 모바일 메뉴 호버 시 아이콘 트랜지션 추가
+                    }
+
+                    &:hover::before { // 모바일 메뉴 호버 시 아이콘 트랜지션 추가
+                        background: url("./../images/icon-circle_h.svg") no-repeat center;
+                        // ====================== 여기까지 추가해야 함 ======================
                     }
                     
                     &.selected::before {
-                        background: url("./../../../images/icon-circle_h.svg") no-repeat center;
+                        background: url("./../images/icon-circle.svg") no-repeat center;
                     }
                     
                     & > a, button.accordion {
@@ -242,7 +243,7 @@
                             content: "";
                             float: right;
                             position: relative;
-                            top: 7px;
+                            top: 5px;
 
                             @include responsive(tablet-size) {
                                 display: none;

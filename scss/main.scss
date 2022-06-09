@@ -211,6 +211,7 @@ body {
 			}
 	
 			.move-box4{
+                position: relative;
                 @include bg-full ("intro05_m", center top);
 				padding-top: 20vh;
 
@@ -221,9 +222,18 @@ body {
                 }
                 
                 .scroll {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 6vh;
+                    transform: translateX(-50%);
                     width: 59px;
                     height: 60px;
-                    margin: 12vh  3.4vw;
+                    
+
+                    @include responsive (tablet-size) {
+                        position: relative;
+                        margin: 12vh  3.4vw;
+                    }
                     
                     ul {
                         position: relative;
