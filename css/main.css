@@ -242,7 +242,6 @@ body header div.header-mobile div.header-flex-box {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -351,21 +350,20 @@ body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]
 }
 
 body header div.header-mobile div.mobilemenu {
-  position: absolute;
+  position: fixed;
   top: 80px;
   z-index: 1;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu {
-    position: fixed;
     left: 50%;
     top: 4vh;
     transform: translate(-50%, 0);
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: white;
     overflow: hidden;
   }
 }

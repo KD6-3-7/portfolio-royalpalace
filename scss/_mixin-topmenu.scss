@@ -18,7 +18,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            background-color:rgba(0, 0, 0, 0.3);
+            // background-color:rgba(0, 0, 0, 0.3);
 
             @include responsive (tablet-size) {
                 background: none;
@@ -120,19 +120,18 @@
         }
         
         div.mobilemenu {
-            position: absolute;
+            position: fixed;
             top: 80px;
             z-index: 1;
             width: 100%;
-            background-color: rgba($sidemenu-background, 0.9);
+            background-color: rgba($sidemenu-background, 0.95);
 
             @include responsive(tablet-size) {
-                position: fixed;
                 left: 50%;
                 top: 4vh;
                 transform: translate(-50%, 0);
                 width: 60%;
-                background-color: rgba(255, 255, 255, 0.97);
+                background-color: rgba(255, 255, 255, 1);
                 overflow: hidden;
             }
 

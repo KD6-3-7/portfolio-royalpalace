@@ -170,7 +170,6 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing, time){
       gallery.auto();
     };
   };
-  console.log(sSlider);
 
   var gallery = new Slider("gallery-view", 1, 1, 1, 1, 1, 0,  3000);
   gallery.auto();

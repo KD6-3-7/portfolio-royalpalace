@@ -16,6 +16,7 @@ let btn_step2_a = document.querySelectorAll('.btn_step2 a');
 
 
 function MouseoverView(btn, target1, target2, target3) {
+
     for(let i=0; i < btn.length; i++){
         btn[i].addEventListener('mouseover', hide);
         btn[i].addEventListener('mouseover', view);
@@ -29,10 +30,14 @@ function MouseoverView(btn, target1, target2, target3) {
                 target1[j].classList.remove('view');
 
                 if(target2){
-                target2[j].classList.remove('view');
+                target2[j].classList.remove('view'); //
                 } 
                 if(target3){
                     target3[j].classList.remove('view');
+
+                    if(target3 == view_step2) {
+                        btn_step2_a[j].classList.remove('view')
+                    }
                 }
             }
         }
@@ -44,16 +49,20 @@ function MouseoverView(btn, target1, target2, target3) {
                 target2[i].classList.add('view');
             }
             if(target3){
-                target3[i].classList.add('view');
+                if(target3 == view_step2){
+                    return false;
+                }
+
+                target3[i].classList.add('view');//
             }
         }
     }
 }
 
-var mouseoverView = new MouseoverView(btn_guidance,guidance,btn_guidance_img);
+var mouseoverView = new MouseoverView(btn_guidance, guidance,btn_guidance_img);
 var mouseoverView = new MouseoverView(btn_course,view_route);
 var mouseoverView = new MouseoverView(btn_amenities,view_amenities);
-var mouseoverView = new MouseoverView(btn_step1,view_step1,btn_step1_a);
+var mouseoverView = new MouseoverView(btn_step1,view_step1,btn_step1_a,view_step2);
 var mouseoverView = new MouseoverView(btn_step2,view_step2,comment,btn_step2_a);
 
 
