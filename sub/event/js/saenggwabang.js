@@ -11,7 +11,6 @@ window.onload = function() {
     const modalTen = document.querySelector(".modal-ten")
     const modalElev = document.querySelector(".modal-elev")
     const modalTwel = document.querySelector(".modal-twel")
-    const modalWindow = document.querySelector("#modalWindow")
 
     const openBox1 = document.querySelector("#snack1")
     const openBox2 = document.querySelector("#snack2")
@@ -40,86 +39,110 @@ window.onload = function() {
     const closeModal12 = document.querySelector(".closeBtn12")
  
     openBox1.addEventListener("click", function() {
-        modalOne.style.display = "block"
+        modalOne.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal1.addEventListener("click", function() {
-        modalOne.style.display = "none"
+        modalOne.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox2.addEventListener("click", function() {
-        modalTwo.style.display = "block"
+        modalTwo.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal2.addEventListener("click", function() {
-        modalTwo.style.display = "none"
+        modalTwo.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox3.addEventListener("click", function() {
-        modalThree.style.display = "block"
+        modalThree.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal3.addEventListener("click", function() {
-        modalThree.style.display = "none"
+        modalThree.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox4.addEventListener("click", function() {
-        modalFour.style.display = "block"
+        modalFour.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal4.addEventListener("click", function() {
-        modalFour.style.display = "none"
+        modalFour.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox5.addEventListener("click", function() {
-        modalFive.style.display = "block"
+        modalFive.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal5.addEventListener("click", function() {
-        modalFive.style.display = "none"
+        modalFive.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox6.addEventListener("click", function() {
-        modalSix.style.display = "block"
+        modalSix.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal6.addEventListener("click", function() {
-        modalSix.style.display = "none"
+        modalSix.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox7.addEventListener("click", function() {
-        modalSeven.style.display = "block"
+        modalSeven.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal7.addEventListener("click", function() {
-        modalSeven.style.display = "none"
+        modalSeven.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox8.addEventListener("click", function() {
-        modalEight.style.display = "block"
+        modalEight.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal8.addEventListener("click", function() {
-        modalEight.style.display = "none"
+        modalEight.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox9.addEventListener("click", function() {
-        modalNine.style.display = "block"
+        modalNine.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal9.addEventListener("click", function() {
-        modalNine.style.display = "none"
+        modalNine.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox10.addEventListener("click", function() {
-        modalTen.style.display = "block"
+        modalTen.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal10.addEventListener("click", function() {
-        modalTen.style.display = "none"
+        modalTen.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox11.addEventListener("click", function() {
-        modalElev.style.display = "block"
+        modalElev.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal11.addEventListener("click", function() {
-        modalElev.style.display = "none"
+        modalElev.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 
     openBox12.addEventListener("click", function() {
-        modalTwel.style.display = "block"
+        modalTwel.style.display = "block";
+        document.body.style.overflow = "hidden";
     })
     closeModal12.addEventListener("click", function() {
-        modalTwel.style.display = "none"
+        modalTwel.style.display = "none";
+        document.body.style.overflow = "unset";
     })
 }
