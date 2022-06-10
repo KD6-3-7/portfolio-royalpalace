@@ -761,18 +761,42 @@ section .guide .guide-info .guide-flex .guide-box p {
   }
 }
 
-section .guide .guide-info .guide-flex #myModal {
+section .guide .guide-info .guide-flex .modal-one,
+section .guide .guide-info .guide-flex .modal-two,
+section .guide .guide-info .guide-flex .modal-three,
+section .guide .guide-info .guide-flex .modal-four,
+section .guide .guide-info .guide-flex .modal-five,
+section .guide .guide-info .guide-flex .modal-six,
+section .guide .guide-info .guide-flex .modal-seven,
+section .guide .guide-info .guide-flex .modal-eight,
+section .guide .guide-info .guide-flex .modal-nine,
+section .guide .guide-info .guide-flex .modal-ten,
+section .guide .guide-info .guide-flex .modal-elev,
+section .guide .guide-info .guide-flex .modal-twel {
   height: 100%;
   width: 100%;
   display: none;
   position: fixed;
   z-index: 100;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-section .guide .guide-info .guide-flex #myModal .modalBox {
+section .guide .guide-info .guide-flex .modal-one .modalBox,
+section .guide .guide-info .guide-flex .modal-two .modalBox,
+section .guide .guide-info .guide-flex .modal-three .modalBox,
+section .guide .guide-info .guide-flex .modal-four .modalBox,
+section .guide .guide-info .guide-flex .modal-five .modalBox,
+section .guide .guide-info .guide-flex .modal-six .modalBox,
+section .guide .guide-info .guide-flex .modal-seven .modalBox,
+section .guide .guide-info .guide-flex .modal-eight .modalBox,
+section .guide .guide-info .guide-flex .modal-nine .modalBox,
+section .guide .guide-info .guide-flex .modal-ten .modalBox,
+section .guide .guide-info .guide-flex .modal-elev .modalBox,
+section .guide .guide-info .guide-flex .modal-twel .modalBox {
   margin: 0 auto;
   position: relative;
   top: 20%;
@@ -785,19 +809,52 @@ section .guide .guide-info .guide-flex #myModal .modalBox {
   padding: 35px;
 }
 
-section .guide .guide-info .guide-flex #myModal .modalBox h4 {
+section .guide .guide-info .guide-flex .modal-one .modalBox h4,
+section .guide .guide-info .guide-flex .modal-two .modalBox h4,
+section .guide .guide-info .guide-flex .modal-three .modalBox h4,
+section .guide .guide-info .guide-flex .modal-four .modalBox h4,
+section .guide .guide-info .guide-flex .modal-five .modalBox h4,
+section .guide .guide-info .guide-flex .modal-six .modalBox h4,
+section .guide .guide-info .guide-flex .modal-seven .modalBox h4,
+section .guide .guide-info .guide-flex .modal-eight .modalBox h4,
+section .guide .guide-info .guide-flex .modal-nine .modalBox h4,
+section .guide .guide-info .guide-flex .modal-ten .modalBox h4,
+section .guide .guide-info .guide-flex .modal-elev .modalBox h4,
+section .guide .guide-info .guide-flex .modal-twel .modalBox h4 {
   font-size: 1.4em;
   margin-bottom: 15px;
 }
 
-section .guide .guide-info .guide-flex #myModal .modalBox h5 {
+section .guide .guide-info .guide-flex .modal-one .modalBox h5,
+section .guide .guide-info .guide-flex .modal-two .modalBox h5,
+section .guide .guide-info .guide-flex .modal-three .modalBox h5,
+section .guide .guide-info .guide-flex .modal-four .modalBox h5,
+section .guide .guide-info .guide-flex .modal-five .modalBox h5,
+section .guide .guide-info .guide-flex .modal-six .modalBox h5,
+section .guide .guide-info .guide-flex .modal-seven .modalBox h5,
+section .guide .guide-info .guide-flex .modal-eight .modalBox h5,
+section .guide .guide-info .guide-flex .modal-nine .modalBox h5,
+section .guide .guide-info .guide-flex .modal-ten .modalBox h5,
+section .guide .guide-info .guide-flex .modal-elev .modalBox h5,
+section .guide .guide-info .guide-flex .modal-twel .modalBox h5 {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.6em;
   margin-bottom: 40px;
 }
 
-section .guide .guide-info .guide-flex #myModal .modalBox .modal-flex {
+section .guide .guide-info .guide-flex .modal-one .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-two .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-three .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-four .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-five .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-six .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-seven .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-eight .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-nine .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-ten .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-elev .modalBox .modal-flex,
+section .guide .guide-info .guide-flex .modal-twel .modalBox .modal-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,18 +865,40 @@ section .guide .guide-info .guide-flex #myModal .modalBox .modal-flex {
   text-align: left;
 }
 
-section .guide .guide-info .guide-flex #myModal .modalBox .modal-flex p {
+section .guide .guide-info .guide-flex .modal-one .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-two .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-three .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-four .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-five .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-six .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-seven .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-eight .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-nine .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-ten .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-elev .modalBox .modal-flex p,
+section .guide .guide-info .guide-flex .modal-twel .modalBox .modal-flex p {
   line-height: 2.2em;
   font-size: 0.9em;
   margin: 0 auto 10px auto;
 }
 
-section .guide .guide-info .guide-flex #myModal .modalBox .modal-flex .imgBox {
+section .guide .guide-info .guide-flex .modal-one .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-two .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-three .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-four .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-five .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-six .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-seven .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-eight .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-nine .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-ten .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-elev .modalBox .modal-flex .imgBox,
+section .guide .guide-info .guide-flex .modal-twel .modalBox .modal-flex .imgBox {
   width: 50%;
   margin: 0 auto;
 }
 
-section .guide .guide-info .guide-flex #myModal .closeBtn {
+section .guide .guide-info .guide-flex .closeBtn {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -859,6 +938,11 @@ section .guide .guide-info .guide-flex .snack-list div {
 
 section .guide .guide-info .guide-flex .snack-list div img {
   margin-bottom: 15px;
+  cursor: pointer;
+}
+
+section .guide .guide-info .guide-flex .snack-list div img:hover {
+  opacity: 50%;
 }
 
 section .guide .guide-info .guide-flex .snack-list div p {

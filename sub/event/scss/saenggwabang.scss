@@ -205,14 +205,26 @@ section {
                     }
                 }
 
-                #myModal {
+                .modal-one,
+                .modal-two,
+                .modal-three,
+                .modal-four,
+                .modal-five,
+                .modal-six,
+                .modal-seven,
+                .modal-eight,
+                .modal-nine,
+                .modal-ten,
+                .modal-elev,
+                .modal-twel {
                     height: 100%;
                     width: 100%;
                     display: none;
                     position: fixed;
                     z-index: 100;
-                    top: 0;
-                    left: 0;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     background-color: rgba(0, 0, 0, 0.5);
 
                     .modalBox {
@@ -231,42 +243,41 @@ section {
                             font-size: 1.4em;
                             margin-bottom: 15px;
                         }
-
+    
                         h5 {
                             font-size: 1em;
                             font-weight: 400;
                             line-height: 1.6em;
                             margin-bottom: 40px;
                         }
-
+    
                         .modal-flex {
                             display: flex;
                             flex-direction: column;
                             text-align: left;
-
+    
                             p {
                                 line-height: 2.2em;
                                 font-size: 0.9em;
                                 margin: 0 auto 10px auto;
                             }
-
+    
                             .imgBox {
                                 width: 50%;
                                 margin: 0 auto;
                             }
                         }
                     }
-
-                    .closeBtn {
-                        position: absolute;
-                        top: 20px;
-                        right: 45px;
-                        font-size: 30px;
-                        cursor: pointer;
-                        color: black;
-                    }
-
                 }
+                .closeBtn {
+                    position: absolute;
+                    top: 20px;
+                    right: 45px;
+                    font-size: 30px;
+                    cursor: pointer;
+                    color: black;
+                }
+
 
                 .snack-list {
                     display: flex;
@@ -284,6 +295,10 @@ section {
                         margin-bottom: 40px;
                         img {
                             margin-bottom: 15px;
+                            cursor: pointer;
+                            &:hover {
+                                opacity: 50%;
+                            }
                         }
                         p {
                             text-align: center;

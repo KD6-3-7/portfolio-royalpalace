@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/saenggwabang.css">
     <title>생과방</title>
-    <script>
-        window.onload = function() {
-            const myModal = document.getElementById("myModal")
-        }
-        
-        function openImg() {
-            myModal.style.display = "block";
-        }
-
-        function closeImg() {
-            myModal.style.display = "none";
-        }
-    </script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/saenggwabang.js"></script>
 </head>
 <body>
     <header>
@@ -244,64 +233,217 @@
                             <p>궁중병과</p>
                         </div>
                         <!-- 여기서부터 -->
-                        <div id="myModal" class="modal">
-                            <div class="modalBox" name="img1">
+                        <div class="modal-one">
+                            <div class="modalBox">
                                 <h4>구선왕도고</h4>
-                                <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
+                                <span class="closeBtn closeBtn1" title="Close image">&times;</span>
                                 <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
                                 <div class="modal-flex">
                                     <p> [ 재료 ] 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
                                         마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
                                     </p>
                                     <div class="imgBox"> 
-                                        <img src="./images/snack1.jpg" alt="1">
+                                        <img src="./images/snack1.jpg" alt="s1">
                                     </div>
                                 </div>
                             </div>
-                            <div class="modalBox" name="img2">
+                        </div>
+                        <div class="modal-two">
+                            <div class="modalBox">
                                 <h4>호두정과</h4>
-                                <span class="closeBtn" onclick="closeImg()" title="Close image">x</span>
+                                <span class="closeBtn closeBtn2" title="Close image">&times;</span>
                                 <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
                                 <div class="modal-flex">
                                     <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
                                         마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
                                     </p>
                                     <div class="imgBox"> 
-                                        <img src="./images/snack2.jpg" alt="2">
+                                        <img src="./images/snack2.jpg" alt="s2">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal-three">
+                            <div class="modalBox">
+                                <h4>매작과</h4>
+                                <span class="closeBtn closeBtn3" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/snack3.jpg" alt="s3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-four">
+                            <div class="modalBox">
+                                <h4>사과정과</h4>
+                                <span class="closeBtn closeBtn4" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/snack4.jpg" alt="s4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-five">
+                            <div class="modalBox">
+                                <h4>주악</h4>
+                                <span class="closeBtn closeBtn5" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/snack5.jpg" alt="s5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-six">
+                            <div class="modalBox">
+                                <h4>약과</h4>
+                                <span class="closeBtn closeBtn6" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/snack6.jpg" alt="s6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-seven">
+                            <div class="modalBox">
+                                <h4>궁중약차</h4>
+                                <span class="closeBtn closeBtn7" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/tea1.jpg" alt="t1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-eight">
+                            <div class="modalBox">
+                                <h4>담강다</h4>
+                                <span class="closeBtn closeBtn8" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/tea2.jpg" alt="t2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-nine">
+                            <div class="modalBox">
+                                <h4>감국다</h4>
+                                <span class="closeBtn closeBtn9" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/tea3.jpg" alt="t3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-ten">
+                            <div class="modalBox">
+                                <h4>삼국다</h4>
+                                <span class="closeBtn closeBtn10" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/tea4.jpg" alt="t4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-elev">
+                            <div class="modalBox">
+                                <h4>삼국다</h4>
+                                <span class="closeBtn closeBtn11" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/tea5.jpg" alt="t5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-twel">
+                            <div class="modalBox">
+                                <h4>삼국다</h4>
+                                <span class="closeBtn closeBtn12" title="Close image">&times;</span>
+                                <h5>2022년 경복궁 생과방에서만 맛 볼 수 있는 <br />향기로운 떡입니다.</h5>
+                                <div class="modal-flex">
+                                    <p> 재료 : 마, 잣, 금귤, 연근, 꿀, 식용금박 <br />
+                                        마를 쪄서 꿀에 담갔다가 찹쌀가루를 입혀 기름에 지져낸 후 잣고물을 묻힌 떡.
+                                    </p>
+                                    <div class="imgBox"> 
+                                        <img src="./images/tea6.jpg" alt="t6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!--여기까지-->
                         <div class="snack-list">
                             <div class="imgC">
-                                <img src="./images/snack1.jpg" alt="궁중병과1" class="openImg" onclick="openImg()" name="img1">
+                                <img src="./images/snack1.jpg" alt="궁중병과1"  id="snack1">
                                 <p>구선왕도고<br>
                                 3,000원</p>
                                 <span class="little-text">(한정판매 1일 40개)</span>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack2.jpg" alt="궁중병과2" class="openImg" onclick="openImg()" name="img2">
+                                <img src="./images/snack2.jpg" alt="궁중병과2"  id="snack2">
                                 <p class="img-padding">호두정과<br>
                                 1,000원</p>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack3.jpg" alt="궁중병과3">
+                                <img src="./images/snack3.jpg" alt="궁중병과3" id="snack3">
                                 <p class="img-padding">매작과<br>
                                 1,000원</p>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack4.jpg" alt="궁중병과4">
+                                <img src="./images/snack4.jpg" alt="궁중병과4" id="snack4">
                                 <p class="img-padding">사과정과<br>
                                 1,000원</p>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack5.jpg" alt="궁중병과5">
+                                <img src="./images/snack5.jpg" alt="궁중병과5" id="snack5">
                                 <p class="img-padding">주악<br>
                                 2,000원</p>
                             </div>
                             <div class="imgC">
-                                <img src="./images/snack6.jpg" alt="궁중병과6">
+                                <img src="./images/snack6.jpg" alt="궁중병과6" id="snack6">
                                 <p class="img-padding">약과<br>
                                 1,000원</p>
                             </div>
@@ -313,32 +455,32 @@
                         </div>
                         <div class="tea-list">
                             <div class="tlist01">
-                                <img src="./images/tea1.jpg" alt="궁중약차1">
+                                <img src="./images/tea1.jpg" alt="궁중약차1" id="tea1">
                                 <p>강계다음<br>
                                 5,000원</p>
                             </div>
                             <div class="tlist02">
-                                <img src="./images/tea2.jpg" alt="궁중약차2">
+                                <img src="./images/tea2.jpg" alt="궁중약차2" id="tea2">
                                 <p>담강다<br>
                                 4,000원</p>
                             </div>
                             <div class="tlist03">
-                                <img src="./images/tea3.jpg" alt="궁중약차3">
+                                <img src="./images/tea3.jpg" alt="궁중약차3" id="tea3">
                                 <p>감국다<br>
                                 4,000원</p>
                             </div>
                             <div class="tlist04">
-                                <img src="./images/tea5.jpg" alt="궁중약차4">
+                                <img src="./images/tea5.jpg" alt="궁중약차4" id="tea4">
                                 <p>삼귤다<br>
                                 4,000원</p>
                             </div>
                             <div class="tlist05">
-                                <img src="./images/tea6.jpg" alt="궁중약차5">
+                                <img src="./images/tea6.jpg" alt="궁중약차5" id="tea5">
                                 <p>제호차<br>
                                 4,000원</p>
                             </div>
                             <div class="tlist06">
-                                <img src="./images/tea4.jpg" alt="궁중약차6">
+                                <img src="./images/tea4.jpg" alt="궁중약차6" id="tea6">
                                 <p>오미자<br>
                                 4,000원</p>
                             </div>
