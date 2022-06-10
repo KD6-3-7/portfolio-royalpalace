@@ -111,14 +111,14 @@ window.onload = function() {
     openBox11.addEventListener("click", function() {
         modalElev.style.display = "block"
     })
-    closeModal1.addEventListener("click", function() {
+    closeModal11.addEventListener("click", function() {
         modalElev.style.display = "none"
     })
 
     openBox12.addEventListener("click", function() {
         modalTwel.style.display = "block"
     })
-    closeModal2.addEventListener("click", function() {
+    closeModal12.addEventListener("click", function() {
         modalTwel.style.display = "none"
     })
 }

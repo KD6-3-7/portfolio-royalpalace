@@ -801,7 +801,7 @@ section .guide .guide-info .guide-flex .modal-twel .modalBox {
   position: relative;
   top: 20%;
   width: 400px;
-  height: 450px;
+  height: 460px;
   text-align: center;
   margin-top: 30px;
   background-color: #fffaf4;
@@ -840,7 +840,7 @@ section .guide .guide-info .guide-flex .modal-twel .modalBox h5 {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.6em;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 section .guide .guide-info .guide-flex .modal-one .modalBox .modal-flex,
@@ -898,6 +898,20 @@ section .guide .guide-info .guide-flex .modal-twel .modalBox .modal-flex .imgBox
   margin: 0 auto;
 }
 
+section .guide .guide-info .guide-flex .modal-three .modalBox,
+section .guide .guide-info .guide-flex .modal-six .modalBox {
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+  width: 400px;
+  height: 485px;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #fffaf4;
+  border-radius: 5%;
+  padding: 35px;
+}
+
 section .guide .guide-info .guide-flex .closeBtn {
   position: absolute;
   top: 20px;
@@ -937,12 +951,17 @@ section .guide .guide-info .guide-flex .snack-list div {
 }
 
 section .guide .guide-info .guide-flex .snack-list div img {
+  opacity: 60%;
   margin-bottom: 15px;
   cursor: pointer;
 }
 
 section .guide .guide-info .guide-flex .snack-list div img:hover {
-  opacity: 50%;
+  opacity: 100%;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
 
 section .guide .guide-info .guide-flex .snack-list div p {
@@ -1003,6 +1022,16 @@ section .guide .guide-info .guide-flex .tea-list div {
 
 section .guide .guide-info .guide-flex .tea-list div img {
   margin-bottom: 15px;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+section .guide .guide-info .guide-flex .tea-list div img:hover {
+  opacity: 100%;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 section .guide .guide-info .guide-flex .tea-list div p {
