@@ -11,6 +11,7 @@ window.onload = function() {
     const modalTen = document.querySelector(".modal-ten")
     const modalElev = document.querySelector(".modal-elev")
     const modalTwel = document.querySelector(".modal-twel")
+    const modalWindow = document.querySelector("#modalWindow")
 
     const openBox1 = document.querySelector("#snack1")
     const openBox2 = document.querySelector("#snack2")
@@ -37,7 +38,7 @@ window.onload = function() {
     const closeModal10 = document.querySelector(".closeBtn10")
     const closeModal11 = document.querySelector(".closeBtn11")
     const closeModal12 = document.querySelector(".closeBtn12")
-
+ 
     openBox1.addEventListener("click", function() {
         modalOne.style.display = "block"
     })

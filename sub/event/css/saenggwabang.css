@@ -800,7 +800,7 @@ section .guide .guide-info .guide-flex .modal-twel .modalBox {
   margin: 0 auto;
   position: relative;
   top: 20%;
-  width: 400px;
+  width: 350px;
   height: 460px;
   text-align: center;
   margin-top: 30px;
@@ -841,6 +841,7 @@ section .guide .guide-info .guide-flex .modal-twel .modalBox h5 {
   font-weight: 400;
   line-height: 1.6em;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 section .guide .guide-info .guide-flex .modal-one .modalBox .modal-flex,
@@ -899,17 +900,15 @@ section .guide .guide-info .guide-flex .modal-twel .modalBox .modal-flex .imgBox
 }
 
 section .guide .guide-info .guide-flex .modal-three .modalBox,
+section .guide .guide-info .guide-flex .modal-five .modalBox,
 section .guide .guide-info .guide-flex .modal-six .modalBox {
-  margin: 0 auto;
-  position: relative;
-  top: 20%;
-  width: 400px;
-  height: 485px;
-  text-align: center;
-  margin-top: 30px;
-  background-color: #fffaf4;
-  border-radius: 5%;
-  padding: 35px;
+  height: 480px;
+}
+
+section .guide .guide-info .guide-flex .modal-three .modalBox h5,
+section .guide .guide-info .guide-flex .modal-five .modalBox h5,
+section .guide .guide-info .guide-flex .modal-six .modalBox h5 {
+  margin-bottom: 35px;
 }
 
 section .guide .guide-info .guide-flex .closeBtn {
