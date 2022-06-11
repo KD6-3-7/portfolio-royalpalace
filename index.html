@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="type" property="og:type" content="article">
+    <meta name="title" property="og:title" content="경복궁">
+    <meta name="images" property="og:image" content="./images/meta-image.jpg">
+    <meta name="description" property="og:description" content="경복궁">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>경복궁</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -115,12 +120,13 @@
           ><span>제일 위로 &nbsp;</span
           ><img src="./images/arr_top.png" alt="위로가기"
         /></a>
-        <a href="#content2"><span>경복궁의 눈물</span><span></span></a>
-        <a href="#content3"><span>복원30주년</span><span></span></a>
-        <a href="#content4"><span>경복궁에 가려면</span><span></span></a>
-        <a href="#content5"><span>경복궁 행사</span><span></span></a>
-        <a href="#content6"><span>경복궁의 사계</span><span></span></a>
-        <a href="#content6"
+        <a class="nav_list view" href="#content1"><span>고궁을 거닐다</span><span></span></a>
+        <a class="nav_list" href="#content2"><span>경복궁의 눈물</span><span></span></a>
+        <a class="nav_list" href="#content3"><span>복원30주년</span><span></span></a>
+        <a class="nav_list" href="#content4"><span>경복궁에 가려면</span><span></span></a>
+        <a class="nav_list" href="#content5"><span>경복궁 행사</span><span></span></a>
+        <a class="nav_list" href="#content6"><span>경복궁의 사계</span><span></span></a>
+        <a class="nav_list" href="#content6"
           ><span>제일 아래로 &nbsp;</span
           ><img src="./images/arr_bottom.png" alt="밑으로가기"
         /></a>
@@ -353,7 +359,7 @@
             </div>
             <div id="poster-view">
               <ul class="slider">
-                <li><a href="/sub/event/star.html">&nbsp;</a></li>
+                <li class="view"><a href="/sub/event/star.html">&nbsp;</a></li>
                 <li><a href="/sub/event/saenggwabang.html">&nbsp;</a></li>
                 <li><a href="/sub/event/tasty.html">&nbsp;</a></li>
                 <li><a href="#none">&nbsp;</a></li>
@@ -383,10 +389,12 @@
                       <td>추첨제(1인 60,000원)</td>
                     </tr>
                   </table>
-                  <button class="button1" onclick="location.href='./sub/event/star.html';">행사 자세히 보기</button>
                 </div>
                 <div class="summary">
-                  <h2>별빛야행</h2>
+                  <div class="title">
+                    <h2>별빛야행</h2>
+                    <span class="detailview"><a href="./sub/event/star.html">자세히 보기</a></span>
+                  </div>
                   <p>
                     하늘을 아름답게 수놓은
                     별빛과 함께
@@ -418,10 +426,13 @@
                       <td>10:00 ~ 16:00</td>
                     </tr>
                   </table>
-                  <button class="button1" onclick="location.href='./sub/event/saenggwabang.html';">행사 자세히 보기</button>
                 </div>
                 <div class="summary">
-                  <h2>생과방</h2>
+                  <div class="title">
+                    <h2>생과방</h2>
+                    <span class="detailview"><a href="./sub/event/saenggwabang.html">자세히 보기</a></span>
+  
+                  </div>
                   <p>
                     경복궁 소주방 전각에 위치한 ‘생과방’은 궁중의 육처소(六處所) 가운데 하나이며,
                     ‘국왕과 왕비’의 후식과 별식을 준비하던 곳으로 ‘생물방’ 혹은 ‘생것방’이라고도 불렸습니다.
@@ -453,10 +464,13 @@
                       <td>추첨제(1인 2,5000원)</td>
                     </tr>
                   </table>
-                  <button class="button1" onclick="location.href='./sub/event/tasty.html';">행사 자세히 보기</button>
                 </div>
                 <div class="summary">
-                  <h2>시식공감</h2>
+                  <div class="title">
+                    <h2>시식공감</h2>
+                    <span class="detailview"><a href="./sub/event/tasty.html">자세히 보기</a></span>
+  
+                  </div>
                   <p>
                     視(시) 경복궁 소주방에서
                     食(식) 궁중병과와 함께
@@ -486,10 +500,13 @@
                       <td>10:00, 14:00(소요시간 20분)</td>
                     </tr>
                   </table>
-                  <button class="button1" onclick="location.href='./sub/event/alternating.html';">행사 자세히 보기</button>
                 </div>
                 <div class="summary">
-                  <h2>수문장 교대의식</h2>
+                  <div class="title">
+                    <h2>수문장 교대의식</h2>
+                    <span class="detailview"><a href="./sub/event/alternating.html">자세히 보기</a></span>
+  
+                  </div>
                   <p>
                     경복궁 수문장 교대의식은 조선시대 왕실 호위문화를 상징하는 대표적인 전통문화행사입니다.
                     ‘조선왕조실록’예종(睿宗) 1년(1469) 수문장제도의 시행 기록을 역사적 근거로 하여
@@ -498,7 +515,9 @@
                   </p>
                 </div>
               </div><!--event-guide-->
-            </div><!--event-hover"-->
+              <button class="button1" onclick="location.href='./sub/mypage/booking.html';">온라인예약·예매 바로가기</button>
+            </div><!--event-hover-->
+
           </section><!--content5-->
           
           <section id="content6">

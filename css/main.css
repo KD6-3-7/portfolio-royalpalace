@@ -52,16 +52,12 @@ ul, li {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   list-style: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
-  display: block;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
 }
 
 a:hover {
@@ -73,9 +69,9 @@ html {
 }
 
 body {
-  font-family: Pretendard;
   color: #fff;
   font-weight: 100;
+  -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar {
@@ -83,7 +79,6 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  width: 200px;
   font-size: 0;
 }
 
@@ -155,37 +150,6 @@ p {
   color: #000;
   background: url(../images/arr_right_bk.png) no-repeat 90% 50%;
   background-color: #fff;
-}
-
-.detailview {
-  font-family: Pretendard;
-  position: relative;
-  width: 8em;
-  line-height: 1.5rem;
-  margin: auto;
-  opacity: 0.6;
-  transition: opacity 0.5s;
-  z-index: 2;
-}
-
-.detailview:hover {
-  opacity: 1;
-}
-
-.detailview a {
-  padding-top: 5vh;
-  border-bottom: 1px solid #eee;
-}
-
-.detailview::after {
-  content: "";
-  position: absolute;
-  right: -1px;
-  bottom: 6px;
-  display: block;
-  width: 15px;
-  border-bottom: 1px solid #eee;
-  transform: rotate(45deg);
 }
 
 .flex {
@@ -672,7 +636,11 @@ body #slide-nav {
     margin-bottom: 0;
   }
   body #slide-nav a span:first-child {
+    position: absolute;
+    right: 20px;
     opacity: 0;
+    width: 140px;
+    text-align: right;
     transition: all 0.5s;
   }
   body #slide-nav a span:last-child {
@@ -688,9 +656,14 @@ body #slide-nav {
   }
   body #slide-nav a:hover span:first-child {
     opacity: 1;
-    font-weight: 500;
+    font-weight: 200;
   }
-  body #slide-nav a:hover span:last-child {
+  body #slide-nav .view span:first-child {
+    color: #fff;
+    opacity: 1;
+    font-weight: 400;
+  }
+  body #slide-nav .view span:last-child {
     transform: translateX(28%);
     border: 4px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
@@ -903,8 +876,8 @@ body #content1 #intro .move-box4 .scroll {
 
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box4 .scroll {
-    position: relative;
-    margin: 12vh  3.4vw;
+    position: static;
+    margin: 12vh  5vw;
   }
 }
 
@@ -967,6 +940,46 @@ body #content2 .txt-center {
     width: 60vw;
     margin: 10vh auto;
   }
+}
+
+body #content2 .txt-center p {
+  margin: 2vh auto;
+}
+
+body #content2 .txt-center .detailview {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font-family: Pretendard;
+  width: 7em;
+  height: 22px;
+  padding: 2px;
+  margin: auto;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  z-index: 2;
+  border-bottom: 1px solid #eee;
+  margin-top: 4vh;
+}
+
+body #content2 .txt-center .detailview:hover {
+  opacity: 1;
+}
+
+body #content2 .txt-center .detailview a {
+  margin: 5px;
+}
+
+body #content2 .txt-center .detailview::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 5px;
+  display: block;
+  width: 15px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #eee;
+  background-color: #0b3c2c;
 }
 
 body #content2 video {
@@ -1328,6 +1341,9 @@ body #content4 .map-info button {
 }
 
 body #content5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 12vh;
   width: 100vw;
   height: 100vh;
@@ -1337,7 +1353,8 @@ body #content5 {
 
 @media screen and (min-width: 768px) {
   body #content5 {
-    padding-top: 20vh;
+    padding-top: 18vh;
+    padding-bottom: 10vh;
     width: 100vw;
     height: 100vh;
     background: url(../images/main_event.jpg) no-repeat center/cover;
@@ -1476,20 +1493,31 @@ body #content5 #poster-view .slider .view {
   opacity: 1;
 }
 
-body #content5 #event-hover .event-guide {
-  flex-direction: column-reverse;
-  padding: 1vh;
-  width: 86%;
-  display: none;
+body #content5 #event-hover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  width: 86%;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  body #content5 #event-hover {
+    width: 56%;
+    height: 28vh;
+  }
+}
+
+body #content5 #event-hover .event-guide {
+  flex-direction: column;
+  padding: 1vh;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide {
-    gap: 0;
     flex-direction: row;
-    align-items: flex-end;
-    width: 56%;
     padding-top: 6vh;
   }
 }
@@ -1505,8 +1533,11 @@ body #content5 #event-hover .event-guide .event-schedule {
 
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .event-schedule {
-    width: 24vw;
+    display: flex;
+    align-items: flex-end;
+    width: 30vw;
     margin: 0;
+    margin-bottom: 10vh;
   }
 }
 
@@ -1526,19 +1557,6 @@ body #content5 #event-hover .event-guide .event-schedule table td {
   }
 }
 
-body #content5 #event-hover .event-guide .event-schedule .button1 {
-  transform: scale(0.8);
-  margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-  body #content5 #event-hover .event-guide .event-schedule .button1 {
-    transform: scale(1);
-    margin: auto;
-    margin-top: 2vh;
-  }
-}
-
 body #content5 #event-hover .event-guide .summary {
   width: 100%;
   margin-top: 3vh;
@@ -1547,36 +1565,110 @@ body #content5 #event-hover .event-guide .summary {
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary {
     width: 76vw;
-    padding-left: 8vw;
+    padding-left: 6vw;
     padding-right: 40px;
     margin-top: 0;
   }
 }
 
-body #content5 #event-hover .event-guide .summary h2 {
-  font-size: 1.6em;
-  font-weight: 100;
-  font-family: "Noto Serif KR", serif;
-  text-align: center;
+body #content5 #event-hover .event-guide .summary .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
-  body #content5 #event-hover .event-guide .summary h2 {
+  body #content5 #event-hover .event-guide .summary .title {
+    justify-content: space-between;
+  }
+}
+
+body #content5 #event-hover .event-guide .summary .title h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: "Noto Serif KR", serif;
+}
+
+@media screen and (min-width: 768px) {
+  body #content5 #event-hover .event-guide .summary .title h2 {
     font-size: 2.6em;
     text-align: left;
+    margin-right: 20px;
+  }
+}
+
+body #content5 #event-hover .event-guide .summary .title .detailview {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font-family: Pretendard;
+  width: 7em;
+  height: 22px;
+  padding: 2px;
+  margin: 0;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  z-index: 2;
+  border-bottom: 1px solid #eee;
+  transform: scale(0.8);
+}
+
+body #content5 #event-hover .event-guide .summary .title .detailview:hover {
+  opacity: 1;
+}
+
+body #content5 #event-hover .event-guide .summary .title .detailview a {
+  margin: 5px;
+}
+
+body #content5 #event-hover .event-guide .summary .title .detailview::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 5px;
+  display: block;
+  width: 15px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #eee;
+  background-color: #0b3c2c;
+}
+
+@media screen and (min-width: 768px) {
+  body #content5 #event-hover .event-guide .summary .title .detailview {
+    transform: scale(1);
   }
 }
 
 body #content5 #event-hover .event-guide .summary p {
+  width: 100%;
   height: 26vh;
   overflow: auto;
   text-align: justify;
+  padding-top: 1vh;
 }
 
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary p {
+    width: unset;
     height: unset;
+    padding-top: 0.5vh;
     overflow: visible;
+  }
+}
+
+body #content5 #event-hover .button1 {
+  transform: scale(0.8);
+  margin: auto;
+  margin-bottom: 4vh;
+}
+
+@media screen and (min-width: 768px) {
+  body #content5 #event-hover .button1 {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    transform: scale(1);
+    margin-bottom: unset;
   }
 }
 

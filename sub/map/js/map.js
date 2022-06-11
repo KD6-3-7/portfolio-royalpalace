@@ -53,7 +53,7 @@ function MouseoverView(btn, target1, target2, target3) {
                     return false;
                 }
 
-                target3[i].classList.add('view');//
+                target3[i].classList.add('view');
             }
         }
     }

@@ -60,6 +60,26 @@ setTimeout (function() {
 }, 5000)
 
 
+// let section = document.getElementsByTagName('section');
+// let slideNav = document.getElementById('slide-nav');
+// let navHeight = slideNav.getBoundingClientRect().top + window.pageYOffset;
+// let viewHeight = section.scrollTop; 
+
+window.addEventListener("scroll", function(){
+	let navList = document.querySelectorAll('.nav_list');
+	let scrollLocation = document.documentElement.scrollTop; 
+	let windowHeight = window.innerHeight; 
+	let currentScrollIdx = Math.floor(scrollLocation/windowHeight);
+
+	for(i=0; i<navList.length; i++){
+		if(currentScrollIdx == i){
+			for(j=0; j<navList.length; j++){
+				navList[j].classList.remove('view');
+			}
+			navList[i].classList.add('view');
+		}
+	}
+})
 
 
 
