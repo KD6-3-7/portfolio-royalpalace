@@ -1882,7 +1882,7 @@ body footer div.wrapper div.copyright div.contact p:first-child {
 
 @media screen and (min-width: 768px) {
   body footer {
-    padding: 0 200px;
+    padding: 0 50px;
   }
 }
 

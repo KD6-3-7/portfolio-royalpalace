@@ -5,10 +5,8 @@
 @import "./../../../scss/_mixin-footer.scss";
 @import "_mixin-topmenu.scss";
 @import "./_map-mixin.scss";
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
-// @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-// header
+
 header {
     position: relative;
     @include topmenu-mobile();
@@ -50,8 +48,7 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
-    // background-color: blueviolet;
+    overflow: hidden;
 
     @include responsive(pc-size){
         height: 100vh;
@@ -69,7 +66,6 @@ section {
         flex-direction: column;
         justify-content: space-between;
         z-index: 1;
-        // background-color: darkblue;
 
         @include responsive(pc-size){
             width: 70%;
@@ -81,10 +77,8 @@ section {
             height: 60vw;
             overflow: auto;
             
-            // background-color: aqua;
-
             @include responsive(tablet-size) {
-                height: 60vh;
+                height: 50vh;
                 margin-top:0;
             }
 
@@ -96,8 +90,6 @@ section {
                 position: absolute;
                 left:0;
                 top:0;
-                // width: 1128px;
-                background-color: rgb(255, 174, 0);
                 transform: scale(0.5);
                 
                 @include responsive(tablet-size) {
@@ -107,23 +99,15 @@ section {
                 @include responsive(pc-size) {
                     transform: scale(1);
                 }
-                // z-index: -1;
     
     
                 & > * {
                     position: absolute;
-
-                    // width: auto;
-                    // transform: translateX(50%);
-    
-                    @include responsive(tablet-size) {
-                        // right: 50%;
-                        // top: 0;
-                    }
                 }
     
-                & >li{
+                & > div {
                     display: none;
+
                     img {
                         object-fit: none;
                     }
@@ -134,17 +118,20 @@ section {
                     li {
                         position: absolute;
 
-                        img {
-                            size:auto;
-                            filter: sepia(100%)
-                                    contrast(90%)
-                                    hue-rotate(350deg)
-                                    brightness(90%);
-                        }
-                        .view {
-                            filter: none;
-                            filter:contrast(120%)
-                                    brightness(55%);
+                        a {
+                            img {
+                                size:auto;
+                                filter: sepia(100%)
+                                        contrast(90%)
+                                        hue-rotate(350deg)
+                                        brightness(90%);
+                            }
+                            
+                            .view {
+                                filter: none;
+                                filter:contrast(120%)
+                                        brightness(55%);
+                            }
                         }
                     }
 
@@ -193,15 +180,21 @@ section {
 
             @include responsive (tablet-size) {
                 display: flex;
-                flex-direction:row-reverse;
+                flex-flow:row-reverse  wrap;
                 justify-content: flex-end;
-                gap: 4vw;
+                gap: 2vw;
                 margin-bottom: -3vw;
                 padding: 3vh 100px 4vh 60px;
             }
+            
+            // @media screen and (min-width : 970px)  {
+            //     flex-direction:row-reverse;
+            //     // justify-content: space-between;
+            // } 
 
             @include responsive (pc-size) {
-                // display: block;
+                justify-content: flex-end;
+                gap: 4vw;
                 margin-bottom: -8vw;
                 padding: 4.4vh 100px 4vh 60px;
             }
@@ -220,7 +213,6 @@ section {
             }
 
             .info-menu {
-                // display: none;
                 visibility: hidden;
                 position: absolute;
                 left: 50%;
@@ -236,17 +228,16 @@ section {
                     display: block;
                     width: 410px;
                     min-width: 400px;
+
                 }
 
                 @include responsive (pc-size) {
                     display: block;
-                    // width: 640px;
                     min-width: 400px;
                     padding-bottom: 4vh;
                 }
 
                 ul {
-                    // display: none;
                     color: $color-white;
                     font-size: 0.9em;
                     font-weight: 400;
@@ -256,6 +247,10 @@ section {
                     gap: 1px;
                     padding-top: 10px;
                     padding-bottom: 9vh;
+
+                    @include responsive (tablet-size) {
+                        padding-bottom: 4vh;
+                    }
 
                     li { 
                         line-height: 2em;
@@ -437,11 +432,16 @@ section {
             text-align: justify;
             color: #4c4742;
             
-            @include responsive(tablet-size) {
+            @media screen and (min-width : 970px) {
                 flex-flow: row nowrap;
                 align-content: space-between;
                 gap: 0;
             }
+
+            // @media screen and (min-width : 970px)  {
+            //     flex-direction:row-reverse;
+            //     gap: 4vw;
+            // } 
     
             @include responsive(pc-size) {
                 flex-flow: column nowrap;
@@ -453,7 +453,7 @@ section {
                 width: 100%;
                 align-items: baseline;
     
-                @include responsive(tablet-size){
+                @media screen and (min-width : 970px) {
                     max-width: 40vw;
                     padding-bottom: 2vh;
                 }
@@ -464,10 +464,10 @@ section {
                 }
     
                 h2 {
-                    font-size: 7vw;
+                    font-size: 5vw;
                     display: inline;
     
-                    @include responsive(tablet-size){
+                    @media screen and (min-width : 970px) {
                         font-size: 8vw;
                         font-size: 2.4em;
                     }
@@ -479,7 +479,7 @@ section {
                     letter-spacing: -1px;
                     padding: 1.6vh 0;
         
-                    @include responsive(tablet-size){
+                    @media screen and (min-width : 970px) {
                         padding: 2vh 0;
                     }
         
@@ -495,8 +495,8 @@ section {
                 width: 100%;
                 height: 20vh;
                 
-                @include responsive(tablet-size) {
-                    width: 46%;
+                @media screen and (min-width : 970px) {
+                    width: 100%;
                     height: 30vh;
                     margin-left: 2em;
                 }
