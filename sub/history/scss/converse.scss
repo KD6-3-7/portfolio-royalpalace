@@ -90,6 +90,15 @@ section.main-flex {
                                 color: white;
                             }
                         }
+                        &.selects {
+                            img {
+                                opacity: 1;
+                            }
+                            p {
+                                opacity: 1;
+                                color: white;
+                            }
+                        }
                     }
                 }
             }

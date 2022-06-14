@@ -520,6 +520,15 @@ section.main-flex section.des-1 .swiper .swiper-wrapper .swiper-slide a:hover p 
   color: white;
 }
 
+section.main-flex section.des-1 .swiper .swiper-wrapper .swiper-slide a.selects img {
+  opacity: 1;
+}
+
+section.main-flex section.des-1 .swiper .swiper-wrapper .swiper-slide a.selects p {
+  opacity: 1;
+  color: white;
+}
+
 section.main-flex section.des-2 {
   margin-top: 90px;
   margin-bottom: 90px;
