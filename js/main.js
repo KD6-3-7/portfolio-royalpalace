@@ -60,10 +60,6 @@ setTimeout (function() {
 }, 5000)
 
 
-// let section = document.getElementsByTagName('section');
-// let slideNav = document.getElementById('slide-nav');
-// let navHeight = slideNav.getBoundingClientRect().top + window.pageYOffset;
-// let viewHeight = section.scrollTop; 
 
 window.addEventListener("scroll", function(){
 	let navList = document.querySelectorAll('.nav_list');
