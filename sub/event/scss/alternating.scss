@@ -101,6 +101,9 @@ section.event {
 
     .wrapper-box {
         @include wrapper();
+        @include responsive(pc-size) {
+            width: 95%;
+        }
 
         .info {
             display: flex;
@@ -179,13 +182,12 @@ section.event {
                     padding: 3px;
                     p {
                         margin-bottom: 18px;
-                        font-size: 16px;
+                        font-size: 0.75em;
                         @include responsive(tablet-size) {
-                            font-size: 13px;
+                            font-size: 0.85em;
                         }
                         @include responsive(pc-size) {
-                            font-size: 18px;
-                        }
+                            font-size: 1.2em;                        }
                     }
         
                     img {
@@ -231,7 +233,6 @@ section.event {
             
             .line-flex {
                 @include line-deco();
-                width: 19%;;
             }
  
             .operation-info {

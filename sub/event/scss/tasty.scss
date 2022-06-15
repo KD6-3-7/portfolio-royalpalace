@@ -34,6 +34,7 @@ aside {
 //section
 section {
     width: 100%;
+
     h1 {
         display: none;
     }
@@ -99,174 +100,179 @@ section {
         }
     }
 
-    .info {
+    .wrapper-box {
         @include wrapper();
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 90px;
-        
         @include responsive(pc-size) {
-            flex-direction: row;
-            justify-content: space-between;           
-        }
-        
-        @include line-deco();
-        
-        .line-flex {
-            width: 19%;;
+            width: 95%;
         }
 
-        
-        .info-text-mobile {
-            p {
-                font-size: 18px;
-                line-height: 2em;
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 90px;
+            
+            @include responsive(pc-size) {
+                flex-direction: row;
+                justify-content: space-between;           
             }
-            display: block;
-            @include responsive(tablet-size) {
+            
+            @include line-deco();
+            
+            .line-flex {
+                width: 19%;;
+            }
+    
+            
+            .info-text-mobile {
+                p {
+                    font-size: 18px;
+                    line-height: 2em;
+                }
                 display: block;
-            }
-            @include responsive(pc-size) {
-                display: none;
-            }
-        }
-        .info-text-pc {
-            p {
-                font-size: 18px;
-                line-height: 2em;
-            }
-            display: none;
-            @include responsive(tablet-size) {
-                display: none;
-            }
-            @include responsive(pc-size) {
-                display: block;
-                margin-top: 20px;
-                width: 80%;
-            }
-        }
-    }
-
-    .guide {
-        @include wrapper();
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 90px;
-        
-        @include responsive(pc-size) {
-            flex-direction: row;
-            justify-content: space-between;        
-        }
-        
-        @include line-deco();
-
-        .line-flex {
-            width: 19%;;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 2em;
-        }
-        
-        .guide-info {
-            p {
-                font-size: 18px;
-                line-height: 2em;
-            }
-
-            @include responsive(pc-size) {
-                width: 80%;
-                margin-top: 20px;
-            }
-
-            .guide-flex {
-                margin-bottom: 33px;
-
+                @include responsive(tablet-size) {
+                    display: block;
+                }
                 @include responsive(pc-size) {
-                    display: flex;
-                    justify-content: space-between;
+                    display: none;
                 }
-
-                .guide-box {
-                    p {
-                        padding: 10px;
-                        @include responsive(pc-size) {
-                            padding: 0;
-                        }
-                    }
-                    margin-bottom: 10px;
-                    background-color: #cec4b6;
-
-                    @include responsive(pc-size) {
-                        padding: 0 30px;
-                        text-align: center;
-                        padding-top: 30px;
-                    }
-
+            }
+            .info-text-pc {
+                p {
+                    font-size: 18px;
+                    line-height: 2em;
                 }
-                
-                .lunch {
-                    width: 100%;
-
+                display: none;
+                @include responsive(tablet-size) {
+                    display: none;
+                }
+                @include responsive(pc-size) {
+                    display: block;
+                    margin-top: 20px;
+                    width: 80%;
+                }
+            }
+        }
+    
+        .guide {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 90px;
+            
+            @include responsive(pc-size) {
+                flex-direction: row;
+                justify-content: space-between;        
+            }
+            
+            @include line-deco();
+    
+            .line-flex {
+                width: 19%;;
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 2em;
+            }
+            
+            .guide-info {
+                p {
+                    font-size: 18px;
+                    line-height: 2em;
+                }
+    
+                @include responsive(pc-size) {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+    
+                .guide-flex {
+                    margin-bottom: 33px;
+    
                     @include responsive(pc-size) {
-                        width: 80%;
+                        display: flex;
+                        justify-content: space-between;
                     }
-
-                    p {
-                        @include responsive(pc-size) {
-                            margin-top: 20px;
-                        }
-                    }
-
-                    .lunch-img-flex {
-                        img {
-                            width: 100%;
-                            margin-bottom: 5px;
-                            @include responsive(tablet-size) {
-                                width: 49%;
-                                margin-bottom: 20px;
-                            }
+    
+                    .guide-box {
+                        p {
+                            padding: 10px;
                             @include responsive(pc-size) {
-                                margin-bottom: 40px;
+                                padding: 0;
                             }
                         }
-
-                        @include responsive(tablet-size) {
-                            width: 100%;
+                        margin-bottom: 10px;
+                        background-color: #cec4b6;
+    
+                        @include responsive(pc-size) {
+                            padding: 0 30px;
+                            text-align: center;
+                            padding-top: 30px;
+                        }
+    
+                    }
+                    
+                    .lunch {
+                        width: 100%;
+    
+                        @include responsive(pc-size) {
+                            width: 80%;
+                        }
+    
+                        p {
+                            @include responsive(pc-size) {
+                                margin-top: 20px;
+                            }
+                        }
+    
+                        .lunch-img-flex {
+                            img {
+                                width: 100%;
+                                margin-bottom: 5px;
+                                @include responsive(tablet-size) {
+                                    width: 49%;
+                                    margin-bottom: 20px;
+                                }
+                                @include responsive(pc-size) {
+                                    margin-bottom: 40px;
+                                }
+                            }
+    
+                            @include responsive(tablet-size) {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                            }
+    
+                        }
+                    }
+    
+                    .vacation {
+                        width: 100%;
+    
+                        @include responsive(pc-size) {
+                            width: 80%;
+                        }
+                        
+                        p {
+                            @include responsive(pc-size) {
+                                margin-top: 20px;
+                            }
+                        }
+    
+                        .stay-img-flex {
+                            img {
+                                width: 49%;
+                                @include responsive(pc-size) {
+                                    margin-bottom: 40px;
+                                }
+                            }
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
                             justify-content: space-between;
                         }
-
-                    }
-                }
-
-                .vacation {
-                    width: 100%;
-
-                    @include responsive(pc-size) {
-                        width: 80%;
-                    }
-                    
-                    p {
-                        @include responsive(pc-size) {
-                            margin-top: 20px;
-                        }
-                    }
-
-                    .stay-img-flex {
-                        img {
-                            width: 49%;
-                            @include responsive(pc-size) {
-                                margin-bottom: 40px;
-                            }
-                        }
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
                     }
                 }
             }
@@ -274,7 +280,6 @@ section {
     }
 
     .operation {
-        @include wrapper();
         display: flex;
         flex-direction: column;
         margin-bottom: 90px;
@@ -287,7 +292,6 @@ section {
         
         .line-flex {
             @include line-deco();
-            width: 19%;
         }
 
         .operation-text {
@@ -305,7 +309,6 @@ section {
     }
 
     .inquiry {
-        @include wrapper();
         display: flex;
         flex-direction: column;
         margin-bottom: 90px;
@@ -318,7 +321,6 @@ section {
         
         .line-flex {
             @include line-deco();
-            width: 19%;;
         }
 
 

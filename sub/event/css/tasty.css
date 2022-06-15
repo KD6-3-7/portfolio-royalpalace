@@ -389,15 +389,15 @@ aside div.sidemenu {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: url("./../images/icon-circle.svg") no-repeat center;
+    background: url("./../../../images/icon-circle.svg") no-repeat center;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
   }
   aside div.sidemenu ul.gnb li.menu:hover::before {
-    background: url("./../images/icon-circle_h.svg") no-repeat center;
+    background: url("./../../../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
-    background: url("./../images/icon-circle_h.svg") no-repeat center;
+    background: url("./../../../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu > a {
     display: inline-block;
@@ -513,10 +513,26 @@ section .img-text .main-text p {
   }
 }
 
-section .info {
+section .wrapper-box {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+}
+
+@media screen and (min-width: 1520px) {
+  section .wrapper-box {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  section .wrapper-box {
+    width: 95%;
+  }
+}
+
+section .wrapper-box .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,14 +544,7 @@ section .info {
 }
 
 @media screen and (min-width: 1520px) {
-  section .info {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section .info {
+  section .wrapper-box .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -546,23 +555,23 @@ section .info {
   }
 }
 
-section .info .little-title {
+section .wrapper-box .info .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .info .little-title h3 {
-  font-size: 22px;
+section .wrapper-box .info .little-title h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-section .info .little-title h3 span {
+section .wrapper-box .info .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .info .little-title h3 span::before {
+section .wrapper-box .info .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -574,7 +583,7 @@ section .info .little-title h3 span::before {
   background: #949392;
 }
 
-section .info .little-title::after {
+section .wrapper-box .info .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -585,58 +594,55 @@ section .info .little-title::after {
   background: #c4c3c2;
 }
 
-section .info .line-flex {
+section .wrapper-box .info .line-flex {
   width: 19%;
 }
 
-section .info .info-text-mobile {
+section .wrapper-box .info .info-text-mobile {
   display: block;
 }
 
-section .info .info-text-mobile p {
+section .wrapper-box .info .info-text-mobile p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  section .info .info-text-mobile {
+  section .wrapper-box .info .info-text-mobile {
     display: block;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .info .info-text-mobile {
+  section .wrapper-box .info .info-text-mobile {
     display: none;
   }
 }
 
-section .info .info-text-pc {
+section .wrapper-box .info .info-text-pc {
   display: none;
 }
 
-section .info .info-text-pc p {
+section .wrapper-box .info .info-text-pc p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  section .info .info-text-pc {
+  section .wrapper-box .info .info-text-pc {
     display: none;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .info .info-text-pc {
+  section .wrapper-box .info .info-text-pc {
     display: block;
     margin-top: 20px;
     width: 80%;
   }
 }
 
-section .guide {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section .wrapper-box .guide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,14 +654,7 @@ section .guide {
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section .guide {
+  section .wrapper-box .guide {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -666,23 +665,23 @@ section .guide {
   }
 }
 
-section .guide .little-title {
+section .wrapper-box .guide .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .guide .little-title h3 {
-  font-size: 22px;
+section .wrapper-box .guide .little-title h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-section .guide .little-title h3 span {
+section .wrapper-box .guide .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .guide .little-title h3 span::before {
+section .wrapper-box .guide .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -694,7 +693,7 @@ section .guide .little-title h3 span::before {
   background: #949392;
 }
 
-section .guide .little-title::after {
+section .wrapper-box .guide .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -705,33 +704,33 @@ section .guide .little-title::after {
   background: #c4c3c2;
 }
 
-section .guide .line-flex {
+section .wrapper-box .guide .line-flex {
   width: 19%;
 }
 
-section .guide p {
+section .wrapper-box .guide p {
   font-size: 18px;
   line-height: 2em;
 }
 
-section .guide .guide-info p {
+section .wrapper-box .guide .guide-info p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info {
+  section .wrapper-box .guide .guide-info {
     width: 80%;
     margin-top: 20px;
   }
 }
 
-section .guide .guide-info .guide-flex {
+section .wrapper-box .guide .guide-info .guide-flex {
   margin-bottom: 33px;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex {
+  section .wrapper-box .guide .guide-info .guide-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -741,65 +740,65 @@ section .guide .guide-info .guide-flex {
   }
 }
 
-section .guide .guide-info .guide-flex .guide-box {
+section .wrapper-box .guide .guide-info .guide-flex .guide-box {
   margin-bottom: 10px;
   background-color: #cec4b6;
 }
 
-section .guide .guide-info .guide-flex .guide-box p {
+section .wrapper-box .guide .guide-info .guide-flex .guide-box p {
   padding: 10px;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .guide-box p {
+  section .wrapper-box .guide .guide-info .guide-flex .guide-box p {
     padding: 0;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .guide-box {
+  section .wrapper-box .guide .guide-info .guide-flex .guide-box {
     padding: 0 30px;
     text-align: center;
     padding-top: 30px;
   }
 }
 
-section .guide .guide-info .guide-flex .lunch {
+section .wrapper-box .guide .guide-info .guide-flex .lunch {
   width: 100%;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .lunch {
+  section .wrapper-box .guide .guide-info .guide-flex .lunch {
     width: 80%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .lunch p {
+  section .wrapper-box .guide .guide-info .guide-flex .lunch p {
     margin-top: 20px;
   }
 }
 
-section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+section .wrapper-box .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
   width: 100%;
   margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+  section .wrapper-box .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
     width: 49%;
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
+  section .wrapper-box .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-flex .lunch .lunch-img-flex {
+  section .wrapper-box .guide .guide-info .guide-flex .lunch .lunch-img-flex {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -816,23 +815,23 @@ section .guide .guide-info .guide-flex .lunch .lunch-img-flex img {
   }
 }
 
-section .guide .guide-info .guide-flex .vacation {
+section .wrapper-box .guide .guide-info .guide-flex .vacation {
   width: 100%;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .vacation {
+  section .wrapper-box .guide .guide-info .guide-flex .vacation {
     width: 80%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .vacation p {
+  section .wrapper-box .guide .guide-info .guide-flex .vacation p {
     margin-top: 20px;
   }
 }
 
-section .guide .guide-info .guide-flex .vacation .stay-img-flex {
+section .wrapper-box .guide .guide-info .guide-flex .vacation .stay-img-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,20 +846,17 @@ section .guide .guide-info .guide-flex .vacation .stay-img-flex {
           justify-content: space-between;
 }
 
-section .guide .guide-info .guide-flex .vacation .stay-img-flex img {
+section .wrapper-box .guide .guide-info .guide-flex .vacation .stay-img-flex img {
   width: 49%;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-flex .vacation .stay-img-flex img {
+  section .wrapper-box .guide .guide-info .guide-flex .vacation .stay-img-flex img {
     margin-bottom: 40px;
   }
 }
 
 section .operation {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,13 +865,6 @@ section .operation {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 90px;
-}
-
-@media screen and (min-width: 1520px) {
-  section .operation {
-    max-width: 1320px;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 1520px) {
@@ -890,17 +879,13 @@ section .operation {
   }
 }
 
-section .operation .line-flex {
-  width: 19%;
-}
-
 section .operation .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
 section .operation .line-flex .little-title h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -946,9 +931,6 @@ section .operation .operation-text p {
 }
 
 section .inquiry {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,13 +939,6 @@ section .inquiry {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 90px;
-}
-
-@media screen and (min-width: 1520px) {
-  section .inquiry {
-    max-width: 1320px;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 1520px) {
@@ -978,17 +953,13 @@ section .inquiry {
   }
 }
 
-section .inquiry .line-flex {
-  width: 19%;
-}
-
 section .inquiry .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
 section .inquiry .line-flex .little-title h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -1098,8 +1069,17 @@ footer div.wrapper div.copyright div.contact p:first-child {
 
 @media screen and (min-width: 768px) {
   footer {
-    padding: 0 200px;
+    padding: 0 50px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  footer div.wrapper {
+    padding: 0 13%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   footer div.wrapper div.policy > ul {
     width: 50%;
   }

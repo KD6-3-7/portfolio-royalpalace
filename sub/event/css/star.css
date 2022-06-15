@@ -389,15 +389,15 @@ aside div.sidemenu {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: url("./../images/icon-circle.svg") no-repeat center;
+    background: url("./../../../images/icon-circle.svg") no-repeat center;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
   }
   aside div.sidemenu ul.gnb li.menu:hover::before {
-    background: url("./../images/icon-circle_h.svg") no-repeat center;
+    background: url("./../../../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu.selected::before {
-    background: url("./../images/icon-circle_h.svg") no-repeat center;
+    background: url("./../../../images/icon-circle_h.svg") no-repeat center;
   }
   aside div.sidemenu ul.gnb li.menu > a {
     display: inline-block;
@@ -513,10 +513,26 @@ section .img-text .main-text p {
   }
 }
 
-section .info {
+section .wrapper-box {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
+}
+
+@media screen and (min-width: 1520px) {
+  section .wrapper-box {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  section .wrapper-box {
+    width: 95%;
+  }
+}
+
+section .wrapper-box .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,14 +544,7 @@ section .info {
 }
 
 @media screen and (min-width: 1520px) {
-  section .info {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section .info {
+  section .wrapper-box .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -546,27 +555,27 @@ section .info {
   }
 }
 
-section .info .line-flex {
+section .wrapper-box .info .line-flex {
   width: 19%;
 }
 
-section .info .line-flex .little-title {
+section .wrapper-box .info .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .info .line-flex .little-title h3 {
-  font-size: 22px;
+section .wrapper-box .info .line-flex .little-title h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-section .info .line-flex .little-title h3 span {
+section .wrapper-box .info .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .info .line-flex .little-title h3 span::before {
+section .wrapper-box .info .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -578,7 +587,7 @@ section .info .line-flex .little-title h3 span::before {
   background: #949392;
 }
 
-section .info .line-flex .little-title::after {
+section .wrapper-box .info .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -589,54 +598,51 @@ section .info .line-flex .little-title::after {
   background: #c4c3c2;
 }
 
-section .info .info-text-mobile {
+section .wrapper-box .info .info-text-mobile {
   display: block;
 }
 
-section .info .info-text-mobile p {
+section .wrapper-box .info .info-text-mobile p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  section .info .info-text-mobile {
+  section .wrapper-box .info .info-text-mobile {
     display: block;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .info .info-text-mobile {
+  section .wrapper-box .info .info-text-mobile {
     display: none;
   }
 }
 
-section .info .info-text-pc {
+section .wrapper-box .info .info-text-pc {
   display: none;
 }
 
-section .info .info-text-pc p {
+section .wrapper-box .info .info-text-pc p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  section .info .info-text-pc {
+  section .wrapper-box .info .info-text-pc {
     display: none;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .info .info-text-pc {
+  section .wrapper-box .info .info-text-pc {
     display: block;
     margin-top: 20px;
     width: 80%;
   }
 }
 
-section .guide {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section .wrapper-box .guide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,14 +654,7 @@ section .guide {
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section .guide {
+  section .wrapper-box .guide {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -666,27 +665,27 @@ section .guide {
   }
 }
 
-section .guide .line-flex {
+section .wrapper-box .guide .line-flex {
   width: 19%;
 }
 
-section .guide .line-flex .little-title {
+section .wrapper-box .guide .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .guide .line-flex .little-title h3 {
-  font-size: 22px;
+section .wrapper-box .guide .line-flex .little-title h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-section .guide .line-flex .little-title h3 span {
+section .wrapper-box .guide .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .guide .line-flex .little-title h3 span::before {
+section .wrapper-box .guide .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -698,7 +697,7 @@ section .guide .line-flex .little-title h3 span::before {
   background: #949392;
 }
 
-section .guide .line-flex .little-title::after {
+section .wrapper-box .guide .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -709,24 +708,24 @@ section .guide .line-flex .little-title::after {
   background: #c4c3c2;
 }
 
-section .guide .guide-info p {
+section .wrapper-box .guide .guide-info p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info {
+  section .wrapper-box .guide .guide-info {
     width: 80%;
     margin-top: 20px;
   }
 }
 
-section .guide .guide-info .guide-food {
+section .wrapper-box .guide .guide-info .guide-food {
   margin-bottom: 33px;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-food {
+  section .wrapper-box .guide .guide-info .guide-food {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -736,22 +735,22 @@ section .guide .guide-info .guide-food {
   }
 }
 
-section .guide .guide-info .guide-food .guide-box {
+section .wrapper-box .guide .guide-info .guide-food .guide-box {
   background-color: #cec4b6;
 }
 
-section .guide .guide-info .guide-food .guide-box p {
+section .wrapper-box .guide .guide-info .guide-food .guide-box p {
   padding: 10px;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-food .guide-box p {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box p {
     padding: 0;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-food .guide-box {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box {
     height: 410px;
     padding: 0 30px;
     text-align: center;
@@ -759,45 +758,45 @@ section .guide .guide-info .guide-food .guide-box p {
   }
 }
 
-section .guide .guide-info .guide-food .guide-box-text {
+section .wrapper-box .guide .guide-info .guide-food .guide-box-text {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food .guide-box-text {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box-text {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-food .guide-box-text {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box-text {
     width: 80%;
     margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-food .guide-box-text p {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box-text p {
     margin-bottom: 20px;
   }
 }
 
-section .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
+section .wrapper-box .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
   width: 100%;
 }
 
-section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
+section .wrapper-box .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
     width: 48%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
+  section .wrapper-box .guide .guide-info .guide-food .guide-box-text .guide-flex-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -807,12 +806,12 @@ section .guide .guide-info .guide-food .guide-box-text .guide-flex-img img {
   }
 }
 
-section .guide .guide-info .guide-exp {
+section .wrapper-box .guide .guide-info .guide-exp {
   margin-bottom: 33px;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-exp {
+  section .wrapper-box .guide .guide-info .guide-exp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -822,22 +821,22 @@ section .guide .guide-info .guide-exp {
   }
 }
 
-section .guide .guide-info .guide-exp .guide-box {
+section .wrapper-box .guide .guide-info .guide-exp .guide-box {
   background-color: #cec4b6;
 }
 
-section .guide .guide-info .guide-exp .guide-box p {
+section .wrapper-box .guide .guide-info .guide-exp .guide-box p {
   padding: 10px;
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-exp .guide-box p {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box p {
     padding: 0;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-exp .guide-box {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box {
     height: 490px;
     padding: 0 30px;
     text-align: center;
@@ -845,50 +844,50 @@ section .guide .guide-info .guide-exp .guide-box p {
   }
 }
 
-section .guide .guide-info .guide-exp .guide-box-text {
+section .wrapper-box .guide .guide-info .guide-exp .guide-box-text {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-exp .guide-box-text {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box-text {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-exp .guide-box-text {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box-text {
     width: 80%;
     margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1520px) {
-  section .guide .guide-info .guide-exp .guide-box-text p {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box-text p {
     margin-bottom: 20px;
   }
 }
 
-section .guide .guide-info .guide-exp .guide-box-text p span {
+section .wrapper-box .guide .guide-info .guide-exp .guide-box-text p span {
   display: block;
   margin-top: 20px;
 }
 
-section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
+section .wrapper-box .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
   width: 100%;
 }
 
-section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
+section .wrapper-box .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
     width: 48%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
+  section .wrapper-box .guide .guide-info .guide-exp .guide-box-text .guide-flex-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -898,10 +897,7 @@ section .guide .guide-info .guide-exp .guide-box-text .guide-flex-img img {
   }
 }
 
-section .operation {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section .wrapper-box .operation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,14 +909,7 @@ section .operation {
 }
 
 @media screen and (min-width: 1520px) {
-  section .operation {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section .operation {
+  section .wrapper-box .operation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -931,27 +920,23 @@ section .operation {
   }
 }
 
-section .operation .line-flex {
-  width: 19%;
-}
-
-section .operation .line-flex .little-title {
+section .wrapper-box .operation .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .operation .line-flex .little-title h3 {
-  font-size: 22px;
+section .wrapper-box .operation .line-flex .little-title h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-section .operation .line-flex .little-title h3 span {
+section .wrapper-box .operation .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .operation .line-flex .little-title h3 span::before {
+section .wrapper-box .operation .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -963,7 +948,7 @@ section .operation .line-flex .little-title h3 span::before {
   background: #949392;
 }
 
-section .operation .line-flex .little-title::after {
+section .wrapper-box .operation .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -974,22 +959,19 @@ section .operation .line-flex .little-title::after {
   background: #c4c3c2;
 }
 
-section .operation p {
+section .wrapper-box .operation p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 1520px) {
-  section .operation p {
+  section .wrapper-box .operation p {
     width: 80%;
     margin-top: 20px;
   }
 }
 
-section .participate {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 7%;
+section .wrapper-box .participate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1001,14 +983,7 @@ section .participate {
 }
 
 @media screen and (min-width: 1520px) {
-  section .participate {
-    max-width: 1320px;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  section .participate {
+  section .wrapper-box .participate {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1019,27 +994,23 @@ section .participate {
   }
 }
 
-section .participate .line-flex {
-  width: 19%;
-}
-
-section .participate .line-flex .little-title {
+section .wrapper-box .participate .line-flex .little-title {
   position: relative;
   margin-bottom: 33px;
 }
 
-section .participate .line-flex .little-title h3 {
-  font-size: 22px;
+section .wrapper-box .participate .line-flex .little-title h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-section .participate .line-flex .little-title h3 span {
+section .wrapper-box .participate .line-flex .little-title h3 span {
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
 }
 
-section .participate .line-flex .little-title h3 span::before {
+section .wrapper-box .participate .line-flex .little-title h3 span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -1051,7 +1022,7 @@ section .participate .line-flex .little-title h3 span::before {
   background: #949392;
 }
 
-section .participate .line-flex .little-title::after {
+section .wrapper-box .participate .line-flex .little-title::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -1062,13 +1033,13 @@ section .participate .line-flex .little-title::after {
   background: #c4c3c2;
 }
 
-section .participate .participate-text p {
+section .wrapper-box .participate .participate-text p {
   font-size: 18px;
   line-height: 2em;
 }
 
 @media screen and (min-width: 1520px) {
-  section .participate .participate-text {
+  section .wrapper-box .participate .participate-text {
     margin-top: 20px;
     width: 80%;
   }
@@ -1139,8 +1110,17 @@ footer div.wrapper div.copyright div.contact p:first-child {
 
 @media screen and (min-width: 768px) {
   footer {
-    padding: 0 200px;
+    padding: 0 50px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  footer div.wrapper {
+    padding: 0 13%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   footer div.wrapper div.policy > ul {
     width: 50%;
   }
