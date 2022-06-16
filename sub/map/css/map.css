@@ -16,7 +16,6 @@ a {
   text-decoration: none;
   color: #2c2928;
 }
-
 a:hover {
   color: #2c2928;
 }
@@ -50,11 +49,9 @@ header {
   position: relative;
   z-index: 999;
 }
-
 header div.header-mobile {
   width: 100%;
 }
-
 header div.header-mobile div.header-flex-box {
   width: 100%;
   height: 80px;
@@ -64,36 +61,30 @@ header div.header-mobile div.header-flex-box {
   align-items: center;
   background-color: #2c2928;
 }
-
 header div.header-mobile div.header-flex-box h1.logo {
   margin: 0 20px;
   line-height: 80px;
 }
-
 header div.header-mobile div.header-flex-box h1.logo img {
   width: 100px;
   display: block;
 }
-
 header div.header-mobile div.header-flex-box div.hamburger {
   width: 25px;
   height: 20px;
   margin-right: 20px;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu] {
   display: none;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label {
   position: relative;
   display: block;
   width: 25px;
   height: 20px;
   cursor: pointer;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span {
   position: absolute;
   display: block;
   width: 100%;
@@ -102,41 +93,33 @@ header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + la
   background: #ffffff;
   transition: 0.3s;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(1) {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span:nth-child(1) {
   top: 0;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(2) {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(3) {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span:nth-child(3) {
   bottom: 0;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(1) {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu]:checked + label span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(2) {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu]:checked + label span:nth-child(2) {
   opacity: 0;
 }
-
-header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(3) {
+header div.header-mobile div.header-flex-box div.hamburger input[id=menu]:checked + label span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
-
 header div.header-mobile div.mobilemenu {
   position: absolute;
   z-index: 1;
   width: 100%;
   background-color: #ffffff;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb {
   height: 0vh;
   padding: 0 20px;
@@ -144,14 +127,12 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb {
   overflow: hidden;
   transition: height ease-in-out 1s 0s;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
   padding: 20px 0;
   border-bottom: 1px solid #dddddd;
   font-size: 1.1em;
   font-weight: 600;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
   content: "";
   display: inline-block;
@@ -160,21 +141,17 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
   background: url("./../../../images/icon-circle.svg") no-repeat center;
   transition: 0.3s ease;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu:hover::before {
   background: url("./../../../images/icon-circle_h.svg") no-repeat center;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu.selected::before {
   background: url("./../../../images/icon-circle.svg") no-repeat center;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu > a, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
   display: inline-block;
   padding-left: 10px;
   color: #231f20;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
   background-color: transparent;
   cursor: pointer;
@@ -186,9 +163,8 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
   transition: 0.5s;
   text-align: left;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
-  background: url("./../images/arr_bottom.svg") no-repeat;
+  background: url("./../../../images/arr_bottom.svg") no-repeat;
   width: 13px;
   height: 13px;
   content: "";
@@ -196,12 +172,10 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.acc
   position: relative;
   top: 5px;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
-  background: url("./../images/arr_up.svg") no-repeat;
+  background: url("./../../../images/arr_up.svg") no-repeat;
   content: "";
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu {
   display: flex;
   flex-direction: row;
@@ -212,56 +186,46 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-m
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li {
   padding: 5px 0;
   width: 50%;
   font-size: 0.9em;
   font-weight: 400;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:nth-child(2) {
   padding-top: 15px;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a {
   display: inline-block;
   color: #999999;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a:hover {
   color: #231f20;
   font-weight: 500;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a.selected {
   color: #231f20;
   font-weight: 500;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
-  width: calc(100% / 3);
+  width: 33.3333333333%;
   padding: 10px;
   border: 1px solid #dddddd;
   text-align: center;
 }
-
 header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:nth-child(2) {
   border-right: none;
 }
-
 header ul.topmenu {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   header div.header-mobile {
     display: none;
@@ -275,7 +239,6 @@ header ul.topmenu {
     justify-content: space-between;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 1520px) {
   header ul.topmenu {
     margin: 0 auto;
@@ -284,10 +247,9 @@ header ul.topmenu {
     transform: translateX(100px);
   }
 }
-
 @media screen and (min-width: 768px) {
   header ul.topmenu li.submenu {
-    width: calc(100% / 3);
+    width: 33.3333333333%;
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
@@ -325,7 +287,6 @@ main {
 aside div.sidemenu {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   aside {
     background-color: #ffffff;
@@ -392,11 +353,9 @@ aside div.sidemenu {
     font-weight: 500;
   }
 }
-
 aside div.sidemenu {
   transform: translateY(0);
 }
-
 aside div.sidemenu .header-logo img {
   width: 100%;
   display: block;
@@ -408,7 +367,6 @@ section {
   flex-direction: column;
   overflow: hidden;
 }
-
 @media screen and (min-width: 1520px) {
   section {
     height: 100vh;
@@ -416,13 +374,11 @@ section {
     justify-content: space-between;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section {
     flex-direction: row;
   }
 }
-
 section #map-area {
   width: 100%;
   display: flex;
@@ -430,193 +386,158 @@ section #map-area {
   justify-content: space-between;
   z-index: 1;
 }
-
 @media screen and (min-width: 1520px) {
   section #map-area {
     width: 70%;
   }
 }
-
 section #map-area .map-clipping {
   position: relative;
   width: 100%;
   height: 60vw;
   overflow: auto;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .map-clipping {
     height: 50vh;
     margin-top: 0;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #map-area .map-clipping {
     height: 75vh;
   }
 }
-
 section #map-area .map-clipping .map {
   position: absolute;
   left: 0;
   top: 0;
   transform: scale(0.5);
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .map-clipping .map {
     transform: scale(0.8);
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #map-area .map-clipping .map {
     transform: scale(1);
   }
 }
-
 section #map-area .map-clipping .map > * {
   position: absolute;
 }
-
 section #map-area .map-clipping .map > div {
   display: none;
 }
-
 section #map-area .map-clipping .map > div img {
-  object-fit: none;
+  -o-object-fit: none;
+     object-fit: none;
 }
-
 section #map-area .map-clipping .map #btn_guidance li {
   position: absolute;
 }
-
 section #map-area .map-clipping .map #btn_guidance li a img {
   size: auto;
   filter: sepia(100%) contrast(90%) hue-rotate(350deg) brightness(90%);
 }
-
 section #map-area .map-clipping .map #btn_guidance li a .view {
   filter: none;
   filter: contrast(120%) brightness(55%);
 }
-
 section #map-area .map-clipping .map #btn_guidance .ghm {
   left: 151px;
   top: 499px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .jg {
   left: 706px;
   top: 107px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .hhd {
   left: 728px;
   top: 127px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .twj {
   left: 599px;
   top: 20px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .hwj {
   left: 830px;
   top: 85px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .gcg {
   left: 865px;
   top: 50px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .joj {
   left: 820px;
   top: 31px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .jgj {
   left: 721px;
   top: 240px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .gjj {
   left: 448px;
   top: 293px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .suj {
   left: 449px;
   top: 244px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .dg {
   left: 570px;
   top: 319px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .sjb {
   left: 646px;
   top: 288px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .ghr {
   left: 515px;
   top: 188px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .hbj {
   left: 640px;
   top: 175px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .gtj {
   left: 600px;
   top: 226px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .saj {
   left: 529px;
   top: 270px;
 }
-
 section #map-area .map-clipping .map #btn_guidance .gnj {
   left: 556px;
   top: 243px;
 }
-
 section #map-area .map-clipping .map .bd {
   display: block;
   filter: grayscale(100%) sepia(100%) contrast(80%) hue-rotate(350deg);
 }
-
 section #map-area .map-clipping .map .road {
   display: block;
 }
-
 section #map-area .map-clipping .map .view {
   display: flex;
 }
-
 section #map-area .buttons {
   position: relative;
   width: 100%;
   max-width: 1800px;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons {
     display: flex;
-    flex-flow: row-reverse  wrap;
+    flex-flow: row-reverse wrap;
     justify-content: flex-end;
     gap: 2vw;
     margin-bottom: -3vw;
     padding: 3vh 100px 4vh 60px;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #map-area .buttons {
     justify-content: flex-end;
@@ -625,13 +546,11 @@ section #map-area .buttons {
     padding: 4.4vh 100px 4vh 60px;
   }
 }
-
 section #map-area .buttons > * {
   width: 100%;
   padding: 15px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons > * {
     position: static;
@@ -639,7 +558,6 @@ section #map-area .buttons > * {
     margin: 0;
   }
 }
-
 section #map-area .buttons .info-menu {
   visibility: hidden;
   position: absolute;
@@ -648,7 +566,6 @@ section #map-area .buttons .info-menu {
   width: 400px;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons .info-menu {
     visibility: visible;
@@ -659,7 +576,6 @@ section #map-area .buttons .info-menu {
     min-width: 400px;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #map-area .buttons .info-menu {
     display: block;
@@ -667,7 +583,6 @@ section #map-area .buttons .info-menu {
     padding-bottom: 4vh;
   }
 }
-
 section #map-area .buttons .info-menu ul {
   color: #fcfbfa;
   font-size: 0.9em;
@@ -679,50 +594,41 @@ section #map-area .buttons .info-menu ul {
   padding-top: 10px;
   padding-bottom: 9vh;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons .info-menu ul {
     padding-bottom: 4vh;
   }
 }
-
 section #map-area .buttons .info-menu ul li {
   line-height: 2em;
   min-width: 86px;
   background-color: #b59a7b;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons .info-menu ul li {
     min-width: 100px;
     background-color: #b59a7b;
   }
 }
-
 section #map-area .buttons .info-menu ul li a {
   color: #fcfbfa;
 }
-
 section #map-area .buttons .info-menu ul li a:hover {
   color: #4c4742;
   background-color: #fcfbfa;
 }
-
 section #map-area .buttons .info-menu ul .btn_course {
   background-color: #7e6754;
 }
-
 section #map-area .buttons .restore-menu {
   visibility: hidden;
   width: 360px;
   color: #7e6754;
   text-align: center;
 }
-
 section #map-area .buttons .restore-menu * {
   margin-bottom: 0.5vh;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons .restore-menu {
     visibility: visible;
@@ -730,69 +636,56 @@ section #map-area .buttons .restore-menu * {
     display: block;
   }
 }
-
 section #map-area .buttons .restore-menu h2 {
   font-size: 1.6em;
   letter-spacing: -2px;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons .restore-menu h2 {
     font-size: 1.6em;
   }
 }
-
 section #map-area .buttons .restore-menu .btn_step1 {
   display: flex;
   justify-content: center;
   line-height: 1.6em;
 }
-
 section #map-area .buttons .restore-menu .btn_step1 a {
-  border: 1px solid #75757584;
+  border: 1px solid rgba(117, 117, 117, 0.5176470588);
   padding: 1px 7px;
   margin: 2px;
 }
-
 section #map-area .buttons .restore-menu .btn_step1 .view {
   background-color: #fff;
 }
-
 section #map-area .buttons .restore-menu .btn_step2 {
   display: flex;
   justify-content: center;
 }
-
 section #map-area .buttons .restore-menu .btn_step2 li {
   width: 63px;
   line-height: 45px;
   text-align: center;
   padding: 2px;
 }
-
 section #map-area .buttons .restore-menu .btn_step2 li a {
   color: #fcfbfa;
   border-radius: 25%;
   background-color: #7e6754;
 }
-
 section #map-area .buttons .restore-menu .btn_step2 li .view {
   color: #4c4742;
   background-color: #fcfbfa;
 }
-
 section #map-area .buttons .restore-menu .comment {
   text-align: center;
 }
-
 section #map-area .buttons .restore-menu .comment span {
   display: none;
 }
-
 section #map-area .buttons .restore-menu .comment .view {
   display: block;
 }
-
 section #map-area .buttons .mobile-btn {
   display: inline-block;
   width: 48%;
@@ -801,30 +694,32 @@ section #map-area .buttons .mobile-btn {
   margin: auto;
   margin-left: 1%;
 }
-
 section #map-area .buttons .mobile-btn:hover {
   background-color: #fff;
 }
-
 @media screen and (min-width: 768px) {
   section #map-area .buttons .mobile-btn {
     display: none;
   }
 }
-
 section #map-area .buttons input {
   display: none;
 }
-
 section #map-area .buttons input:checked + label {
   border-bottom: 2px solid #757575;
 }
-
 section #map-area .buttons #tab1:checked ~ .info-menu,
 section #map-area .buttons #tab2:checked ~ .restore-menu {
   visibility: visible;
 }
-
+@-webkit-keyframes emphasis {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes emphasis {
   from {
     opacity: 0.3;
@@ -833,19 +728,16 @@ section #map-area .buttons #tab2:checked ~ .restore-menu {
     opacity: 1;
   }
 }
-
 section #guidance-area {
   position: relative;
   padding: 4vh;
   background-color: #e1d4c6;
 }
-
 @media screen and (min-width: 768px) {
   section #guidance-area {
     padding: 5vh;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #guidance-area {
     width: 30vw;
@@ -854,14 +746,13 @@ section #guidance-area {
     padding-bottom: 20vh;
   }
 }
-
 section #guidance-area .guidance-comment {
   display: none;
   position: absolute;
   z-index: 50;
-  animation: emphasis 1s alternate infinite;
+  -webkit-animation: emphasis 1s alternate infinite;
+          animation: emphasis 1s alternate infinite;
 }
-
 @media screen and (min-width: 1520px) {
   section #guidance-area .guidance-comment {
     display: block;
@@ -869,7 +760,6 @@ section #guidance-area .guidance-comment {
     top: 5vh;
   }
 }
-
 section #guidance-area .guidance {
   display: none;
   flex-flow: column wrap;
@@ -880,7 +770,6 @@ section #guidance-area .guidance {
   text-align: justify;
   color: #4c4742;
 }
-
 @media screen and (min-width: 970px) {
   section #guidance-area .guidance {
     flex-flow: row nowrap;
@@ -888,7 +777,6 @@ section #guidance-area .guidance {
     gap: 0;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #guidance-area .guidance {
     flex-flow: column nowrap;
@@ -896,51 +784,43 @@ section #guidance-area .guidance {
     margin-top: 20vh;
   }
 }
-
 section #guidance-area .guidance .place-txt {
   width: 100%;
   align-items: baseline;
 }
-
 @media screen and (min-width: 970px) {
   section #guidance-area .guidance .place-txt {
     max-width: 40vw;
     padding-bottom: 2vh;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #guidance-area .guidance .place-txt {
     padding-bottom: 0;
     flex-wrap: wrap;
   }
 }
-
 section #guidance-area .guidance .place-txt h2 {
   font-size: 5vw;
   display: inline;
 }
-
 @media screen and (min-width: 970px) {
   section #guidance-area .guidance .place-txt h2 {
     font-size: 8vw;
     font-size: 2.4em;
   }
 }
-
 section #guidance-area .guidance .place-txt p {
   width: 100%;
   font-size: 1em;
   letter-spacing: -1px;
   padding: 1.6vh 0;
 }
-
 @media screen and (min-width: 970px) {
   section #guidance-area .guidance .place-txt p {
     padding: 2vh 0;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #guidance-area .guidance .place-txt p {
     width: 100%;
@@ -948,12 +828,10 @@ section #guidance-area .guidance .place-txt p {
     padding-bottom: 5vh;
   }
 }
-
 section #guidance-area .guidance .place-img {
   width: 100%;
   height: 20vh;
 }
-
 @media screen and (min-width: 970px) {
   section #guidance-area .guidance .place-img {
     width: 100%;
@@ -961,7 +839,6 @@ section #guidance-area .guidance .place-img {
     margin-left: 2em;
   }
 }
-
 @media screen and (min-width: 1520px) {
   section #guidance-area .guidance .place-img {
     width: 100%;
@@ -969,13 +846,12 @@ section #guidance-area .guidance .place-img {
     margin: 0;
   }
 }
-
 section #guidance-area .guidance .place-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 section #guidance-area .view {
   display: flex;
 }
@@ -983,64 +859,58 @@ section #guidance-area .view {
 footer {
   background-color: #2c2928;
 }
-
 footer div.wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 8%;
 }
-
 footer div.wrapper div.policy > ul {
   padding: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 footer div.wrapper div.policy > ul li > a {
   color: #ffffff;
   font-size: 0.7em;
   font-weight: 200;
 }
-
 footer div.wrapper div.copyright {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 30px 0;
 }
-
 footer div.wrapper div.copyright div.footer-logo {
   display: none;
 }
-
 footer div.wrapper div.copyright div.contact {
   color: #ffffff;
   line-height: 1.1em;
 }
-
 footer div.wrapper div.copyright div.contact p {
   font-size: 0.7em;
   font-weight: 200;
 }
-
 footer div.wrapper div.copyright div.contact p:first-child {
   font-size: 0.8em;
   font-weight: 400;
 }
-
 @media screen and (min-width: 768px) {
   footer {
     padding: 0 50px;
   }
 }
-
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  footer {
+    padding: 0 200px;
+  }
+}
 @media screen and (min-width: 768px) and (min-width: 1520px) {
   footer div.wrapper {
     padding: 0 13%;
   }
 }
-
 @media screen and (min-width: 768px) {
   footer div.wrapper div.policy > ul {
     width: 50%;
@@ -1048,6 +918,8 @@ footer div.wrapper div.copyright div.contact p:first-child {
   footer div.wrapper div.policy > ul li > a {
     font-size: 0.9em;
   }
+}
+@media screen and (min-width: 768px) {
   footer div.wrapper div.copyright div.footer-logo {
     display: block;
     width: 145px;
@@ -1069,8 +941,7 @@ footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-
 footer .footer-logo img {
-  width: 100px;
-}
-/*# sourceMappingURL=map.css.map */
+  width: 100%;
+  display: block;
+}/*# sourceMappingURL=map.css.map */

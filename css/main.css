@@ -16,7 +16,6 @@ a {
   text-decoration: none;
   color: #2c2928;
 }
-
 a:hover {
   color: #2c2928;
 }
@@ -59,7 +58,6 @@ ul, li {
 a {
   color: #fff;
 }
-
 a:hover {
   color: #fff;
 }
@@ -97,7 +95,6 @@ p {
   line-height: 1.4em;
   font-weight: 100;
 }
-
 @media screen and (min-width: 768px) {
   p {
     font-size: 1.1em;
@@ -109,7 +106,6 @@ p {
   width: 90vw;
   padding: 30px;
 }
-
 @media screen and (min-width: 768px) {
   .txt-area {
     width: 95vw;
@@ -121,7 +117,6 @@ p {
   margin-top: 15vh;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   .txt-center {
     margin-top: 10vh;
@@ -129,7 +124,6 @@ p {
     padding: 20px;
   }
 }
-
 .txt-center p {
   font-family: Pretendard;
 }
@@ -145,7 +139,6 @@ p {
   background: url(../images/arr_right.png) no-repeat 90% 50%;
   transition: all 0.5s;
 }
-
 .button1:hover {
   color: #000;
   background: url(../images/arr_right_bk.png) no-repeat 90% 50%;
@@ -166,24 +159,20 @@ body {
   position: relative;
   color: #fff;
 }
-
 body h2 {
   font-size: 2rem;
   font-weight: 100;
   padding-bottom: 1rem;
 }
-
 @media screen and (min-width: 768px) {
   body h2 {
     font-size: 3rem;
     font-weight: 100;
   }
 }
-
 body header {
   position: relative;
 }
-
 body header div.header-mobile {
   position: absolute;
   left: 0;
@@ -191,13 +180,11 @@ body header div.header-mobile {
   z-index: 1;
   width: 100%;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile {
     top: 1.6vh;
   }
 }
-
 body header div.header-mobile div.header-flex-box {
   position: fixed;
   width: 100%;
@@ -207,22 +194,18 @@ body header div.header-mobile div.header-flex-box {
   justify-content: space-between;
   align-items: center;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.header-flex-box {
     background: none;
   }
 }
-
 body header div.header-mobile div.header-flex-box h1.logo {
   margin: 0 20px;
   line-height: 80px;
 }
-
 body header div.header-mobile div.header-flex-box h1.logo img {
   width: 100px;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.header-flex-box h1.logo {
     margin: 0 40px;
@@ -232,14 +215,12 @@ body header div.header-mobile div.header-flex-box h1.logo img {
     width: 140px;
   }
 }
-
 body header div.header-mobile div.header-flex-box div.hamburger {
   width: 25px;
   height: 20px;
   margin-right: 20px;
   z-index: 1000;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.header-flex-box div.hamburger {
     width: 86px;
@@ -249,11 +230,9 @@ body header div.header-mobile div.header-flex-box div.hamburger {
     margin-right: 2vw;
   }
 }
-
 body header div.header-mobile div.header-flex-box div.hamburger span {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.header-flex-box div.hamburger span {
     display: block;
@@ -263,20 +242,17 @@ body header div.header-mobile div.header-flex-box div.hamburger span {
     text-align: end;
   }
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu] {
   display: none;
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label {
   position: relative;
   display: block;
   width: 25px;
   height: 16px;
   cursor: pointer;
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span {
   position: absolute;
   display: block;
   width: 100%;
@@ -285,34 +261,27 @@ body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]
   background: #ffffff;
   transition: 0.3s;
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(1) {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span:nth-child(1) {
   top: 0;
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(2) {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"] + label span:nth-child(3) {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu] + label span:nth-child(3) {
   bottom: 0;
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(1) {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu]:checked + label span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(2) {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu]:checked + label span:nth-child(2) {
   opacity: 0;
 }
-
-body header div.header-mobile div.header-flex-box div.hamburger input[id="menu"]:checked + label span:nth-child(3) {
+body header div.header-mobile div.header-flex-box div.hamburger input[id=menu]:checked + label span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
-
 body header div.header-mobile div.mobilemenu {
   position: fixed;
   top: 80px;
@@ -320,24 +289,21 @@ body header div.header-mobile div.mobilemenu {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu {
     left: 50%;
     top: 4vh;
     transform: translate(-50%, 0);
     width: 60%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
 }
-
 @media screen and (min-width: 1520px) {
   body header div.header-mobile div.mobilemenu {
     width: 60%;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb {
   height: 0vh;
   padding: 0 20px;
@@ -345,7 +311,6 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb {
   overflow: hidden;
   transition: height ease-in-out 1s 0s;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb {
     display: grid;
@@ -355,37 +320,31 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb {
     margin: auto;
   }
 }
-
 @media screen and (min-width: 1520px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb {
     width: 70%;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb .sh-logo {
   display: none;
   margin-top: 70px;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb .sh-logo img {
   width: 70px;
   margin: auto;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb .sh-logo {
     display: block;
     grid-column: 1/4;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
   padding: 20px 0;
   border-bottom: 1px solid #dddddd;
   font-size: 1.1em;
   font-weight: 600;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
     width: 20%;
@@ -394,7 +353,6 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
     border-bottom: 0;
   }
 }
-
 @media screen and (min-width: 1520px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
     width: 14%;
@@ -403,7 +361,6 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu {
     border-bottom: 0;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::before {
   content: "";
   display: inline-block;
@@ -412,21 +369,17 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu::befo
   background: url("./../images/icon-circle.svg") no-repeat center;
   transition: 0.3s ease;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu:hover::before {
   background: url("./../images/icon-circle_h.svg") no-repeat center;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu.selected::before {
   background: url("./../images/icon-circle.svg") no-repeat center;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu > a, body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
   display: inline-block;
   padding-left: 10px;
   color: #231f20;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion {
   background-color: transparent;
   cursor: pointer;
@@ -438,7 +391,6 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu butto
   transition: 0.5s;
   text-align: left;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
   background: url("./../images/arr_bottom.svg") no-repeat;
   width: 13px;
@@ -448,24 +400,20 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu butto
   position: relative;
   top: 5px;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion::after {
     display: none;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
   background: url("./../images/arr_up.svg") no-repeat;
   content: "";
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu button.accordion.active::after {
     display: none;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu {
   display: flex;
   flex-direction: row;
@@ -476,25 +424,21 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.sm
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu {
     max-height: 140px;
     flex-flow: column nowrap;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li {
   padding: 5px 0;
   width: 50%;
   font-size: 0.9em;
   font-weight: 400;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:first-child, body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li:nth-child(2) {
   padding-top: 15px;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li {
     width: 100%;
@@ -504,45 +448,37 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.sm
     padding-top: 2px;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a {
   display: inline-block;
   color: #999999;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a {
     display: block;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a:hover {
   color: #231f20;
   font-weight: 500;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-menu li a.selected {
   color: #231f20;
   font-weight: 500;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb .mobilemenu-onlypc {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb .mobilemenu-onlypc {
     display: block;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb .close-btn {
   display: none;
   width: 100%;
   padding-bottom: 50px;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb .close-btn a {
   width: 100px;
   background-color: #333;
@@ -550,14 +486,12 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb .close-btn a {
   text-align: center;
   line-height: 2em;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb .close-btn {
     display: block;
     grid-column: 1/4;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
   margin-top: 30px;
   display: flex;
@@ -565,43 +499,35 @@ body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
   justify-content: space-between;
   z-index: 10000;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
     display: none;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
-  width: calc(100% / 3);
+  width: 33.3333333333%;
   padding: 10px;
   border: 1px solid #dddddd;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
     width: 100%;
   }
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu a {
   color: #333;
   font-weight: 400;
 }
-
 body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:first-child, body header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:nth-child(2) {
   border-right: none;
 }
-
 body header ul.topmenu {
   display: none;
 }
-
 body #slide-nav {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   body #slide-nav {
     position: fixed;
@@ -672,7 +598,14 @@ body #slide-nav {
     margin-left: 10px;
   }
 }
-
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes fadeout {
   from {
     opacity: 1;
@@ -681,21 +614,17 @@ body #slide-nav {
     opacity: 0;
   }
 }
-
 body section {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
-
 body #content1 {
   overflow: hidden;
 }
-
 body #content1 p {
   font-family: "Noto Serif KR", serif;
 }
-
 body #content1 .more {
   position: absolute;
   left: 50%;
@@ -709,18 +638,15 @@ body #content1 .more {
   z-index: 0;
   z-index: 5;
 }
-
 body #content1 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
   transform: transition(0.3s);
 }
-
 body #content1 .more img:hover {
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 .more {
     width: 40%;
@@ -730,7 +656,6 @@ body #content1 .more img:hover {
     height: 56px;
   }
 }
-
 @media screen and (min-width: 768px) {
   body #content1 .more {
     z-index: 5;
@@ -740,17 +665,15 @@ body #content1 .more img:hover {
     transform: translate(0, 0);
   }
 }
-
 body #content1 #intro {
   position: absolute;
   left: 0;
   top: 0;
   display: flex;
-  width: calc(100% * 5);
+  width: 500%;
   height: 100vh;
   transition: left 0.5s ease-out;
 }
-
 body #content1 #intro .move-box1 {
   width: 100vw;
   overflow: hidden;
@@ -761,7 +684,6 @@ body #content1 #intro .move-box1 {
   background: url(../images/intro04_m.jpg) no-repeat top/cover;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box1 {
     width: 100vw;
@@ -770,7 +692,6 @@ body #content1 #intro .move-box1 {
     overflow: hidden;
   }
 }
-
 body #content1 #intro .move-box1 video {
   position: absolute;
   top: 0px;
@@ -780,11 +701,12 @@ body #content1 #intro .move-box1 video {
   min-height: 100%;
   width: auto;
   height: auto;
-  animation: fadeout 2s 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeout 2s 4s;
+          animation: fadeout 2s 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   background-color: #000;
 }
-
 body #content1 #intro .move-box1 .bg1 {
   position: absolute;
   left: 0;
@@ -793,10 +715,11 @@ body #content1 #intro .move-box1 .bg1 {
   height: 100vh;
   background: url(../images/intro01_m.jpg) no-repeat right top/cover;
   overflow: hidden;
-  animation: fadeout 2s 7s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeout 2s 7s;
+          animation: fadeout 2s 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box1 .bg1 {
     width: 100vw;
@@ -805,11 +728,9 @@ body #content1 #intro .move-box1 .bg1 {
     overflow: hidden;
   }
 }
-
 body #content1 #intro .move-box1 .txt-area {
   position: relative;
 }
-
 body #content1 #intro .move-box2 {
   width: 100vw;
   height: 100vh;
@@ -817,7 +738,6 @@ body #content1 #intro .move-box2 {
   overflow: hidden;
   padding-top: 15vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box2 {
     width: 100vw;
@@ -826,7 +746,6 @@ body #content1 #intro .move-box2 {
     overflow: hidden;
   }
 }
-
 body #content1 #intro .move-box3 {
   width: 100vw;
   height: 100vh;
@@ -834,7 +753,6 @@ body #content1 #intro .move-box3 {
   overflow: hidden;
   padding-top: 15vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box3 {
     width: 100vw;
@@ -843,7 +761,6 @@ body #content1 #intro .move-box3 {
     overflow: hidden;
   }
 }
-
 body #content1 #intro .move-box4 {
   position: relative;
   width: 100vw;
@@ -852,7 +769,17 @@ body #content1 #intro .move-box4 {
   overflow: hidden;
   padding-top: 20vh;
 }
-
+@-webkit-keyframes scroll {
+  0% {
+    height: 40%;
+  }
+  80% {
+    height: 100%;
+  }
+  100% {
+    height: 40%;
+  }
+}
 @keyframes scroll {
   0% {
     height: 40%;
@@ -864,7 +791,6 @@ body #content1 #intro .move-box4 {
     height: 40%;
   }
 }
-
 body #content1 #intro .move-box4 .scroll {
   position: absolute;
   left: 50%;
@@ -873,38 +799,33 @@ body #content1 #intro .move-box4 .scroll {
   width: 59px;
   height: 60px;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box4 .scroll {
     position: static;
-    margin: 12vh  5vw;
+    margin: 12vh 5vw;
   }
 }
-
 body #content1 #intro .move-box4 .scroll ul {
   position: relative;
   width: 17px;
   margin: auto;
-  animation: scroll 1.4s infinite  linear;
+  -webkit-animation: scroll 1.4s infinite linear;
+          animation: scroll 1.4s infinite linear;
 }
-
 body #content1 #intro .move-box4 .scroll ul li:first-child {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-
 body #content1 #intro .move-box4 .scroll ul li:last-child {
   width: 50%;
   height: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.7);
 }
-
 body #content1 #intro .move-box4 .scroll .txt {
   text-align: center;
   margin: 10px auto;
 }
-
 @media screen and (min-width: 768px) {
   body #content1 #intro .move-box4 {
     width: 100vw;
@@ -913,14 +834,12 @@ body #content1 #intro .move-box4 .scroll .txt {
     overflow: hidden;
   }
 }
-
 body #content2 {
   width: 100vw;
   height: 100vh;
   background: url(../images/main_history_m.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content2 {
     width: 100vw;
@@ -929,23 +848,19 @@ body #content2 {
     overflow: hidden;
   }
 }
-
 body #content2 .txt-center {
   width: 80vw;
   margin: 20vh auto;
 }
-
 @media screen and (min-width: 768px) {
   body #content2 .txt-center {
     width: 60vw;
     margin: 10vh auto;
   }
 }
-
 body #content2 .txt-center p {
   margin: 2vh auto;
 }
-
 body #content2 .txt-center .detailview {
   position: relative;
   display: flex;
@@ -961,15 +876,12 @@ body #content2 .txt-center .detailview {
   border-bottom: 1px solid #eee;
   margin-top: 4vh;
 }
-
 body #content2 .txt-center .detailview:hover {
   opacity: 1;
 }
-
 body #content2 .txt-center .detailview a {
   margin: 5px;
 }
-
 body #content2 .txt-center .detailview::after {
   content: "";
   position: absolute;
@@ -979,9 +891,8 @@ body #content2 .txt-center .detailview::after {
   width: 15px;
   transform: rotate(45deg);
   border-bottom: 1px solid #eee;
-  background-color: #0b3c2c;
+  background-color: rgb(11, 60, 44);
 }
-
 body #content2 video {
   position: absolute;
   top: 0px;
@@ -992,14 +903,12 @@ body #content2 video {
   height: auto;
   opacity: 0.3;
 }
-
 body #content3 {
   width: 100vw;
   height: 100vh;
   background: url(../images/main_restore_m.jpg) no-repeat center/cover;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content3 {
     width: 100vw;
@@ -1008,7 +917,6 @@ body #content3 {
     overflow: hidden;
   }
 }
-
 body #content3 .more {
   position: absolute;
   left: 50%;
@@ -1021,18 +929,15 @@ body #content3 .more {
   cursor: pointer;
   z-index: 0;
 }
-
 body #content3 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
   transform: transition(0.3s);
 }
-
 body #content3 .more img:hover {
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
   body #content3 .more {
     width: 90%;
@@ -1042,7 +947,6 @@ body #content3 .more img:hover {
     height: 56px;
   }
 }
-
 @media screen and (min-width: 768px) {
   body #content3 .more {
     position: absolute;
@@ -1066,7 +970,6 @@ body #content3 .more img:hover {
     opacity: 1;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 768px) {
   body #content3 .more {
     width: 80%;
@@ -1076,7 +979,6 @@ body #content3 .more img:hover {
     height: 56px;
   }
 }
-
 body #content3 #restore-view {
   position: relative;
   width: 70vw;
@@ -1086,21 +988,18 @@ body #content3 #restore-view {
   margin: auto;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content3 #restore-view {
     width: 62vw;
     padding-top: 8vh;
   }
 }
-
 body #content3 #restore-view .slider {
   position: absolute;
   left: 0px;
   display: flex;
   transition: left 1s ease-out;
 }
-
 body #content3 #restore-view .slider .restore {
   display: flex;
   flex-direction: column;
@@ -1111,23 +1010,19 @@ body #content3 #restore-view .slider .restore {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 28px;
 }
-
 body #content3 #restore-view .slider .restore:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
-
 @media screen and (min-width: 768px) {
   body #content3 #restore-view .slider .restore {
     padding: 32px;
   }
 }
-
 body #content3 #restore-view .slider .restore .year {
   font-size: 2.4em;
   font-weight: 500;
   padding-top: 2vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content3 #restore-view .slider .restore .year {
     font-size: 2.8em;
@@ -1135,13 +1030,11 @@ body #content3 #restore-view .slider .restore .year {
     padding-top: 4.4vh;
   }
 }
-
 body #content3 #restore-view .slider .restore .title {
   font-size: 1.2em;
   font-weight: 200;
   padding-bottom: 2vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content3 #restore-view .slider .restore .title {
     font-size: 1.4em;
@@ -1149,18 +1042,15 @@ body #content3 #restore-view .slider .restore .title {
     padding-bottom: 4.4vh;
   }
 }
-
 body #content3 #restore-view .slider .restore p {
   text-align: justify;
 }
-
 @media screen and (min-width: 768px) {
   body #content3 #restore-view .slider .restore p {
     line-height: 1.6em;
     text-align: justify;
   }
 }
-
 body #content3 #restore-view .slider .restore .restore-img {
   display: flex;
   justify-content: center;
@@ -1169,7 +1059,6 @@ body #content3 #restore-view .slider .restore .restore-img {
   height: 18vh;
   margin-top: 2vh;
 }
-
 body #content3 #restore-view .slider .restore .restore-img .tooltip {
   width: 90%;
   font-weight: 300;
@@ -1177,36 +1066,29 @@ body #content3 #restore-view .slider .restore .restore-img .tooltip {
   background-color: rgba(32, 25, 25, 0.9);
   visibility: hidden;
 }
-
 body #content3 #restore-view .slider .restore .restore-img:hover .tooltip {
   visibility: visible;
 }
-
 body #content3 #restore-view .slider .restore .img01 {
   background: url(../images/restore01.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content3 #restore-view .slider .restore .img02 {
   background: url(../images/restore02.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content3 #restore-view .slider .restore .img03 {
   background: url(../images/restore03.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content3 #restore-view .slider .restore .img04 {
   background: url(../images/restore04.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content3 #restore-view .slider .restore .img05 {
   background: url(../images/restore05.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content4 {
   display: flex;
   flex-direction: column;
@@ -1220,7 +1102,6 @@ body #content4 {
   background: url(../images/main_info_m.jpg) no-repeat center/cover;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content4 {
     flex-direction: row;
@@ -1233,29 +1114,24 @@ body #content4 {
     overflow: hidden;
   }
 }
-
 body #content4 > div {
   width: 90%;
 }
-
 @media screen and (min-width: 768px) {
   body #content4 > div {
     width: 400px;
   }
 }
-
 body #content4 .txt {
   max-width: 100%;
   line-height: 1.2em;
 }
-
 body #content4 h4 {
   font-size: 1.2em;
   font-weight: 400;
   line-height: 2em;
   padding-top: 1em;
 }
-
 @media screen and (min-width: 768px) {
   body #content4 h4 {
     font-size: 1.4em;
@@ -1264,7 +1140,6 @@ body #content4 h4 {
     padding-top: 2em;
   }
 }
-
 body #content4 .box {
   position: relative;
   width: 100%;
@@ -1272,17 +1147,14 @@ body #content4 .box {
   border: 1px solid rgba(255, 255, 255, 0.5);
   overflow: hidden;
 }
-
 body #content4 .box:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
-
 @media screen and (min-width: 768px) {
   body #content4 .box {
     height: 250px;
   }
 }
-
 body #content4 .box .tooltip {
   position: absolute;
   left: 50%;
@@ -1301,45 +1173,37 @@ body #content4 .box .tooltip {
   visibility: hidden;
   transition: 0.3s;
 }
-
 body #content4 .box:hover .tooltip {
   visibility: visible;
 }
-
 body #content4 .box .map_img {
   width: 500px;
   height: 300px;
   opacity: 0.5;
   transition: 0.3s;
 }
-
 body #content4 .box .map_img:hover {
   filter: blur(2px);
   transform: scale(1.1);
 }
-
 body #content4 .map-guide .map_img {
   background: url(../images/map.png) no-repeat center;
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
-
 body #content4 .map-info .map_img {
   background: url(../images/map_info.png) no-repeat center;
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
-
 body #content4 .map-info button {
   margin-top: 20px;
 }
-
 @media screen and (min-width: 768px) {
   body #content4 .map-info button {
     margin-top: 60px;
   }
 }
-
 body #content5 {
   display: flex;
   flex-direction: column;
@@ -1350,7 +1214,6 @@ body #content5 {
   background: url(../images/main_event_m.jpg) no-repeat center/cover;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 {
     padding-top: 18vh;
@@ -1361,7 +1224,6 @@ body #content5 {
     overflow: hidden;
   }
 }
-
 body #content5 .more {
   position: absolute;
   left: 50%;
@@ -1374,18 +1236,15 @@ body #content5 .more {
   cursor: pointer;
   z-index: 0;
 }
-
 body #content5 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
   transform: transition(0.3s);
 }
-
 body #content5 .more img:hover {
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 .more {
     width: 90%;
@@ -1395,7 +1254,6 @@ body #content5 .more img:hover {
     height: 56px;
   }
 }
-
 @media screen and (min-width: 768px) {
   body #content5 .more {
     position: absolute;
@@ -1419,7 +1277,6 @@ body #content5 .more img:hover {
     opacity: 1;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 768px) {
   body #content5 .more {
     width: 74%;
@@ -1429,7 +1286,6 @@ body #content5 .more img:hover {
     height: 56px;
   }
 }
-
 body #content5 #poster-view {
   width: 52vw;
   margin-top: 12vh;
@@ -1437,13 +1293,11 @@ body #content5 #poster-view {
   overflow: hidden;
   border: 1px solid #000;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #poster-view {
     width: 55vw;
   }
 }
-
 body #content5 #poster-view .slider {
   position: relative;
   cursor: pointer;
@@ -1451,12 +1305,10 @@ body #content5 #poster-view .slider {
   margin: auto;
   transition: left 1s ease-out;
 }
-
 body #content5 #poster-view .slider li {
   height: 38vh;
   overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #poster-view .slider li {
     height: 42vh;
@@ -1464,35 +1316,28 @@ body #content5 #poster-view .slider li {
     overflow: hidden;
   }
 }
-
 body #content5 #poster-view .slider li:first-child {
   background: url(../images/event01.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content5 #poster-view .slider li:nth-child(2) {
   background: url(../images/event02.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content5 #poster-view .slider li:nth-child(3) {
   background: url(../images/event03.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content5 #poster-view .slider li:nth-child(4) {
   background: url(../images/event04.jpg) no-repeat center bottom/cover;
   overflow: hidden;
 }
-
 body #content5 #poster-view .slider li:focus {
   opacity: 1;
 }
-
 body #content5 #poster-view .slider .view {
   opacity: 1;
 }
-
 body #content5 #event-hover {
   position: relative;
   display: flex;
@@ -1501,36 +1346,30 @@ body #content5 #event-hover {
   width: 86%;
   display: flex;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover {
     width: 56%;
     height: 28vh;
   }
 }
-
 body #content5 #event-hover .event-guide {
   flex-direction: column;
   padding: 1vh;
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide {
     flex-direction: row;
     padding-top: 6vh;
   }
 }
-
 body #content5 #event-hover .event-guide:first-child {
   display: flex;
 }
-
 body #content5 #event-hover .event-guide .event-schedule {
   font-family: Pretendard;
   margin: auto;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .event-schedule {
     display: flex;
@@ -1540,28 +1379,23 @@ body #content5 #event-hover .event-guide .event-schedule {
     margin-bottom: 10vh;
   }
 }
-
 body #content5 #event-hover .event-guide .event-schedule table {
   display: none;
 }
-
 body #content5 #event-hover .event-guide .event-schedule table td {
   vertical-align: top;
   line-height: 1.4em;
   padding: 0.2em 0;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .event-schedule table {
     display: block;
   }
 }
-
 body #content5 #event-hover .event-guide .summary {
   width: 100%;
   margin-top: 3vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary {
     width: 76vw;
@@ -1570,25 +1404,21 @@ body #content5 #event-hover .event-guide .summary {
     margin-top: 0;
   }
 }
-
 body #content5 #event-hover .event-guide .summary .title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary .title {
     justify-content: space-between;
   }
 }
-
 body #content5 #event-hover .event-guide .summary .title h2 {
   font-size: 1.5em;
   font-weight: 100;
   font-family: "Noto Serif KR", serif;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary .title h2 {
     font-size: 2.6em;
@@ -1596,7 +1426,6 @@ body #content5 #event-hover .event-guide .summary .title h2 {
     margin-right: 20px;
   }
 }
-
 body #content5 #event-hover .event-guide .summary .title .detailview {
   position: relative;
   display: flex;
@@ -1612,15 +1441,12 @@ body #content5 #event-hover .event-guide .summary .title .detailview {
   border-bottom: 1px solid #eee;
   transform: scale(0.8);
 }
-
 body #content5 #event-hover .event-guide .summary .title .detailview:hover {
   opacity: 1;
 }
-
 body #content5 #event-hover .event-guide .summary .title .detailview a {
   margin: 5px;
 }
-
 body #content5 #event-hover .event-guide .summary .title .detailview::after {
   content: "";
   position: absolute;
@@ -1630,15 +1456,13 @@ body #content5 #event-hover .event-guide .summary .title .detailview::after {
   width: 15px;
   transform: rotate(45deg);
   border-bottom: 1px solid #eee;
-  background-color: #0b3c2c;
+  background-color: rgb(11, 60, 44);
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary .title .detailview {
     transform: scale(1);
   }
 }
-
 body #content5 #event-hover .event-guide .summary p {
   width: 100%;
   height: 26vh;
@@ -1646,7 +1470,6 @@ body #content5 #event-hover .event-guide .summary p {
   text-align: justify;
   padding-top: 1vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .event-guide .summary p {
     width: unset;
@@ -1655,13 +1478,11 @@ body #content5 #event-hover .event-guide .summary p {
     overflow: visible;
   }
 }
-
 body #content5 #event-hover .button1 {
   transform: scale(0.8);
   margin: auto;
   margin-bottom: 4vh;
 }
-
 @media screen and (min-width: 768px) {
   body #content5 #event-hover .button1 {
     position: absolute;
@@ -1671,7 +1492,6 @@ body #content5 #event-hover .button1 {
     margin-bottom: unset;
   }
 }
-
 body #content6 {
   height: 130vh;
   display: flex;
@@ -1683,7 +1503,6 @@ body #content6 {
   background: url(../images/main_gallery.jpg) no-repeat center/cover;
   overflow: hidden;
 }
-
 body #content6 .more {
   position: absolute;
   left: 50%;
@@ -1696,18 +1515,15 @@ body #content6 .more {
   cursor: pointer;
   z-index: 0;
 }
-
 body #content6 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
   transform: transition(0.3s);
 }
-
 body #content6 .more img:hover {
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
   body #content6 .more {
     width: 90%;
@@ -1717,7 +1533,6 @@ body #content6 .more img:hover {
     height: 56px;
   }
 }
-
 @media screen and (min-width: 768px) {
   body #content6 .more {
     position: absolute;
@@ -1741,7 +1556,6 @@ body #content6 .more img:hover {
     opacity: 1;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 768px) {
   body #content6 .more {
     width: 80%;
@@ -1751,17 +1565,14 @@ body #content6 .more img:hover {
     height: 56px;
   }
 }
-
 body #content6 #gallery-view {
   width: 65vw;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-
 body #content6 #gallery-view:hover {
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
-
 body #content6 #gallery-view div {
   position: relative;
   display: flex;
@@ -1769,23 +1580,20 @@ body #content6 #gallery-view div {
   transition: 0.5s;
   display: none;
 }
-
 body #content6 #gallery-view div:nth-child(2) {
   display: flex;
 }
-
 body #content6 #gallery-view div img {
   min-width: 65vw;
   min-height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 body #content6 .gallery-nav {
   font-family: Pretendard;
   padding-top: 1vh;
   width: 65vw;
 }
-
 body #content6 .gallery-nav .line {
   line-height: 4em;
   font-family: "Noto Serif KR", serif;
@@ -1795,16 +1603,13 @@ body #content6 .gallery-nav .line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   margin-bottom: -4px;
 }
-
 body #content6 .gallery-nav ul {
   display: flex;
   justify-content: space-evenly;
 }
-
 body #content6 .gallery-nav ul a li {
   text-align: center;
 }
-
 body #content6 .gallery-nav ul a li span {
   display: block;
   width: 10px;
@@ -1818,80 +1623,70 @@ body #content6 .gallery-nav ul a li span {
   opacity: 0;
   transition: all 0.1s;
 }
-
 body #content6 .gallery-nav ul .view {
   font-weight: 600;
 }
-
 body #content6 .gallery-nav ul .view span {
   opacity: 1;
 }
-
 body #content6 .txt-area {
   margin-top: 20vh;
 }
-
 body footer {
   background-color: #2c2928;
 }
-
 body footer div.wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 8%;
 }
-
 body footer div.wrapper div.policy > ul {
   padding: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 body footer div.wrapper div.policy > ul li > a {
   color: #ffffff;
   font-size: 0.7em;
   font-weight: 200;
 }
-
 body footer div.wrapper div.copyright {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 30px 0;
 }
-
 body footer div.wrapper div.copyright div.footer-logo {
   display: none;
 }
-
 body footer div.wrapper div.copyright div.contact {
   color: #ffffff;
   line-height: 1.1em;
 }
-
 body footer div.wrapper div.copyright div.contact p {
   font-size: 0.7em;
   font-weight: 200;
 }
-
 body footer div.wrapper div.copyright div.contact p:first-child {
   font-size: 0.8em;
   font-weight: 400;
 }
-
 @media screen and (min-width: 768px) {
   body footer {
     padding: 0 50px;
   }
 }
-
+@media screen and (min-width: 768px) and (min-width: 1520px) {
+  body footer {
+    padding: 0 200px;
+  }
+}
 @media screen and (min-width: 768px) and (min-width: 1520px) {
   body footer div.wrapper {
     padding: 0 13%;
   }
 }
-
 @media screen and (min-width: 768px) {
   body footer div.wrapper div.policy > ul {
     width: 50%;
@@ -1899,6 +1694,8 @@ body footer div.wrapper div.copyright div.contact p:first-child {
   body footer div.wrapper div.policy > ul li > a {
     font-size: 0.9em;
   }
+}
+@media screen and (min-width: 768px) {
   body footer div.wrapper div.copyright div.footer-logo {
     display: block;
     width: 145px;
@@ -1920,8 +1717,6 @@ body footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
 }
-
 body footer .footer-logo img {
   width: 100px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
