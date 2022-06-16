@@ -174,13 +174,13 @@ section.main-sec {
                 // border-top: solid 3px #333;
             }
 
-            input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
+            input[id='tabThr']:checked ~ .css3-tab-nav label[for='tabThr'] {
                 background: #333;
                 color: $color-white;
                 cursor: default;
             }
 
-            input[id='addNew']:checked ~ div.add-new {
+            input[id='tabThr']:checked ~ div.tab-Thr {
                 display: block;
                 // border-top: solid 3px #333;
             }
