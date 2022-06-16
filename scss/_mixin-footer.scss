@@ -57,6 +57,10 @@
 @mixin footer-pc() {
     padding: 0 50px;
 
+    @include responsive(pc-size) {
+        padding: 0 200px;
+    }
+
     div.wrapper {
         @include responsive(pc-size) {
             padding: 0 13%;

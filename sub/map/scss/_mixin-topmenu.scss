@@ -140,7 +140,7 @@
                         text-align: left;
 
                         &::after {
-                            background: url("./../images/arr_bottom.svg") no-repeat;
+                            background: url("./../../../images/arr_bottom.svg") no-repeat;
                             width: 13px;
                             height: 13px;
                             content: "";
@@ -150,7 +150,7 @@
                         }
 
                         &.active::after {
-                            background: url("./../images/arr_up.svg") no-repeat;
+                            background: url("./../../../images/arr_up.svg") no-repeat;
                             content: "";
                         }
                     }
