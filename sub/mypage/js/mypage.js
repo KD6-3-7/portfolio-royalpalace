@@ -1,6 +1,8 @@
 // 회원가입 페이지 목록에서 선택한 이메일 주소 자동 입력
 function input_email() {
-	document.frmEdit.mailServer1.value = document.frmEdit.mailServer2.value;
+	const mailServer1 = document.getElementById("mailServer1");
+	const mailServer2 = document.getElementById("mailServer2");
+	mailServer1.value = mailServer2.value;
 }
 
 

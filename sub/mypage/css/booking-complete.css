@@ -210,19 +210,19 @@ header div.header-mobile div.mobilemenu ul.mobile-gnb > li.mobilemenu ul.small-m
   color: #231f20;
   font-weight: 500;
 }
-header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box {
+header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu-box ul.login-flex-box {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu {
+header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu-box ul.login-flex-box li.mobilemenu {
   width: 33.3333333333%;
   padding: 10px;
   border: 1px solid #dddddd;
   text-align: center;
 }
-header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb div.login-flex-box li.mobilemenu:nth-child(2) {
+header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu-box ul.login-flex-box li.mobilemenu:first-child, header div.header-mobile div.mobilemenu ul.mobile-gnb li.mobilemenu-box ul.login-flex-box li.mobilemenu:nth-child(2) {
   border-right: none;
 }
 header ul.topmenu {
@@ -380,7 +380,7 @@ section.complete div.result div.logo {
   height: 50px;
   margin: 0 auto;
 }
-section.complete div.result P {
+section.complete div.result h2 {
   padding-top: 10px;
   text-align: center;
   font-family: "Noto Serif KR", serif;
@@ -388,7 +388,7 @@ section.complete div.result P {
   font-weight: 300;
 }
 @media screen and (min-width: 768px) {
-  section.complete div.result P {
+  section.complete div.result h2 {
     font-size: 1.8em;
   }
 }
