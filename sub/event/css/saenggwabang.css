@@ -348,7 +348,7 @@ aside div.sidemenu {
 section {
   width: 100%;
 }
-section h1 {
+section h2 {
   display: none;
 }
 section .img-text {
@@ -371,17 +371,17 @@ section .img-text .main-text {
     right: 10%;
   }
 }
-section .img-text .main-text h2 {
+section .img-text .main-text h3 {
   font-size: 25px;
 }
 @media screen and (min-width: 768px) {
-  section .img-text .main-text h2 {
+  section .img-text .main-text h3 {
     font-size: 30px;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1520px) {
-  section .img-text .main-text h2 {
+  section .img-text .main-text h3 {
     font-size: 44px;
     margin-bottom: 74px;
   }
@@ -479,11 +479,9 @@ section .wrapper-box .info .line-flex {
   width: 19%;
 }
 section .wrapper-box .info .info-text-mobile {
-  display: block;
-}
-section .wrapper-box .info .info-text-mobile p {
   font-size: 18px;
   line-height: 2em;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   section .wrapper-box .info .info-text-mobile {
@@ -496,11 +494,9 @@ section .wrapper-box .info .info-text-mobile p {
   }
 }
 section .wrapper-box .info .info-text-pc {
-  display: none;
-}
-section .wrapper-box .info .info-text-pc p {
   font-size: 18px;
   line-height: 2em;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   section .wrapper-box .info .info-text-pc {

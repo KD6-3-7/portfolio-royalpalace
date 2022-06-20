@@ -34,7 +34,7 @@ aside {
 //section
 section {
     width: 100%;
-    h1 {
+    h2 {
         display: none;
     }
 
@@ -57,7 +57,7 @@ section {
                 right: 10%;
             }
 
-            h2 {
+            h3 {
                 font-size: 25px;
                 @include responsive(tablet-size) {
                     font-size: 30px;
@@ -123,10 +123,8 @@ section {
     
             
             .info-text-mobile {
-                p {
-                    font-size: 18px;
-                    line-height: 2em;
-                }
+                font-size: 18px;
+                line-height: 2em;
                 display: block;
                 @include responsive(tablet-size) {
                     display: block;
@@ -136,10 +134,8 @@ section {
                 }
             }
             .info-text-pc {
-                p {
-                    font-size: 18px;
-                    line-height: 2em;
-                }
+                font-size: 18px;
+                line-height: 2em;
                 display: none;
                 @include responsive(tablet-size) {
                     display: none;
