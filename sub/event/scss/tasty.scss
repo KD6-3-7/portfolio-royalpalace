@@ -35,7 +35,7 @@ aside {
 section {
     width: 100%;
 
-    h1 {
+    h2 {
         display: none;
     }
 
@@ -58,7 +58,7 @@ section {
                 right: 10%;
             }
 
-            h2 {
+            h3 {
                 font-size: 25px;
                 @include responsive(tablet-size) {
                     font-size: 30px;
