@@ -53,7 +53,7 @@ section {
 
     .parking-price{
         padding-bottom: 150px;
-        word-break: keep-all;
+
         
         #pk-price{
             width: 100%;
@@ -107,12 +107,12 @@ section {
             tr{
                 .dis {
                     @include responsive(pc-size) {
-                        .dis_hello{
+                        .dis-hello{
                             width: 22%;
                             margin: 0 auto;
                             text-align: left;
                         }
-                        .dis_hi{
+                        .dis-hi{
                             width: 63%;
                             margin: 0 auto;
                             text-align: left;

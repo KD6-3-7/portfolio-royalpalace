@@ -40,30 +40,33 @@ section {
 
     ul.ex1{
         width: 100%;
-        
-        div.exp-txt1{
-            display: flex;
-            // word-break: break-all;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 20px 10px;
-            border-bottom: 1px solid $color-border;
-            .num{
-                width: 40%;
-            }
-            .time{
-                width: 60%;
-
-            }
-            @include responsive(pc-size) {
+        li{
+            div.exp-txt1{
+                display: flex;
+                // word-break: break-all;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 20px 10px;
+                border-bottom: 1px solid $color-border;
                 .num{
-                    width: 30%;
+                    width: 40%;
                 }
                 .time{
-                    width: 70%;
+                    width: 60%;
+    
+                }
+                @include responsive(pc-size) {
+                    .num{
+                        width: 30%;
+                    }
+                    .time{
+                        width: 70%;
+                    }
                 }
             }
         }
+        
+        
 
     }
     .ex2{
