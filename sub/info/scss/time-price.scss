@@ -97,7 +97,6 @@ section {
         
         #roy2-price {
             width: 100%;
-            word-break: keep-all;
             @include responsive(tablet-size) {
                 padding: 30px;
             }
@@ -122,15 +121,15 @@ section {
             border-collapse: collapse;
             
             tr{
-                .br_list{
-                    div.list_align {
+                .br-list{
+                    div.list-align {
                         width: 60%;
                         margin: 0 auto;
                         text-align: left;
                     }
                 }
 
-                .last_list a{
+                .last-list a{
                    text-decoration: underline;
                 }
             }
