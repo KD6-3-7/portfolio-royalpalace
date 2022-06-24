@@ -147,7 +147,7 @@ var Slider = function(id, _big, _wide, _web, _tab, _mobile, spacing, time){
     };
 
   //갤러리 슬라이드 
-  let galleryBtn = document.querySelector('.gallery-nav ul').children;
+  let galleryBtn = document.querySelector('.season').children;
   let galleryView = document.querySelector("#gallery-view").children;
   var sSlider = document.querySelectorAll('#gallery-view .slider')
   

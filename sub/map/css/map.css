@@ -404,6 +404,7 @@ aside div.sidemenu .header-logo img {
 
 section {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -493,7 +494,6 @@ section #map-area .map-clipping .map #btn_guidance li {
 }
 
 section #map-area .map-clipping .map #btn_guidance li a img {
-  size: auto;
   filter: sepia(100%) contrast(90%) hue-rotate(350deg) brightness(90%);
 }
 
@@ -749,7 +749,7 @@ section #map-area .buttons .restore-menu .btn_step1 {
 }
 
 section #map-area .buttons .restore-menu .btn_step1 a {
-  border: 1px solid #75757584;
+  border: 1px solid rgba(117, 117, 117, 0.5);
   padding: 1px 7px;
   margin: 2px;
 }
@@ -874,7 +874,7 @@ section #guidance-area .guidance {
   display: none;
   flex-flow: column wrap;
   gap: 2vh;
-  align-items: top;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
   text-align: justify;
@@ -917,7 +917,7 @@ section #guidance-area .guidance .place-txt {
 }
 
 section #guidance-area .guidance .place-txt h2 {
-  font-size: 5vw;
+  font-size: 6vw;
   display: inline;
 }
 

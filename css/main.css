@@ -714,7 +714,7 @@ body #content1 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
-  transform: transition(0.3s);
+  transition: 0.3s;
 }
 
 body #content1 .more img:hover {
@@ -1026,7 +1026,7 @@ body #content3 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
-  transform: transition(0.3s);
+  transition: 0.3s;
 }
 
 body #content3 .more img:hover {
@@ -1060,7 +1060,7 @@ body #content3 .more img:hover {
     width: 20px;
     height: 40px;
     opacity: 0.7;
-    transform: transition(0.3s);
+    transition: 0.3s;
   }
   body #content3 .more img:hover {
     opacity: 1;
@@ -1379,7 +1379,7 @@ body #content5 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
-  transform: transition(0.3s);
+  transition: 0.3s;
 }
 
 body #content5 .more img:hover {
@@ -1413,7 +1413,7 @@ body #content5 .more img:hover {
     width: 20px;
     height: 40px;
     opacity: 0.7;
-    transform: transition(0.3s);
+    transition: 0.3s;
   }
   body #content5 .more img:hover {
     opacity: 1;
@@ -1701,7 +1701,7 @@ body #content6 .more img {
   width: 20px;
   height: 40px;
   opacity: 0.7;
-  transform: transition(0.3s);
+  transition: 0.3s;
 }
 
 body #content6 .more img:hover {
@@ -1735,7 +1735,7 @@ body #content6 .more img:hover {
     width: 20px;
     height: 40px;
     opacity: 0.7;
-    transform: transition(0.3s);
+    transition: 0.3s;
   }
   body #content6 .more img:hover {
     opacity: 1;
