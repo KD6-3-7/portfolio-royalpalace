@@ -755,7 +755,7 @@ body #content1 #intro .move-box1 {
   width: 100vw;
   overflow: hidden;
   position: relative;
-  padding-top: 15vh;
+  padding-top: 13vh;
   width: 100vw;
   height: 100vh;
   background: url(../images/intro04_m.jpg) no-repeat top/cover;
@@ -1796,16 +1796,16 @@ body #content6 .gallery-nav .line {
   margin-bottom: -4px;
 }
 
-body #content6 .gallery-nav ul {
+body #content6 .gallery-nav .season {
   display: flex;
   justify-content: space-evenly;
 }
 
-body #content6 .gallery-nav ul a li {
+body #content6 .gallery-nav .season a div {
   text-align: center;
 }
 
-body #content6 .gallery-nav ul a li span {
+body #content6 .gallery-nav .season a div span {
   display: block;
   width: 10px;
   height: 10px;
@@ -1819,11 +1819,11 @@ body #content6 .gallery-nav ul a li span {
   transition: all 0.1s;
 }
 
-body #content6 .gallery-nav ul .view {
+body #content6 .gallery-nav .season .view {
   font-weight: 600;
 }
 
-body #content6 .gallery-nav ul .view span {
+body #content6 .gallery-nav .season .view span {
   opacity: 1;
 }
 
