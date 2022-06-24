@@ -166,7 +166,7 @@ body {
                 width: 100vw;
                 overflow: hidden;
 				position: relative;
-                padding-top: 15vh;
+                padding-top: 13vh;
                 @include bg-full ("intro04_m", top);
                     @include responsive (tablet-size) {
                         @include bg-full ("intro04", right top);
@@ -820,13 +820,12 @@ body {
                 margin-bottom: -4px;
             }
 
-            ul {
+            .season {
                 display: flex;
                 justify-content: space-evenly;
                 
-
                 a {
-                    li {
+                    div {
                         text-align: center;
                         
                         span {
