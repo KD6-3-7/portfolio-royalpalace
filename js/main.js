@@ -31,7 +31,7 @@ $(window).on("wheel", function(e){
 
 //메인슬라이드
 let slides = document.querySelector("#intro"); //전체 슬라이드 컨테이너
-let slideImg = document.querySelectorAll("#intro > ul");//모든 슬라이드들
+let slideImg = document.querySelectorAll("#intro > div");//모든 슬라이드들
 let currentIdx = 0; //현재 슬라이드 index
 const slideCount = slideImg.length; // 슬라이드 개수
 let prev1 = document.querySelector('#content1 .prev'); //이전 버튼
