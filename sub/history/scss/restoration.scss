@@ -54,7 +54,7 @@ section.main-sec {
         .des-1-converse-image {
             width: 100%;
             
-            .des-1-image1{
+            .des-1-image1 {
                 display: none;
                 background-color: #dfd4c2;
 
@@ -100,9 +100,9 @@ section.main-sec {
                         }
                     }
                 }
-            }
-        }
-    }
+            } // des-1-image1
+        } // des-1-converse-image
+    } // section.des-1
     
     section.des-2 {
         width: 100%;
@@ -184,9 +184,9 @@ section.main-sec {
                 display: block;
                 // border-top: solid 3px #333;
             }
-        }
-    }
-}
+        } // css3-tab
+    } // section.des-2
+} // section.main-sec
 
 
 // footer
