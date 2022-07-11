@@ -409,6 +409,12 @@ section ul > li ol li {
   color: #2c2928;
   opacity: 0.8;
 }
+section ul > li ol li a {
+  display: inline-block;
+}
+section ul > li ol li a:hover {
+  color: blue;
+}
 section ul > li ol .table-3 h3, section ul > li ol .table-3 p {
   font-weight: 400;
   font-size: 1em;
@@ -521,4 +527,4 @@ footer div.wrapper div.copyright div.contact p:first-child {
   footer div.wrapper div.copyright div.contact p:first-child {
     display: none;
   }
-}/*# sourceMappingURL=privacy.css.map */
+}
